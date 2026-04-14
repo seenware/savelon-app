@@ -1,0 +1,447 @@
+{
+  "@@locale": "ja",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "暗号化された連絡先",
+  "navContacts": "連絡先",
+  "navOrganize": "整理",
+  "navSupport": "サポート",
+  "navSettings": "設定",
+  "settingsTitle": "設定",
+  "language": "言語",
+  "languageSystemDefault": "システムのデフォルト",
+  "organizeTitle": "整理",
+  "supportTitle": "サポート",
+  "search": "検索",
+  "commonCancel": "キャンセル",
+  "commonDelete": "消去",
+  "commonSave": "保存",
+  "commonEdit": "編集",
+  "commonMerge": "マージ",
+  "commonSkip": "スキップ",
+  "commonRetry": "リトライ",
+  "commonClose": "閉じる",
+  "commonNext": "次",
+  "commonBack": "戻る",
+  "commonYes": "はい",
+  "commonNo": "いいえ",
+  "commonContinue": "続ける",
+  "commonTryAgain": "もう一度やり直してください",
+  "commonApply": "適用する",
+  "commonDiscard": "破棄",
+  "commonUnlock": "ロックを解除する",
+  "commonLoading": "読み込み中...",
+  "commonErrorWithDetails": "エラー: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "あなたの連絡先。あなただけです。",
+  "contactNotFound": "連絡先が見つかりません",
+  "contactDeleted": "連絡先が削除されました",
+  "contactUpdated": "連絡先が更新されました",
+  "contactSaved": "連絡先が保存されました",
+  "contactsMerged": "連絡先が統合されました",
+  "deleteContactTitle": "連絡先の削除",
+  "deleteContactConfirm": "{name} を削除してもよろしいですか?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "「{name}」を削除してもよろしいですか?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "削除できませんでした: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "更新に失敗しました: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "保存に失敗しました: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "ノーネーム",
+  "noNameTitle": "ノーネーム",
+  "noNameBody": "この連絡先には名前がありません。このまま保存しますか？",
+  "discardChangesTitle": "変更を破棄しますか?",
+  "discardChangesBody": "保存されていない変更は失われます。",
+  "newContact": "新しい連絡先",
+  "editContact": "連絡先の編集",
+  "addMore": "さらに追加",
+  "addNameFieldsTitle": "名前フィールドの追加",
+  "call": "電話",
+  "sendEmail": "メールを送信",
+  "copy": "コピー",
+  "copiedToClipboard": "クリップボードにコピーされました",
+  "importContacts": "連絡先のインポート",
+  "importing": "インポート中...",
+  "importedCount": "{count}件の連絡先をインポートしました",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "{imported} 連絡先をインポートしました、{skipped} はスキップされました",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "連絡先のインポートに失敗しました",
+  "noContactsToImport": "インポートする連絡先がありません。",
+  "contactsPermissionRequiredImport": "連絡先をインポートするには連絡先の許可が必要です",
+  "importDialogTitle": "連絡先のインポート",
+  "importDialogBody": "デバイスまたはファイルから連絡先をインポートしますか?",
+  "importSourceTitle": "インポート",
+  "importZipPasswordTitle": "アーカイブパスワード",
+  "importZipPasswordChecking": "確認中...",
+  "exportContacts": "連絡先のエクスポート",
+  "exportContactsTitle": "連絡先のエクスポート",
+  "exportSubtitle": "連絡先を保存する方法を選択します。",
+  "exportFormatVcfTitle": ".vcf として保存",
+  "exportFormatVcfSubtitle": "Apple 連絡先、Google 連絡先などで機能する 1 つのファイル。",
+  "exportFormatZipTitle": "パスワードで保護されたアーカイブに保存する",
+  "exportFormatZipSubtitle": ".vcf が入った .zip — 開くにはパスワードが必要です。",
+  "exportProtectedTitle": "保護されたエクスポート",
+  "exportCompleteTitle": "エクスポートが完了しました",
+  "stillLoadingContacts": "まだ連絡先を読み込み中です。お待ちください。",
+  "couldNotLoadContacts": "連絡先をロードできませんでした。",
+  "passwordChangedSuccess": "パスワードが正常に変更されました",
+  "passwordProtectionEnabled": "パスワード保護が正常に有効になりました",
+  "passwordProtectionRemoved": "パスワード保護が正常に削除されました",
+  "removePasswordProtectionButton": "パスワード保護を削除する",
+  "changePasswordTitle": "パスワードを変更する",
+  "setPasswordTitle": "パスワードを設定する",
+  "passwordSettingsChangeTitle": "パスワードを変更する",
+  "passwordSettingsSetTitle": "パスワードを設定する",
+  "privacyPolicy": "プライバシーポリシー",
+  "privacyPolicyOpenFailed": "プライバシー ポリシーを開けませんでした: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "アプリをリセットする",
+  "resetAppConfirmTitle": "すべての連絡先を削除して、アプリをリセットしますか?",
+  "resetAppCannotUndo": "これは元に戻すことはできません",
+  "resetAppError": "アプリのリセット中にエラーが発生しました: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "新しい画像を選択",
+  "photoPickerRemoveImage": "画像を削除",
+  "onboardingHeadline1": "あなたの連絡先にアクセスできるのは誰ですか?",
+  "onboardingSubline1": "一部のアプリはそれらをクラウドにアップロードします。これにより、プライバシーのリスクがさらに高まる可能性があります。",
+  "onboardingHeadline2": "多くのアプリは連絡先へのアクセスを要求します",
+  "onboardingSubline2": "それは便利ですが、重要な連絡先は非公開にしておく必要があります。",
+  "onboardingHeadline3": "敏感な連絡先を隔離しておいてください",
+  "onboardingSubline3": "重要でめったに使用されない連絡先は、メインの連絡先アプリの外部に保存することをお勧めします。",
+  "onboardingHeadline4": "大切な連絡先を保護する",
+  "onboardingSubline4": "Savelon は、それらを暗号化して他のアプリから非公開にしてデバイスに保存します。",
+  "onboardingGetStarted": "始めましょう",
+  "onboardingNext": "次",
+  "activateDemoTitle": "デモをアクティブ化する",
+  "activateDemoCancel": "キャンセル",
+  "demoAccessGranted": "{dateTime} までデモにアクセスできるようになりました",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "パスワード保護を追加する",
+  "setupPasswordShortError": "少なくとも 4 文字を使用してください",
+  "setupPasswordMismatch": "パスワードが一致しません",
+  "setupPasswordFailedSeed": "シードの生成に失敗しました。もう一度試してください。",
+  "setupPasswordFailedInit": "初期化に失敗しました。エラー: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "連絡先は、デバイスにのみ保存される長い秘密キーによって強力に暗号化されます。ただし、パスワードを使用するとさらに保護が強化されます。",
+  "setupPasswordLabel": "パスワード",
+  "setupPasswordHelper": "少なくとも 4 文字",
+  "setupPasswordConfirmLabel": "パスワード（確認）",
+  "setupPasswordWarning": "このパスワードは回復できません。書き留めて安全に保管してください。",
+  "setupPasswordPageTitle": "パスワードの作成",
+  "setupPasswordNext": "次",
+  "setupPasswordSkip": "スキップ",
+  "confirmationCheckboxTitle": "パスワードを回復できないことを理解しています",
+  "loginWelcomeBack": "おかえり",
+  "loginPasswordLabel": "パスワード",
+  "loginUnlock": "ロックを解除する",
+  "loginPasswordRequired": "パスワードを入力してください",
+  "loginIncorrectPassword": "パスワードが間違っています。もう一度試してください。",
+  "paywallNoSubscription": "アクティブなサブスクリプションが見つかりません。続行するには購入してください。",
+  "paywallNoInternetTitle": "インターネット接続なし",
+  "paywallNoInternetBody": "アプリに初めてアクセスするには、インターネット接続が必要です。接続してもう一度お試しください。",
+  "paywallStoreUnavailableTitle": "ストアが利用できません",
+  "paywallStoreUnavailableBody": "サブスクリプション オプションを読み込めません。もう一度試してください。",
+  "subscriptionVerifyTitle": "サブスクリプションの確認",
+  "subscriptionSoftWarningTitle": "サブスクリプションの検証が必要です",
+  "subscriptionContinueAnyway": "とにかく続行",
+  "subscriptionLastVerified": "最後に確認した日: {date}。",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "サブスクリプションをオンラインで確認できませんでした。",
+  "subscriptionAccessUntil": "アクセスは {date} まで続きます。確認するには、それまでに接続してください。",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "サブスクリプションを確認するには、インターネットに接続してください。",
+  "organizeNoDuplicates": "潜在的な重複は見つかりませんでした",
+  "organizeSkippedShownAgain": "スキップされた重複が再度表示されます。",
+  "organizeShowSkippedTooltip": "スキップされた重複グループを再度表示します",
+  "organizeFailedToLoad": "重複したグループのロードに失敗しました: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} 件の重複",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "タップして詳細を表示",
+  "organizeConflictMostlyIdentical": "ほとんど同一",
+  "organizeConflictFieldVariants": "{field}: {count} 種類",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "名前",
+  "fieldLabelCompany": "会社",
+  "fieldLabelPhone": "電話",
+  "fieldLabelEmail": "電子メール",
+  "importErrorUnsupportedSource": "ここではインポートは利用できません。",
+  "importErrorPermissionDenied": "連絡先をインポートするには、連絡先の許可が必要です。",
+  "importErrorNoContacts": "インポートする連絡先がありません。",
+  "importErrorUnsupportedFileType": ".vcf ファイルまたは .zip アーカイブを選択してください。",
+  "importErrorInvalidFile": "選択したファイルは無効であるか、読み取ることができません。",
+  "importErrorWrongPassword": "アーカイブのパスワードが正しくありません。もう一度試してください。",
+  "importErrorNoVcfInArchive": "選択したアーカイブには .vcf ファイルが見つかりませんでした。",
+  "importErrorFailed": "連絡先のインポートに失敗しました: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "連絡先はまだ利用できません。",
+  "exportErrorNoContacts": "エクスポートする連絡先がありません。",
+  "exportErrorPasswordRequired": "保護されたエクスポートにはパスワードが必要です。",
+  "exportErrorPasswordTooShort": "保護されたエクスポートには、少なくとも {min} 文字のパスワードが必要です。",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "エクスポートに失敗しました: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "ダウンロードが開始されました。",
+  "exportNoticeFileSaved": "ファイルは正常に保存されました。",
+  "phoneTypeMobile": "携帯",
+  "phoneTypeHome": "自宅",
+  "phoneTypeWork": "仕事",
+  "phoneTypeSchool": "学校",
+  "phoneTypeOther": "その他",
+  "emailTypePersonal": "個人",
+  "emailTypeWork": "仕事",
+  "emailTypeSchool": "学校",
+  "emailTypeOther": "その他",
+  "addressTypeHome": "家",
+  "addressTypeWork": "仕事",
+  "addressTypeSchool": "学校",
+  "addressTypeBirth": "誕生",
+  "linkTypeWebsite": "Webサイト",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "その他",
+  "dateTypeCreated": "作成日",
+  "dateTypeBirthday": "誕生日",
+  "dateTypeMet": "出会い",
+  "dateTypeGraduation": "卒業",
+  "dateTypeMarriage": "結婚",
+  "dateTypeOther": "その他",
+  "noNameInList": "(名前なし)",
+  "formAddPhone": "電話を追加",
+  "formAddEmail": "メールアドレスを追加",
+  "formAddAddress": "住所を追加",
+  "formAddLink": "リンクを追加",
+  "formAddDate": "日付を追加",
+  "formHintPhoneNumber": "電話番号",
+  "formHintEmail": "電子メール",
+  "formHintUrl": "URL",
+  "formHintAddress": "住所",
+  "formHintSelectDate": "日付を選択してください",
+  "formHintNotes": "メモを追加する",
+  "formCompany": "会社",
+  "formDepartment": "部門",
+  "formJobTitle": "役職",
+  "formPrefix": "プレフィックス",
+  "formFirstName": "ファーストネーム",
+  "formMiddleName": "ミドルネーム",
+  "formLastName": "苗字",
+  "formSuffix": "サフィックス",
+  "formNickname": "ニックネーム",
+  "contactsListTitle": "連絡先",
+  "contactsListEmpty": "まだ連絡先がありません",
+  "contactsImportButton": "連絡先のインポート",
+  "mergeContactsTitle": "連絡先を統合する",
+  "mergeContactsSubtitle": "1 つに結合する連絡先を選択してください",
+  "exportPasswordHint": "パスワード",
+  "exportPasswordConfirmHint": "パスワード（確認）",
+  "exportPasswordHelper": "少なくとも {min} 文字",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "アーカイブパスワード",
+  "activateDemoAccessCodeLabel": "アクセスコード",
+  "subscriptionExpiredTitle": "サブスクリプションの有効期限が切れました",
+  "subscriptionExpiredBody": "すべての機能を引き続き使用するには更新してください。",
+  "contactsLoadError": "連絡先をロードできませんでした。",
+  "contactsListError": "連絡先をロードできませんでした。",
+  "contactsSearchNoResults": "連絡先が見つかりません",
+  "supportPageIntro": "ご質問、フィードバック、または不具合がありますか？Savelonチームがすべてのメッセージを読みます。",
+  "supportCtaMessageTeam": "チームに連絡",
+  "importFromDeviceContacts": "連絡先から",
+  "importFromFileVcfZip": "ファイルから（VCF、ZIP）",
+  "exportCreateUniquePasswordTitle": "固有のパスワードを作成",
+  "exportPasswordIrrecoverableHint": "このパスワードは復元できません。",
+  "exportProtectedArchiveCta": "保護されたアーカイブを書き出す",
+  "exportIosSavedFileWarning": "このファイルはSavelonフォルダに保存されます。アプリを削除するとファイルも削除されます。保持する場合は別の場所に移動してください。",
+  "importContactsConfirmBody": "{count}件の連絡先をSavelonにインポートしますか？",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "パスワードを設定",
+  "settingsChangePasswordPageTitle": "パスワードを変更",
+  "settingsRemovePasswordPageTitle": "パスワードを削除",
+  "settingsNewPasswordLabel": "新しいパスワード",
+  "settingsConfirmNewPasswordLabel": "新しいパスワードを確認",
+  "settingsReenterNewPasswordHelper": "新しいパスワードを再入力",
+  "settingsSetPasswordCta": "パスワードを設定",
+  "settingsChangePasswordCta": "パスワードを変更",
+  "settingsRemovePasswordCta": "パスワードを削除",
+  "settingsCurrentPasswordLabel": "現在のパスワード",
+  "settingsEnterCurrentPasswordHelper": "現在のパスワードを入力",
+  "settingsNewPasswordMustDiffer": "新しいパスワードは現在のパスワードと異なる必要があります",
+  "settingsFailedToSetPassword": "パスワードを設定できませんでした: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "パスワードを変更できませんでした: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "パスワードを削除できませんでした: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "パスワードが無効です",
+  "settingsCurrentPasswordIncorrect": "現在のパスワードが正しくありません",
+  "settingsCurrentPasswordRequired": "現在のパスワードが必要です",
+  "authPasswordRequiredWhenProtectionEnabled": "パスワード保護が有効なときはパスワードが必要です",
+  "authPasswordRequiredWhenEnablePassword": "パスワードオプションを有効にするときはパスワードが必要です",
+  "authPasswordRequiredForAccount": "このアカウントにはパスワードが必要です",
+  "visit": "開く",
+  "unlockPro": "Pro をアンロック",
+  "lifetimeThanksTitle": "私たちと一緒にいてくれてありがとうございます",
+  "lifetimeThanksSubtitle": "生涯 Pro アクセスをプレゼントします",
+  "lifetimeThanksGift": "ギフト",
+  "lifetimeThanksCta": "生涯アクセスを受け取る"
+}

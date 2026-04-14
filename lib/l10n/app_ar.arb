@@ -1,0 +1,447 @@
+{
+  "@@locale": "ar",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "جهات الاتصال المشفرة",
+  "navContacts": "جهات الاتصال",
+  "navOrganize": "تنظيم",
+  "navSupport": "الدعم",
+  "navSettings": "إعدادات",
+  "settingsTitle": "إعدادات",
+  "language": "لغة",
+  "languageSystemDefault": "الافتراضي للنظام",
+  "organizeTitle": "تنظم",
+  "supportTitle": "الدعم",
+  "search": "بحث",
+  "commonCancel": "إلغاء",
+  "commonDelete": "حذف",
+  "commonSave": "حفظ",
+  "commonEdit": "تعديل",
+  "commonMerge": "دمج",
+  "commonSkip": "تخطّي",
+  "commonRetry": "أعد المحاولة",
+  "commonClose": "إغلاق",
+  "commonNext": "التالي",
+  "commonBack": "عُد",
+  "commonYes": "نعم",
+  "commonNo": "لا",
+  "commonContinue": "متابعة",
+  "commonTryAgain": "حاول ثانية",
+  "commonApply": "تطبيق",
+  "commonDiscard": "تجاهل",
+  "commonUnlock": "فتح",
+  "commonLoading": "تحميل...",
+  "commonErrorWithDetails": "خطأ: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "جهات الاتصال الخاصة بك. لك وحدك.",
+  "contactNotFound": "لم يتم العثور على جهة الاتصال",
+  "contactDeleted": "تم حذف جهة الاتصال",
+  "contactUpdated": "تم تحديث جهة الاتصال",
+  "contactSaved": "تم حفظ جهة الاتصال",
+  "contactsMerged": "تم دمج جهات الاتصال",
+  "deleteContactTitle": "حذف جهة الاتصال",
+  "deleteContactConfirm": "هل أنت متأكد أنك تريد حذف {name}؟",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "هل أنت متأكد أنك تريد حذف \"{name}\"؟",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "فشل الحذف: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "فشل التحديث: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "فشل الحفظ: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "لا اسم",
+  "noNameTitle": "لا اسم",
+  "noNameBody": "جهة الاتصال هذه ليس لها اسم. هل تريد الحفظ على أي حال؟",
+  "discardChangesTitle": "هل تريد تجاهل التغييرات؟",
+  "discardChangesBody": "لديك تغييرات غير محفوظة وسيتم فقدها.",
+  "newContact": "جهة اتصال جديدة",
+  "editContact": "تحرير جهة الاتصال",
+  "addMore": "أضف المزيد",
+  "addNameFieldsTitle": "إضافة حقول الاسم",
+  "call": "اتصال",
+  "sendEmail": "إرسال البريد الإلكتروني",
+  "copy": "نسخ",
+  "copiedToClipboard": "تم النسخ إلى الحافظة",
+  "importContacts": "استيراد جهات الاتصال",
+  "importing": "جارٍ الاستيراد...",
+  "importedCount": "تم استيراد {count} من جهات الاتصال",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "تم استيراد جهات اتصال {imported}، وتم تخطي {skipped}",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "فشل استيراد جهات الاتصال",
+  "noContactsToImport": "لا توجد جهات اتصال لاستيرادها.",
+  "contactsPermissionRequiredImport": "مطلوب إذن جهات الاتصال لاستيراد جهات الاتصال",
+  "importDialogTitle": "استيراد جهات الاتصال",
+  "importDialogBody": "استيراد جهات الاتصال من جهازك أو ملف؟",
+  "importSourceTitle": "استيراد",
+  "importZipPasswordTitle": "كلمة مرور الأرشيف",
+  "importZipPasswordChecking": "جارٍ التحقق...",
+  "exportContacts": "تصدير جهات الاتصال",
+  "exportContactsTitle": "تصدير جهات الاتصال",
+  "exportSubtitle": "اختر الطريقة التي تريد بها حفظ جهات الاتصال الخاصة بك.",
+  "exportFormatVcfTitle": "حفظ باسم .vcf",
+  "exportFormatVcfSubtitle": "ملف واحد يعمل مع جهات اتصال Apple وجهات اتصال Google والمزيد.",
+  "exportFormatZipTitle": "حفظ في الأرشيف المحمي بكلمة مرور",
+  "exportFormatZipSubtitle": "ملف .zip يحتوي على ملف .vcf بداخله — يلزم كلمة مرور لفتحه.",
+  "exportProtectedTitle": "التصدير المحمي",
+  "exportCompleteTitle": "اكتمل التصدير",
+  "stillLoadingContacts": "لا يزال يتم تحميل جهات الاتصال. انتظر من فضلك.",
+  "couldNotLoadContacts": "تعذر تحميل جهات الاتصال.",
+  "passwordChangedSuccess": "تم تغيير كلمة المرور بنجاح",
+  "passwordProtectionEnabled": "تم تمكين الحماية بكلمة مرور بنجاح",
+  "passwordProtectionRemoved": "تمت إزالة حماية كلمة المرور بنجاح",
+  "removePasswordProtectionButton": "إزالة الحماية بكلمة المرور",
+  "changePasswordTitle": "تغيير كلمة المرور",
+  "setPasswordTitle": "تعيين كلمة المرور",
+  "passwordSettingsChangeTitle": "تغيير كلمة المرور",
+  "passwordSettingsSetTitle": "تعيين كلمة المرور",
+  "privacyPolicy": "سياسة الخصوصية",
+  "privacyPolicyOpenFailed": "فشل في فتح سياسة الخصوصية: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "إعادة ضبط التطبيق",
+  "resetAppConfirmTitle": "هل تريد حذف جميع جهات الاتصال وإعادة ضبط التطبيق؟",
+  "resetAppCannotUndo": "لا يمكن التراجع عن هذا",
+  "resetAppError": "خطأ في إعادة تعيين التطبيق: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "حدد صورة جديدة",
+  "photoPickerRemoveImage": "إزالة الصورة",
+  "onboardingHeadline1": "من يمكنه الوصول إلى جهات الاتصال الخاصة بك؟",
+  "onboardingSubline1": "تقوم بعض التطبيقات بتحميلها إلى السحابة. وهذا يمكن أن يخلق المزيد من المخاطر المتعلقة بالخصوصية.",
+  "onboardingHeadline2": "تطلب العديد من التطبيقات الوصول إلى جهات الاتصال",
+  "onboardingSubline2": "يمكن أن يكون مفيدًا، لكن جهات الاتصال المهمة يجب أن تظل خاصة.",
+  "onboardingHeadline3": "احتفظ بجهات الاتصال الحساسة منفصلة",
+  "onboardingSubline3": "نوصي بتخزين جهات الاتصال المهمة ونادرا ما تستخدم خارج تطبيق جهات الاتصال الرئيسي.",
+  "onboardingHeadline4": "حماية جهات الاتصال الهامة الخاصة بك",
+  "onboardingSubline4": "Savelon يخزنها على جهازك، مشفرة وخاصة من التطبيقات الأخرى.",
+  "onboardingGetStarted": "ابدأ",
+  "onboardingNext": "التالي",
+  "activateDemoTitle": "تفعيل النسخة التجريبية",
+  "activateDemoCancel": "إلغاء",
+  "demoAccessGranted": "لديك الآن وصول تجريبي حتى {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "إضافة حماية كلمة المرور",
+  "setupPasswordShortError": "استخدم 4 أحرف على الأقل",
+  "setupPasswordMismatch": "كلمات المرور غير متطابقة",
+  "setupPasswordFailedSeed": "فشل في توليد البذور. يرجى المحاولة مرة أخرى.",
+  "setupPasswordFailedInit": "فشل في التهيئة. خطأ: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "ستظل جهات الاتصال الخاصة بك مشفرة بقوة باستخدام مفتاح سري طويل، يتم تخزينه على جهازك فقط. لكن كلمة المرور تضيف حماية إضافية.",
+  "setupPasswordLabel": "كلمة المرور",
+  "setupPasswordHelper": "4 أحرف على الأقل",
+  "setupPasswordConfirmLabel": "تأكيد كلمة المرور",
+  "setupPasswordWarning": "لا يمكن استعادة كلمة المرور هذه. اكتبها واحتفظ بها آمنة!",
+  "setupPasswordPageTitle": "إنشاء كلمة المرور",
+  "setupPasswordNext": "التالي",
+  "setupPasswordSkip": "تخطّي",
+  "confirmationCheckboxTitle": "أدرك أنه لا يمكن استعادة كلمة المرور الخاصة بي",
+  "loginWelcomeBack": "مرحبًا بعودتك",
+  "loginPasswordLabel": "كلمة المرور",
+  "loginUnlock": "فتح",
+  "loginPasswordRequired": "أدخل كلمة المرور الخاصة بك",
+  "loginIncorrectPassword": "كلمة مرور غير صحيحة. يرجى المحاولة مرة أخرى.",
+  "paywallNoSubscription": "لم يتم العثور على اشتراك نشط. يرجى الشراء للمتابعة.",
+  "paywallNoInternetTitle": "لا يوجد اتصال بالإنترنت",
+  "paywallNoInternetBody": "مطلوب اتصال بالإنترنت للوصول إلى التطبيق لأول مرة. يرجى الاتصال والمحاولة مرة أخرى.",
+  "paywallStoreUnavailableTitle": "المتجر غير متاح",
+  "paywallStoreUnavailableBody": "غير قادر على تحميل خيارات الاشتراك. يرجى المحاولة مرة أخرى.",
+  "subscriptionVerifyTitle": "التحقق من الاشتراك",
+  "subscriptionSoftWarningTitle": "مطلوب التحقق من الاشتراك",
+  "subscriptionContinueAnyway": "استمر على أي حال",
+  "subscriptionLastVerified": "آخر التحقق {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "لا يمكن التحقق من الاشتراك عبر الإنترنت.",
+  "subscriptionAccessUntil": "يستمر وصولك حتى {date} — اتصل بالإنترنت قبل ذلك للتحقق.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "اتصل بالإنترنت للتحقق من اشتراكك.",
+  "organizeNoDuplicates": "لم يتم العثور على التكرارات المحتملة",
+  "organizeSkippedShownAgain": "يتم عرض التكرارات التي تم تخطيها مرة أخرى.",
+  "organizeShowSkippedTooltip": "إظهار المجموعات المكررة التي تم تخطيها مرة أخرى",
+  "organizeFailedToLoad": "فشل تحميل المجموعات المكررة: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} مكررات",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "انقر لعرض التفاصيل",
+  "organizeConflictMostlyIdentical": "متطابقة في الغالب",
+  "organizeConflictFieldVariants": "{field}: {count} متغيرات",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "اسم",
+  "fieldLabelCompany": "شركة",
+  "fieldLabelPhone": "هاتف",
+  "fieldLabelEmail": "بريد إلكتروني",
+  "importErrorUnsupportedSource": "الاستيراد غير متوفر هنا.",
+  "importErrorPermissionDenied": "مطلوب إذن جهات الاتصال لاستيراد جهات الاتصال.",
+  "importErrorNoContacts": "لا توجد جهات اتصال لاستيرادها.",
+  "importErrorUnsupportedFileType": "الرجاء تحديد ملف .vcf أو أرشيف .zip.",
+  "importErrorInvalidFile": "الملف المحدد غير صالح أو غير قابل للقراءة.",
+  "importErrorWrongPassword": "كلمة مرور الأرشيف غير صحيحة. يرجى المحاولة مرة أخرى.",
+  "importErrorNoVcfInArchive": "لم يتم العثور على ملفات .vcf في الأرشيف المحدد.",
+  "importErrorFailed": "فشل استيراد جهات الاتصال: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "جهات الاتصال ليست متاحة بعد.",
+  "exportErrorNoContacts": "لا توجد جهات اتصال للتصدير.",
+  "exportErrorPasswordRequired": "كلمة المرور مطلوبة للتصدير المحمي.",
+  "exportErrorPasswordTooShort": "يتطلب التصدير المحمي كلمة مرور لا تقل عن {min} حرفًا.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "فشل التصدير: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "بدأ التنزيل.",
+  "exportNoticeFileSaved": "تم حفظ الملف بنجاح.",
+  "phoneTypeMobile": "جوال",
+  "phoneTypeHome": "المنزل",
+  "phoneTypeWork": "عمل",
+  "phoneTypeSchool": "مدرسة",
+  "phoneTypeOther": "آخر",
+  "emailTypePersonal": "شخصي",
+  "emailTypeWork": "عمل",
+  "emailTypeSchool": "مدرسة",
+  "emailTypeOther": "آخر",
+  "addressTypeHome": "بيت",
+  "addressTypeWork": "عمل",
+  "addressTypeSchool": "مدرسة",
+  "addressTypeBirth": "الولادة",
+  "linkTypeWebsite": "موقع إلكتروني",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "آخر",
+  "dateTypeCreated": "تاريخ الإنشاء",
+  "dateTypeBirthday": "عيد ميلاد",
+  "dateTypeMet": "لقاء",
+  "dateTypeGraduation": "تخرُّج",
+  "dateTypeMarriage": "زواج",
+  "dateTypeOther": "آخر",
+  "noNameInList": "(بدون اسم)",
+  "formAddPhone": "إضافة هاتف",
+  "formAddEmail": "أضف البريد الإلكتروني",
+  "formAddAddress": "أضف عنوانًا",
+  "formAddLink": "إضافة رابط",
+  "formAddDate": "أضف التاريخ",
+  "formHintPhoneNumber": "رقم التليفون",
+  "formHintEmail": "بريد إلكتروني",
+  "formHintUrl": "عنوان URL",
+  "formHintAddress": "عنوان",
+  "formHintSelectDate": "اختر التاريخ",
+  "formHintNotes": "أضف ملاحظات",
+  "formCompany": "شركة",
+  "formDepartment": "قسم",
+  "formJobTitle": "مسمى وظيفي",
+  "formPrefix": "بادئة",
+  "formFirstName": "الاسم الأول",
+  "formMiddleName": "الاسم الأوسط",
+  "formLastName": "اسم العائلة",
+  "formSuffix": "لاحقة",
+  "formNickname": "كنية",
+  "contactsListTitle": "جهات الاتصال",
+  "contactsListEmpty": "لا توجد جهات اتصال بعد",
+  "contactsImportButton": "استيراد جهات الاتصال",
+  "mergeContactsTitle": "دمج جهات الاتصال",
+  "mergeContactsSubtitle": "حدد جهات الاتصال لدمجها في جهة واحدة",
+  "exportPasswordHint": "كلمة المرور",
+  "exportPasswordConfirmHint": "تأكيد كلمة المرور",
+  "exportPasswordHelper": "على الأقل {min} حرفًا",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "كلمة مرور الأرشيف",
+  "activateDemoAccessCodeLabel": "رمز الوصول",
+  "subscriptionExpiredTitle": "انتهت صلاحية الاشتراك",
+  "subscriptionExpiredBody": "قم بالتجديد لمواصلة استخدام جميع الميزات.",
+  "contactsLoadError": "تعذر تحميل جهات الاتصال.",
+  "contactsListError": "تعذر تحميل جهات الاتصال.",
+  "contactsSearchNoResults": "لم يتم العثور على جهات اتصال",
+  "supportPageIntro": "أسئلة أو ملاحظات أو شيء لا يعمل؟ يقرأ فريق Savelon كل رسالة.",
+  "supportCtaMessageTeam": "مراسلة الفريق",
+  "importFromDeviceContacts": "من جهات اتصالك",
+  "importFromFileVcfZip": "من ملف (VCF، ZIP)",
+  "exportCreateUniquePasswordTitle": "إنشاء كلمة مرور فريدة",
+  "exportPasswordIrrecoverableHint": "لا يمكن استعادة كلمة المرور هذه.",
+  "exportProtectedArchiveCta": "تصدير أرشيف محمي",
+  "exportIosSavedFileWarning": "يُحفظ هذا الملف في مجلد Savelon. إذا حذفت التطبيق، يُحذف الملف أيضًا. انقله إلى موقع آخر للاحتفاظ به.",
+  "importContactsConfirmBody": "استيراد {count} جهة اتصال إلى Savelon؟",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "تعيين كلمة المرور",
+  "settingsChangePasswordPageTitle": "تغيير كلمة المرور",
+  "settingsRemovePasswordPageTitle": "إزالة كلمة المرور",
+  "settingsNewPasswordLabel": "كلمة المرور الجديدة",
+  "settingsConfirmNewPasswordLabel": "تأكيد كلمة المرور الجديدة",
+  "settingsReenterNewPasswordHelper": "أعد إدخال كلمة المرور الجديدة",
+  "settingsSetPasswordCta": "تعيين كلمة المرور",
+  "settingsChangePasswordCta": "تغيير كلمة المرور",
+  "settingsRemovePasswordCta": "إزالة كلمة المرور",
+  "settingsCurrentPasswordLabel": "كلمة المرور الحالية",
+  "settingsEnterCurrentPasswordHelper": "أدخل كلمة المرور الحالية",
+  "settingsNewPasswordMustDiffer": "يجب أن تختلف كلمة المرور الجديدة عن الحالية",
+  "settingsFailedToSetPassword": "تعذر تعيين كلمة المرور: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "تعذر تغيير كلمة المرور: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "تعذر إزالة كلمة المرور: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "كلمة المرور غير صالحة",
+  "settingsCurrentPasswordIncorrect": "كلمة المرور الحالية غير صحيحة",
+  "settingsCurrentPasswordRequired": "كلمة المرور الحالية مطلوبة",
+  "authPasswordRequiredWhenProtectionEnabled": "كلمة المرور مطلوبة عند تفعيل الحماية بكلمة المرور",
+  "authPasswordRequiredWhenEnablePassword": "كلمة المرور مطلوبة عند تفعيل خيار كلمة المرور",
+  "authPasswordRequiredForAccount": "كلمة المرور مطلوبة لهذا الحساب",
+  "visit": "زيارة",
+  "unlockPro": "فتح Pro",
+  "lifetimeThanksTitle": "شكرًا لكونك معنا",
+  "lifetimeThanksSubtitle": "نمنحك وصول Pro مدى الحياة",
+  "lifetimeThanksGift": "هدية",
+  "lifetimeThanksCta": "احصل على الوصول مدى الحياة"
+}

@@ -1,0 +1,447 @@
+{
+  "@@locale": "ko",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "암호화된 연락처",
+  "navContacts": "연락처",
+  "navOrganize": "정리",
+  "navSupport": "지원",
+  "navSettings": "설정",
+  "settingsTitle": "설정",
+  "language": "언어",
+  "languageSystemDefault": "시스템 기본값",
+  "organizeTitle": "정리",
+  "supportTitle": "지원",
+  "search": "검색",
+  "commonCancel": "취소",
+  "commonDelete": "삭제",
+  "commonSave": "저장",
+  "commonEdit": "편집",
+  "commonMerge": "병합",
+  "commonSkip": "건너뛰기",
+  "commonRetry": "다시 시도",
+  "commonClose": "닫기",
+  "commonNext": "다음",
+  "commonBack": "돌아가기",
+  "commonYes": "예",
+  "commonNo": "아니요",
+  "commonContinue": "계속",
+  "commonTryAgain": "다시 시도",
+  "commonApply": "적용",
+  "commonDiscard": "버리다",
+  "commonUnlock": "잠금 해제",
+  "commonLoading": "로드 중...",
+  "commonErrorWithDetails": "오류: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "귀하의 연락처. 당신만의 것.",
+  "contactNotFound": "연락처를 찾을 수 없습니다",
+  "contactDeleted": "연락처가 삭제되었습니다.",
+  "contactUpdated": "연락처가 업데이트되었습니다.",
+  "contactSaved": "연락처가 저장되었습니다",
+  "contactsMerged": "연락처가 병합되었습니다.",
+  "deleteContactTitle": "연락처 삭제",
+  "deleteContactConfirm": "{name}을 삭제하시겠습니까?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "정말로 '{name}'을 삭제하시겠습니까?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "삭제 실패: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "업데이트 실패: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "저장 실패: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "이름 없음",
+  "noNameTitle": "이름 없음",
+  "noNameBody": "이 연락처에는 이름이 없습니다. 저장하시겠습니까?",
+  "discardChangesTitle": "변경사항을 취소하시겠습니까?",
+  "discardChangesBody": "저장되지 않은 변경사항은 손실됩니다.",
+  "newContact": "새 연락처",
+  "editContact": "연락처 편집",
+  "addMore": "더 추가",
+  "addNameFieldsTitle": "이름 필드 추가",
+  "call": "통화",
+  "sendEmail": "이메일 보내기",
+  "copy": "복사",
+  "copiedToClipboard": "클립보드에 복사됨",
+  "importContacts": "연락처 가져오기",
+  "importing": "가져오는 중...",
+  "importedCount": "{count} 연락처를 가져왔습니다.",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "{imported} 연락처를 가져왔고, {skipped} 연락처를 건너뛰었습니다.",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "연락처를 가져오지 못했습니다.",
+  "noContactsToImport": "가져올 연락처가 없습니다.",
+  "contactsPermissionRequiredImport": "연락처를 가져오려면 연락처 권한이 필요합니다.",
+  "importDialogTitle": "연락처 가져오기",
+  "importDialogBody": "장치 또는 파일에서 연락처를 가져오시겠습니까?",
+  "importSourceTitle": "가져오기",
+  "importZipPasswordTitle": "아카이브 비밀번호",
+  "importZipPasswordChecking": "확인 중...",
+  "exportContacts": "연락처 내보내기",
+  "exportContactsTitle": "연락처 내보내기",
+  "exportSubtitle": "연락처를 저장할 방법을 선택하세요.",
+  "exportFormatVcfTitle": ".vcf로 저장",
+  "exportFormatVcfSubtitle": "Apple 연락처, Google 연락처 등과 함께 작동하는 하나의 파일입니다.",
+  "exportFormatZipTitle": "비밀번호로 보호된 아카이브에 저장",
+  "exportFormatZipSubtitle": ".vcf이 포함된 .zip — 열려면 비밀번호가 필요합니다.",
+  "exportProtectedTitle": "보호된 내보내기",
+  "exportCompleteTitle": "내보내기 완료",
+  "stillLoadingContacts": "연락처를 로드하는 중입니다. 기다리세요.",
+  "couldNotLoadContacts": "연락처를 로드할 수 없습니다.",
+  "passwordChangedSuccess": "비밀번호가 성공적으로 변경되었습니다.",
+  "passwordProtectionEnabled": "비밀번호 보호가 활성화되었습니다.",
+  "passwordProtectionRemoved": "비밀번호 보호가 성공적으로 제거되었습니다.",
+  "removePasswordProtectionButton": "비밀번호 보호 제거",
+  "changePasswordTitle": "비밀번호 변경",
+  "setPasswordTitle": "비밀번호 설정",
+  "passwordSettingsChangeTitle": "비밀번호 변경",
+  "passwordSettingsSetTitle": "비밀번호 설정",
+  "privacyPolicy": "개인 정보 보호 정책",
+  "privacyPolicyOpenFailed": "개인정보 보호정책을 열지 못했습니다: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "앱 재설정",
+  "resetAppConfirmTitle": "연락처를 모두 삭제하고 앱을 재설정하시겠습니까?",
+  "resetAppCannotUndo": "이 작업은 취소할 수 없습니다.",
+  "resetAppError": "앱 재설정 오류: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "새 이미지 선택",
+  "photoPickerRemoveImage": "이미지 삭제",
+  "onboardingHeadline1": "누가 귀하의 연락처에 액세스할 수 있나요?",
+  "onboardingSubline1": "일부 앱은 이를 클라우드에 업로드합니다. 이로 인해 더 많은 개인 정보 보호 위험이 발생할 수 있습니다.",
+  "onboardingHeadline2": "많은 앱에서 연락처 액세스를 요청합니다.",
+  "onboardingSubline2": "유용할 수 있지만 중요한 연락처는 비공개로 유지되어야 합니다.",
+  "onboardingHeadline3": "민감한 연락처를 별도로 보관하세요",
+  "onboardingSubline3": "중요하고 거의 사용하지 않는 연락처를 기본 연락처 앱 외부에 저장하는 것이 좋습니다.",
+  "onboardingHeadline4": "중요한 연락처를 보호하세요",
+  "onboardingSubline4": "Savelon은 연락처를 기기에 저장하며, 암호화되어 다른 앱으로부터 비공개로 유지됩니다.",
+  "onboardingGetStarted": "시작하기",
+  "onboardingNext": "다음",
+  "activateDemoTitle": "데모 활성화",
+  "activateDemoCancel": "취소",
+  "demoAccessGranted": "이제 {dateTime}까지 데모에 액세스할 수 있습니다.",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "비밀번호 보호 추가",
+  "setupPasswordShortError": "4자 이상 사용하세요",
+  "setupPasswordMismatch": "비밀번호가 일치하지 않습니다.",
+  "setupPasswordFailedSeed": "시드를 생성하지 못했습니다. 다시 시도해 주세요.",
+  "setupPasswordFailedInit": "초기화하지 못했습니다. 오류: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "연락처는 기기에만 저장되는 긴 비밀 키로 강하게 암호화됩니다. 비밀번호는 여기에 더해지는 추가 보호입니다.",
+  "setupPasswordLabel": "비밀번호",
+  "setupPasswordHelper": "최소 4자 이상",
+  "setupPasswordConfirmLabel": "비밀번호 확인",
+  "setupPasswordWarning": "이 비밀번호는 복구할 수 없습니다. 꼭 적어서 보관하세요!",
+  "setupPasswordPageTitle": "비밀번호 생성",
+  "setupPasswordNext": "다음",
+  "setupPasswordSkip": "건너뛰기",
+  "confirmationCheckboxTitle": "내 비밀번호를 복구할 수 없음을 이해합니다.",
+  "loginWelcomeBack": "돌아온 것을 환영합니다",
+  "loginPasswordLabel": "비밀번호",
+  "loginUnlock": "잠금 해제",
+  "loginPasswordRequired": "비밀번호를 입력하세요",
+  "loginIncorrectPassword": "잘못된 비밀번호입니다. 다시 시도해 주세요.",
+  "paywallNoSubscription": "활성 구독을 찾을 수 없습니다. 계속하려면 구매하세요.",
+  "paywallNoInternetTitle": "인터넷에 연결되어 있지 않음",
+  "paywallNoInternetBody": "처음으로 앱에 액세스하려면 인터넷 연결이 필요합니다. 연결한 후 다시 시도해 주세요.",
+  "paywallStoreUnavailableTitle": "스토어를 사용할 수 없음",
+  "paywallStoreUnavailableBody": "구독 옵션을 로드할 수 없습니다. 다시 시도해 주세요.",
+  "subscriptionVerifyTitle": "구독 확인",
+  "subscriptionSoftWarningTitle": "구독 확인이 필요함",
+  "subscriptionContinueAnyway": "계속 진행",
+  "subscriptionLastVerified": "마지막으로 확인된 날짜는 {date}입니다.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "온라인으로 구독을 확인할 수 없습니다.",
+  "subscriptionAccessUntil": "액세스는 {date}까지 계속됩니다. 그 전에 연결하여 확인하세요.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "구독을 확인하려면 인터넷에 연결하세요.",
+  "organizeNoDuplicates": "잠재적인 중복 항목이 발견되지 않았습니다.",
+  "organizeSkippedShownAgain": "건너뛴 중복 항목이 다시 표시됩니다.",
+  "organizeShowSkippedTooltip": "건너뛴 중복 그룹을 다시 표시",
+  "organizeFailedToLoad": "중복 그룹을 로드하지 못했습니다: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count}개 중복",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "세부정보를 보려면 탭하세요.",
+  "organizeConflictMostlyIdentical": "대부분 동일",
+  "organizeConflictFieldVariants": "{field}: {count} 변형",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "이름",
+  "fieldLabelCompany": "회사",
+  "fieldLabelPhone": "전화",
+  "fieldLabelEmail": "이메일",
+  "importErrorUnsupportedSource": "여기서는 가져오기를 사용할 수 없습니다.",
+  "importErrorPermissionDenied": "연락처를 가져오려면 연락처 권한이 필요합니다.",
+  "importErrorNoContacts": "가져올 연락처가 없습니다.",
+  "importErrorUnsupportedFileType": ".vcf 파일 또는 .zip 아카이브를 선택하세요.",
+  "importErrorInvalidFile": "선택한 파일이 잘못되었거나 읽을 수 없습니다.",
+  "importErrorWrongPassword": "잘못된 아카이브 비밀번호입니다. 다시 시도해 주세요.",
+  "importErrorNoVcfInArchive": "선택한 아카이브에서 .vcf 파일을 찾을 수 없습니다.",
+  "importErrorFailed": "연락처 가져오기 실패: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "아직 연락처를 사용할 수 없습니다.",
+  "exportErrorNoContacts": "내보낼 연락처가 없습니다.",
+  "exportErrorPasswordRequired": "보호된 내보내기를 위해서는 비밀번호가 필요합니다.",
+  "exportErrorPasswordTooShort": "보호된 내보내기에는 최소 {min} 문자의 비밀번호가 필요합니다.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "내보내기 실패: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "다운로드가 시작되었습니다.",
+  "exportNoticeFileSaved": "파일이 성공적으로 저장되었습니다.",
+  "phoneTypeMobile": "휴대전화",
+  "phoneTypeHome": "집",
+  "phoneTypeWork": "직장",
+  "phoneTypeSchool": "학교",
+  "phoneTypeOther": "다른",
+  "emailTypePersonal": "개인의",
+  "emailTypeWork": "직장",
+  "emailTypeSchool": "학교",
+  "emailTypeOther": "다른",
+  "addressTypeHome": "집",
+  "addressTypeWork": "직장",
+  "addressTypeSchool": "학교",
+  "addressTypeBirth": "출생",
+  "linkTypeWebsite": "웹사이트",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "다른",
+  "dateTypeCreated": "생성됨",
+  "dateTypeBirthday": "생일",
+  "dateTypeMet": "만난",
+  "dateTypeGraduation": "졸업",
+  "dateTypeMarriage": "결혼",
+  "dateTypeOther": "다른",
+  "noNameInList": "(이름 없음)",
+  "formAddPhone": "전화 추가",
+  "formAddEmail": "이메일 추가",
+  "formAddAddress": "주소 추가",
+  "formAddLink": "링크 추가",
+  "formAddDate": "날짜 추가",
+  "formHintPhoneNumber": "전화 번호",
+  "formHintEmail": "이메일",
+  "formHintUrl": "URL",
+  "formHintAddress": "주소",
+  "formHintSelectDate": "날짜 선택",
+  "formHintNotes": "메모 추가",
+  "formCompany": "회사",
+  "formDepartment": "부서",
+  "formJobTitle": "직위",
+  "formPrefix": "접두사",
+  "formFirstName": "이름",
+  "formMiddleName": "중간 이름",
+  "formLastName": "성",
+  "formSuffix": "접미사",
+  "formNickname": "별명",
+  "contactsListTitle": "연락처",
+  "contactsListEmpty": "아직 연락처가 없습니다.",
+  "contactsImportButton": "연락처 가져오기",
+  "mergeContactsTitle": "연락처 병합",
+  "mergeContactsSubtitle": "하나로 병합할 연락처를 선택하세요.",
+  "exportPasswordHint": "비밀번호",
+  "exportPasswordConfirmHint": "비밀번호 확인",
+  "exportPasswordHelper": "최소 {min}자 이상",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "아카이브 비밀번호",
+  "activateDemoAccessCodeLabel": "액세스 코드",
+  "subscriptionExpiredTitle": "구독이 만료되었습니다",
+  "subscriptionExpiredBody": "모든 기능을 계속 사용하려면 갱신하세요.",
+  "contactsLoadError": "연락처를 로드할 수 없습니다.",
+  "contactsListError": "연락처를 로드할 수 없습니다.",
+  "contactsSearchNoResults": "연락처를 찾을 수 없음",
+  "supportPageIntro": "질문, 피드백 또는 문제가 있나요? Savelon 팀이 모든 메시지를 읽습니다.",
+  "supportCtaMessageTeam": "팀에 메시지 보내기",
+  "importFromDeviceContacts": "내 연락처에서",
+  "importFromFileVcfZip": "파일에서(VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "고유 비밀번호 만들기",
+  "exportPasswordIrrecoverableHint": "이 비밀번호는 복구할 수 없습니다.",
+  "exportProtectedArchiveCta": "보호된 보관함 내보내기",
+  "exportIosSavedFileWarning": "이 파일은 Savelon 폴더에 저장됩니다. 앱을 삭제하면 파일도 삭제됩니다. 보관하려면 다른 위치로 옮기세요.",
+  "importContactsConfirmBody": "연락처 {count}개를 Savelon으로 가져올까요?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "비밀번호 설정",
+  "settingsChangePasswordPageTitle": "비밀번호 변경",
+  "settingsRemovePasswordPageTitle": "비밀번호 제거",
+  "settingsNewPasswordLabel": "새 비밀번호",
+  "settingsConfirmNewPasswordLabel": "새 비밀번호 확인",
+  "settingsReenterNewPasswordHelper": "새 비밀번호를 다시 입력하세요",
+  "settingsSetPasswordCta": "비밀번호 설정",
+  "settingsChangePasswordCta": "비밀번호 변경",
+  "settingsRemovePasswordCta": "비밀번호 제거",
+  "settingsCurrentPasswordLabel": "현재 비밀번호",
+  "settingsEnterCurrentPasswordHelper": "현재 비밀번호를 입력하세요",
+  "settingsNewPasswordMustDiffer": "새 비밀번호는 현재 비밀번호와 달라야 합니다",
+  "settingsFailedToSetPassword": "비밀번호를 설정하지 못했습니다: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "비밀번호를 변경하지 못했습니다: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "비밀번호를 제거하지 못했습니다: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "비밀번호가 유효하지 않습니다",
+  "settingsCurrentPasswordIncorrect": "현재 비밀번호가 올바르지 않습니다",
+  "settingsCurrentPasswordRequired": "현재 비밀번호가 필요합니다",
+  "authPasswordRequiredWhenProtectionEnabled": "비밀번호 보호가 켜져 있을 때 비밀번호가 필요합니다",
+  "authPasswordRequiredWhenEnablePassword": "비밀번호 옵션을 켤 때 비밀번호가 필요합니다",
+  "authPasswordRequiredForAccount": "이 계정에는 비밀번호가 필요합니다",
+  "visit": "방문",
+  "unlockPro": "Pro 잠금 해제",
+  "lifetimeThanksTitle": "함께해 주셔서 감사합니다",
+  "lifetimeThanksSubtitle": "평생 Pro 이용권을 선물해 드립니다",
+  "lifetimeThanksGift": "선물",
+  "lifetimeThanksCta": "평생 이용권 받기"
+}

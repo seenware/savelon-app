@@ -1,0 +1,447 @@
+{
+  "@@locale": "hi",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "एन्क्रिप्टेड संपर्क",
+  "navContacts": "संपर्क",
+  "navOrganize": "आयोजन",
+  "navSupport": "सहायता",
+  "navSettings": "सेटिंग्स",
+  "settingsTitle": "सेटिंग्स",
+  "language": "भाषा",
+  "languageSystemDefault": "सिस्टम डिफ़ॉल्ट",
+  "organizeTitle": "आयोजन",
+  "supportTitle": "सहायता",
+  "search": "खोज",
+  "commonCancel": "रद्द करना",
+  "commonDelete": "मिटाना",
+  "commonSave": "सहेजें",
+  "commonEdit": "संपादन करना",
+  "commonMerge": "मर्ज",
+  "commonSkip": "छोडना",
+  "commonRetry": "पुन: प्रयास करें",
+  "commonClose": "बंद करना",
+  "commonNext": "अगला",
+  "commonBack": "वापस जाओ",
+  "commonYes": "हाँ",
+  "commonNo": "नहीं",
+  "commonContinue": "जारी रखना",
+  "commonTryAgain": "पुनः प्रयास करें",
+  "commonApply": "लागू करें",
+  "commonDiscard": "खारिज करना",
+  "commonUnlock": "अनलॉक",
+  "commonLoading": "लोड हो रहा है...",
+  "commonErrorWithDetails": "त्रुटि: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "आपके संपर्क। केवल आपके।",
+  "contactNotFound": "संपर्क नहीं मिला",
+  "contactDeleted": "संपर्क हटा दिया गया",
+  "contactUpdated": "संपर्क अपडेट किया गया",
+  "contactSaved": "संपर्क सहेजा गया",
+  "contactsMerged": "संपर्क विलीन हो गए",
+  "deleteContactTitle": "संपर्क हटाएँ",
+  "deleteContactConfirm": "क्या आप वाकई {name} को हटाना चाहते हैं?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "क्या आप वाकई \"{name}\" को हटाना चाहते हैं?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "हटाने में विफल: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "अद्यतन करने में विफल: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "सहेजने में विफल: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "कोई नाम नहीं",
+  "noNameTitle": "कोई नाम नहीं",
+  "noNameBody": "इस संपर्क का कोई नाम नहीं है। फिर भी सहेजें?",
+  "discardChangesTitle": "परिवर्तनों को निरस्त करें?",
+  "discardChangesBody": "आपके पास सहेजे न गए परिवर्तन हैं जो खो जाएंगे.",
+  "newContact": "नया संपर्क",
+  "editContact": "संपर्क संपादित करें",
+  "addMore": "अधिक जोड़ें",
+  "addNameFieldsTitle": "नाम फ़ील्ड जोड़ें",
+  "call": "कॉल करें",
+  "sendEmail": "ईमेल भेजें",
+  "copy": "कॉपी करें",
+  "copiedToClipboard": "क्लिपबोर्ड पर कॉपी किया गया",
+  "importContacts": "संपर्क आयात करें",
+  "importing": "आयात किया जा रहा है...",
+  "importedCount": "आयातित {count} संपर्क",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "आयातित {imported} संपर्क, {skipped} छोड़ दिया गया",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "संपर्क आयात करने में विफल",
+  "noContactsToImport": "आयात करने के लिए कोई संपर्क नहीं हैं.",
+  "contactsPermissionRequiredImport": "संपर्कों को आयात करने के लिए संपर्क अनुमति आवश्यक है",
+  "importDialogTitle": "संपर्क आयात करें",
+  "importDialogBody": "अपने डिवाइस या फ़ाइल से संपर्क आयात करें?",
+  "importSourceTitle": "आयात",
+  "importZipPasswordTitle": "आर्काइव पासवर्ड",
+  "importZipPasswordChecking": "जांच हो रही है...",
+  "exportContacts": "संपर्क निर्यात करें",
+  "exportContactsTitle": "संपर्क निर्यात करें",
+  "exportSubtitle": "चुनें कि आप अपने संपर्कों को कैसे सहेजना चाहते हैं.",
+  "exportFormatVcfTitle": ".vcf के रूप में सहेजें",
+  "exportFormatVcfSubtitle": "एक फ़ाइल जो Apple संपर्क, Google संपर्क और बहुत कुछ के साथ काम करती है।",
+  "exportFormatZipTitle": "पासवर्ड से सुरक्षित संग्रह में सहेजें",
+  "exportFormatZipSubtitle": "एक .zip जिसके अंदर आपका .vcf है - इसे खोलने के लिए एक पासवर्ड की आवश्यकता होती है।",
+  "exportProtectedTitle": "संरक्षित निर्यात",
+  "exportCompleteTitle": "निर्यात पूर्ण",
+  "stillLoadingContacts": "अभी भी संपर्क लोड हो रहे हैं. कृपया प्रतीक्षा करें।",
+  "couldNotLoadContacts": "संपर्क लोड नहीं किये जा सके.",
+  "passwordChangedSuccess": "पासवर्ड सफलतापूर्वक बदला गया",
+  "passwordProtectionEnabled": "पासवर्ड सुरक्षा सफलतापूर्वक सक्षम की गई",
+  "passwordProtectionRemoved": "पासवर्ड सुरक्षा सफलतापूर्वक हटा दी गई",
+  "removePasswordProtectionButton": "पासवर्ड सुरक्षा हटाएँ",
+  "changePasswordTitle": "पासवर्ड बदलें",
+  "setPasswordTitle": "पासवर्ड सेट करें",
+  "passwordSettingsChangeTitle": "पासवर्ड बदलें",
+  "passwordSettingsSetTitle": "पासवर्ड सेट करें",
+  "privacyPolicy": "गोपनीयता नीति",
+  "privacyPolicyOpenFailed": "गोपनीयता नीति खोलने में विफल: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "ऐप रीसेट करें",
+  "resetAppConfirmTitle": "सभी संपर्क हटाएं, और ऐप रीसेट करें?",
+  "resetAppCannotUndo": "इसे पूर्ववत नहीं किया जा सकता",
+  "resetAppError": "ऐप रीसेट करने में त्रुटि: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "नई छवि चुनें",
+  "photoPickerRemoveImage": "छवि हटाएँ",
+  "onboardingHeadline1": "आपके संपर्कों तक कौन पहुंच सकता है?",
+  "onboardingSubline1": "कुछ ऐप्स उन्हें क्लाउड पर अपलोड करते हैं। इससे अधिक गोपनीयता जोखिम पैदा हो सकता है.",
+  "onboardingHeadline2": "कई ऐप्स संपर्क पहुंच मांगते हैं",
+  "onboardingSubline2": "यह उपयोगी हो सकता है - लेकिन महत्वपूर्ण संपर्क निजी रहने चाहिए।",
+  "onboardingHeadline3": "संवेदनशील संपर्कों को अलग रखें",
+  "onboardingSubline3": "हम महत्वपूर्ण और शायद ही कभी उपयोग किए जाने वाले संपर्कों को आपके मुख्य संपर्क ऐप के बाहर संग्रहीत करने की सलाह देते हैं।",
+  "onboardingHeadline4": "अपने महत्वपूर्ण संपर्कों को सुरक्षित रखें",
+  "onboardingSubline4": "Savelon उन्हें आपके डिवाइस पर एन्क्रिप्टेड और अन्य ऐप्स से निजी रूप से संग्रहीत करता है।",
+  "onboardingGetStarted": "शुरू करें",
+  "onboardingNext": "अगला",
+  "activateDemoTitle": "डेमो सक्रिय करें",
+  "activateDemoCancel": "रद्द करना",
+  "demoAccessGranted": "अब आपके पास {dateTime} तक डेमो एक्सेस है",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "पासवर्ड सुरक्षा जोड़ें",
+  "setupPasswordShortError": "कम से कम 4 अक्षरों का प्रयोग करें",
+  "setupPasswordMismatch": "पासवर्ड मेल नहीं खाते",
+  "setupPasswordFailedSeed": "बीज उत्पन्न करने में विफल. कृपया पुन: प्रयास करें।",
+  "setupPasswordFailedInit": "प्रारंभ करने में विफल. त्रुटि: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "आपके संपर्क अभी भी केवल आपके डिवाइस पर संग्रहीत एक लंबी गुप्त कुंजी द्वारा दृढ़ता से एन्क्रिप्ट किए जाएंगे। लेकिन पासवर्ड अतिरिक्त सुरक्षा जोड़ता है।",
+  "setupPasswordLabel": "पासवर्ड",
+  "setupPasswordHelper": "कम से कम 4 अक्षर",
+  "setupPasswordConfirmLabel": "पासवर्ड की पुष्टि कीजिये",
+  "setupPasswordWarning": "यह पासवर्ड पुनर्प्राप्त नहीं किया जा सकता. इसे लिख लें और सुरक्षित रखें!",
+  "setupPasswordPageTitle": "पासवर्ड बनाएं",
+  "setupPasswordNext": "अगला",
+  "setupPasswordSkip": "छोडना",
+  "confirmationCheckboxTitle": "मैं समझता हूं कि मेरा पासवर्ड पुनर्प्राप्त नहीं किया जा सकता",
+  "loginWelcomeBack": "वापसी पर स्वागत है",
+  "loginPasswordLabel": "पासवर्ड",
+  "loginUnlock": "अनलॉक",
+  "loginPasswordRequired": "अपना पासवर्ड दर्ज करें",
+  "loginIncorrectPassword": "गलत पासवर्ड। कृपया पुन: प्रयास करें।",
+  "paywallNoSubscription": "कोई सक्रिय सदस्यता नहीं मिली. कृपया जारी रखने के लिए खरीदारी करें.",
+  "paywallNoInternetTitle": "कोई इंटरनेट कनेक्शन नहीं",
+  "paywallNoInternetBody": "पहली बार ऐप तक पहुंचने के लिए इंटरनेट कनेक्शन की आवश्यकता होती है। कृपया कनेक्ट करें और पुनः प्रयास करें.",
+  "paywallStoreUnavailableTitle": "स्टोर अनुपलब्ध",
+  "paywallStoreUnavailableBody": "सदस्यता विकल्प लोड करने में असमर्थ. कृपया पुन: प्रयास करें।",
+  "subscriptionVerifyTitle": "सदस्यता सत्यापित करें",
+  "subscriptionSoftWarningTitle": "सदस्यता सत्यापन की आवश्यकता है",
+  "subscriptionContinueAnyway": "फिर भी जारी रखें",
+  "subscriptionLastVerified": "अंतिम बार सत्यापित {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "सदस्यता को ऑनलाइन सत्यापित नहीं किया जा सका.",
+  "subscriptionAccessUntil": "आपकी पहुंच {date} तक जारी रहेगी - सत्यापित करने के लिए उससे पहले कनेक्ट करें।",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "अपनी सदस्यता सत्यापित करने के लिए इंटरनेट से कनेक्ट करें।",
+  "organizeNoDuplicates": "कोई संभावित डुप्लिकेट नहीं मिला",
+  "organizeSkippedShownAgain": "छोड़े गए डुप्लिकेट फिर से दिखाए जाते हैं।",
+  "organizeShowSkippedTooltip": "छोड़े गए डुप्लिकेट समूहों को फिर से दिखाएं",
+  "organizeFailedToLoad": "डुप्लिकेट समूह लोड करने में विफल: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} डुप्लिकेट",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "विवरण देखने के लिए टैप करें",
+  "organizeConflictMostlyIdentical": "अधिकतर समान",
+  "organizeConflictFieldVariants": "{field}: {count} वेरिएंट",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "नाम",
+  "fieldLabelCompany": "कंपनी",
+  "fieldLabelPhone": "फ़ोन",
+  "fieldLabelEmail": "ईमेल",
+  "importErrorUnsupportedSource": "यहां आयात उपलब्ध नहीं है.",
+  "importErrorPermissionDenied": "संपर्कों को आयात करने के लिए संपर्क अनुमति आवश्यक है.",
+  "importErrorNoContacts": "आयात करने के लिए कोई संपर्क नहीं हैं.",
+  "importErrorUnsupportedFileType": "कृपया एक .vcf फ़ाइल या एक .zip संग्रह चुनें।",
+  "importErrorInvalidFile": "चयनित फ़ाइल अमान्य या अपठनीय है.",
+  "importErrorWrongPassword": "ग़लत संग्रह पासवर्ड. कृपया पुन: प्रयास करें।",
+  "importErrorNoVcfInArchive": "चयनित संग्रह में कोई .vcf फ़ाइलें नहीं मिलीं।",
+  "importErrorFailed": "संपर्क आयात करने में विफल: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "संपर्क अभी तक उपलब्ध नहीं हैं.",
+  "exportErrorNoContacts": "निर्यात करने के लिए कोई संपर्क नहीं.",
+  "exportErrorPasswordRequired": "संरक्षित निर्यात के लिए पासवर्ड आवश्यक है।",
+  "exportErrorPasswordTooShort": "संरक्षित निर्यात के लिए कम से कम {min} वर्णों का पासवर्ड आवश्यक है।",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "निर्यात विफल: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "डाउनलोड प्रारंभ हुआ.",
+  "exportNoticeFileSaved": "फ़ाइल सफलतापूर्वक सहेजी गई.",
+  "phoneTypeMobile": "मोबाइल",
+  "phoneTypeHome": "घर",
+  "phoneTypeWork": "काम",
+  "phoneTypeSchool": "विद्यालय",
+  "phoneTypeOther": "अन्य",
+  "emailTypePersonal": "निजी",
+  "emailTypeWork": "काम",
+  "emailTypeSchool": "विद्यालय",
+  "emailTypeOther": "अन्य",
+  "addressTypeHome": "घर",
+  "addressTypeWork": "काम",
+  "addressTypeSchool": "विद्यालय",
+  "addressTypeBirth": "जन्म",
+  "linkTypeWebsite": "वेबसाइट",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "अन्य",
+  "dateTypeCreated": "बनाया था",
+  "dateTypeBirthday": "जन्मदिन",
+  "dateTypeMet": "मिले",
+  "dateTypeGraduation": "स्नातक",
+  "dateTypeMarriage": "शादी",
+  "dateTypeOther": "अन्य",
+  "noNameInList": "(कोई नाम नहीं)",
+  "formAddPhone": "फ़ोन जोड़ें",
+  "formAddEmail": "ईमेल जोड़ें",
+  "formAddAddress": "पता जोड़ें",
+  "formAddLink": "लिंक जोड़ें",
+  "formAddDate": "दिनांक जोड़ें",
+  "formHintPhoneNumber": "फ़ोन नंबर",
+  "formHintEmail": "ईमेल",
+  "formHintUrl": "यूआरएल",
+  "formHintAddress": "पता",
+  "formHintSelectDate": "तारीख़ चुनें",
+  "formHintNotes": "नोट्स जोड़ें",
+  "formCompany": "कंपनी",
+  "formDepartment": "विभाग",
+  "formJobTitle": "नौकरी का शीर्षक",
+  "formPrefix": "उपसर्ग",
+  "formFirstName": "पहला नाम",
+  "formMiddleName": "मध्य नाम",
+  "formLastName": "अंतिम नाम",
+  "formSuffix": "प्रत्यय",
+  "formNickname": "उपनाम",
+  "contactsListTitle": "संपर्क",
+  "contactsListEmpty": "अभी तक कोई संपर्क नहीं",
+  "contactsImportButton": "संपर्क आयात करें",
+  "mergeContactsTitle": "संपर्क मर्ज करें",
+  "mergeContactsSubtitle": "एक में विलय करने के लिए संपर्कों का चयन करें",
+  "exportPasswordHint": "पासवर्ड",
+  "exportPasswordConfirmHint": "पासवर्ड की पुष्टि कीजिये",
+  "exportPasswordHelper": "कम से कम {min} अक्षर",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "पुरालेख पासवर्ड",
+  "activateDemoAccessCodeLabel": "एक्सेस कोड",
+  "subscriptionExpiredTitle": "सदस्यता समाप्त हो गई",
+  "subscriptionExpiredBody": "सभी सुविधाओं का उपयोग जारी रखने के लिए नवीनीकृत करें।",
+  "contactsLoadError": "संपर्क लोड नहीं किये जा सके.",
+  "contactsListError": "संपर्क लोड नहीं किये जा सके.",
+  "contactsSearchNoResults": "कोई संपर्क नहीं मिला",
+  "supportPageIntro": "प्रश्न, प्रतिक्रिया या कुछ काम नहीं कर रहा? Savelon टीम हर संदेश पढ़ती है।",
+  "supportCtaMessageTeam": "टीम को संदेश भेजें",
+  "importFromDeviceContacts": "आपके संपर्कों से",
+  "importFromFileVcfZip": "फ़ाइल से (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "अद्वितीय पासवर्ड बनाएँ",
+  "exportPasswordIrrecoverableHint": "इस पासवर्ड को पुनर्प्राप्त नहीं किया जा सकता।",
+  "exportProtectedArchiveCta": "संरक्षित संग्रह निर्यात करें",
+  "exportIosSavedFileWarning": "यह फ़ाइल Savelon फ़ोल्डर में सहेजी जाती है। यदि आप ऐप हटाते हैं तो फ़ाइल भी हट जाएगी। इसे रखने के लिए कहीं और ले जाएँ।",
+  "importContactsConfirmBody": "Savelon में {count} संपर्क आयात करें?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "पासवर्ड सेट करें",
+  "settingsChangePasswordPageTitle": "पासवर्ड बदलें",
+  "settingsRemovePasswordPageTitle": "पासवर्ड हटाएँ",
+  "settingsNewPasswordLabel": "नया पासवर्ड",
+  "settingsConfirmNewPasswordLabel": "नया पासवर्ड पुष्टि करें",
+  "settingsReenterNewPasswordHelper": "नया पासवर्ड फिर से दर्ज करें",
+  "settingsSetPasswordCta": "पासवर्ड सेट करें",
+  "settingsChangePasswordCta": "पासवर्ड बदलें",
+  "settingsRemovePasswordCta": "पासवर्ड हटाएँ",
+  "settingsCurrentPasswordLabel": "वर्तमान पासवर्ड",
+  "settingsEnterCurrentPasswordHelper": "अपना वर्तमान पासवर्ड दर्ज करें",
+  "settingsNewPasswordMustDiffer": "नया पासवर्ड वर्तमान से अलग होना चाहिए",
+  "settingsFailedToSetPassword": "पासवर्ड सेट नहीं हो सका: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "पासवर्ड बदला नहीं जा सका: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "पासवर्ड हटाया नहीं जा सका: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "पासवर्ड अमान्य है",
+  "settingsCurrentPasswordIncorrect": "वर्तमान पासवर्ड गलत है",
+  "settingsCurrentPasswordRequired": "वर्तमान पासवर्ड आवश्यक है",
+  "authPasswordRequiredWhenProtectionEnabled": "जब पासवर्ड सुरक्षा चालू हो तो पासवर्ड आवश्यक है",
+  "authPasswordRequiredWhenEnablePassword": "पासवर्ड विकल्प चालू करते समय पासवर्ड आवश्यक है",
+  "authPasswordRequiredForAccount": "इस खाते के लिए पासवर्ड आवश्यक है",
+  "visit": "देखें",
+  "unlockPro": "Pro अनलॉक करें",
+  "lifetimeThanksTitle": "हमारे साथ बने रहने के लिए धन्यवाद",
+  "lifetimeThanksSubtitle": "हम आपको लाइफटाइम Pro एक्सेस उपहार में दे रहे हैं",
+  "lifetimeThanksGift": "उपहार",
+  "lifetimeThanksCta": "लाइफटाइम एक्सेस प्राप्त करें"
+}

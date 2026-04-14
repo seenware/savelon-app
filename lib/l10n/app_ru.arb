@@ -1,0 +1,447 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Зашифрованные контакты",
+  "navContacts": "Контакты",
+  "navOrganize": "Дубликаты",
+  "navSupport": "Поддержка",
+  "navSettings": "Настройки",
+  "settingsTitle": "Настройки",
+  "language": "Язык",
+  "languageSystemDefault": "Система по умолчанию",
+  "organizeTitle": "Дубликаты",
+  "supportTitle": "Поддержка",
+  "search": "Поиск",
+  "commonCancel": "Отмена",
+  "commonDelete": "Удалить",
+  "commonSave": "Сохранить",
+  "commonEdit": "Редактировать",
+  "commonMerge": "Объединить",
+  "commonSkip": "Пропустить",
+  "commonRetry": "Повторить попытку",
+  "commonClose": "Закрыть",
+  "commonNext": "Далее",
+  "commonBack": "Назад",
+  "commonYes": "Да",
+  "commonNo": "Нет",
+  "commonContinue": "Продолжить",
+  "commonTryAgain": "Попробуйте еще раз",
+  "commonApply": "Применить",
+  "commonDiscard": "Удалить",
+  "commonUnlock": "Разблокировать",
+  "commonLoading": "Загрузка...",
+  "commonErrorWithDetails": "Ошибка: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Ваши контакты. Только ваши.",
+  "contactNotFound": "Контакт не найден",
+  "contactDeleted": "Контакт удален",
+  "contactUpdated": "Контакт обновлен",
+  "contactSaved": "Контакт сохранен.",
+  "contactsMerged": "Контакты объединены",
+  "deleteContactTitle": "Удалить контакт",
+  "deleteContactConfirm": "Вы уверены, что хотите удалить {name}?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "Вы уверены, что хотите удалить «{name}»?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Не удалось удалить: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Не удалось обновить: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Не удалось сохранить: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "Без имени",
+  "noNameTitle": "Без имени",
+  "noNameBody": "У этого контакта нет имени. Все равно сохранить?",
+  "discardChangesTitle": "Удалить изменения?",
+  "discardChangesBody": "У вас есть несохраненные изменения, которые будут потеряны.",
+  "newContact": "Новый контакт",
+  "editContact": "Редактировать контакт",
+  "addMore": "Добавить еще",
+  "addNameFieldsTitle": "Добавить поля имени",
+  "call": "Вызов",
+  "sendEmail": "Отправить электронное письмо",
+  "copy": "Копировать",
+  "visit": "Открыть",
+  "copiedToClipboard": "Скопировано в буфер обмена",
+  "importContacts": "Импортировать контакты",
+  "importing": "Импорт...",
+  "importedCount": "Импортированные контакты {count}",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "Импортированы контакты {imported}, {skipped} пропущены.",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Не удалось импортировать контакты",
+  "noContactsToImport": "Нет контактов для импорта.",
+  "contactsPermissionRequiredImport": "Для импорта контактов требуется разрешение контактов.",
+  "importDialogTitle": "Импортировать контакты",
+  "importDialogBody": "Импортировать контакты с устройства или из файла?",
+  "importSourceTitle": "Импорт",
+  "importZipPasswordTitle": "Пароль архива",
+  "importZipPasswordChecking": "Проверка...",
+  "exportContacts": "Экспортировать контаты",
+  "unlockPro": "Открыть Pro",
+  "exportContactsTitle": "Экспортировать контаты",
+  "exportSubtitle": "Выберите, как вы хотите сохранить контакты.",
+  "exportFormatVcfTitle": "Сохранить как .vcf",
+  "exportFormatVcfSubtitle": "Один файл, который работает с контактами Apple, контактами Google и другими.",
+  "exportFormatZipTitle": "Сохранить в архиве, защищенном паролем.",
+  "exportFormatZipSubtitle": ".zip с вашим .vcf внутри — для открытия требуется пароль.",
+  "exportProtectedTitle": "Защищенный экспорт",
+  "exportCompleteTitle": "Экспорт завершен",
+  "stillLoadingContacts": "Продолжаем загружать контакты. Пожалуйста, подождите.",
+  "couldNotLoadContacts": "Не удалось загрузить контакты.",
+  "passwordChangedSuccess": "Пароль успешно изменен",
+  "passwordProtectionEnabled": "Защита паролем успешно включена",
+  "passwordProtectionRemoved": "Защита паролем успешно удалена",
+  "removePasswordProtectionButton": "Удалить защиту паролем",
+  "changePasswordTitle": "Изменить пароль",
+  "setPasswordTitle": "Установить пароль",
+  "passwordSettingsChangeTitle": "Изменить пароль",
+  "passwordSettingsSetTitle": "Установить пароль",
+  "privacyPolicy": "Политика конфиденциальности",
+  "privacyPolicyOpenFailed": "Не удалось открыть политику конфиденциальности: {error}.",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Сбросить приложение",
+  "resetAppConfirmTitle": "Удалить все контакты и сбросить приложение?",
+  "resetAppCannotUndo": "Это нельзя отменить",
+  "resetAppError": "Ошибка сброса приложения: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Выбрать новое изображение",
+  "photoPickerRemoveImage": "Удалить изображение",
+  "onboardingHeadline1": "Кто может получить доступ к вашим контактам?",
+  "onboardingSubline1": "Некоторые приложения загружают их в облако. Это может создать больше рисков для конфиденциальности.",
+  "onboardingHeadline2": "Многие приложения запрашивают доступ к контактам",
+  "onboardingSubline2": "Это может быть полезно, но важные контакты должны оставаться конфиденциальными.",
+  "onboardingHeadline3": "Храните конфиденциальные контакты отдельно",
+  "onboardingSubline3": "Мы рекомендуем хранить важные и редко используемые контакты за пределами основного приложения контактов.",
+  "onboardingHeadline4": "Защитите свои важные контакты",
+  "onboardingSubline4": "Savelon хранит их на вашем устройстве в зашифрованном виде и конфиденциально для других приложений.",
+  "onboardingGetStarted": "Начать",
+  "onboardingNext": "Далее",
+  "activateDemoTitle": "Активировать демо",
+  "activateDemoCancel": "Отмена",
+  "demoAccessGranted": "Теперь у вас есть демо-доступ до {dateTime}.",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Добавить защиту паролем",
+  "setupPasswordShortError": "Используйте не менее 4 символов",
+  "setupPasswordMismatch": "Пароли не совпадают",
+  "setupPasswordFailedSeed": "Не удалось создать начальное значение. Пожалуйста, попробуйте еще раз.",
+  "setupPasswordFailedInit": "Не удалось инициализировать. Ошибка: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Ваши контакты по-прежнему будут надежно зашифрованы длинным секретным ключом, хранящимся только на вашем устройстве. Но пароль добавляет дополнительную защиту.",
+  "setupPasswordLabel": "Пароль",
+  "setupPasswordHelper": "Минимум 4 символа",
+  "setupPasswordConfirmLabel": "Подтвердите пароль",
+  "setupPasswordWarning": "Этот пароль невозможно восстановить. Запишите его и храните в безопасности!",
+  "setupPasswordPageTitle": "Создать пароль",
+  "setupPasswordNext": "Далее",
+  "setupPasswordSkip": "Пропускать",
+  "confirmationCheckboxTitle": "Я понимаю, что мой пароль невозможно восстановить",
+  "loginWelcomeBack": "Добро пожаловать",
+  "loginPasswordLabel": "Пароль",
+  "loginUnlock": "Разблокировать",
+  "loginPasswordRequired": "Введите свой пароль",
+  "loginIncorrectPassword": "Неправильный пароль. Пожалуйста, попробуйте еще раз.",
+  "paywallNoSubscription": "Активная подписка не найдена. Пожалуйста, купите, чтобы продолжить.",
+  "lifetimeThanksTitle": "Спасибо, что вы с нами",
+  "lifetimeThanksSubtitle": "Мы дарим вам пожизненный доступ Pro",
+  "lifetimeThanksGift": "подарок",
+  "lifetimeThanksCta": "Получить пожизненный доступ",
+  "paywallNoInternetTitle": "Нет подключения к Интернету",
+  "paywallNoInternetBody": "Для первого доступа к приложению требуется подключение к Интернету. Пожалуйста, подключитесь и повторите попытку.",
+  "paywallStoreUnavailableTitle": "Магазин недоступен",
+  "paywallStoreUnavailableBody": "Не удалось загрузить варианты подписки. Пожалуйста, попробуйте еще раз.",
+  "subscriptionVerifyTitle": "Подтвердить подписку",
+  "subscriptionSoftWarningTitle": "Требуется подтверждение подписки",
+  "subscriptionContinueAnyway": "Продолжить в любом случае",
+  "subscriptionLastVerified": "Последняя проверка {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "Подписку не удалось подтвердить онлайн.",
+  "subscriptionAccessUntil": "Ваш доступ продолжается до {date} — подключитесь до этого момента, чтобы подтвердить.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Подключитесь к Интернету, чтобы подтвердить подписку.",
+  "organizeNoDuplicates": "Потенциальные дубликаты не найдены",
+  "organizeSkippedShownAgain": "Пропущенные дубликаты отображаются снова.",
+  "organizeShowSkippedTooltip": "Снова показать пропущенные повторяющиеся группы",
+  "organizeFailedToLoad": "Не удалось загрузить повторяющиеся группы: {error}.",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} дубликата",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Нажмите, чтобы просмотреть подробности",
+  "organizeConflictMostlyIdentical": "В основном идентичны",
+  "organizeConflictFieldVariants": "{field}: варианты {count}",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "имя",
+  "fieldLabelCompany": "компания",
+  "fieldLabelPhone": "телефон",
+  "fieldLabelEmail": "электронная почта",
+  "importErrorUnsupportedSource": "Импорт здесь недоступен.",
+  "importErrorPermissionDenied": "Для импорта контактов требуется разрешение контактов.",
+  "importErrorNoContacts": "Нет контактов для импорта.",
+  "importErrorUnsupportedFileType": "Пожалуйста, выберите файл .vcf или архив .zip.",
+  "importErrorInvalidFile": "Выбранный файл недействителен или нечитаем.",
+  "importErrorWrongPassword": "Неправильный пароль архива. Пожалуйста, попробуйте еще раз.",
+  "importErrorNoVcfInArchive": "В выбранном архиве не обнаружено файлов .vcf.",
+  "importErrorFailed": "Не удалось импортировать контакты: {detail}.",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Контакты пока недоступны.",
+  "exportErrorNoContacts": "Нет контактов для экспорта.",
+  "exportErrorPasswordRequired": "Для защищенного экспорта требуется пароль.",
+  "exportErrorPasswordTooShort": "Для защищенного экспорта требуется пароль длиной не менее {min} символов.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Не удалось экспортировать: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "Загрузка началась.",
+  "exportNoticeFileSaved": "Файл успешно сохранен.",
+  "phoneTypeMobile": "Мобильный",
+  "phoneTypeHome": "Домашний",
+  "phoneTypeWork": "Рабочий",
+  "phoneTypeSchool": "Школьный",
+  "phoneTypeOther": "Другой",
+  "emailTypePersonal": "Личная",
+  "emailTypeWork": "Рабочая",
+  "emailTypeSchool": "Школьная",
+  "emailTypeOther": "Другая",
+  "addressTypeHome": "Дом",
+  "addressTypeWork": "Работа",
+  "addressTypeSchool": "Школа",
+  "addressTypeBirth": "Родился",
+  "linkTypeWebsite": "Веб-сайт",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Другая",
+  "dateTypeCreated": "Созданный",
+  "dateTypeBirthday": "День рождения",
+  "dateTypeMet": "Познакомились",
+  "dateTypeGraduation": "Выпускной",
+  "dateTypeMarriage": "Свадьба",
+  "dateTypeOther": "Другая",
+  "noNameInList": "(Без имени)",
+  "formAddPhone": "Добавить телефон",
+  "formAddEmail": "Добавить электронную почту",
+  "formAddAddress": "Добавить адрес",
+  "formAddLink": "Добавить ссылку",
+  "formAddDate": "Добавить дату",
+  "formHintPhoneNumber": "Номер телефона",
+  "formHintEmail": "Электронная почта",
+  "formHintUrl": "URL-адрес",
+  "formHintAddress": "Адрес",
+  "formHintSelectDate": "Выберите дату",
+  "formHintNotes": "Добавить заметки",
+  "formCompany": "Компания",
+  "formDepartment": "Отдел",
+  "formJobTitle": "Должность",
+  "formPrefix": "Префикс",
+  "formFirstName": "Имя",
+  "formMiddleName": "Отчество",
+  "formLastName": "Фамилия",
+  "formSuffix": "Суффикс",
+  "formNickname": "Псевдоним",
+  "contactsListTitle": "Контакты",
+  "contactsListEmpty": "Пока нет контактов",
+  "contactsImportButton": "Импортировать контакты",
+  "mergeContactsTitle": "Объединить контакты",
+  "mergeContactsSubtitle": "Выберите контакты для объединения в один",
+  "exportPasswordHint": "Пароль",
+  "exportPasswordConfirmHint": "Подтвердите пароль",
+  "exportPasswordHelper": "Не менее {min} символов",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Пароль архива",
+  "activateDemoAccessCodeLabel": "Код доступа",
+  "subscriptionExpiredTitle": "Срок подписки истек",
+  "subscriptionExpiredBody": "Продлите подписку, чтобы продолжить использовать все функции.",
+  "contactsLoadError": "Не удалось загрузить контакты.",
+  "contactsListError": "Не удалось загрузить контакты.",
+  "contactsSearchNoResults": "Контакты не найдены",
+  "supportPageIntro": "Вопросы, отзывы или что-то не работает? Команда Savelon читает каждое сообщение.",
+  "supportCtaMessageTeam": "Написать команде",
+  "importFromDeviceContacts": "Из ваших контактов",
+  "importFromFileVcfZip": "Из файла (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Создать уникальный пароль",
+  "exportPasswordIrrecoverableHint": "Этот пароль нельзя восстановить.",
+  "exportProtectedArchiveCta": "Экспорт защищённого архива",
+  "exportIosSavedFileWarning": "Этот файл сохраняется в папке Savelon. Если удалить приложение, файл тоже будет удалён. Переместите его в другое место, чтобы сохранить.",
+  "importContactsConfirmBody": "Импортировать {count} контактов в Savelon?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Задать пароль",
+  "settingsChangePasswordPageTitle": "Изменить пароль",
+  "settingsRemovePasswordPageTitle": "Удалить пароль",
+  "settingsNewPasswordLabel": "Новый пароль",
+  "settingsConfirmNewPasswordLabel": "Подтвердите новый пароль",
+  "settingsReenterNewPasswordHelper": "Введите новый пароль ещё раз",
+  "settingsSetPasswordCta": "Задать пароль",
+  "settingsChangePasswordCta": "Изменить пароль",
+  "settingsRemovePasswordCta": "Удалить пароль",
+  "settingsCurrentPasswordLabel": "Текущий пароль",
+  "settingsEnterCurrentPasswordHelper": "Введите текущий пароль",
+  "settingsNewPasswordMustDiffer": "Новый пароль должен отличаться от текущего",
+  "settingsFailedToSetPassword": "Не удалось задать пароль: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Не удалось изменить пароль: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Не удалось удалить пароль: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Недопустимый пароль",
+  "settingsCurrentPasswordIncorrect": "Неверный текущий пароль",
+  "settingsCurrentPasswordRequired": "Требуется текущий пароль",
+  "authPasswordRequiredWhenProtectionEnabled": "Пароль требуется при включённой защите паролем",
+  "authPasswordRequiredWhenEnablePassword": "Пароль требуется при включении опции пароля",
+  "authPasswordRequiredForAccount": "Для этой учётной записи требуется пароль"
+}

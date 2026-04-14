@@ -1,0 +1,447 @@
+{
+  "@@locale": "en",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Encrypted Contacts",
+  "navContacts": "Contacts",
+  "navOrganize": "Organize",
+  "navSupport": "Support",
+  "navSettings": "Settings",
+  "settingsTitle": "Settings",
+  "language": "Language",
+  "languageSystemDefault": "System default",
+  "organizeTitle": "Organize",
+  "supportTitle": "Support",
+  "search": "Search",
+  "commonCancel": "Cancel",
+  "commonDelete": "Delete",
+  "commonSave": "Save",
+  "commonEdit": "Edit",
+  "commonMerge": "Merge",
+  "commonSkip": "Skip",
+  "commonRetry": "Retry",
+  "commonClose": "Close",
+  "commonNext": "Next",
+  "commonBack": "Go Back",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "commonContinue": "Continue",
+  "commonTryAgain": "Try Again",
+  "commonApply": "Apply",
+  "commonDiscard": "Discard",
+  "commonUnlock": "Unlock",
+  "commonLoading": "Loading...",
+  "commonErrorWithDetails": "Error: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Your Contacts. Yours Alone.",
+  "contactNotFound": "Contact not found",
+  "contactDeleted": "Contact deleted",
+  "contactUpdated": "Contact updated",
+  "contactSaved": "Contact saved",
+  "contactsMerged": "Contacts merged",
+  "deleteContactTitle": "Delete Contact",
+  "deleteContactConfirm": "Are you sure you want to delete {name}?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "Are you sure you want to delete \"{name}\"?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Failed to delete: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Failed to update: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Failed to save: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "No Name",
+  "noNameTitle": "No Name",
+  "noNameBody": "This contact has no name. Save anyway?",
+  "discardChangesTitle": "Discard changes?",
+  "discardChangesBody": "You have unsaved changes that will be lost.",
+  "newContact": "New Contact",
+  "editContact": "Edit Contact",
+  "addMore": "Add more",
+  "addNameFieldsTitle": "Add Name Fields",
+  "call": "Call",
+  "sendEmail": "Send Email",
+  "copy": "Copy",
+  "visit": "Visit",
+  "copiedToClipboard": "Copied to clipboard",
+  "importContacts": "Import Contacts",
+  "importing": "Importing...",
+  "importedCount": "Imported {count} contacts",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "Imported {imported} contacts, {skipped} skipped",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Failed to import contacts",
+  "noContactsToImport": "There are no contacts to import.",
+  "contactsPermissionRequiredImport": "Contacts permission is required to import contacts",
+  "importDialogTitle": "Import Contacts",
+  "importDialogBody": "Import contacts from your device or a file?",
+  "importSourceTitle": "Import",
+  "importZipPasswordTitle": "Archive password",
+  "importZipPasswordChecking": "Checking...",
+  "exportContacts": "Export Contacts",
+  "unlockPro": "Unlock Pro",
+  "exportContactsTitle": "Export contacts",
+  "exportSubtitle": "Pick how you want to save your contacts.",
+  "exportFormatVcfTitle": "Save as .vcf",
+  "exportFormatVcfSubtitle": "One file that works with Apple Contacts, Google Contacts, and more.",
+  "exportFormatZipTitle": "Save in password-protected archive",
+  "exportFormatZipSubtitle": "A .zip with your .vcf inside — requires a password to open it.",
+  "exportProtectedTitle": "Protected export",
+  "exportCompleteTitle": "Export complete",
+  "stillLoadingContacts": "Still loading contacts. Please wait.",
+  "couldNotLoadContacts": "Could not load contacts.",
+  "passwordChangedSuccess": "Password changed successfully",
+  "passwordProtectionEnabled": "Password protection enabled successfully",
+  "passwordProtectionRemoved": "Password protection removed successfully",
+  "removePasswordProtectionButton": "Remove Password Protection",
+  "changePasswordTitle": "Change Password",
+  "setPasswordTitle": "Set Password",
+  "passwordSettingsChangeTitle": "Change Password",
+  "passwordSettingsSetTitle": "Set Password",
+  "privacyPolicy": "Privacy Policy",
+  "privacyPolicyOpenFailed": "Failed to open privacy policy: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Reset the app",
+  "resetAppConfirmTitle": "Delete all contacts, and reset the app?",
+  "resetAppCannotUndo": "This cannot be undone",
+  "resetAppError": "Error resetting app: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Select new image",
+  "photoPickerRemoveImage": "Remove image",
+  "onboardingHeadline1": "Who can access your contacts?",
+  "onboardingSubline1": "Some apps upload them to the cloud. This can create more privacy risks.",
+  "onboardingHeadline2": "Many apps ask for contact access",
+  "onboardingSubline2": "It can be useful — but important contacts should stay private.",
+  "onboardingHeadline3": "Keep sensitive contacts separate",
+  "onboardingSubline3": "We recommend to store important and rarely used contacts outside your main contacts app.",
+  "onboardingHeadline4": "Protect your important contacts",
+  "onboardingSubline4": "Savelon stores them on your device, encrypted and private from other apps.",
+  "onboardingGetStarted": "Get Started",
+  "onboardingNext": "Next",
+  "activateDemoTitle": "Activate Demo",
+  "activateDemoCancel": "Cancel",
+  "demoAccessGranted": "You now have demo access until {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Add password protection",
+  "setupPasswordShortError": "Use at least 4 characters",
+  "setupPasswordMismatch": "Passwords do not match",
+  "setupPasswordFailedSeed": "Failed to generate seed. Please try again.",
+  "setupPasswordFailedInit": "Failed to initialize. Error: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Your contacts will still be strongly encrypted by a long secret key, stored on your device only. But password adds extra protection.",
+  "setupPasswordLabel": "Password",
+  "setupPasswordHelper": "At least 4 characters",
+  "setupPasswordConfirmLabel": "Confirm Password",
+  "setupPasswordWarning": "This password cannot be recovered. Write it down and keep it safe!",
+  "setupPasswordPageTitle": "Create Password",
+  "setupPasswordNext": "Next",
+  "setupPasswordSkip": "Skip",
+  "confirmationCheckboxTitle": "I understand my password cannot be recovered",
+  "loginWelcomeBack": "Welcome Back",
+  "loginPasswordLabel": "Password",
+  "loginUnlock": "Unlock",
+  "loginPasswordRequired": "Enter your password",
+  "loginIncorrectPassword": "Incorrect password. Please try again.",
+  "paywallNoSubscription": "No active subscription found. Please purchase to continue.",
+  "lifetimeThanksTitle": "Thank you for being with us",
+  "lifetimeThanksSubtitle": "We gift you lifetime pro access",
+  "lifetimeThanksGift": "gift",
+  "lifetimeThanksCta": "Claim lifetime access",
+  "paywallNoInternetTitle": "No Internet Connection",
+  "paywallNoInternetBody": "An internet connection is required to access the app for the first time. Please connect and try again.",
+  "paywallStoreUnavailableTitle": "Store Unavailable",
+  "paywallStoreUnavailableBody": "Unable to load subscription options. Please try again.",
+  "subscriptionVerifyTitle": "Verify Subscription",
+  "subscriptionSoftWarningTitle": "Subscription Verification Needed",
+  "subscriptionContinueAnyway": "Continue Anyway",
+  "subscriptionLastVerified": "Last verified {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "Subscription could not be verified online.",
+  "subscriptionAccessUntil": "Your access continues until {date} — connect before then to verify.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Connect to the internet to verify your subscription.",
+  "organizeNoDuplicates": "No potential duplicates found",
+  "organizeSkippedShownAgain": "Skipped duplicates are shown again.",
+  "organizeShowSkippedTooltip": "Show skipped duplicate groups again",
+  "organizeFailedToLoad": "Failed to load duplicate groups: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} duplicates",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Tap to view details",
+  "organizeConflictMostlyIdentical": "Mostly identical",
+  "organizeConflictFieldVariants": "{field}: {count} variants",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "name",
+  "fieldLabelCompany": "company",
+  "fieldLabelPhone": "phone",
+  "fieldLabelEmail": "email",
+  "importErrorUnsupportedSource": "Import is not available here.",
+  "importErrorPermissionDenied": "Contacts permission is required to import contacts.",
+  "importErrorNoContacts": "There are no contacts to import.",
+  "importErrorUnsupportedFileType": "Please select a .vcf file or a .zip archive.",
+  "importErrorInvalidFile": "The selected file is invalid or unreadable.",
+  "importErrorWrongPassword": "Incorrect archive password. Please try again.",
+  "importErrorNoVcfInArchive": "No .vcf files were found in the selected archive.",
+  "importErrorFailed": "Failed to import contacts: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Contacts are not available yet.",
+  "exportErrorNoContacts": "No contacts to export.",
+  "exportErrorPasswordRequired": "Password is required for a protected export.",
+  "exportErrorPasswordTooShort": "Protected export requires a password of at least {min} characters.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Export failed: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "Download started.",
+  "exportNoticeFileSaved": "File saved successfully.",
+  "phoneTypeMobile": "mobile",
+  "phoneTypeHome": "home",
+  "phoneTypeWork": "work",
+  "phoneTypeSchool": "school",
+  "phoneTypeOther": "other",
+  "emailTypePersonal": "personal",
+  "emailTypeWork": "work",
+  "emailTypeSchool": "school",
+  "emailTypeOther": "other",
+  "addressTypeHome": "Home",
+  "addressTypeWork": "Work",
+  "addressTypeSchool": "School",
+  "addressTypeBirth": "Birth",
+  "linkTypeWebsite": "Website",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Other",
+  "dateTypeCreated": "Created",
+  "dateTypeBirthday": "Birthday",
+  "dateTypeMet": "Met",
+  "dateTypeGraduation": "Graduation",
+  "dateTypeMarriage": "Marriage",
+  "dateTypeOther": "Other",
+  "noNameInList": "(No name)",
+  "formAddPhone": "Add phone",
+  "formAddEmail": "Add email",
+  "formAddAddress": "Add address",
+  "formAddLink": "Add link",
+  "formAddDate": "Add date",
+  "formHintPhoneNumber": "Phone number",
+  "formHintEmail": "Email",
+  "formHintUrl": "URL",
+  "formHintAddress": "Address",
+  "formHintSelectDate": "Select date",
+  "formHintNotes": "Add notes",
+  "formCompany": "Company",
+  "formDepartment": "Department",
+  "formJobTitle": "Job Title",
+  "formPrefix": "Prefix",
+  "formFirstName": "First Name",
+  "formMiddleName": "Middle Name",
+  "formLastName": "Last Name",
+  "formSuffix": "Suffix",
+  "formNickname": "Nickname",
+  "contactsListTitle": "Contacts",
+  "contactsListEmpty": "No contacts yet",
+  "contactsImportButton": "Import Contacts",
+  "mergeContactsTitle": "Merge contacts",
+  "mergeContactsSubtitle": "Select contacts to merge into one",
+  "exportPasswordHint": "Password",
+  "exportPasswordConfirmHint": "Confirm password",
+  "exportPasswordHelper": "At least {min} characters",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Archive password",
+  "activateDemoAccessCodeLabel": "Access code",
+  "subscriptionExpiredTitle": "Subscription expired",
+  "subscriptionExpiredBody": "Renew to continue using all features.",
+  "contactsLoadError": "Could not load contacts.",
+  "contactsListError": "Could not load contacts.",
+  "contactsSearchNoResults": "No contacts found",
+  "supportPageIntro": "Questions, feedback, or something not working? The Savelon team reads every message.",
+  "supportCtaMessageTeam": "Message the team",
+  "importFromDeviceContacts": "From your contacts",
+  "importFromFileVcfZip": "From a file (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Create unique password",
+  "exportPasswordIrrecoverableHint": "This password can't be recovered.",
+  "exportProtectedArchiveCta": "Export protected archive",
+  "exportIosSavedFileWarning": "This file is saved in the Savelon folder. If you delete the app, the file will be deleted too. Move it to another location to keep it.",
+  "importContactsConfirmBody": "Import {count} contacts to Savelon?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Set Password",
+  "settingsChangePasswordPageTitle": "Change Password",
+  "settingsRemovePasswordPageTitle": "Remove Password",
+  "settingsNewPasswordLabel": "New Password",
+  "settingsConfirmNewPasswordLabel": "Confirm New Password",
+  "settingsReenterNewPasswordHelper": "Re-enter your new password",
+  "settingsSetPasswordCta": "Set Password",
+  "settingsChangePasswordCta": "Change Password",
+  "settingsRemovePasswordCta": "Remove Password",
+  "settingsCurrentPasswordLabel": "Current Password",
+  "settingsEnterCurrentPasswordHelper": "Enter your current password",
+  "settingsNewPasswordMustDiffer": "New password must be different from current password",
+  "settingsFailedToSetPassword": "Failed to set password: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Failed to change password: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Failed to remove password: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Password is invalid",
+  "settingsCurrentPasswordIncorrect": "Current password is incorrect",
+  "settingsCurrentPasswordRequired": "Current password is required",
+  "authPasswordRequiredWhenProtectionEnabled": "Password required when password protection is enabled",
+  "authPasswordRequiredWhenEnablePassword": "Password required when enablePassword is true",
+  "authPasswordRequiredForAccount": "Password required for this account"
+}

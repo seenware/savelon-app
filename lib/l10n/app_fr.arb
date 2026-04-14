@@ -1,0 +1,447 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Contacts chiffrés",
+  "navContacts": "Contacts",
+  "navOrganize": "Organiser",
+  "navSupport": "Assistance",
+  "navSettings": "Paramètres",
+  "settingsTitle": "Paramètres",
+  "language": "Langue",
+  "languageSystemDefault": "Valeur par défaut du système",
+  "organizeTitle": "Organiser",
+  "supportTitle": "Assistance",
+  "search": "Recherche",
+  "commonCancel": "Annuler",
+  "commonDelete": "Supprimer",
+  "commonSave": "Enregistrer",
+  "commonEdit": "Modifier",
+  "commonMerge": "Fusionner",
+  "commonSkip": "Sauter",
+  "commonRetry": "Réessayer",
+  "commonClose": "Fermer",
+  "commonNext": "Suivant",
+  "commonBack": "Retour",
+  "commonYes": "Oui",
+  "commonNo": "Non",
+  "commonContinue": "Continuer",
+  "commonTryAgain": "Essayer à nouveau",
+  "commonApply": "Appliquer",
+  "commonDiscard": "Ne pas enregistrer",
+  "commonUnlock": "Déverrouiller",
+  "commonLoading": "Chargement...",
+  "commonErrorWithDetails": "Erreur : {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Vos contacts. Les vôtres uniquement.",
+  "contactNotFound": "Contact introuvable",
+  "contactDeleted": "Contact supprimé",
+  "contactUpdated": "Contact mis à jour",
+  "contactSaved": "Contact enregistré",
+  "contactsMerged": "Contacts fusionnés",
+  "deleteContactTitle": "Supprimer le contact",
+  "deleteContactConfirm": "Êtes-vous sûr de vouloir supprimer {name} ?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "Êtes-vous sûr de vouloir supprimer « {name} » ?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Échec de la suppression : {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Échec de la mise à jour : {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Échec de l'enregistrement : {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "Pas de nom",
+  "noNameTitle": "Pas de nom",
+  "noNameBody": "Ce contact n'a pas de nom. Enregistrer quand même ?",
+  "discardChangesTitle": "Ne pas enregistrer les modifications ?",
+  "discardChangesBody": "Vous avez des modifications non enregistrées qui seront perdues.",
+  "newContact": "Nouveau contact",
+  "editContact": "Modifier le contact",
+  "addMore": "Ajouter plus",
+  "addNameFieldsTitle": "Ajouter des champs de nom",
+  "call": "Appeler",
+  "sendEmail": "Envoyer un e-mail",
+  "copy": "Copier",
+  "copiedToClipboard": "Copié dans le presse-papiers",
+  "importContacts": "Importer des contacts",
+  "importing": "Importation...",
+  "importedCount": "Contacts {count} importés",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "Contacts {imported} importés, {skipped} ignorés",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Échec de l'importation des contacts",
+  "noContactsToImport": "Il n'y a aucun contact à importer.",
+  "contactsPermissionRequiredImport": "L'autorisation des contacts est requise pour importer des contacts",
+  "importDialogTitle": "Importer des contacts",
+  "importDialogBody": "Importer des contacts depuis votre appareil ou un fichier ?",
+  "importSourceTitle": "Importer",
+  "importZipPasswordTitle": "Mot de passe de l'archive",
+  "importZipPasswordChecking": "Vérification...",
+  "exportContacts": "Exporter les contacts",
+  "exportContactsTitle": "Exporter les contacts",
+  "exportSubtitle": "Choisissez comment vous souhaitez enregistrer vos contacts.",
+  "exportFormatVcfTitle": "Enregistrer sous .vcf",
+  "exportFormatVcfSubtitle": "Un fichier qui fonctionne avec les contacts Apple, les contacts Google et plus encore.",
+  "exportFormatZipTitle": "Enregistrer dans une archive protégée par mot de passe",
+  "exportFormatZipSubtitle": "Un .zip avec votre .vcf à l'intérieur — nécessite un mot de passe pour l'ouvrir.",
+  "exportProtectedTitle": "Exportation protégée",
+  "exportCompleteTitle": "Exportation terminée",
+  "stillLoadingContacts": "Toujours en train de charger les contacts. S'il vous plaît, attendez.",
+  "couldNotLoadContacts": "Impossible de charger les contacts.",
+  "passwordChangedSuccess": "Mot de passe modifié avec succès",
+  "passwordProtectionEnabled": "La protection par mot de passe a été activée avec succès",
+  "passwordProtectionRemoved": "La protection par mot de passe a été supprimée avec succès",
+  "removePasswordProtectionButton": "Supprimer la protection par mot de passe",
+  "changePasswordTitle": "Changer le mot de passe",
+  "setPasswordTitle": "Définir le mot de passe",
+  "passwordSettingsChangeTitle": "Changer le mot de passe",
+  "passwordSettingsSetTitle": "Définir le mot de passe",
+  "privacyPolicy": "Politique de confidentialité",
+  "privacyPolicyOpenFailed": "Échec de l'ouverture de la politique de confidentialité : {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Réinitialiser l'application",
+  "resetAppConfirmTitle": "Supprimer tous les contacts et réinitialiser l'application ?",
+  "resetAppCannotUndo": "Cela ne peut pas être annulé",
+  "resetAppError": "Erreur lors de la réinitialisation de l'application : {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Sélectionnez une nouvelle image",
+  "photoPickerRemoveImage": "Supprimer l'image",
+  "onboardingHeadline1": "Qui peut accéder à vos contacts ?",
+  "onboardingSubline1": "Certaines applications les envoient dans le cloud. Cela peut créer davantage de risques pour la vie privée.",
+  "onboardingHeadline2": "De nombreuses applications demandent l'accès aux contacts",
+  "onboardingSubline2": "Cela peut être utile, mais les contacts importants doivent rester privés.",
+  "onboardingHeadline3": "Gardez les contacts sensibles séparés",
+  "onboardingSubline3": "Nous vous recommandons de stocker les contacts importants et rarement utilisés en dehors de votre application de contacts principale.",
+  "onboardingHeadline4": "Protégez vos contacts importants",
+  "onboardingSubline4": "Savelon les stocke sur votre appareil, chiffrés et inaccessibles aux autres applications.",
+  "onboardingGetStarted": "Commencer",
+  "onboardingNext": "Suivant",
+  "activateDemoTitle": "Activer la démo",
+  "activateDemoCancel": "Annuler",
+  "demoAccessGranted": "Vous avez désormais accès à la démo jusqu'au {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Ajouter une protection par mot de passe",
+  "setupPasswordShortError": "Utilisez au moins 4 caractères",
+  "setupPasswordMismatch": "Les mots de passe ne correspondent pas",
+  "setupPasswordFailedSeed": "Échec de la génération de la graine. Veuillez réessayer.",
+  "setupPasswordFailedInit": "Échec de l'initialisation. Erreur : {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Vos contacts restent fortement chiffrés par une longue clé secrète, stockée uniquement sur votre appareil. Le mot de passe ajoute une protection supplémentaire.",
+  "setupPasswordLabel": "Mot de passe",
+  "setupPasswordHelper": "Au moins 4 caractères",
+  "setupPasswordConfirmLabel": "Confirmez le mot de passe",
+  "setupPasswordWarning": "Ce mot de passe ne peut pas être récupéré. Écrivez-le et conservez-le en sécurité !",
+  "setupPasswordPageTitle": "Créer un mot de passe",
+  "setupPasswordNext": "Suivant",
+  "setupPasswordSkip": "Sauter",
+  "confirmationCheckboxTitle": "Je comprends que mon mot de passe ne peut pas être récupéré",
+  "loginWelcomeBack": "Bon retour",
+  "loginPasswordLabel": "Mot de passe",
+  "loginUnlock": "Déverrouiller",
+  "loginPasswordRequired": "Entrez votre mot de passe",
+  "loginIncorrectPassword": "Mot de passe incorrect. Veuillez réessayer.",
+  "paywallNoSubscription": "Aucun abonnement actif trouvé. Veuillez acheter pour continuer.",
+  "paywallNoInternetTitle": "Pas de connexion Internet",
+  "paywallNoInternetBody": "Une connexion Internet est requise pour accéder à l'application pour la première fois. Veuillez vous connecter et réessayer.",
+  "paywallStoreUnavailableTitle": "Magasin indisponible",
+  "paywallStoreUnavailableBody": "Impossible de charger les options d'abonnement. Veuillez réessayer.",
+  "subscriptionVerifyTitle": "Vérifier l'abonnement",
+  "subscriptionSoftWarningTitle": "Vérification de l'abonnement requise",
+  "subscriptionContinueAnyway": "Continuer quand même",
+  "subscriptionLastVerified": "Dernière vérification {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "L'abonnement n'a pas pu être vérifié en ligne.",
+  "subscriptionAccessUntil": "Votre accès se poursuit jusqu'au {date} — connectez-vous avant cette date pour vérifier.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Connectez-vous à Internet pour vérifier votre abonnement.",
+  "organizeNoDuplicates": "Aucun doublon potentiel trouvé",
+  "organizeSkippedShownAgain": "Les doublons ignorés sont à nouveau affichés.",
+  "organizeShowSkippedTooltip": "Afficher à nouveau les groupes en double ignorés",
+  "organizeFailedToLoad": "Échec du chargement des groupes en double : {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} doublons",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Appuyez pour afficher les détails",
+  "organizeConflictMostlyIdentical": "Presque identique",
+  "organizeConflictFieldVariants": "{field} : {count} variantes",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "nom",
+  "fieldLabelCompany": "entreprise",
+  "fieldLabelPhone": "téléphone",
+  "fieldLabelEmail": "e-mail",
+  "importErrorUnsupportedSource": "L'importation n'est pas disponible ici.",
+  "importErrorPermissionDenied": "L'autorisation des contacts est requise pour importer des contacts.",
+  "importErrorNoContacts": "Il n'y a aucun contact à importer.",
+  "importErrorUnsupportedFileType": "Veuillez sélectionner un fichier .vcf ou une archive .zip.",
+  "importErrorInvalidFile": "Le fichier sélectionné est invalide ou illisible.",
+  "importErrorWrongPassword": "Mot de passe d'archive incorrect. Veuillez réessayer.",
+  "importErrorNoVcfInArchive": "Aucun fichier .vcf n'a été trouvé dans l'archive sélectionnée.",
+  "importErrorFailed": "Échec de l'importation des contacts : {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Les contacts ne sont pas encore disponibles.",
+  "exportErrorNoContacts": "Aucun contact à exporter.",
+  "exportErrorPasswordRequired": "Un mot de passe est requis pour une exportation protégée.",
+  "exportErrorPasswordTooShort": "L'exportation protégée nécessite un mot de passe d'au moins {min} caractères.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Échec de l'exportation : {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "Le téléchargement a commencé.",
+  "exportNoticeFileSaved": "Fichier enregistré avec succès.",
+  "phoneTypeMobile": "mobile",
+  "phoneTypeHome": "maison",
+  "phoneTypeWork": "travail",
+  "phoneTypeSchool": "école",
+  "phoneTypeOther": "autre",
+  "emailTypePersonal": "personnel",
+  "emailTypeWork": "travail",
+  "emailTypeSchool": "école",
+  "emailTypeOther": "autre",
+  "addressTypeHome": "Maison",
+  "addressTypeWork": "Travail",
+  "addressTypeSchool": "École",
+  "addressTypeBirth": "Naissance",
+  "linkTypeWebsite": "Site web",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Autre",
+  "dateTypeCreated": "Créé",
+  "dateTypeBirthday": "Anniversaire",
+  "dateTypeMet": "Rencontre",
+  "dateTypeGraduation": "Diplôme",
+  "dateTypeMarriage": "Mariage",
+  "dateTypeOther": "Autre",
+  "noNameInList": "(Pas de nom)",
+  "formAddPhone": "Ajouter un téléphone",
+  "formAddEmail": "Ajouter un e-mail",
+  "formAddAddress": "Ajouter une adresse",
+  "formAddLink": "Ajouter un lien",
+  "formAddDate": "Ajouter une date",
+  "formHintPhoneNumber": "Numéro de téléphone",
+  "formHintEmail": "E-mail",
+  "formHintUrl": "URL",
+  "formHintAddress": "Adresse",
+  "formHintSelectDate": "Sélectionnez une date",
+  "formHintNotes": "Ajouter des notes",
+  "formCompany": "Entreprise",
+  "formDepartment": "Département",
+  "formJobTitle": "Titre d'emploi",
+  "formPrefix": "Préfixe",
+  "formFirstName": "Prénom",
+  "formMiddleName": "Deuxième prénom",
+  "formLastName": "Nom de famille",
+  "formSuffix": "Suffixe",
+  "formNickname": "Surnom",
+  "contactsListTitle": "Contacts",
+  "contactsListEmpty": "Aucun contact pour l'instant",
+  "contactsImportButton": "Importer des contacts",
+  "mergeContactsTitle": "Fusionner les contacts",
+  "mergeContactsSubtitle": "Sélectionnez les contacts à fusionner en un seul",
+  "exportPasswordHint": "Mot de passe",
+  "exportPasswordConfirmHint": "Confirmez le mot de passe",
+  "exportPasswordHelper": "Au moins {min} caractères",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Mot de passe de l'archive",
+  "activateDemoAccessCodeLabel": "Code d'accès",
+  "subscriptionExpiredTitle": "Abonnement expiré",
+  "subscriptionExpiredBody": "Renouvelez pour continuer à utiliser toutes les fonctionnalités.",
+  "contactsLoadError": "Impossible de charger les contacts.",
+  "contactsListError": "Impossible de charger les contacts.",
+  "contactsSearchNoResults": "Aucun contact trouvé",
+  "supportPageIntro": "Une question, un commentaire ou un problème ? L'équipe Savelon lit chaque message.",
+  "supportCtaMessageTeam": "Écrire à l'équipe",
+  "importFromDeviceContacts": "Depuis vos contacts",
+  "importFromFileVcfZip": "Depuis un fichier (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Créer un mot de passe unique",
+  "exportPasswordIrrecoverableHint": "Ce mot de passe ne peut pas être récupéré.",
+  "exportProtectedArchiveCta": "Exporter l'archive protégée",
+  "exportIosSavedFileWarning": "Ce fichier est enregistré dans le dossier Savelon. Si vous supprimez l'application, le fichier sera aussi supprimé. Déplacez-le ailleurs pour le conserver.",
+  "importContactsConfirmBody": "Importer {count} contacts dans Savelon ?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Définir le mot de passe",
+  "settingsChangePasswordPageTitle": "Modifier le mot de passe",
+  "settingsRemovePasswordPageTitle": "Supprimer le mot de passe",
+  "settingsNewPasswordLabel": "Nouveau mot de passe",
+  "settingsConfirmNewPasswordLabel": "Confirmer le nouveau mot de passe",
+  "settingsReenterNewPasswordHelper": "Saisissez à nouveau votre nouveau mot de passe",
+  "settingsSetPasswordCta": "Définir le mot de passe",
+  "settingsChangePasswordCta": "Modifier le mot de passe",
+  "settingsRemovePasswordCta": "Supprimer le mot de passe",
+  "settingsCurrentPasswordLabel": "Mot de passe actuel",
+  "settingsEnterCurrentPasswordHelper": "Saisissez votre mot de passe actuel",
+  "settingsNewPasswordMustDiffer": "Le nouveau mot de passe doit être différent de l'actuel",
+  "settingsFailedToSetPassword": "Échec de la définition du mot de passe : {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Échec de la modification du mot de passe : {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Échec de la suppression du mot de passe : {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Le mot de passe est invalide",
+  "settingsCurrentPasswordIncorrect": "Le mot de passe actuel est incorrect",
+  "settingsCurrentPasswordRequired": "Le mot de passe actuel est requis",
+  "authPasswordRequiredWhenProtectionEnabled": "Mot de passe requis lorsque la protection par mot de passe est activée",
+  "authPasswordRequiredWhenEnablePassword": "Mot de passe requis lorsque l'option mot de passe est activée",
+  "authPasswordRequiredForAccount": "Mot de passe requis pour ce compte",
+  "visit": "Visiter",
+  "unlockPro": "Débloquer Pro",
+  "lifetimeThanksTitle": "Merci d'être avec nous",
+  "lifetimeThanksSubtitle": "Nous vous offrons un accès Pro à vie",
+  "lifetimeThanksGift": "cadeau",
+  "lifetimeThanksCta": "Obtenir l'accès à vie"
+}

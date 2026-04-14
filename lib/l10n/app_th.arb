@@ -1,0 +1,447 @@
+{
+  "@@locale": "th",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "ผู้ติดต่อที่เข้ารหัส",
+  "navContacts": "รายชื่อผู้ติดต่อ",
+  "navOrganize": "จัดระเบียบ",
+  "navSupport": "ช่วยเหลือ",
+  "navSettings": "การตั้งค่า",
+  "settingsTitle": "การตั้งค่า",
+  "language": "ภาษา",
+  "languageSystemDefault": "ค่าเริ่มต้นของระบบ",
+  "organizeTitle": "จัดระเบียบ",
+  "supportTitle": "ช่วยเหลือ",
+  "search": "ค้นหา",
+  "commonCancel": "ยกเลิก",
+  "commonDelete": "ลบ",
+  "commonSave": "บันทึก",
+  "commonEdit": "แก้ไข",
+  "commonMerge": "ผสาน",
+  "commonSkip": "ข้าม",
+  "commonRetry": "ลองอีกครั้ง",
+  "commonClose": "ปิด",
+  "commonNext": "ต่อไป",
+  "commonBack": "กลับไป",
+  "commonYes": "ใช่",
+  "commonNo": "ไม่",
+  "commonContinue": "ดำเนินการต่อ",
+  "commonTryAgain": "ลองอีกครั้ง",
+  "commonApply": "นำมาใช้",
+  "commonDiscard": "ทิ้ง",
+  "commonUnlock": "ปลดล็อค",
+  "commonLoading": "กำลังโหลด...",
+  "commonErrorWithDetails": "ข้อผิดพลาด: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "ผู้ติดต่อของคุณ ของคุณคนเดียว",
+  "contactNotFound": "ไม่พบผู้ติดต่อ",
+  "contactDeleted": "ลบผู้ติดต่อแล้ว",
+  "contactUpdated": "อัพเดทรายชื่อติดต่อแล้ว",
+  "contactSaved": "บันทึกการติดต่อแล้ว",
+  "contactsMerged": "รวมรายชื่อแล้ว",
+  "deleteContactTitle": "ลบผู้ติดต่อ",
+  "deleteContactConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบ {name}",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "คุณแน่ใจหรือไม่ว่าต้องการลบ \"{name}\"",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "ลบไม่สำเร็จ: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "ไม่สามารถอัปเดต: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "ไม่สามารถบันทึก: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "ไม่มีชื่อ",
+  "noNameTitle": "ไม่มีชื่อ",
+  "noNameBody": "ผู้ติดต่อรายนี้ไม่มีชื่อ บันทึกต่อไปใช่ไหม?",
+  "discardChangesTitle": "ยกเลิกการเปลี่ยนแปลงใช่ไหม",
+  "discardChangesBody": "คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึกซึ่งจะสูญหายไป",
+  "newContact": "ติดต่อใหม่",
+  "editContact": "แก้ไขการติดต่อ",
+  "addMore": "เพิ่มมากขึ้น",
+  "addNameFieldsTitle": "เพิ่มฟิลด์ชื่อ",
+  "call": "เรียก",
+  "sendEmail": "ส่งอีเมล์",
+  "copy": "คัดลอก",
+  "copiedToClipboard": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+  "importContacts": "นำเข้าผู้ติดต่อ",
+  "importing": "กำลังนำเข้า...",
+  "importedCount": "นำเข้ารายชื่อติดต่อ {count} แล้ว",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "นำเข้ารายชื่อติดต่อ {imported} แล้ว {skipped} ข้ามไป",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "ไม่สามารถนำเข้าผู้ติดต่อได้",
+  "noContactsToImport": "ไม่มีผู้ติดต่อให้นำเข้า",
+  "contactsPermissionRequiredImport": "ต้องอนุญาตให้เข้าถึงรายชื่อผู้ติดต่อเพื่อนำเข้า",
+  "importDialogTitle": "นำเข้าผู้ติดต่อ",
+  "importDialogBody": "นำเข้าผู้ติดต่อจากอุปกรณ์หรือไฟล์ของคุณ?",
+  "importSourceTitle": "นำเข้า",
+  "importZipPasswordTitle": "รหัสผ่านของไฟล์บีบอัด",
+  "importZipPasswordChecking": "กำลังตรวจสอบ...",
+  "exportContacts": "ส่งออกผู้ติดต่อ",
+  "exportContactsTitle": "ส่งออกผู้ติดต่อ",
+  "exportSubtitle": "เลือกวิธีที่คุณต้องการบันทึกผู้ติดต่อของคุณ",
+  "exportFormatVcfTitle": "บันทึกเป็น .vcf",
+  "exportFormatVcfSubtitle": "ไฟล์เดียวที่ใช้งานได้กับ Apple Contacts, Google Contacts และอื่นๆ",
+  "exportFormatZipTitle": "บันทึกในไฟล์เก็บถาวรที่มีการป้องกันด้วยรหัสผ่าน",
+  "exportFormatZipSubtitle": ".zip ที่มี .vcf อยู่ข้างใน — ต้องใช้รหัสผ่านเพื่อเปิด",
+  "exportProtectedTitle": "การส่งออกที่ได้รับการคุ้มครอง",
+  "exportCompleteTitle": "ส่งออกเสร็จสมบูรณ์",
+  "stillLoadingContacts": "กำลังโหลดรายชื่อติดต่ออยู่ โปรดรอ.",
+  "couldNotLoadContacts": "ไม่สามารถโหลดผู้ติดต่อได้",
+  "passwordChangedSuccess": "เปลี่ยนรหัสผ่านเรียบร้อยแล้ว",
+  "passwordProtectionEnabled": "เปิดใช้งานการป้องกันด้วยรหัสผ่านสำเร็จแล้ว",
+  "passwordProtectionRemoved": "ลบการป้องกันด้วยรหัสผ่านเรียบร้อยแล้ว",
+  "removePasswordProtectionButton": "ลบการป้องกันด้วยรหัสผ่าน",
+  "changePasswordTitle": "เปลี่ยนรหัสผ่าน",
+  "setPasswordTitle": "ตั้งรหัสผ่าน",
+  "passwordSettingsChangeTitle": "เปลี่ยนรหัสผ่าน",
+  "passwordSettingsSetTitle": "ตั้งรหัสผ่าน",
+  "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+  "privacyPolicyOpenFailed": "ไม่สามารถเปิดนโยบายความเป็นส่วนตัว: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "รีเซ็ตแอป",
+  "resetAppConfirmTitle": "ลบผู้ติดต่อทั้งหมดแล้วรีเซ็ตแอปใช่ไหม",
+  "resetAppCannotUndo": "สิ่งนี้ไม่สามารถยกเลิกได้",
+  "resetAppError": "เกิดข้อผิดพลาดในการรีเซ็ตแอป: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "เลือกรูปภาพใหม่",
+  "photoPickerRemoveImage": "ลบรูปภาพ",
+  "onboardingHeadline1": "ใครสามารถเข้าถึงผู้ติดต่อของคุณได้บ้าง?",
+  "onboardingSubline1": "แอปบางแอปจะอัปโหลดไปยังระบบคลาวด์ สิ่งนี้สามารถสร้างความเสี่ยงด้านความเป็นส่วนตัวได้มากขึ้น",
+  "onboardingHeadline2": "แอพจำนวนมากขอการเข้าถึงผู้ติดต่อ",
+  "onboardingSubline2": "อาจมีประโยชน์ แต่ผู้ติดต่อที่สำคัญควรเก็บไว้เป็นส่วนตัว",
+  "onboardingHeadline3": "แยกผู้ติดต่อที่ละเอียดอ่อนออกจากกัน",
+  "onboardingSubline3": "เราขอแนะนำให้จัดเก็บรายชื่อติดต่อที่สำคัญและไม่ค่อยได้ใช้ไว้นอกแอปรายชื่อติดต่อหลักของคุณ",
+  "onboardingHeadline4": "ปกป้องผู้ติดต่อที่สำคัญของคุณ",
+  "onboardingSubline4": "Savelon เก็บไว้ในอุปกรณ์ของคุณ เข้ารหัสและเป็นส่วนตัวจากแอปอื่น",
+  "onboardingGetStarted": "เริ่มต้นเลย",
+  "onboardingNext": "ต่อไป",
+  "activateDemoTitle": "เปิดใช้งานการสาธิต",
+  "activateDemoCancel": "ยกเลิก",
+  "demoAccessGranted": "ตอนนี้คุณมีสิทธิ์เข้าถึงการสาธิตจนถึง {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "เพิ่มการป้องกันด้วยรหัสผ่าน",
+  "setupPasswordShortError": "ใช้อย่างน้อย 4 ตัวอักษร",
+  "setupPasswordMismatch": "รหัสผ่านไม่ตรงกัน",
+  "setupPasswordFailedSeed": "ไม่สามารถสร้าง seed ได้ โปรดลองอีกครั้ง",
+  "setupPasswordFailedInit": "ไม่สามารถเริ่มต้นได้ ข้อผิดพลาด: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "ผู้ติดต่อของคุณจะยังคงได้รับการเข้ารหัสอย่างแน่นหนาด้วยรหัสลับขนาดยาวที่จัดเก็บไว้ในอุปกรณ์ของคุณเท่านั้น แต่รหัสผ่านเพิ่มการป้องกันพิเศษ",
+  "setupPasswordLabel": "รหัสผ่าน",
+  "setupPasswordHelper": "อย่างน้อย 4 ตัวอักษร",
+  "setupPasswordConfirmLabel": "ยืนยันรหัสผ่าน",
+  "setupPasswordWarning": "รหัสผ่านนี้ไม่สามารถกู้คืนได้ เขียนมันลงไปและเก็บไว้อย่างปลอดภัย!",
+  "setupPasswordPageTitle": "สร้างรหัสผ่าน",
+  "setupPasswordNext": "ต่อไป",
+  "setupPasswordSkip": "ข้าม",
+  "confirmationCheckboxTitle": "ฉันเข้าใจว่ารหัสผ่านของฉันไม่สามารถกู้คืนได้",
+  "loginWelcomeBack": "ยินดีต้อนรับกลับ",
+  "loginPasswordLabel": "รหัสผ่าน",
+  "loginUnlock": "ปลดล็อค",
+  "loginPasswordRequired": "ใส่รหัสผ่านของคุณ",
+  "loginIncorrectPassword": "รหัสผ่านไม่ถูกต้อง โปรดลองอีกครั้ง",
+  "paywallNoSubscription": "ไม่พบการสมัครสมาชิกที่ใช้งานอยู่ กรุณาซื้อเพื่อดำเนินการต่อ",
+  "paywallNoInternetTitle": "ไม่มีการเชื่อมต่ออินเทอร์เน็ต",
+  "paywallNoInternetBody": "จำเป็นต้องเชื่อมต่ออินเทอร์เน็ตเพื่อเข้าถึงแอปเป็นครั้งแรก โปรดเชื่อมต่อและลองอีกครั้ง",
+  "paywallStoreUnavailableTitle": "ร้านค้าไม่พร้อมใช้งาน",
+  "paywallStoreUnavailableBody": "ไม่สามารถโหลดตัวเลือกการสมัครสมาชิกได้ โปรดลองอีกครั้ง",
+  "subscriptionVerifyTitle": "ยืนยันการสมัครสมาชิก",
+  "subscriptionSoftWarningTitle": "จำเป็นต้องมีการยืนยันการสมัครสมาชิก",
+  "subscriptionContinueAnyway": "ดำเนินการต่อ",
+  "subscriptionLastVerified": "ตรวจสอบครั้งล่าสุด {date}",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "ไม่สามารถยืนยันการสมัครสมาชิกทางออนไลน์ได้",
+  "subscriptionAccessUntil": "การเข้าถึงของคุณจะดำเนินต่อไปจนถึง {date} — เชื่อมต่อก่อนเวลาดังกล่าวเพื่อยืนยัน",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "เชื่อมต่ออินเทอร์เน็ตเพื่อยืนยันการสมัครสมาชิกของคุณ",
+  "organizeNoDuplicates": "ไม่พบรายการที่ซ้ำกัน",
+  "organizeSkippedShownAgain": "รายการซ้ำที่ข้ามจะแสดงอีกครั้ง",
+  "organizeShowSkippedTooltip": "แสดงกลุ่มที่ซ้ำกันที่ถูกข้ามอีกครั้ง",
+  "organizeFailedToLoad": "ไม่สามารถโหลดกลุ่มที่ซ้ำกัน: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} รายการซ้ำ",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "แตะเพื่อดูรายละเอียด",
+  "organizeConflictMostlyIdentical": "เหมือนกันเป็นส่วนใหญ่",
+  "organizeConflictFieldVariants": "{field}: {count} เวอร์ชัน",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "ชื่อ",
+  "fieldLabelCompany": "บริษัท",
+  "fieldLabelPhone": "โทรศัพท์",
+  "fieldLabelEmail": "อีเมล",
+  "importErrorUnsupportedSource": "ไม่สามารถนำเข้าได้ที่นี่",
+  "importErrorPermissionDenied": "ต้องอนุญาตให้แอปเข้าถึงรายชื่อติดต่อ.",
+  "importErrorNoContacts": "ไม่มีผู้ติดต่อให้นำเข้า",
+  "importErrorUnsupportedFileType": "โปรดเลือกไฟล์ .vcf หรือไฟล์เก็บถาวร .zip",
+  "importErrorInvalidFile": "ไฟล์ที่เลือกไม่ถูกต้องหรือไม่สามารถอ่านได้",
+  "importErrorWrongPassword": "รหัสผ่านการเก็บถาวรไม่ถูกต้อง โปรดลองอีกครั้ง",
+  "importErrorNoVcfInArchive": "ไม่พบไฟล์ .vcf ในไฟล์เก็บถาวรที่เลือก",
+  "importErrorFailed": "นำเข้าผู้ติดต่อไม่สำเร็จ: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "ผู้ติดต่อยังไม่พร้อมใช้งาน",
+  "exportErrorNoContacts": "ไม่มีผู้ติดต่อให้ส่งออก",
+  "exportErrorPasswordRequired": "ต้องใช้รหัสผ่านเพื่อการส่งออกที่มีการป้องกัน",
+  "exportErrorPasswordTooShort": "การส่งออกที่มีการป้องกันต้องใช้รหัสผ่านที่มีความยาวอย่างน้อย {min} อักขระ",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "การส่งออกล้มเหลว: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "เริ่มดาวน์โหลดแล้ว",
+  "exportNoticeFileSaved": "บันทึกไฟล์เรียบร้อยแล้ว",
+  "phoneTypeMobile": "มือถือ",
+  "phoneTypeHome": "บ้าน",
+  "phoneTypeWork": "งาน",
+  "phoneTypeSchool": "โรงเรียน",
+  "phoneTypeOther": "อื่น",
+  "emailTypePersonal": "ส่วนตัว",
+  "emailTypeWork": "งาน",
+  "emailTypeSchool": "โรงเรียน",
+  "emailTypeOther": "อื่น",
+  "addressTypeHome": "บ้าน",
+  "addressTypeWork": "งาน",
+  "addressTypeSchool": "โรงเรียน",
+  "addressTypeBirth": "การเกิด",
+  "linkTypeWebsite": "เว็บไซต์",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "อื่น",
+  "dateTypeCreated": "สร้าง",
+  "dateTypeBirthday": "วันเกิด",
+  "dateTypeMet": "พบกัน",
+  "dateTypeGraduation": "การสำเร็จการศึกษา",
+  "dateTypeMarriage": "การแต่งงาน",
+  "dateTypeOther": "อื่น",
+  "noNameInList": "(ไม่มีชื่อ)",
+  "formAddPhone": "เพิ่มโทรศัพท์",
+  "formAddEmail": "เพิ่มอีเมล",
+  "formAddAddress": "เพิ่มที่อยู่",
+  "formAddLink": "เพิ่มลิงค์",
+  "formAddDate": "เพิ่มวันที่",
+  "formHintPhoneNumber": "หมายเลขโทรศัพท์",
+  "formHintEmail": "อีเมล",
+  "formHintUrl": "URL",
+  "formHintAddress": "ที่อยู่",
+  "formHintSelectDate": "เลือกวันที่",
+  "formHintNotes": "เพิ่มบันทึก",
+  "formCompany": "บริษัท",
+  "formDepartment": "แผนก",
+  "formJobTitle": "ตำแหน่งงาน",
+  "formPrefix": "คำนำหน้า",
+  "formFirstName": "ชื่อ",
+  "formMiddleName": "ชื่อกลาง",
+  "formLastName": "นามสกุล",
+  "formSuffix": "คำต่อท้าย",
+  "formNickname": "ชื่อเล่น",
+  "contactsListTitle": "รายชื่อผู้ติดต่อ",
+  "contactsListEmpty": "ยังไม่มีผู้ติดต่อ",
+  "contactsImportButton": "นำเข้าผู้ติดต่อ",
+  "mergeContactsTitle": "รวมผู้ติดต่อ",
+  "mergeContactsSubtitle": "เลือกผู้ติดต่อที่จะรวมเป็นหนึ่งเดียว",
+  "exportPasswordHint": "รหัสผ่าน",
+  "exportPasswordConfirmHint": "ยืนยันรหัสผ่าน",
+  "exportPasswordHelper": "อย่างน้อย {min} อักขระ",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "รหัสผ่านของไฟล์บีบอัด",
+  "activateDemoAccessCodeLabel": "รหัสการเข้าถึง",
+  "subscriptionExpiredTitle": "การสมัครสมาชิกหมดอายุแล้ว",
+  "subscriptionExpiredBody": "ต่ออายุเพื่อใช้ฟีเจอร์ทั้งหมดต่อไป",
+  "contactsLoadError": "ไม่สามารถโหลดผู้ติดต่อได้",
+  "contactsListError": "ไม่สามารถโหลดผู้ติดต่อได้",
+  "contactsSearchNoResults": "ไม่พบผู้ติดต่อ",
+  "supportPageIntro": "มีคำถาม ข้อเสนอแนะ หรือมีบางอย่างใช้งานไม่ได้? ทีม Savelon อ่านทุกข้อความ",
+  "supportCtaMessageTeam": "ส่งข้อความถึงทีม",
+  "importFromDeviceContacts": "จากรายชื่อติดต่อของคุณ",
+  "importFromFileVcfZip": "จากไฟล์ (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "สร้างรหัสผ่านเฉพาะ",
+  "exportPasswordIrrecoverableHint": "รหัสผ่านนี้กู้คืนไม่ได้",
+  "exportProtectedArchiveCta": "ส่งออกคลังที่ป้องกันไว้",
+  "exportIosSavedFileWarning": "ไฟล์นี้ถูกบันทึกในโฟลเดอร์ Savelon หากคุณลบแอป ไฟล์จะถูกลบด้วย ย้ายไปที่อื่นเพื่อเก็บไว้",
+  "importContactsConfirmBody": "นำเข้า {count} รายชื่อไปยัง Savelon?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "ตั้งรหัสผ่าน",
+  "settingsChangePasswordPageTitle": "เปลี่ยนรหัสผ่าน",
+  "settingsRemovePasswordPageTitle": "ลบรหัสผ่าน",
+  "settingsNewPasswordLabel": "รหัสผ่านใหม่",
+  "settingsConfirmNewPasswordLabel": "ยืนยันรหัสผ่านใหม่",
+  "settingsReenterNewPasswordHelper": "ป้อนรหัสผ่านใหม่อีกครั้ง",
+  "settingsSetPasswordCta": "ตั้งรหัสผ่าน",
+  "settingsChangePasswordCta": "เปลี่ยนรหัสผ่าน",
+  "settingsRemovePasswordCta": "ลบรหัสผ่าน",
+  "settingsCurrentPasswordLabel": "รหัสผ่านปัจจุบัน",
+  "settingsEnterCurrentPasswordHelper": "ป้อนรหัสผ่านปัจจุบัน",
+  "settingsNewPasswordMustDiffer": "รหัสผ่านใหม่ต้องไม่เหมือนรหัสปัจจุบัน",
+  "settingsFailedToSetPassword": "ตั้งรหัสผ่านไม่สำเร็จ: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "เปลี่ยนรหัสผ่านไม่สำเร็จ: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "ลบรหัสผ่านไม่สำเร็จ: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "รหัสผ่านไม่ถูกต้อง",
+  "settingsCurrentPasswordIncorrect": "รหัสผ่านปัจจุบันไม่ถูกต้อง",
+  "settingsCurrentPasswordRequired": "ต้องระบุรหัสผ่านปัจจุบัน",
+  "authPasswordRequiredWhenProtectionEnabled": "ต้องมีรหัสผ่านเมื่อเปิดการป้องกันด้วยรหัสผ่าน",
+  "authPasswordRequiredWhenEnablePassword": "ต้องมีรหัสผ่านเมื่อเปิดตัวเลือกรหัสผ่าน",
+  "authPasswordRequiredForAccount": "บัญชีนี้ต้องใช้รหัสผ่าน",
+  "visit": "เยี่ยมชม",
+  "unlockPro": "ปลดล็อก Pro",
+  "lifetimeThanksTitle": "ขอบคุณที่อยู่กับเรา",
+  "lifetimeThanksSubtitle": "เรามอบสิทธิ์ Pro ตลอดชีพให้คุณ",
+  "lifetimeThanksGift": "ของขวัญ",
+  "lifetimeThanksCta": "รับสิทธิ์ตลอดชีพ"
+}

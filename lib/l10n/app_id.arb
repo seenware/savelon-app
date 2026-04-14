@@ -1,0 +1,447 @@
+{
+  "@@locale": "id",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Kontak Terenkripsi",
+  "navContacts": "Kontak",
+  "navOrganize": "Mengatur",
+  "navSupport": "Dukungan",
+  "navSettings": "Pengaturan",
+  "settingsTitle": "Pengaturan",
+  "language": "Bahasa",
+  "languageSystemDefault": "Bawaan sistem",
+  "organizeTitle": "Mengatur",
+  "supportTitle": "Dukungan",
+  "search": "Cari",
+  "commonCancel": "Batal",
+  "commonDelete": "Hapus",
+  "commonSave": "Simpan",
+  "commonEdit": "Sunting",
+  "commonMerge": "Gabung",
+  "commonSkip": "Lewati",
+  "commonRetry": "Mencoba kembali",
+  "commonClose": "Tutup",
+  "commonNext": "Berikutnya",
+  "commonBack": "Kembali",
+  "commonYes": "Ya",
+  "commonNo": "Tidak",
+  "commonContinue": "Lanjutkan",
+  "commonTryAgain": "Coba Lagi",
+  "commonApply": "Terapkan",
+  "commonDiscard": "Membuang",
+  "commonUnlock": "Buka kunci",
+  "commonLoading": "Memuat...",
+  "commonErrorWithDetails": "Kesalahan: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Kontak Anda. Hanya milik Anda.",
+  "contactNotFound": "Kontak tidak ditemukan",
+  "contactDeleted": "Kontak dihapus",
+  "contactUpdated": "Kontak diperbarui",
+  "contactSaved": "Kontak disimpan",
+  "contactsMerged": "Kontak digabungkan",
+  "deleteContactTitle": "Hapus Kontak",
+  "deleteContactConfirm": "Apakah Anda yakin ingin menghapus {name}?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "Apakah Anda yakin ingin menghapus \"{name}\"?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Gagal menghapus: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Gagal memperbarui: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Gagal menyimpan: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "Tanpa Nama",
+  "noNameTitle": "Tanpa Nama",
+  "noNameBody": "Kontak ini tidak memiliki nama. Tetap simpan?",
+  "discardChangesTitle": "Hapus perubahan?",
+  "discardChangesBody": "Anda memiliki perubahan yang belum disimpan dan akan hilang.",
+  "newContact": "Kontak Baru",
+  "editContact": "Sunting Kontak",
+  "addMore": "Tambahkan lebih banyak",
+  "addNameFieldsTitle": "Tambahkan Bidang Nama",
+  "call": "Panggil",
+  "sendEmail": "Kirim Email",
+  "copy": "Salin",
+  "copiedToClipboard": "Disalin ke papan klip",
+  "importContacts": "Impor Kontak",
+  "importing": "Mengimpor...",
+  "importedCount": "Kontak {count} yang diimpor",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "Kontak {imported} yang diimpor, {skipped} dilewati",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Gagal mengimpor kontak",
+  "noContactsToImport": "Tidak ada kontak untuk diimpor.",
+  "contactsPermissionRequiredImport": "Izin kontak diperlukan untuk mengimpor kontak",
+  "importDialogTitle": "Impor Kontak",
+  "importDialogBody": "Impor kontak dari perangkat atau file Anda?",
+  "importSourceTitle": "Impor",
+  "importZipPasswordTitle": "Kata sandi arsip",
+  "importZipPasswordChecking": "Memeriksa...",
+  "exportContacts": "Ekspor Kontak",
+  "exportContactsTitle": "Ekspor kontak",
+  "exportSubtitle": "Pilih bagaimana Anda ingin menyimpan kontak Anda.",
+  "exportFormatVcfTitle": "Simpan sebagai .vcf",
+  "exportFormatVcfSubtitle": "Satu file yang berfungsi dengan Apple Kontak, Google Kontak, dan banyak lagi.",
+  "exportFormatZipTitle": "Simpan dalam arsip yang dilindungi kata sandi",
+  "exportFormatZipSubtitle": ".zip dengan .vcf di dalamnya — memerlukan kata sandi untuk membukanya.",
+  "exportProtectedTitle": "Ekspor dilindungi",
+  "exportCompleteTitle": "Ekspor selesai",
+  "stillLoadingContacts": "Masih memuat kontak. Harap tunggu.",
+  "couldNotLoadContacts": "Tidak dapat memuat kontak.",
+  "passwordChangedSuccess": "Kata sandi berhasil diubah",
+  "passwordProtectionEnabled": "Perlindungan kata sandi berhasil diaktifkan",
+  "passwordProtectionRemoved": "Perlindungan kata sandi berhasil dihapus",
+  "removePasswordProtectionButton": "Hapus Perlindungan Kata Sandi",
+  "changePasswordTitle": "Ubah Kata Sandi",
+  "setPasswordTitle": "Tetapkan Kata Sandi",
+  "passwordSettingsChangeTitle": "Ubah Kata Sandi",
+  "passwordSettingsSetTitle": "Tetapkan Kata Sandi",
+  "privacyPolicy": "Kebijakan Privasi",
+  "privacyPolicyOpenFailed": "Gagal membuka kebijakan privasi: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Setel ulang aplikasi",
+  "resetAppConfirmTitle": "Hapus semua kontak, dan setel ulang aplikasi?",
+  "resetAppCannotUndo": "Hal ini tidak dapat dibatalkan",
+  "resetAppError": "Kesalahan saat menyetel ulang aplikasi: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Pilih gambar baru",
+  "photoPickerRemoveImage": "Hapus gambar",
+  "onboardingHeadline1": "Siapa yang dapat mengakses kontak Anda?",
+  "onboardingSubline1": "Beberapa aplikasi mengunggahnya ke cloud. Hal ini dapat menimbulkan lebih banyak risiko privasi.",
+  "onboardingHeadline2": "Banyak aplikasi yang meminta akses kontak",
+  "onboardingSubline2": "Ini bisa berguna — tetapi kontak penting harus tetap bersifat pribadi.",
+  "onboardingHeadline3": "Pisahkan kontak sensitif",
+  "onboardingSubline3": "Kami menyarankan untuk menyimpan kontak penting dan jarang digunakan di luar aplikasi kontak utama Anda.",
+  "onboardingHeadline4": "Lindungi kontak penting Anda",
+  "onboardingSubline4": "Savelon menyimpannya di perangkat Anda, terenkripsi dan pribadi dari aplikasi lain.",
+  "onboardingGetStarted": "Memulai",
+  "onboardingNext": "Berikutnya",
+  "activateDemoTitle": "Aktifkan Demo",
+  "activateDemoCancel": "Batal",
+  "demoAccessGranted": "Anda sekarang memiliki akses demo hingga {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Tambahkan perlindungan kata sandi",
+  "setupPasswordShortError": "Gunakan minimal 4 karakter",
+  "setupPasswordMismatch": "Kata sandi tidak cocok",
+  "setupPasswordFailedSeed": "Gagal membuat seed. Silakan coba lagi.",
+  "setupPasswordFailedInit": "Gagal melakukan inisialisasi. Kesalahan: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Kontak Anda akan tetap dienkripsi dengan kuat oleh kunci rahasia panjang, yang hanya disimpan di perangkat Anda. Namun kata sandi menambah perlindungan ekstra.",
+  "setupPasswordLabel": "Kata sandi",
+  "setupPasswordHelper": "Setidaknya 4 karakter",
+  "setupPasswordConfirmLabel": "Konfirmasi Kata Sandi",
+  "setupPasswordWarning": "Kata sandi ini tidak dapat dipulihkan. Tuliskan dan simpan dengan aman!",
+  "setupPasswordPageTitle": "Buat Kata Sandi",
+  "setupPasswordNext": "Berikutnya",
+  "setupPasswordSkip": "Lewati",
+  "confirmationCheckboxTitle": "Saya memahami kata sandi saya tidak dapat dipulihkan",
+  "loginWelcomeBack": "Selamat Datang kembali",
+  "loginPasswordLabel": "Kata sandi",
+  "loginUnlock": "Buka kunci",
+  "loginPasswordRequired": "Masukkan kata sandi Anda",
+  "loginIncorrectPassword": "Kata sandi salah. Silakan coba lagi.",
+  "paywallNoSubscription": "Tidak ditemukan langganan aktif. Silakan membeli untuk melanjutkan.",
+  "paywallNoInternetTitle": "Tidak Ada Koneksi Internet",
+  "paywallNoInternetBody": "Koneksi internet diperlukan untuk mengakses aplikasi untuk pertama kalinya. Silakan sambungkan dan coba lagi.",
+  "paywallStoreUnavailableTitle": "Toko Tidak Tersedia",
+  "paywallStoreUnavailableBody": "Tidak dapat memuat opsi berlangganan. Silakan coba lagi.",
+  "subscriptionVerifyTitle": "Verifikasi Langganan",
+  "subscriptionSoftWarningTitle": "Verifikasi Langganan Diperlukan",
+  "subscriptionContinueAnyway": "Tetap Lanjutkan",
+  "subscriptionLastVerified": "Terakhir diverifikasi {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "Langganan tidak dapat diverifikasi secara online.",
+  "subscriptionAccessUntil": "Akses Anda berlanjut hingga {date} — sambungkan sebelum itu untuk memverifikasi.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Hubungkan ke internet untuk memverifikasi langganan Anda.",
+  "organizeNoDuplicates": "Tidak ada potensi duplikat yang ditemukan",
+  "organizeSkippedShownAgain": "Duplikat yang dilewati akan ditampilkan lagi.",
+  "organizeShowSkippedTooltip": "Tampilkan lagi grup duplikat yang dilewati",
+  "organizeFailedToLoad": "Gagal memuat grup duplikat: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} duplikat",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Ketuk untuk melihat detailnya",
+  "organizeConflictMostlyIdentical": "Sebagian besar identik",
+  "organizeConflictFieldVariants": "{field}: {count} varian",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "nama",
+  "fieldLabelCompany": "perusahaan",
+  "fieldLabelPhone": "telepon",
+  "fieldLabelEmail": "e-mail",
+  "importErrorUnsupportedSource": "Impor tidak tersedia di sini.",
+  "importErrorPermissionDenied": "Izin kontak diperlukan untuk mengimpor kontak.",
+  "importErrorNoContacts": "Tidak ada kontak untuk diimpor.",
+  "importErrorUnsupportedFileType": "Silakan pilih file .vcf atau arsip .zip.",
+  "importErrorInvalidFile": "File yang dipilih tidak valid atau tidak dapat dibaca.",
+  "importErrorWrongPassword": "Kata sandi arsip salah. Silakan coba lagi.",
+  "importErrorNoVcfInArchive": "Tidak ada file .vcf yang ditemukan di arsip yang dipilih.",
+  "importErrorFailed": "Gagal mengimpor kontak: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Kontak belum tersedia.",
+  "exportErrorNoContacts": "Tidak ada kontak untuk diekspor.",
+  "exportErrorPasswordRequired": "Kata sandi diperlukan untuk ekspor yang dilindungi.",
+  "exportErrorPasswordTooShort": "Ekspor yang dilindungi memerlukan kata sandi minimal {min} karakter.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Ekspor gagal: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "Pengunduhan dimulai.",
+  "exportNoticeFileSaved": "File berhasil disimpan.",
+  "phoneTypeMobile": "seluler",
+  "phoneTypeHome": "rumah",
+  "phoneTypeWork": "bekerja",
+  "phoneTypeSchool": "sekolah",
+  "phoneTypeOther": "lainnya",
+  "emailTypePersonal": "pribadi",
+  "emailTypeWork": "bekerja",
+  "emailTypeSchool": "sekolah",
+  "emailTypeOther": "lainnya",
+  "addressTypeHome": "Rumah",
+  "addressTypeWork": "Bekerja",
+  "addressTypeSchool": "Sekolah",
+  "addressTypeBirth": "Kelahiran",
+  "linkTypeWebsite": "Situs web",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Lainnya",
+  "dateTypeCreated": "Dibuat",
+  "dateTypeBirthday": "Hari ulang tahun",
+  "dateTypeMet": "Bertemu",
+  "dateTypeGraduation": "Kelulusan",
+  "dateTypeMarriage": "Pernikahan",
+  "dateTypeOther": "Lainnya",
+  "noNameInList": "(Tidak ada nama)",
+  "formAddPhone": "Tambahkan telepon",
+  "formAddEmail": "Tambahkan email",
+  "formAddAddress": "Tambahkan alamat",
+  "formAddLink": "Tambahkan tautan",
+  "formAddDate": "Tambahkan tanggal",
+  "formHintPhoneNumber": "Nomor telepon",
+  "formHintEmail": "E-mail",
+  "formHintUrl": "URL",
+  "formHintAddress": "Alamat",
+  "formHintSelectDate": "Pilih tanggal",
+  "formHintNotes": "Tambahkan catatan",
+  "formCompany": "Perusahaan",
+  "formDepartment": "Departemen",
+  "formJobTitle": "Jabatan",
+  "formPrefix": "Awalan",
+  "formFirstName": "Nama depan",
+  "formMiddleName": "Nama tengah",
+  "formLastName": "Nama Belakang",
+  "formSuffix": "Akhiran",
+  "formNickname": "Nama panggilan",
+  "contactsListTitle": "Kontak",
+  "contactsListEmpty": "Belum ada kontak",
+  "contactsImportButton": "Impor Kontak",
+  "mergeContactsTitle": "Gabungkan kontak",
+  "mergeContactsSubtitle": "Pilih kontak untuk digabungkan menjadi satu",
+  "exportPasswordHint": "Kata sandi",
+  "exportPasswordConfirmHint": "Konfirmasikan kata sandi",
+  "exportPasswordHelper": "Setidaknya {min} karakter",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Kata sandi arsip",
+  "activateDemoAccessCodeLabel": "Kode akses",
+  "subscriptionExpiredTitle": "Langganan telah habis masa berlakunya",
+  "subscriptionExpiredBody": "Perpanjang untuk terus menggunakan semua fitur.",
+  "contactsLoadError": "Tidak dapat memuat kontak.",
+  "contactsListError": "Tidak dapat memuat kontak.",
+  "contactsSearchNoResults": "Tidak ada kontak",
+  "supportPageIntro": "Ada pertanyaan, masukan, atau sesuatu tidak berfungsi? Tim Savelon membaca setiap pesan.",
+  "supportCtaMessageTeam": "Hubungi tim",
+  "importFromDeviceContacts": "Dari kontak Anda",
+  "importFromFileVcfZip": "Dari file (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Buat kata sandi unik",
+  "exportPasswordIrrecoverableHint": "Kata sandi ini tidak dapat dipulihkan.",
+  "exportProtectedArchiveCta": "Ekspor arsip terlindungi",
+  "exportIosSavedFileWarning": "File ini disimpan di folder Savelon. Jika Anda menghapus aplikasi, file ini juga akan terhapus. Pindahkan ke lokasi lain untuk menyimpannya.",
+  "importContactsConfirmBody": "Impor {count} kontak ke Savelon?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Atur kata sandi",
+  "settingsChangePasswordPageTitle": "Ubah kata sandi",
+  "settingsRemovePasswordPageTitle": "Hapus kata sandi",
+  "settingsNewPasswordLabel": "Kata sandi baru",
+  "settingsConfirmNewPasswordLabel": "Konfirmasi kata sandi baru",
+  "settingsReenterNewPasswordHelper": "Masukkan lagi kata sandi baru Anda",
+  "settingsSetPasswordCta": "Atur kata sandi",
+  "settingsChangePasswordCta": "Ubah kata sandi",
+  "settingsRemovePasswordCta": "Hapus kata sandi",
+  "settingsCurrentPasswordLabel": "Kata sandi saat ini",
+  "settingsEnterCurrentPasswordHelper": "Masukkan kata sandi saat ini",
+  "settingsNewPasswordMustDiffer": "Kata sandi baru harus berbeda dari yang saat ini",
+  "settingsFailedToSetPassword": "Gagal mengatur kata sandi: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Gagal mengubah kata sandi: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Gagal menghapus kata sandi: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Kata sandi tidak valid",
+  "settingsCurrentPasswordIncorrect": "Kata sandi saat ini salah",
+  "settingsCurrentPasswordRequired": "Kata sandi saat ini wajib diisi",
+  "authPasswordRequiredWhenProtectionEnabled": "Kata sandi diperlukan saat perlindungan kata sandi diaktifkan",
+  "authPasswordRequiredWhenEnablePassword": "Kata sandi diperlukan saat mengaktifkan opsi kata sandi",
+  "authPasswordRequiredForAccount": "Kata sandi diperlukan untuk akun ini",
+  "visit": "Kunjungi",
+  "unlockPro": "Buka Pro",
+  "lifetimeThanksTitle": "Terima kasih telah bersama kami",
+  "lifetimeThanksSubtitle": "Kami menghadiahkan akses Pro seumur hidup untuk Anda",
+  "lifetimeThanksGift": "hadiah",
+  "lifetimeThanksCta": "Klaim akses seumur hidup"
+}

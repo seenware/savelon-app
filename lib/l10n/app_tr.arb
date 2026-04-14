@@ -1,0 +1,447 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Şifrelenmiş Kişiler",
+  "navContacts": "Kişiler",
+  "navOrganize": "Düzenle",
+  "navSupport": "Destek",
+  "navSettings": "Ayarlar",
+  "settingsTitle": "Ayarlar",
+  "language": "Dil",
+  "languageSystemDefault": "Sistem varsayılanı",
+  "organizeTitle": "Düzenle",
+  "supportTitle": "Destek",
+  "search": "Ara",
+  "commonCancel": "İptal",
+  "commonDelete": "Sil",
+  "commonSave": "Kaydet",
+  "commonEdit": "Düzenle",
+  "commonMerge": "Birleştir",
+  "commonSkip": "Atla",
+  "commonRetry": "Yeniden dene",
+  "commonClose": "Kapat",
+  "commonNext": "Sonraki",
+  "commonBack": "Geri gitmek",
+  "commonYes": "Evet",
+  "commonNo": "Hayır",
+  "commonContinue": "Devam et",
+  "commonTryAgain": "Tekrar deneyin",
+  "commonApply": "Uygula",
+  "commonDiscard": "Vazgeç",
+  "commonUnlock": "Kilidi aç",
+  "commonLoading": "Yükleniyor...",
+  "commonErrorWithDetails": "Hata: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Kişileriniz. Yalnızca sizin.",
+  "contactNotFound": "Kişi bulunamadı",
+  "contactDeleted": "Kişi silindi",
+  "contactUpdated": "Kişi güncellendi",
+  "contactSaved": "Kişi kaydedildi",
+  "contactsMerged": "Kişiler birleştirildi",
+  "deleteContactTitle": "Kişiyi Sil",
+  "deleteContactConfirm": "{name}'ı silmek istediğinizden emin misiniz?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "\"{name}\" kişisini silmek istediğinizden emin misiniz?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Silinemedi: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Güncellenemedi: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Kaydedilemedi: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "İsim Yok",
+  "noNameTitle": "İsim Yok",
+  "noNameBody": "Bu kişinin adı yok. Yine de kaydedilsin mi?",
+  "discardChangesTitle": "Değişiklikler silinsin mi?",
+  "discardChangesBody": "Kaybedilecek kaydedilmemiş değişiklikleriniz var.",
+  "newContact": "Yeni Kişi",
+  "editContact": "Kişiyi Düzenle",
+  "addMore": "Daha fazlasını ekle",
+  "addNameFieldsTitle": "Ad Alanları Ekle",
+  "call": "Ara",
+  "sendEmail": "E-posta Gönder",
+  "copy": "Kopyala",
+  "copiedToClipboard": "Panoya kopyalandı",
+  "importContacts": "Kişileri İçe Aktar",
+  "importing": "İçe aktarılıyor...",
+  "importedCount": "{count} kişi içe aktarıldı",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "{imported} kişi içe aktarıldı, {skipped} atlandı",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Kişiler içe aktarılamadı",
+  "noContactsToImport": "İçe aktarılacak kişi yok.",
+  "contactsPermissionRequiredImport": "Kişileri içe aktarmak için Kişiler izni gereklidir",
+  "importDialogTitle": "Kişileri İçe Aktar",
+  "importDialogBody": "Kişileri cihazınızdan mı yoksa bir dosyadan mı aktarıyorsunuz?",
+  "importSourceTitle": "İçe aktar",
+  "importZipPasswordTitle": "Arşiv parolası",
+  "importZipPasswordChecking": "Kontrol ediliyor...",
+  "exportContacts": "Kişileri Dışa Aktar",
+  "exportContactsTitle": "Kişileri dışa aktar",
+  "exportSubtitle": "Kişilerinizi nasıl kaydetmek istediğinizi seçin.",
+  "exportFormatVcfTitle": ".vcf olarak kaydet",
+  "exportFormatVcfSubtitle": "Apple Kişiler, Google Kişiler ve daha fazlasıyla çalışan tek bir dosya.",
+  "exportFormatZipTitle": "Parola korumalı arşive kaydet",
+  "exportFormatZipSubtitle": "İçinde .vcf bulunan bir .zip — onu açmak için bir şifre gerekir.",
+  "exportProtectedTitle": "Korumalı dışa aktarma",
+  "exportCompleteTitle": "Dışa aktarma tamamlandı",
+  "stillLoadingContacts": "Kişiler hâlâ yükleniyor. Lütfen bekleyin.",
+  "couldNotLoadContacts": "Kişiler yüklenemedi.",
+  "passwordChangedSuccess": "Şifre başarıyla değiştirildi",
+  "passwordProtectionEnabled": "Şifre koruması başarıyla etkinleştirildi",
+  "passwordProtectionRemoved": "Şifre koruması başarıyla kaldırıldı",
+  "removePasswordProtectionButton": "Şifre Korumasını Kaldır",
+  "changePasswordTitle": "Şifre değiştir",
+  "setPasswordTitle": "Şifreyi Ayarla",
+  "passwordSettingsChangeTitle": "Şifre değiştir",
+  "passwordSettingsSetTitle": "Şifreyi Ayarla",
+  "privacyPolicy": "Gizlilik Politikası",
+  "privacyPolicyOpenFailed": "Gizlilik politikası açılamadı: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Uygulamayı sıfırla",
+  "resetAppConfirmTitle": "Tüm kişiler silinip uygulama sıfırlansın mı?",
+  "resetAppCannotUndo": "Bu geri alınamaz",
+  "resetAppError": "Uygulama sıfırlanırken hata oluştu: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Yeni resim seç",
+  "photoPickerRemoveImage": "Resmi kaldır",
+  "onboardingHeadline1": "Kişilerinize kimler erişebilir?",
+  "onboardingSubline1": "Bazı uygulamalar bunları buluta yükler. Bu daha fazla gizlilik riski oluşturabilir.",
+  "onboardingHeadline2": "Birçok uygulama kişi erişimi istiyor",
+  "onboardingSubline2": "Yararlı olabilir ancak önemli kişiler gizli kalmalıdır.",
+  "onboardingHeadline3": "Hassas kişileri ayrı tutun",
+  "onboardingSubline3": "Önemli ve nadiren kullanılan kişileri ana kişiler uygulamanızın dışında saklamanızı öneririz.",
+  "onboardingHeadline4": "Önemli kişilerinizi koruyun",
+  "onboardingSubline4": "Savelon bunları cihazınızda şifrelenmiş ve diğer uygulamalardan özel olarak saklar.",
+  "onboardingGetStarted": "Başlayın",
+  "onboardingNext": "Sonraki",
+  "activateDemoTitle": "Demoyu Etkinleştir",
+  "activateDemoCancel": "İptal",
+  "demoAccessGranted": "Artık {dateTime} tarihine kadar demo erişiminiz var",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Şifre koruması ekleyin",
+  "setupPasswordShortError": "En az 4 karakter kullanın",
+  "setupPasswordMismatch": "Şifreler eşleşmiyor",
+  "setupPasswordFailedSeed": "Tohum oluşturulamadı. Lütfen tekrar deneyin.",
+  "setupPasswordFailedInit": "Başlatılamadı. Hata: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Kişileriniz yalnızca cihazınızda saklanan uzun bir gizli anahtarla güçlü bir şekilde şifrelenmeye devam edecektir. Ancak şifre ekstra koruma sağlar.",
+  "setupPasswordLabel": "Şifre",
+  "setupPasswordHelper": "En az 4 karakter",
+  "setupPasswordConfirmLabel": "Şifreyi Onayla",
+  "setupPasswordWarning": "Bu şifre kurtarılamaz. Bunu bir yere yazın ve güvende tutun!",
+  "setupPasswordPageTitle": "Şifre Oluştur",
+  "setupPasswordNext": "Sonraki",
+  "setupPasswordSkip": "Atla",
+  "confirmationCheckboxTitle": "Şifremin kurtarılamayacağını anlıyorum",
+  "loginWelcomeBack": "Tekrar hoşgeldiniz",
+  "loginPasswordLabel": "Şifre",
+  "loginUnlock": "Kilidi aç",
+  "loginPasswordRequired": "Şifrenizi girin",
+  "loginIncorrectPassword": "Yanlış şifre. Lütfen tekrar deneyin.",
+  "paywallNoSubscription": "Aktif abonelik bulunamadı. Devam etmek için lütfen satın alın.",
+  "paywallNoInternetTitle": "İnternet Bağlantısı Yok",
+  "paywallNoInternetBody": "Uygulamaya ilk kez erişmek için internet bağlantısı gereklidir. Lütfen bağlanın ve tekrar deneyin.",
+  "paywallStoreUnavailableTitle": "Mağaza Kullanılamıyor",
+  "paywallStoreUnavailableBody": "Abonelik seçenekleri yüklenemiyor. Lütfen tekrar deneyin.",
+  "subscriptionVerifyTitle": "Aboneliği Doğrula",
+  "subscriptionSoftWarningTitle": "Abonelik Doğrulaması Gerekiyor",
+  "subscriptionContinueAnyway": "Yine de Devam Et",
+  "subscriptionLastVerified": "Son doğrulama {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "Abonelik çevrimiçi olarak doğrulanamadı.",
+  "subscriptionAccessUntil": "Erişiminiz {date} tarihine kadar devam eder — doğrulamak için bu tarihten önce bağlanın.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Aboneliğinizi doğrulamak için internete bağlanın.",
+  "organizeNoDuplicates": "Potansiyel kopya bulunamadı",
+  "organizeSkippedShownAgain": "Atlanan kopyalar tekrar gösterilir.",
+  "organizeShowSkippedTooltip": "Atlanan yinelenen grupları tekrar göster",
+  "organizeFailedToLoad": "Yinelenen gruplar yüklenemedi: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} kopya",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Ayrıntıları görüntülemek için dokunun",
+  "organizeConflictMostlyIdentical": "Çoğunlukla aynı",
+  "organizeConflictFieldVariants": "{field}: {count} varyant",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "isim",
+  "fieldLabelCompany": "şirket",
+  "fieldLabelPhone": "telefon",
+  "fieldLabelEmail": "e-posta",
+  "importErrorUnsupportedSource": "İçe aktarma burada kullanılamıyor.",
+  "importErrorPermissionDenied": "Kişileri içe aktarmak için Kişilerin izni gereklidir.",
+  "importErrorNoContacts": "İçe aktarılacak kişi yok.",
+  "importErrorUnsupportedFileType": "Lütfen bir .vcf dosyası veya .zip arşivi seçin.",
+  "importErrorInvalidFile": "Seçilen dosya geçersiz veya okunamıyor.",
+  "importErrorWrongPassword": "Yanlış arşiv şifresi. Lütfen tekrar deneyin.",
+  "importErrorNoVcfInArchive": "Seçilen arşivde .vcf dosyası bulunamadı.",
+  "importErrorFailed": "Kişiler içe aktarılamadı: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Kişiler henüz kullanılamıyor.",
+  "exportErrorNoContacts": "Dışa aktarılacak kişi yok.",
+  "exportErrorPasswordRequired": "Korumalı bir dışa aktarma için parola gereklidir.",
+  "exportErrorPasswordTooShort": "Korumalı dışa aktarma, en az {min} karakterden oluşan bir parola gerektirir.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Dışa aktarma başarısız oldu: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "İndirme başladı.",
+  "exportNoticeFileSaved": "Dosya başarıyla kaydedildi.",
+  "phoneTypeMobile": "mobil",
+  "phoneTypeHome": "Ev",
+  "phoneTypeWork": "iş",
+  "phoneTypeSchool": "okul",
+  "phoneTypeOther": "diğer",
+  "emailTypePersonal": "kişisel",
+  "emailTypeWork": "iş",
+  "emailTypeSchool": "okul",
+  "emailTypeOther": "diğer",
+  "addressTypeHome": "Ev",
+  "addressTypeWork": "İş",
+  "addressTypeSchool": "Okul",
+  "addressTypeBirth": "Doğum",
+  "linkTypeWebsite": "Web sitesi",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Diğer",
+  "dateTypeCreated": "Oluşturuldu",
+  "dateTypeBirthday": "Doğum günü",
+  "dateTypeMet": "Buluştu",
+  "dateTypeGraduation": "Mezuniyet",
+  "dateTypeMarriage": "Evlilik",
+  "dateTypeOther": "Diğer",
+  "noNameInList": "(İsim yok)",
+  "formAddPhone": "Telefon ekle",
+  "formAddEmail": "E-posta ekle",
+  "formAddAddress": "Adres ekle",
+  "formAddLink": "Bağlantı ekle",
+  "formAddDate": "Tarih ekle",
+  "formHintPhoneNumber": "Telefon numarası",
+  "formHintEmail": "E-posta",
+  "formHintUrl": "URL'si",
+  "formHintAddress": "Adres",
+  "formHintSelectDate": "Tarih seçin",
+  "formHintNotes": "Not ekle",
+  "formCompany": "Şirket",
+  "formDepartment": "Departman",
+  "formJobTitle": "İş unvanı",
+  "formPrefix": "Önek",
+  "formFirstName": "İlk adı",
+  "formMiddleName": "İkinci ad",
+  "formLastName": "Soy isim",
+  "formSuffix": "sonek",
+  "formNickname": "Takma ad",
+  "contactsListTitle": "Kişiler",
+  "contactsListEmpty": "Henüz kişi yok",
+  "contactsImportButton": "Kişileri İçe Aktar",
+  "mergeContactsTitle": "Kişileri birleştir",
+  "mergeContactsSubtitle": "Tek bir kişide birleştirilecek kişileri seçin",
+  "exportPasswordHint": "Şifre",
+  "exportPasswordConfirmHint": "Şifreyi onayla",
+  "exportPasswordHelper": "En az {min} karakter",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Arşiv parolası",
+  "activateDemoAccessCodeLabel": "Erişim kodu",
+  "subscriptionExpiredTitle": "Aboneliğin süresi doldu",
+  "subscriptionExpiredBody": "Tüm özellikleri kullanmaya devam etmek için yenileyin.",
+  "contactsLoadError": "Kişiler yüklenemedi.",
+  "contactsListError": "Kişiler yüklenemedi.",
+  "contactsSearchNoResults": "Kişi bulunamadı",
+  "supportPageIntro": "Sorularınız, geri bildiriminiz veya bir sorun mu var? Savelon ekibi her mesajı okur.",
+  "supportCtaMessageTeam": "Ekibe yazın",
+  "importFromDeviceContacts": "Kişilerinizden",
+  "importFromFileVcfZip": "Dosyadan (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Benzersiz şifre oluştur",
+  "exportPasswordIrrecoverableHint": "Bu şifre kurtarılamaz.",
+  "exportProtectedArchiveCta": "Korumalı arşivi dışa aktar",
+  "exportIosSavedFileWarning": "Bu dosya Savelon klasörüne kaydedilir. Uygulamayı silerseniz dosya da silinir. Saklamak için başka bir konuma taşıyın.",
+  "importContactsConfirmBody": "{count} kişi Savelon'a aktarılsın mı?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Şifre belirle",
+  "settingsChangePasswordPageTitle": "Şifreyi değiştir",
+  "settingsRemovePasswordPageTitle": "Şifreyi kaldır",
+  "settingsNewPasswordLabel": "Yeni şifre",
+  "settingsConfirmNewPasswordLabel": "Yeni şifreyi onayla",
+  "settingsReenterNewPasswordHelper": "Yeni şifrenizi tekrar girin",
+  "settingsSetPasswordCta": "Şifre belirle",
+  "settingsChangePasswordCta": "Şifreyi değiştir",
+  "settingsRemovePasswordCta": "Şifreyi kaldır",
+  "settingsCurrentPasswordLabel": "Mevcut şifre",
+  "settingsEnterCurrentPasswordHelper": "Mevcut şifrenizi girin",
+  "settingsNewPasswordMustDiffer": "Yeni şifre mevcut şifreden farklı olmalıdır",
+  "settingsFailedToSetPassword": "Şifre belirlenemedi: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Şifre değiştirilemedi: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Şifre kaldırılamadı: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Şifre geçersiz",
+  "settingsCurrentPasswordIncorrect": "Mevcut şifre yanlış",
+  "settingsCurrentPasswordRequired": "Mevcut şifre gerekli",
+  "authPasswordRequiredWhenProtectionEnabled": "Şifre koruması açıkken şifre gerekir",
+  "authPasswordRequiredWhenEnablePassword": "Şifre seçeneğini açarken şifre gerekir",
+  "authPasswordRequiredForAccount": "Bu hesap için şifre gerekir",
+  "visit": "Ziyaret et",
+  "unlockPro": "Pro kilidini aç",
+  "lifetimeThanksTitle": "Bizimle olduğunuz için teşekkür ederiz",
+  "lifetimeThanksSubtitle": "Size ömür boyu Pro erişimi hediye ediyoruz",
+  "lifetimeThanksGift": "hediye",
+  "lifetimeThanksCta": "Ömür boyu erişimi al"
+}

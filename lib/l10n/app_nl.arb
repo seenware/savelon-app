@@ -1,0 +1,447 @@
+{
+  "@@locale": "nl",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Versleutelde contacten",
+  "navContacts": "Contacten",
+  "navOrganize": "Organiseren",
+  "navSupport": "Ondersteuning",
+  "navSettings": "Instellingen",
+  "settingsTitle": "Instellingen",
+  "language": "Taal",
+  "languageSystemDefault": "Systeemstandaard",
+  "organizeTitle": "Organiseren",
+  "supportTitle": "Ondersteuning",
+  "search": "Zoeken",
+  "commonCancel": "Annuleren",
+  "commonDelete": "Verwijderen",
+  "commonSave": "Opslaan",
+  "commonEdit": "Bewerken",
+  "commonMerge": "Samenvoegen",
+  "commonSkip": "Overslaan",
+  "commonRetry": "Opnieuw proberen",
+  "commonClose": "Sluiten",
+  "commonNext": "Volgende",
+  "commonBack": "Ga terug",
+  "commonYes": "Ja",
+  "commonNo": "Nee",
+  "commonContinue": "Doorgaan",
+  "commonTryAgain": "Probeer het opnieuw",
+  "commonApply": "Toepassen",
+  "commonDiscard": "Weggooien",
+  "commonUnlock": "Ontgrendelen",
+  "commonLoading": "Laden...",
+  "commonErrorWithDetails": "Fout: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Jouw contacten. Alleen de jouwe.",
+  "contactNotFound": "Contact niet gevonden",
+  "contactDeleted": "Contact verwijderd",
+  "contactUpdated": "Contact bijgewerkt",
+  "contactSaved": "Contact opgeslagen",
+  "contactsMerged": "Contacten samengevoegd",
+  "deleteContactTitle": "Contact verwijderen",
+  "deleteContactConfirm": "Weet u zeker dat u {name} wilt verwijderen?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "Weet u zeker dat u \"{name}\" wilt verwijderen?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Kan niet verwijderen: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Kan niet bijwerken: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Kan niet opslaan: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "Geen naam",
+  "noNameTitle": "Geen naam",
+  "noNameBody": "Dit contact heeft geen naam. Toch opslaan?",
+  "discardChangesTitle": "Wijzigingen weggooien?",
+  "discardChangesBody": "Er zijn niet-opgeslagen wijzigingen die verloren gaan.",
+  "newContact": "Nieuw contact",
+  "editContact": "Contact bewerken",
+  "addMore": "Voeg meer toe",
+  "addNameFieldsTitle": "Naamvelden toevoegen",
+  "call": "Bellen",
+  "sendEmail": "E-mail verzenden",
+  "copy": "Kopiëren",
+  "copiedToClipboard": "Gekopieerd naar klembord",
+  "importContacts": "Contacten importeren",
+  "importing": "Importeren...",
+  "importedCount": "{count} contacten geïmporteerd",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "Geïmporteerde {imported} contacten, {skipped} overgeslagen",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Kan contacten niet importeren",
+  "noContactsToImport": "Er zijn geen contacten om te importeren.",
+  "contactsPermissionRequiredImport": "Om contacten te importeren is toestemming voor contacten vereist",
+  "importDialogTitle": "Contacten importeren",
+  "importDialogBody": "Contacten importeren vanaf uw apparaat of een bestand?",
+  "importSourceTitle": "Importeren",
+  "importZipPasswordTitle": "Archiefwachtwoord",
+  "importZipPasswordChecking": "Controleren...",
+  "exportContacts": "Contacten exporteren",
+  "exportContactsTitle": "Contacten exporteren",
+  "exportSubtitle": "Kies hoe u uw contacten wilt opslaan.",
+  "exportFormatVcfTitle": "Opslaan als .vcf",
+  "exportFormatVcfSubtitle": "Eén bestand dat werkt met Apple Contacten, Google Contacten en meer.",
+  "exportFormatZipTitle": "Opslaan in een met een wachtwoord beveiligd archief",
+  "exportFormatZipSubtitle": "Een .zip met uw .vcf erin — u hebt een wachtwoord nodig om het te openen.",
+  "exportProtectedTitle": "Beschermde export",
+  "exportCompleteTitle": "Exporteren voltooid",
+  "stillLoadingContacts": "Contacten worden nog steeds geladen. Wacht alstublieft.",
+  "couldNotLoadContacts": "Kan contacten niet laden.",
+  "passwordChangedSuccess": "Wachtwoord succesvol gewijzigd",
+  "passwordProtectionEnabled": "Wachtwoordbeveiliging is succesvol ingeschakeld",
+  "passwordProtectionRemoved": "Wachtwoordbeveiliging is succesvol verwijderd",
+  "removePasswordProtectionButton": "Wachtwoordbeveiliging verwijderen",
+  "changePasswordTitle": "Wachtwoord wijzigen",
+  "setPasswordTitle": "Wachtwoord instellen",
+  "passwordSettingsChangeTitle": "Wachtwoord wijzigen",
+  "passwordSettingsSetTitle": "Wachtwoord instellen",
+  "privacyPolicy": "Privacybeleid",
+  "privacyPolicyOpenFailed": "Kan privacybeleid niet openen: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Reset de app",
+  "resetAppConfirmTitle": "Alle contacten verwijderen en de app resetten?",
+  "resetAppCannotUndo": "Dit kan niet ongedaan worden gemaakt",
+  "resetAppError": "Fout bij het opnieuw instellen van de app: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Selecteer nieuwe afbeelding",
+  "photoPickerRemoveImage": "Afbeelding verwijderen",
+  "onboardingHeadline1": "Wie heeft toegang tot uw contacten?",
+  "onboardingSubline1": "Sommige apps uploaden ze naar de cloud. Dit kan meer privacyrisico’s met zich meebrengen.",
+  "onboardingHeadline2": "Veel apps vragen om contacttoegang",
+  "onboardingSubline2": "Het kan nuttig zijn, maar belangrijke contacten moeten privé blijven.",
+  "onboardingHeadline3": "Houd gevoelige contacten gescheiden",
+  "onboardingSubline3": "We raden aan om belangrijke en zelden gebruikte contacten buiten uw hoofdcontacten-app op te slaan.",
+  "onboardingHeadline4": "Bescherm uw belangrijke contacten",
+  "onboardingSubline4": "Savelon slaat ze op uw apparaat op, versleuteld en afgeschermd van andere apps.",
+  "onboardingGetStarted": "Aan de slag",
+  "onboardingNext": "Volgende",
+  "activateDemoTitle": "Activeer de demo",
+  "activateDemoCancel": "Annuleren",
+  "demoAccessGranted": "U hebt nu demo-toegang tot {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Voeg wachtwoordbeveiliging toe",
+  "setupPasswordShortError": "Gebruik minimaal 4 tekens",
+  "setupPasswordMismatch": "Wachtwoorden komen niet overeen",
+  "setupPasswordFailedSeed": "Sleutel aanmaken mislukt. Probeer het opnieuw.",
+  "setupPasswordFailedInit": "Initialiseren is mislukt. Fout: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Uw contacten blijven sterk versleuteld met een lange geheime sleutel die alleen op uw apparaat wordt opgeslagen. Het wachtwoord voegt extra bescherming toe.",
+  "setupPasswordLabel": "Wachtwoord",
+  "setupPasswordHelper": "Minimaal 4 tekens",
+  "setupPasswordConfirmLabel": "Bevestig wachtwoord",
+  "setupPasswordWarning": "Dit wachtwoord kan niet worden hersteld. Schrijf het op en bewaar het veilig!",
+  "setupPasswordPageTitle": "Wachtwoord aanmaken",
+  "setupPasswordNext": "Volgende",
+  "setupPasswordSkip": "Overslaan",
+  "confirmationCheckboxTitle": "Ik begrijp dat mijn wachtwoord niet kan worden hersteld",
+  "loginWelcomeBack": "Welkom terug",
+  "loginPasswordLabel": "Wachtwoord",
+  "loginUnlock": "Ontgrendelen",
+  "loginPasswordRequired": "Voer uw wachtwoord in",
+  "loginIncorrectPassword": "Onjuist wachtwoord. Probeer het opnieuw.",
+  "paywallNoSubscription": "Geen actief abonnement gevonden. Koop een abonnement om door te gaan.",
+  "paywallNoInternetTitle": "Geen internetverbinding",
+  "paywallNoInternetBody": "Om voor de eerste keer toegang te krijgen tot de app is een internetverbinding vereist. Maak verbinding en probeer het opnieuw.",
+  "paywallStoreUnavailableTitle": "Winkel niet beschikbaar",
+  "paywallStoreUnavailableBody": "Kan abonnementsopties niet laden. Probeer het opnieuw.",
+  "subscriptionVerifyTitle": "Abonnement verifiëren",
+  "subscriptionSoftWarningTitle": "Abonnementsverificatie vereist",
+  "subscriptionContinueAnyway": "Hoe dan ook doorgaan",
+  "subscriptionLastVerified": "Laatst geverifieerd {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "Het abonnement kon niet online worden geverifieerd.",
+  "subscriptionAccessUntil": "Uw toegang loopt door tot {date} — maak vóór die tijd verbinding om te verifiëren.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Maak verbinding met internet om uw abonnement te verifiëren.",
+  "organizeNoDuplicates": "Geen potentiële duplicaten gevonden",
+  "organizeSkippedShownAgain": "Overgeslagen duplicaten worden opnieuw weergegeven.",
+  "organizeShowSkippedTooltip": "Overgeslagen duplicaatgroepen opnieuw tonen",
+  "organizeFailedToLoad": "Kan dubbele groepen niet laden: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} duplicaten",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Tik om details te bekijken",
+  "organizeConflictMostlyIdentical": "Grotendeels identiek",
+  "organizeConflictFieldVariants": "{field}: {count} varianten",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "naam",
+  "fieldLabelCompany": "bedrijf",
+  "fieldLabelPhone": "telefoon",
+  "fieldLabelEmail": "e-mail",
+  "importErrorUnsupportedSource": "Importeren is hier niet beschikbaar.",
+  "importErrorPermissionDenied": "Om contacten te importeren is toestemming voor contacten vereist.",
+  "importErrorNoContacts": "Er zijn geen contacten om te importeren.",
+  "importErrorUnsupportedFileType": "Selecteer een .vcf-bestand of een .zip-archief.",
+  "importErrorInvalidFile": "Het geselecteerde bestand is ongeldig of onleesbaar.",
+  "importErrorWrongPassword": "Onjuist archiefwachtwoord. Probeer het opnieuw.",
+  "importErrorNoVcfInArchive": "Er zijn geen .vcf-bestanden gevonden in het geselecteerde archief.",
+  "importErrorFailed": "Kan contacten niet importeren: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Contacten zijn nog niet beschikbaar.",
+  "exportErrorNoContacts": "Geen contacten om te exporteren.",
+  "exportErrorPasswordRequired": "Voor een beveiligde export is een wachtwoord vereist.",
+  "exportErrorPasswordTooShort": "Voor beveiligde export is een wachtwoord van minimaal {min} tekens vereist.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Exporteren mislukt: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "Het downloaden is gestart.",
+  "exportNoticeFileSaved": "Bestand succesvol opgeslagen.",
+  "phoneTypeMobile": "mobiel",
+  "phoneTypeHome": "thuis",
+  "phoneTypeWork": "werk",
+  "phoneTypeSchool": "school",
+  "phoneTypeOther": "ander",
+  "emailTypePersonal": "persoonlijk",
+  "emailTypeWork": "werk",
+  "emailTypeSchool": "school",
+  "emailTypeOther": "ander",
+  "addressTypeHome": "Thuis",
+  "addressTypeWork": "Werk",
+  "addressTypeSchool": "School",
+  "addressTypeBirth": "Geboorte",
+  "linkTypeWebsite": "Website",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Overig",
+  "dateTypeCreated": "Gemaakt",
+  "dateTypeBirthday": "Verjaardag",
+  "dateTypeMet": "Ontmoeting",
+  "dateTypeGraduation": "Afstuderen",
+  "dateTypeMarriage": "Huwelijk",
+  "dateTypeOther": "Overig",
+  "noNameInList": "(Geen naam)",
+  "formAddPhone": "Telefoon toevoegen",
+  "formAddEmail": "E-mailadres toevoegen",
+  "formAddAddress": "Adres toevoegen",
+  "formAddLink": "Koppeling toevoegen",
+  "formAddDate": "Datum toevoegen",
+  "formHintPhoneNumber": "Telefoonnummer",
+  "formHintEmail": "E-mail",
+  "formHintUrl": "URL",
+  "formHintAddress": "Adres",
+  "formHintSelectDate": "Datum selecteren",
+  "formHintNotes": "Voeg notities toe",
+  "formCompany": "Bedrijf",
+  "formDepartment": "Afdeling",
+  "formJobTitle": "Functietitel",
+  "formPrefix": "Voorvoegsel",
+  "formFirstName": "Voornaam",
+  "formMiddleName": "Middelste naam",
+  "formLastName": "Achternaam",
+  "formSuffix": "Achtervoegsel",
+  "formNickname": "Bijnaam",
+  "contactsListTitle": "Contacten",
+  "contactsListEmpty": "Nog geen contacten",
+  "contactsImportButton": "Contacten importeren",
+  "mergeContactsTitle": "Contacten samenvoegen",
+  "mergeContactsSubtitle": "Selecteer contacten om samen te voegen tot één",
+  "exportPasswordHint": "Wachtwoord",
+  "exportPasswordConfirmHint": "Bevestig wachtwoord",
+  "exportPasswordHelper": "Minimaal {min} tekens",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Archiefwachtwoord",
+  "activateDemoAccessCodeLabel": "Toegangscode",
+  "subscriptionExpiredTitle": "Abonnement verlopen",
+  "subscriptionExpiredBody": "Verleng om alle functies te blijven gebruiken.",
+  "contactsLoadError": "Kan contacten niet laden.",
+  "contactsListError": "Kan contacten niet laden.",
+  "contactsSearchNoResults": "Geen contacten gevonden",
+  "supportPageIntro": "Vragen, feedback of iets werkt niet? Het Savelon-team leest elk bericht.",
+  "supportCtaMessageTeam": "Bericht naar het team",
+  "importFromDeviceContacts": "Uit uw contacten",
+  "importFromFileVcfZip": "Uit een bestand (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Uniek wachtwoord aanmaken",
+  "exportPasswordIrrecoverableHint": "Dit wachtwoord kan niet worden hersteld.",
+  "exportProtectedArchiveCta": "Beveiligd archief exporteren",
+  "exportIosSavedFileWarning": "Dit bestand wordt opgeslagen in de Savelon-map. Als u de app verwijdert, wordt het bestand ook verwijderd. Verplaats het naar een andere locatie om het te bewaren.",
+  "importContactsConfirmBody": "{count} contacten importeren in Savelon?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Wachtwoord instellen",
+  "settingsChangePasswordPageTitle": "Wachtwoord wijzigen",
+  "settingsRemovePasswordPageTitle": "Wachtwoord verwijderen",
+  "settingsNewPasswordLabel": "Nieuw wachtwoord",
+  "settingsConfirmNewPasswordLabel": "Nieuw wachtwoord bevestigen",
+  "settingsReenterNewPasswordHelper": "Voer uw nieuwe wachtwoord opnieuw in",
+  "settingsSetPasswordCta": "Wachtwoord instellen",
+  "settingsChangePasswordCta": "Wachtwoord wijzigen",
+  "settingsRemovePasswordCta": "Wachtwoord verwijderen",
+  "settingsCurrentPasswordLabel": "Huidig wachtwoord",
+  "settingsEnterCurrentPasswordHelper": "Voer uw huidige wachtwoord in",
+  "settingsNewPasswordMustDiffer": "Het nieuwe wachtwoord moet verschillen van het huidige",
+  "settingsFailedToSetPassword": "Wachtwoord instellen mislukt: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Wachtwoord wijzigen mislukt: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Wachtwoord verwijderen mislukt: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Wachtwoord is ongeldig",
+  "settingsCurrentPasswordIncorrect": "Huidig wachtwoord is onjuist",
+  "settingsCurrentPasswordRequired": "Huidig wachtwoord is verplicht",
+  "authPasswordRequiredWhenProtectionEnabled": "Wachtwoord vereist wanneer wachtwoordbeveiliging is ingeschakeld",
+  "authPasswordRequiredWhenEnablePassword": "Wachtwoord vereist bij het inschakelen van de wachtwoordoptie",
+  "authPasswordRequiredForAccount": "Wachtwoord vereist voor dit account",
+  "visit": "Bezoeken",
+  "unlockPro": "Pro ontgrendelen",
+  "lifetimeThanksTitle": "Bedankt dat je bij ons bent",
+  "lifetimeThanksSubtitle": "We geven je levenslange Pro-toegang cadeau",
+  "lifetimeThanksGift": "cadeau",
+  "lifetimeThanksCta": "Levenslange toegang claimen"
+}

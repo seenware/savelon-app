@@ -1,0 +1,447 @@
+{
+  "@@locale": "zh_CN",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "加密联系人",
+  "navContacts": "联系人",
+  "navOrganize": "组织",
+  "navSupport": "支持",
+  "navSettings": "设置",
+  "settingsTitle": "设置",
+  "language": "语言",
+  "languageSystemDefault": "系统默认",
+  "organizeTitle": "组织",
+  "supportTitle": "支持",
+  "search": "搜索",
+  "commonCancel": "取消",
+  "commonDelete": "删除",
+  "commonSave": "保存",
+  "commonEdit": "编辑",
+  "commonMerge": "合并",
+  "commonSkip": "跳过",
+  "commonRetry": "重试",
+  "commonClose": "关闭",
+  "commonNext": "下一个",
+  "commonBack": "返回",
+  "commonYes": "是",
+  "commonNo": "否",
+  "commonContinue": "继续",
+  "commonTryAgain": "再试一次",
+  "commonApply": "应用",
+  "commonDiscard": "丢弃",
+  "commonUnlock": "解锁",
+  "commonLoading": "加载中...",
+  "commonErrorWithDetails": "错误：{error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "您的联系人，只属于您自己。",
+  "contactNotFound": "未找到联系人",
+  "contactDeleted": "联系人已删除",
+  "contactUpdated": "联系人已更新",
+  "contactSaved": "联系人已保存",
+  "contactsMerged": "联系人已合并",
+  "deleteContactTitle": "删除联系人",
+  "deleteContactConfirm": "您确定要删除{name}吗？",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "您确定要删除“{name}”吗？",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "删除失败：{error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "更新失败：{error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "保存失败：{error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "无名",
+  "noNameTitle": "无名",
+  "noNameBody": "该联系人没有姓名。还是要保存吗？",
+  "discardChangesTitle": "放弃更改？",
+  "discardChangesBody": "您有未保存的更改，这些更改将会丢失。",
+  "newContact": "新联系人",
+  "editContact": "编辑联系人",
+  "addMore": "添加更多",
+  "addNameFieldsTitle": "添加名称字段",
+  "call": "拨号",
+  "sendEmail": "发送电子邮件",
+  "copy": "复制",
+  "copiedToClipboard": "已复制到剪贴板",
+  "importContacts": "导入联系人",
+  "importing": "正在导入...",
+  "importedCount": "导入{count}联系人",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "已导入 {imported} 联系人，{skipped} 已跳过",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "导入联系人失败",
+  "noContactsToImport": "没有要导入的联系人。",
+  "contactsPermissionRequiredImport": "导入联系人需要联系人权限",
+  "importDialogTitle": "导入联系人",
+  "importDialogBody": "从您的设备或文件导入联系人？",
+  "importSourceTitle": "导入",
+  "importZipPasswordTitle": "存档密码",
+  "importZipPasswordChecking": "正在检查...",
+  "exportContacts": "导出联系人",
+  "exportContactsTitle": "导出联系人",
+  "exportSubtitle": "选择您想要保存联系人的方式。",
+  "exportFormatVcfTitle": "另存为.vcf",
+  "exportFormatVcfSubtitle": "适用于 Apple 联系人、Google 联系人等的一个文件。",
+  "exportFormatZipTitle": "保存在受密码保护的存档中",
+  "exportFormatZipSubtitle": "里面有 .vcf 的 .zip — 需要密码才能打开它。",
+  "exportProtectedTitle": "受保护的导出",
+  "exportCompleteTitle": "导出完成",
+  "stillLoadingContacts": "仍在加载联系人。请稍等。",
+  "couldNotLoadContacts": "无法加载联系人。",
+  "passwordChangedSuccess": "密码修改成功",
+  "passwordProtectionEnabled": "密码保护启用成功",
+  "passwordProtectionRemoved": "密码保护已成功删除",
+  "removePasswordProtectionButton": "删除密码保护",
+  "changePasswordTitle": "更改密码",
+  "setPasswordTitle": "设置密码",
+  "passwordSettingsChangeTitle": "更改密码",
+  "passwordSettingsSetTitle": "设置密码",
+  "privacyPolicy": "隐私政策",
+  "privacyPolicyOpenFailed": "隐私政策打开失败：{error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "重置应用程序",
+  "resetAppConfirmTitle": "删除所有联系人并重置应用程序？",
+  "resetAppCannotUndo": "此操作无法撤消",
+  "resetAppError": "重置应用程序时出错：{error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "选择新图像",
+  "photoPickerRemoveImage": "删除图像",
+  "onboardingHeadline1": "谁可以访问您的联系人？",
+  "onboardingSubline1": "一些应用程序将它们上传到云端。这可能会带来更多的隐私风险。",
+  "onboardingHeadline2": "许多应用程序要求联系人访问权限",
+  "onboardingSubline2": "它可能很有用，但重要的联系人应该保密。",
+  "onboardingHeadline3": "将敏感联系人分开",
+  "onboardingSubline3": "我们建议将重要且很少使用的联系人存储在主联系人应用程序之外。",
+  "onboardingHeadline4": "保护您的重要联系人",
+  "onboardingSubline4": "Savelon 将联系人保存在您的设备上，加密存储，并对其他应用保密。",
+  "onboardingGetStarted": "开始使用",
+  "onboardingNext": "下一个",
+  "activateDemoTitle": "激活演示",
+  "activateDemoCancel": "取消",
+  "demoAccessGranted": "您现在可以在 {dateTime} 之前访问演示版",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "添加密码保护",
+  "setupPasswordShortError": "至少使用 4 个字符",
+  "setupPasswordMismatch": "密码不匹配",
+  "setupPasswordFailedSeed": "无法生成种子。请再试一次。",
+  "setupPasswordFailedInit": "初始化失败。错误：{error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "您的联系人仍将通过长密钥进行高度加密，仅存储在您的设备上。但密码增加了额外的保护。",
+  "setupPasswordLabel": "密码",
+  "setupPasswordHelper": "至少 4 个字符",
+  "setupPasswordConfirmLabel": "确认密码",
+  "setupPasswordWarning": "该密码无法恢复。写下来并妥善保管！",
+  "setupPasswordPageTitle": "创建密码",
+  "setupPasswordNext": "下一个",
+  "setupPasswordSkip": "跳过",
+  "confirmationCheckboxTitle": "我了解我的密码无法恢复",
+  "loginWelcomeBack": "欢迎回来",
+  "loginPasswordLabel": "密码",
+  "loginUnlock": "解锁",
+  "loginPasswordRequired": "输入您的密码",
+  "loginIncorrectPassword": "密码不正确。请再试一次。",
+  "paywallNoSubscription": "未找到有效订阅。请购买以继续。",
+  "paywallNoInternetTitle": "无互联网连接",
+  "paywallNoInternetBody": "首次访问该应用程序需要互联网连接。请连接并重试。",
+  "paywallStoreUnavailableTitle": "商店不可用",
+  "paywallStoreUnavailableBody": "无法加载订阅选项。请再试一次。",
+  "subscriptionVerifyTitle": "验证订阅",
+  "subscriptionSoftWarningTitle": "需要订阅验证",
+  "subscriptionContinueAnyway": "无论如何继续",
+  "subscriptionLastVerified": "最后验证{date}。",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "无法在线验证订阅。",
+  "subscriptionAccessUntil": "您的访问将持续到{date} — 在此之前连接以进行验证。",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "连接到互联网以验证您的订阅。",
+  "organizeNoDuplicates": "未发现潜在的重复项",
+  "organizeSkippedShownAgain": "跳过的重复项会再次显示。",
+  "organizeShowSkippedTooltip": "再次显示跳过的重复组",
+  "organizeFailedToLoad": "无法加载重复组：{error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} 个重复项",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "点击查看详情",
+  "organizeConflictMostlyIdentical": "大部分相同",
+  "organizeConflictFieldVariants": "{field}：{count} 变体",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "姓名",
+  "fieldLabelCompany": "公司",
+  "fieldLabelPhone": "电话",
+  "fieldLabelEmail": "电子邮件",
+  "importErrorUnsupportedSource": "此处无法导入。",
+  "importErrorPermissionDenied": "导入联系人需要联系人权限。",
+  "importErrorNoContacts": "没有要导入的联系人。",
+  "importErrorUnsupportedFileType": "请选择.vcf文件或.zip存档。",
+  "importErrorInvalidFile": "所选文件无效或不可读。",
+  "importErrorWrongPassword": "存档密码不正确。请再试一次。",
+  "importErrorNoVcfInArchive": "在所选存档中未找到 .vcf 文件。",
+  "importErrorFailed": "导入联系人失败：{detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "联系人暂不可用。",
+  "exportErrorNoContacts": "没有要导出的联系人。",
+  "exportErrorPasswordRequired": "受保护的导出需要密码。",
+  "exportErrorPasswordTooShort": "受保护的导出需要至少包含 {min} 个字符的密码。",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "导出失败：{detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "下载开始。",
+  "exportNoticeFileSaved": "文件保存成功。",
+  "phoneTypeMobile": "手机",
+  "phoneTypeHome": "家",
+  "phoneTypeWork": "工作",
+  "phoneTypeSchool": "学校",
+  "phoneTypeOther": "其他",
+  "emailTypePersonal": "个人的",
+  "emailTypeWork": "工作",
+  "emailTypeSchool": "学校",
+  "emailTypeOther": "其他",
+  "addressTypeHome": "家",
+  "addressTypeWork": "工作",
+  "addressTypeSchool": "学校",
+  "addressTypeBirth": "出生",
+  "linkTypeWebsite": "网站",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "其他",
+  "dateTypeCreated": "已创建",
+  "dateTypeBirthday": "生日",
+  "dateTypeMet": "相识",
+  "dateTypeGraduation": "毕业",
+  "dateTypeMarriage": "婚姻",
+  "dateTypeOther": "其他",
+  "noNameInList": "（无名字）",
+  "formAddPhone": "添加电话",
+  "formAddEmail": "添加电子邮件",
+  "formAddAddress": "添加地址",
+  "formAddLink": "添加链接",
+  "formAddDate": "添加日期",
+  "formHintPhoneNumber": "电话号码",
+  "formHintEmail": "电子邮件",
+  "formHintUrl": "网址",
+  "formHintAddress": "地址",
+  "formHintSelectDate": "选择日期",
+  "formHintNotes": "添加注释",
+  "formCompany": "公司",
+  "formDepartment": "部门",
+  "formJobTitle": "职称",
+  "formPrefix": "前缀",
+  "formFirstName": "名",
+  "formMiddleName": "中间名字",
+  "formLastName": "姓",
+  "formSuffix": "后缀",
+  "formNickname": "昵称",
+  "contactsListTitle": "联系人",
+  "contactsListEmpty": "还没有联系人",
+  "contactsImportButton": "导入联系人",
+  "mergeContactsTitle": "合并联系人",
+  "mergeContactsSubtitle": "选择要合并为一个的联系人",
+  "exportPasswordHint": "密码",
+  "exportPasswordConfirmHint": "确认密码",
+  "exportPasswordHelper": "至少{min}个字符",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "存档密码",
+  "activateDemoAccessCodeLabel": "访问代码",
+  "subscriptionExpiredTitle": "订阅已过期",
+  "subscriptionExpiredBody": "续订即可继续使用所有功能。",
+  "contactsLoadError": "无法加载联系人。",
+  "contactsListError": "无法加载联系人。",
+  "contactsSearchNoResults": "未找到联系人",
+  "supportPageIntro": "有疑问、反馈或遇到问题？Savelon 团队会阅读每条消息。",
+  "supportCtaMessageTeam": "联系团队",
+  "importFromDeviceContacts": "从您的联系人",
+  "importFromFileVcfZip": "从文件（VCF、ZIP）",
+  "exportCreateUniquePasswordTitle": "创建唯一密码",
+  "exportPasswordIrrecoverableHint": "此密码无法找回。",
+  "exportProtectedArchiveCta": "导出受保护的压缩包",
+  "exportIosSavedFileWarning": "此文件保存在 Savelon 文件夹中。若删除应用，文件也会被删除。请移到其他位置以保留。",
+  "importContactsConfirmBody": "将 {count} 位联系人导入 Savelon？",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "设置密码",
+  "settingsChangePasswordPageTitle": "更改密码",
+  "settingsRemovePasswordPageTitle": "移除密码",
+  "settingsNewPasswordLabel": "新密码",
+  "settingsConfirmNewPasswordLabel": "确认新密码",
+  "settingsReenterNewPasswordHelper": "再次输入新密码",
+  "settingsSetPasswordCta": "设置密码",
+  "settingsChangePasswordCta": "更改密码",
+  "settingsRemovePasswordCta": "移除密码",
+  "settingsCurrentPasswordLabel": "当前密码",
+  "settingsEnterCurrentPasswordHelper": "输入当前密码",
+  "settingsNewPasswordMustDiffer": "新密码必须与当前密码不同",
+  "settingsFailedToSetPassword": "无法设置密码：{error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "无法更改密码：{error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "无法移除密码：{error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "密码无效",
+  "settingsCurrentPasswordIncorrect": "当前密码不正确",
+  "settingsCurrentPasswordRequired": "需要当前密码",
+  "authPasswordRequiredWhenProtectionEnabled": "启用密码保护时需要密码",
+  "authPasswordRequiredWhenEnablePassword": "启用密码选项时需要密码",
+  "authPasswordRequiredForAccount": "此账户需要密码",
+  "visit": "访问",
+  "unlockPro": "解锁 Pro",
+  "lifetimeThanksTitle": "感谢一路有你",
+  "lifetimeThanksSubtitle": "我们赠送你终身 Pro 权限",
+  "lifetimeThanksGift": "赠送",
+  "lifetimeThanksCta": "领取终身权限"
+}

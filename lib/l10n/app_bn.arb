@@ -1,0 +1,447 @@
+{
+  "@@locale": "bn",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "এনক্রিপ্ট করা পরিচিতি",
+  "navContacts": "পরিচিতি",
+  "navOrganize": "সংগঠিত করুন",
+  "navSupport": "সহায়তা",
+  "navSettings": "সেটিংস",
+  "settingsTitle": "সেটিংস",
+  "language": "ভাষা",
+  "languageSystemDefault": "সিস্টেম ডিফল্ট",
+  "organizeTitle": "সংগঠিত করুন",
+  "supportTitle": "সহায়তা",
+  "search": "অনুসন্ধান করুন",
+  "commonCancel": "বাতিল করুন",
+  "commonDelete": "মুছুন",
+  "commonSave": "সংরক্ষণ করুন",
+  "commonEdit": "সম্পাদনা করুন",
+  "commonMerge": "একত্রিত করুন",
+  "commonSkip": "এড়িয়ে যান",
+  "commonRetry": "আবার চেষ্টা করুন",
+  "commonClose": "বন্ধ",
+  "commonNext": "পরবর্তী",
+  "commonBack": "ফিরে যান",
+  "commonYes": "হ্যাঁ",
+  "commonNo": "না",
+  "commonContinue": "চালিয়ে যান",
+  "commonTryAgain": "আবার চেষ্টা করুন",
+  "commonApply": "প্রয়োগ করুন",
+  "commonDiscard": "বাতিল করুন",
+  "commonUnlock": "আনলক করুন",
+  "commonLoading": "লোড হচ্ছে...",
+  "commonErrorWithDetails": "ত্রুটি: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "আপনার পরিচিতি। শুধু আপনার।",
+  "contactNotFound": "পরিচিতি পাওয়া যায়নি",
+  "contactDeleted": "পরিচিতি মুছে ফেলা হয়েছে",
+  "contactUpdated": "পরিচিতি আপডেট করা হয়েছে",
+  "contactSaved": "পরিচিতি সংরক্ষিত",
+  "contactsMerged": "পরিচিতি একত্রিত হয়েছে৷",
+  "deleteContactTitle": "পরিচিতি মুছুন",
+  "deleteContactConfirm": "আপনি কি {name} মুছতে চান?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "আপনি কি \"{name}\" মুছতে চান?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "মুছে ফেলতে ব্যর্থ হয়েছে: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "আপডেট করতে ব্যর্থ হয়েছে: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "সংরক্ষণ করতে ব্যর্থ হয়েছে: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "নাম নেই",
+  "noNameTitle": "নাম নেই",
+  "noNameBody": "এই পরিচিতির কোন নাম নেই। যাইহোক সংরক্ষণ করবেন?",
+  "discardChangesTitle": "পরিবর্তনগুলি বাতিল করবেন?",
+  "discardChangesBody": "আপনার অসংরক্ষিত পরিবর্তনগুলি হারিয়ে যাবে৷",
+  "newContact": "নতুন পরিচিতি",
+  "editContact": "পরিচিতি সম্পাদনা করুন",
+  "addMore": "আরো যোগ করুন",
+  "addNameFieldsTitle": "নাম ক্ষেত্র যোগ করুন",
+  "call": "কল",
+  "sendEmail": "ইমেইল পাঠান",
+  "copy": "কপি",
+  "copiedToClipboard": "ক্লিপবোর্ডে কপি করা হয়েছে",
+  "importContacts": "পরিচিতি আমদানি করুন",
+  "importing": "আমদানি করা হচ্ছে...",
+  "importedCount": "আমদানি করা {count} পরিচিতি",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "আমদানি করা {imported} পরিচিতি, {skipped} বাদ দেওয়া হয়েছে৷",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "পরিচিতি আমদানি করতে ব্যর্থ হয়েছে৷",
+  "noContactsToImport": "আমদানি করার জন্য কোনো পরিচিতি নেই৷",
+  "contactsPermissionRequiredImport": "পরিচিতি আমদানি করতে পরিচিতির অনুমতি প্রয়োজন৷",
+  "importDialogTitle": "পরিচিতি আমদানি করুন",
+  "importDialogBody": "আপনার ডিভাইস বা একটি ফাইল থেকে পরিচিতি আমদানি করবেন?",
+  "importSourceTitle": "আমদানি",
+  "importZipPasswordTitle": "সংরক্ষণাগার পাসওয়ার্ড",
+  "importZipPasswordChecking": "যাচাই করা হচ্ছে...",
+  "exportContacts": "পরিচিতি রপ্তানি করুন",
+  "exportContactsTitle": "পরিচিতি রপ্তানি করুন",
+  "exportSubtitle": "আপনি কীভাবে আপনার পরিচিতিগুলি সংরক্ষণ করতে চান তা চয়ন করুন৷",
+  "exportFormatVcfTitle": ".vcf হিসাবে সংরক্ষণ করুন",
+  "exportFormatVcfSubtitle": "একটি ফাইল যা Apple পরিচিতি, Google পরিচিতি এবং আরও অনেক কিছুর সাথে কাজ করে৷",
+  "exportFormatZipTitle": "পাসওয়ার্ড-সুরক্ষিত আর্কাইভে সংরক্ষণ করুন",
+  "exportFormatZipSubtitle": "ভিতরে আপনার .vcf সহ একটি .zip — এটি খুলতে একটি পাসওয়ার্ড প্রয়োজন৷",
+  "exportProtectedTitle": "সুরক্ষিত রপ্তানি",
+  "exportCompleteTitle": "রপ্তানি সম্পূর্ণ",
+  "stillLoadingContacts": "এখনও পরিচিতি লোড হচ্ছে৷ অনুগ্রহ করে অপেক্ষা করুন।",
+  "couldNotLoadContacts": "পরিচিতি লোড করা যায়নি।",
+  "passwordChangedSuccess": "পাসওয়ার্ড সফলভাবে পরিবর্তন করা হয়েছে",
+  "passwordProtectionEnabled": "পাসওয়ার্ড সুরক্ষা সফলভাবে সক্ষম হয়েছে৷",
+  "passwordProtectionRemoved": "পাসওয়ার্ড সুরক্ষা সফলভাবে সরানো হয়েছে",
+  "removePasswordProtectionButton": "পাসওয়ার্ড সুরক্ষা সরান",
+  "changePasswordTitle": "পাসওয়ার্ড পরিবর্তন করুন",
+  "setPasswordTitle": "পাসওয়ার্ড সেট করুন",
+  "passwordSettingsChangeTitle": "পাসওয়ার্ড পরিবর্তন করুন",
+  "passwordSettingsSetTitle": "পাসওয়ার্ড সেট করুন",
+  "privacyPolicy": "গোপনীয়তা নীতি",
+  "privacyPolicyOpenFailed": "গোপনীয়তা নীতি খুলতে ব্যর্থ হয়েছে: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "অ্যাপটি রিসেট করুন",
+  "resetAppConfirmTitle": "সমস্ত পরিচিতি মুছে ফেলবেন, এবং অ্যাপ রিসেট করবেন?",
+  "resetAppCannotUndo": "এটি পূর্বাবস্থায় ফেরানো যাবে না",
+  "resetAppError": "অ্যাপ রিসেট করার সময় ত্রুটি: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "নতুন ছবি নির্বাচন করুন",
+  "photoPickerRemoveImage": "ছবি সরান",
+  "onboardingHeadline1": "কে আপনার পরিচিতি অ্যাক্সেস করতে পারে?",
+  "onboardingSubline1": "কিছু অ্যাপ ক্লাউডে আপলোড করে। এটি আরও গোপনীয়তার ঝুঁকি তৈরি করতে পারে।",
+  "onboardingHeadline2": "অনেক অ্যাপ পরিচিতি অ্যাক্সেসের অনুমতি চায়",
+  "onboardingSubline2": "এটি দরকারী হতে পারে - তবে গুরুত্বপূর্ণ পরিচিতিগুলি ব্যক্তিগত থাকা উচিত৷",
+  "onboardingHeadline3": "সংবেদনশীল পরিচিতি আলাদা রাখুন",
+  "onboardingSubline3": "আমরা আপনার প্রধান পরিচিতি অ্যাপের বাইরে গুরুত্বপূর্ণ এবং খুব কমই ব্যবহৃত পরিচিতিগুলি সংরক্ষণ করার পরামর্শ দিই।",
+  "onboardingHeadline4": "আপনার গুরুত্বপূর্ণ পরিচিতি রক্ষা করুন",
+  "onboardingSubline4": "Savelon সেগুলিকে আপনার ডিভাইসে সঞ্চয় করে, এনক্রিপ্ট করা এবং অন্যান্য অ্যাপ থেকে ব্যক্তিগত।",
+  "onboardingGetStarted": "শুরু করুন",
+  "onboardingNext": "পরবর্তী",
+  "activateDemoTitle": "ডেমো সক্রিয় করুন",
+  "activateDemoCancel": "বাতিল করুন",
+  "demoAccessGranted": "আপনার কাছে এখন {dateTime} পর্যন্ত ডেমো অ্যাক্সেস আছে",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "পাসওয়ার্ড সুরক্ষা যোগ করুন",
+  "setupPasswordShortError": "কমপক্ষে 4টি অক্ষর ব্যবহার করুন",
+  "setupPasswordMismatch": "পাসওয়ার্ড মেলে না",
+  "setupPasswordFailedSeed": "বীজ উৎপন্ন করতে ব্যর্থ। আবার চেষ্টা করুন.",
+  "setupPasswordFailedInit": "আরম্ভ করতে ব্যর্থ হয়েছে. ত্রুটি: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "আপনার পরিচিতিগুলি এখনও একটি দীর্ঘ গোপন কী দ্বারা দৃঢ়ভাবে এনক্রিপ্ট করা হবে, শুধুমাত্র আপনার ডিভাইসে সংরক্ষিত। কিন্তু পাসওয়ার্ড অতিরিক্ত সুরক্ষা যোগ করে।",
+  "setupPasswordLabel": "পাসওয়ার্ড",
+  "setupPasswordHelper": "কমপক্ষে 4টি অক্ষর",
+  "setupPasswordConfirmLabel": "পাসওয়ার্ড নিশ্চিত করুন",
+  "setupPasswordWarning": "এই পাসওয়ার্ড পুনরুদ্ধার করা যাবে না. এটি লিখুন এবং এটি নিরাপদ রাখুন!",
+  "setupPasswordPageTitle": "পাসওয়ার্ড তৈরি করুন",
+  "setupPasswordNext": "পরবর্তী",
+  "setupPasswordSkip": "এড়িয়ে যান",
+  "confirmationCheckboxTitle": "আমি বুঝি আমার পাসওয়ার্ড পুনরুদ্ধার করা যাবে না",
+  "loginWelcomeBack": "ফিরে স্বাগতম",
+  "loginPasswordLabel": "পাসওয়ার্ড",
+  "loginUnlock": "আনলক করুন",
+  "loginPasswordRequired": "আপনার পাসওয়ার্ড লিখুন",
+  "loginIncorrectPassword": "ভুল পাসওয়ার্ড। আবার চেষ্টা করুন.",
+  "paywallNoSubscription": "কোনো সক্রিয় সাবস্ক্রিপশন পাওয়া যায়নি। চালিয়ে যেতে ক্রয় করুন।",
+  "paywallNoInternetTitle": "ইন্টারনেট সংযোগ নেই",
+  "paywallNoInternetBody": "প্রথমবার অ্যাপটি অ্যাক্সেস করার জন্য একটি ইন্টারনেট সংযোগ প্রয়োজন। অনুগ্রহ করে সংযোগ করুন এবং আবার চেষ্টা করুন।",
+  "paywallStoreUnavailableTitle": "স্টোর অনুপলব্ধ",
+  "paywallStoreUnavailableBody": "সদস্যতা বিকল্প লোড করতে অক্ষম. আবার চেষ্টা করুন.",
+  "subscriptionVerifyTitle": "সদস্যতা যাচাই করুন",
+  "subscriptionSoftWarningTitle": "সদস্যতা যাচাইকরণ প্রয়োজন",
+  "subscriptionContinueAnyway": "যাইহোক চালিয়ে যান",
+  "subscriptionLastVerified": "সর্বশেষ যাচাইকৃত {date}।",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "সদস্যতা অনলাইন যাচাই করা যায়নি.",
+  "subscriptionAccessUntil": "আপনার অ্যাক্সেস {date} পর্যন্ত চলতে থাকবে — যাচাই করতে তার আগে সংযোগ করুন।",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "আপনার সদস্যতা যাচাই করতে ইন্টারনেটে সংযোগ করুন৷",
+  "organizeNoDuplicates": "কোন সম্ভাব্য সদৃশ পাওয়া যায়নি",
+  "organizeSkippedShownAgain": "এড়িয়ে যাওয়া সদৃশগুলি আবার দেখানো হয়।",
+  "organizeShowSkippedTooltip": "এড়িয়ে যাওয়া সদৃশ গোষ্ঠীগুলি আবার দেখান৷",
+  "organizeFailedToLoad": "সদৃশ গোষ্ঠীগুলি লোড করতে ব্যর্থ হয়েছে: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} ডুপ্লিকেট",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "বিস্তারিত দেখতে আলতো চাপুন",
+  "organizeConflictMostlyIdentical": "বেশিরভাগই অভিন্ন",
+  "organizeConflictFieldVariants": "{field}: {count} ভেরিয়েন্ট",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "নাম",
+  "fieldLabelCompany": "কোম্পানি",
+  "fieldLabelPhone": "ফোন",
+  "fieldLabelEmail": "ইমেইল",
+  "importErrorUnsupportedSource": "আমদানি এখানে উপলব্ধ নয়.",
+  "importErrorPermissionDenied": "পরিচিতি আমদানি করতে পরিচিতির অনুমতি প্রয়োজন৷",
+  "importErrorNoContacts": "আমদানি করার জন্য কোনো পরিচিতি নেই৷",
+  "importErrorUnsupportedFileType": "অনুগ্রহ করে একটি .vcf ফাইল বা একটি .zip সংরক্ষণাগার নির্বাচন করুন৷",
+  "importErrorInvalidFile": "নির্বাচিত ফাইলটি অবৈধ বা অপঠনযোগ্য।",
+  "importErrorWrongPassword": "ভুল সংরক্ষণাগার পাসওয়ার্ড. আবার চেষ্টা করুন.",
+  "importErrorNoVcfInArchive": "নির্বাচিত আর্কাইভে কোনো .vcf ফাইল পাওয়া যায়নি।",
+  "importErrorFailed": "পরিচিতি আমদানি করতে ব্যর্থ হয়েছে: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "পরিচিতি এখনও উপলব্ধ নেই.",
+  "exportErrorNoContacts": "রপ্তানি করার জন্য কোনো পরিচিতি নেই৷",
+  "exportErrorPasswordRequired": "একটি সুরক্ষিত রপ্তানির জন্য পাসওয়ার্ড প্রয়োজন৷",
+  "exportErrorPasswordTooShort": "সুরক্ষিত রপ্তানির জন্য কমপক্ষে {min} অক্ষরের পাসওয়ার্ড প্রয়োজন৷",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "রপ্তানি ব্যর্থ হয়েছে: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "ডাউনলোড শুরু হয়েছে।",
+  "exportNoticeFileSaved": "ফাইল সফলভাবে সংরক্ষণ করা হয়েছে.",
+  "phoneTypeMobile": "মোবাইল",
+  "phoneTypeHome": "বাড়ি",
+  "phoneTypeWork": "কাজ",
+  "phoneTypeSchool": "স্কুল",
+  "phoneTypeOther": "অন্যান্য",
+  "emailTypePersonal": "ব্যক্তিগত",
+  "emailTypeWork": "কাজ",
+  "emailTypeSchool": "স্কুল",
+  "emailTypeOther": "অন্যান্য",
+  "addressTypeHome": "বাড়ি",
+  "addressTypeWork": "কাজ",
+  "addressTypeSchool": "স্কুল",
+  "addressTypeBirth": "জন্ম",
+  "linkTypeWebsite": "ওয়েবসাইট",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "অন্যান্য",
+  "dateTypeCreated": "তৈরি হয়েছে",
+  "dateTypeBirthday": "জন্মদিন",
+  "dateTypeMet": "দেখা হয়েছে",
+  "dateTypeGraduation": "স্নাতক",
+  "dateTypeMarriage": "বিবাহ",
+  "dateTypeOther": "অন্যান্য",
+  "noNameInList": "(নাম নেই)",
+  "formAddPhone": "ফোন যোগ করুন",
+  "formAddEmail": "ইমেল যোগ করুন",
+  "formAddAddress": "ঠিকানা যোগ করুন",
+  "formAddLink": "লিঙ্ক যোগ করুন",
+  "formAddDate": "তারিখ যোগ করুন",
+  "formHintPhoneNumber": "ফোন নম্বর",
+  "formHintEmail": "ইমেইল",
+  "formHintUrl": "URL",
+  "formHintAddress": "ঠিকানা",
+  "formHintSelectDate": "তারিখ নির্বাচন করুন",
+  "formHintNotes": "নোট যোগ করুন",
+  "formCompany": "কোম্পানি",
+  "formDepartment": "বিভাগ",
+  "formJobTitle": "চাকরির শিরোনাম",
+  "formPrefix": "উপসর্গ",
+  "formFirstName": "প্রথম নাম",
+  "formMiddleName": "মধ্য নাম",
+  "formLastName": "পদবি",
+  "formSuffix": "প্রত্যয়",
+  "formNickname": "ডাকনাম",
+  "contactsListTitle": "পরিচিতি",
+  "contactsListEmpty": "এখনও কোন পরিচিতি নেই",
+  "contactsImportButton": "পরিচিতি আমদানি করুন",
+  "mergeContactsTitle": "পরিচিতি মার্জ করুন",
+  "mergeContactsSubtitle": "একটিতে একত্রিত করতে পরিচিতিগুলি নির্বাচন করুন৷",
+  "exportPasswordHint": "পাসওয়ার্ড",
+  "exportPasswordConfirmHint": "পাসওয়ার্ড নিশ্চিত করুন",
+  "exportPasswordHelper": "কমপক্ষে {min} অক্ষর",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "সংরক্ষণাগার পাসওয়ার্ড",
+  "activateDemoAccessCodeLabel": "অ্যাক্সেস কোড",
+  "subscriptionExpiredTitle": "সদস্যতার মেয়াদ শেষ",
+  "subscriptionExpiredBody": "সমস্ত বৈশিষ্ট্য ব্যবহার চালিয়ে যেতে পুনর্নবীকরণ করুন।",
+  "contactsLoadError": "পরিচিতি লোড করা যায়নি।",
+  "contactsListError": "পরিচিতি লোড করা যায়নি।",
+  "contactsSearchNoResults": "কোনো পরিচিতি পাওয়া যায়নি",
+  "supportPageIntro": "প্রশ্ন, মতামত বা কিছু কাজ করছে না? Savelon দল প্রতিটি বার্তা পড়ে।",
+  "supportCtaMessageTeam": "দলকে বার্তা পাঠান",
+  "importFromDeviceContacts": "আপনার পরিচিতি থেকে",
+  "importFromFileVcfZip": "ফাইল থেকে (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "অনন্য পাসওয়ার্ড তৈরি করুন",
+  "exportPasswordIrrecoverableHint": "এই পাসওয়ার্ড পুনরুদ্ধার করা যাবে না।",
+  "exportProtectedArchiveCta": "সুরক্ষিত আর্কাইভ রপ্তানি করুন",
+  "exportIosSavedFileWarning": "এই ফাইলটি Savelon ফোল্ডারে সংরক্ষিত হয়। অ্যাপ মুছে ফেললে ফাইলও মুছে যাবে। রাখতে অন্য জায়গায় সরিয়ে নিন।",
+  "importContactsConfirmBody": "Savelon-এ {count}টি পরিচিতি আমদানি করবেন?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "পাসওয়ার্ড সেট করুন",
+  "settingsChangePasswordPageTitle": "পাসওয়ার্ড পরিবর্তন করুন",
+  "settingsRemovePasswordPageTitle": "পাসওয়ার্ড সরান",
+  "settingsNewPasswordLabel": "নতুন পাসওয়ার্ড",
+  "settingsConfirmNewPasswordLabel": "নতুন পাসওয়ার্ড নিশ্চিত করুন",
+  "settingsReenterNewPasswordHelper": "নতুন পাসওয়ার্ড আবার লিখুন",
+  "settingsSetPasswordCta": "পাসওয়ার্ড সেট করুন",
+  "settingsChangePasswordCta": "পাসওয়ার্ড পরিবর্তন করুন",
+  "settingsRemovePasswordCta": "পাসওয়ার্ড সরান",
+  "settingsCurrentPasswordLabel": "বর্তমান পাসওয়ার্ড",
+  "settingsEnterCurrentPasswordHelper": "আপনার বর্তমান পাসওয়ার্ড লিখুন",
+  "settingsNewPasswordMustDiffer": "নতুন পাসওয়ার্ড বর্তমান থেকে আলাদা হতে হবে",
+  "settingsFailedToSetPassword": "পাসওয়ার্ড সেট করা যায়নি: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "পাসওয়ার্ড পরিবর্তন করা যায়নি: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "পাসওয়ার্ড সরানো যায়নি: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "পাসওয়ার্ড অবৈধ",
+  "settingsCurrentPasswordIncorrect": "বর্তমান পাসওয়ার্ড ভুল",
+  "settingsCurrentPasswordRequired": "বর্তমান পাসওয়ার্ড প্রয়োজন",
+  "authPasswordRequiredWhenProtectionEnabled": "পাসওয়ার্ড সুরক্ষা চালু থাকলে পাসওয়ার্ড প্রয়োজন",
+  "authPasswordRequiredWhenEnablePassword": "পাসওয়ার্ড বিকল্প চালু করার সময় পাসওয়ার্ড প্রয়োজন",
+  "authPasswordRequiredForAccount": "এই অ্যাকাউন্টের জন্য পাসওয়ার্ড প্রয়োজন",
+  "visit": "ভিজিট করুন",
+  "unlockPro": "Pro আনলক করুন",
+  "lifetimeThanksTitle": "আমাদের সঙ্গে থাকার জন্য ধন্যবাদ",
+  "lifetimeThanksSubtitle": "আমরা আপনাকে লাইফটাইম Pro অ্যাক্সেস উপহার দিচ্ছি",
+  "lifetimeThanksGift": "উপহার",
+  "lifetimeThanksCta": "লাইফটাইম অ্যাক্সেস দাবি করুন"
+}

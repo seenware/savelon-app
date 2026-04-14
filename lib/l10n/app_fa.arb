@@ -1,0 +1,447 @@
+{
+  "@@locale": "fa",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "مخاطبین رمزگذاری شده",
+  "navContacts": "مخاطبین",
+  "navOrganize": "سازماندهی کنید",
+  "navSupport": "پشتیبانی",
+  "navSettings": "تنظیمات",
+  "settingsTitle": "تنظیمات",
+  "language": "زبان",
+  "languageSystemDefault": "پیش فرض سیستم",
+  "organizeTitle": "سازماندهی کنید",
+  "supportTitle": "پشتیبانی",
+  "search": "جستجو کنید",
+  "commonCancel": "لغو کنید",
+  "commonDelete": "حذف کنید",
+  "commonSave": "ذخیره کنید",
+  "commonEdit": "ویرایش کنید",
+  "commonMerge": "ادغام",
+  "commonSkip": "پرش کنید",
+  "commonRetry": "دوباره امتحان کنید",
+  "commonClose": "بستن",
+  "commonNext": "بعدی",
+  "commonBack": "به عقب برگرد",
+  "commonYes": "بله",
+  "commonNo": "خیر",
+  "commonContinue": "ادامه دهید",
+  "commonTryAgain": "دوباره امتحان کنید",
+  "commonApply": "اعمال",
+  "commonDiscard": "دور انداختن",
+  "commonUnlock": "باز کردن قفل",
+  "commonLoading": "در حال بارگیری...",
+  "commonErrorWithDetails": "خطا: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "مخاطبین شما مال شما تنها.",
+  "contactNotFound": "مخاطب یافت نشد",
+  "contactDeleted": "مخاطب حذف شد",
+  "contactUpdated": "مخاطب به‌روزرسانی شد",
+  "contactSaved": "مخاطب ذخیره شد",
+  "contactsMerged": "مخاطبین ادغام شدند",
+  "deleteContactTitle": "حذف مخاطب",
+  "deleteContactConfirm": "آیا مطمئن هستید که می خواهید {name} را حذف کنید؟",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "آیا مطمئن هستید که می خواهید \"{name}\" را حذف کنید؟",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "حذف نشد: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "به روز رسانی انجام نشد: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "ذخیره نشد: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "بدون نام",
+  "noNameTitle": "بدون نام",
+  "noNameBody": "این مخاطب نامی ندارد. به هر حال ذخیره شود؟",
+  "discardChangesTitle": "از تغییرات صرفنظر شود؟",
+  "discardChangesBody": "شما تغییرات ذخیره نشده ای دارید که از بین خواهند رفت.",
+  "newContact": "مخاطب جدید",
+  "editContact": "ویرایش مخاطب",
+  "addMore": "بیشتر اضافه کنید",
+  "addNameFieldsTitle": "فیلدهای نام را اضافه کنید",
+  "call": "تماس بگیرید",
+  "sendEmail": "ارسال ایمیل",
+  "copy": "کپی کنید",
+  "copiedToClipboard": "در کلیپ بورد کپی شد",
+  "importContacts": "وارد کردن مخاطبین",
+  "importing": "واردات...",
+  "importedCount": "مخاطبین {count} وارد شده است",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "مخاطبین {imported} وارد شدند، {skipped} رد شدند",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "وارد کردن مخاطبین انجام نشد",
+  "noContactsToImport": "هیچ مخاطبی برای وارد کردن وجود ندارد.",
+  "contactsPermissionRequiredImport": "مجوز مخاطبین برای وارد کردن مخاطبین مورد نیاز است",
+  "importDialogTitle": "وارد کردن مخاطبین",
+  "importDialogBody": "مخاطبین را از دستگاه یا یک فایل وارد کنید؟",
+  "importSourceTitle": "واردات",
+  "importZipPasswordTitle": "رمز عبور بایگانی",
+  "importZipPasswordChecking": "در حال بررسی...",
+  "exportContacts": "صادرات مخاطبین",
+  "exportContactsTitle": "صادرات مخاطبین",
+  "exportSubtitle": "نحوه ذخیره مخاطبین خود را انتخاب کنید.",
+  "exportFormatVcfTitle": "ذخیره به عنوان .vcf",
+  "exportFormatVcfSubtitle": "یک فایل که با مخاطبین Apple، Google و موارد دیگر کار می‌کند.",
+  "exportFormatZipTitle": "ذخیره در آرشیو محافظت شده با رمز عبور",
+  "exportFormatZipSubtitle": "یک .zip با .vcf شما در داخل - برای باز کردن آن به رمز عبور نیاز دارد.",
+  "exportProtectedTitle": "صادرات محافظت شده",
+  "exportCompleteTitle": "صادرات کامل شد",
+  "stillLoadingContacts": "هنوز مخاطبین در حال بارگیری هستند. لطفا صبر کنید.",
+  "couldNotLoadContacts": "مخاطبین بارگیری نشد.",
+  "passwordChangedSuccess": "رمز عبور با موفقیت تغییر کرد",
+  "passwordProtectionEnabled": "حفاظت از رمز عبور با موفقیت فعال شد",
+  "passwordProtectionRemoved": "حفاظت از رمز عبور با موفقیت حذف شد",
+  "removePasswordProtectionButton": "محافظت از رمز عبور را حذف کنید",
+  "changePasswordTitle": "رمز عبور را تغییر دهید",
+  "setPasswordTitle": "رمز عبور را تنظیم کنید",
+  "passwordSettingsChangeTitle": "رمز عبور را تغییر دهید",
+  "passwordSettingsSetTitle": "رمز عبور را تنظیم کنید",
+  "privacyPolicy": "سیاست حفظ حریم خصوصی",
+  "privacyPolicyOpenFailed": "سیاست حفظ حریم خصوصی باز نشد: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "برنامه را ریست کنید",
+  "resetAppConfirmTitle": "همه مخاطبین حذف شوند و برنامه بازنشانی شود؟",
+  "resetAppCannotUndo": "این قابل واگرد نیست",
+  "resetAppError": "خطا در بازنشانی برنامه: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "تصویر جدید را انتخاب کنید",
+  "photoPickerRemoveImage": "حذف تصویر",
+  "onboardingHeadline1": "چه کسی می تواند به مخاطبین شما دسترسی داشته باشد؟",
+  "onboardingSubline1": "برخی از برنامه ها آنها را در فضای ابری آپلود می کنند. این می تواند خطرات بیشتری برای حفظ حریم خصوصی ایجاد کند.",
+  "onboardingHeadline2": "بسیاری از برنامه ها برای دسترسی به مخاطب درخواست می کنند",
+  "onboardingSubline2": "می تواند مفید باشد - اما مخاطبین مهم باید خصوصی بمانند.",
+  "onboardingHeadline3": "مخاطبین حساس را جدا نگه دارید",
+  "onboardingSubline3": "توصیه می کنیم مخاطبین مهم و به ندرت استفاده شده را خارج از برنامه مخاطبین اصلی خود ذخیره کنید.",
+  "onboardingHeadline4": "از مخاطبین مهم خود محافظت کنید",
+  "onboardingSubline4": "Savelon آنها را به صورت رمزگذاری شده و خصوصی از سایر برنامه ها در دستگاه شما ذخیره می کند.",
+  "onboardingGetStarted": "شروع کنید",
+  "onboardingNext": "بعدی",
+  "activateDemoTitle": "دمو را فعال کنید",
+  "activateDemoCancel": "لغو کنید",
+  "demoAccessGranted": "اکنون تا {dateTime} به نسخه آزمایشی دسترسی دارید",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "محافظت از رمز عبور را اضافه کنید",
+  "setupPasswordShortError": "حداقل از 4 کاراکتر استفاده کنید",
+  "setupPasswordMismatch": "گذرواژه ها مطابقت ندارند",
+  "setupPasswordFailedSeed": "تولید دانه انجام نشد. لطفا دوباره امتحان کنید.",
+  "setupPasswordFailedInit": "مقداردهی اولیه ناموفق بود. خطا: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "مخاطبین شما همچنان با یک کلید مخفی طولانی که فقط در دستگاه شما ذخیره می شود، به شدت رمزگذاری می شوند. اما رمز عبور محافظت بیشتری را اضافه می کند.",
+  "setupPasswordLabel": "رمز عبور",
+  "setupPasswordHelper": "حداقل 4 کاراکتر",
+  "setupPasswordConfirmLabel": "رمز عبور را تایید کنید",
+  "setupPasswordWarning": "این رمز عبور قابل بازیابی نیست. آن را یادداشت کنید و از آن محافظت کنید!",
+  "setupPasswordPageTitle": "رمز عبور ایجاد کنید",
+  "setupPasswordNext": "بعدی",
+  "setupPasswordSkip": "پرش کنید",
+  "confirmationCheckboxTitle": "می دانم رمز عبور من قابل بازیابی نیست",
+  "loginWelcomeBack": "خوش آمدید بازگشت",
+  "loginPasswordLabel": "رمز عبور",
+  "loginUnlock": "باز کردن قفل",
+  "loginPasswordRequired": "رمز عبور خود را وارد کنید",
+  "loginIncorrectPassword": "رمز عبور نادرست است. لطفاً دوباره امتحان کنید.",
+  "paywallNoSubscription": "هیچ اشتراک فعالی یافت نشد. لطفاً برای ادامه خرید کنید.",
+  "paywallNoInternetTitle": "بدون اتصال به اینترنت",
+  "paywallNoInternetBody": "اتصال به اینترنت برای دسترسی به برنامه برای اولین بار مورد نیاز است. لطفاً وصل شوید و دوباره امتحان کنید.",
+  "paywallStoreUnavailableTitle": "فروشگاه در دسترس نیست",
+  "paywallStoreUnavailableBody": "بارگیری گزینه های اشتراک امکان پذیر نیست. لطفا دوباره امتحان کنید.",
+  "subscriptionVerifyTitle": "تایید اشتراک",
+  "subscriptionSoftWarningTitle": "تأیید اشتراک مورد نیاز است",
+  "subscriptionContinueAnyway": "به هر حال ادامه بده",
+  "subscriptionLastVerified": "آخرین تأیید {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "اشتراک آنلاین تأیید نشد.",
+  "subscriptionAccessUntil": "دسترسی شما تا {date} ادامه می‌یابد — قبل از آن برای تأیید، متصل شوید.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "برای تأیید اشتراک خود به اینترنت متصل شوید.",
+  "organizeNoDuplicates": "هیچ مورد تکراری احتمالی یافت نشد",
+  "organizeSkippedShownAgain": "موارد تکراری نادیده گرفته شده دوباره نشان داده می شوند.",
+  "organizeShowSkippedTooltip": "دوباره گروه های تکراری حذف شده را نشان دهید",
+  "organizeFailedToLoad": "بارگیری گروه های تکراری انجام نشد: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} مورد تکراری",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "برای مشاهده جزئیات ضربه بزنید",
+  "organizeConflictMostlyIdentical": "اکثراً یکسان است",
+  "organizeConflictFieldVariants": "{field}: انواع {count}",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "نام",
+  "fieldLabelCompany": "شرکت",
+  "fieldLabelPhone": "تلفن",
+  "fieldLabelEmail": "ایمیل",
+  "importErrorUnsupportedSource": "واردات در اینجا در دسترس نیست.",
+  "importErrorPermissionDenied": "مجوز مخاطبین برای وارد کردن مخاطبین مورد نیاز است.",
+  "importErrorNoContacts": "هیچ مخاطبی برای وارد کردن وجود ندارد.",
+  "importErrorUnsupportedFileType": "لطفاً یک فایل .vcf یا بایگانی .zip را انتخاب کنید.",
+  "importErrorInvalidFile": "فایل انتخابی نامعتبر یا غیرقابل خواندن است.",
+  "importErrorWrongPassword": "رمز عبور بایگانی اشتباه است. لطفا دوباره امتحان کنید.",
+  "importErrorNoVcfInArchive": "هیچ فایل .vcf در بایگانی انتخاب شده یافت نشد.",
+  "importErrorFailed": "وارد کردن مخاطبین انجام نشد: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "مخاطبین هنوز در دسترس نیستند.",
+  "exportErrorNoContacts": "هیچ مخاطبی برای صادرات وجود ندارد.",
+  "exportErrorPasswordRequired": "رمز عبور برای صادرات محافظت شده مورد نیاز است.",
+  "exportErrorPasswordTooShort": "صادرات محافظت‌شده به رمز عبور حداقل {min} کاراکتر نیاز دارد.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "صادر نشد: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "دانلود شروع شد.",
+  "exportNoticeFileSaved": "فایل با موفقیت ذخیره شد.",
+  "phoneTypeMobile": "موبایل",
+  "phoneTypeHome": "خانه",
+  "phoneTypeWork": "کاری",
+  "phoneTypeSchool": "مدرسه",
+  "phoneTypeOther": "دیگر",
+  "emailTypePersonal": "شخصی",
+  "emailTypeWork": "کاری",
+  "emailTypeSchool": "مدرسه",
+  "emailTypeOther": "دیگر",
+  "addressTypeHome": "خانه",
+  "addressTypeWork": "محل کار",
+  "addressTypeSchool": "مدرسه",
+  "addressTypeBirth": "تولد",
+  "linkTypeWebsite": "وب سایت",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "دیگر",
+  "dateTypeCreated": "ایجاد شد",
+  "dateTypeBirthday": "تولد",
+  "dateTypeMet": "ملاقات کرد",
+  "dateTypeGraduation": "فارغ التحصیلی",
+  "dateTypeMarriage": "ازدواج",
+  "dateTypeOther": "دیگر",
+  "noNameInList": "(بدون نام)",
+  "formAddPhone": "تلفن را اضافه کنید",
+  "formAddEmail": "ایمیل اضافه کنید",
+  "formAddAddress": "آدرس اضافه کنید",
+  "formAddLink": "لینک اضافه کنید",
+  "formAddDate": "اضافه کردن تاریخ",
+  "formHintPhoneNumber": "شماره تلفن",
+  "formHintEmail": "ایمیل",
+  "formHintUrl": "URL",
+  "formHintAddress": "آدرس",
+  "formHintSelectDate": "تاریخ را انتخاب کنید",
+  "formHintNotes": "یادداشت ها را اضافه کنید",
+  "formCompany": "شرکت",
+  "formDepartment": "بخش",
+  "formJobTitle": "عنوان شغلی",
+  "formPrefix": "پیشوند",
+  "formFirstName": "نام",
+  "formMiddleName": "نام میانی",
+  "formLastName": "نام خانوادگی",
+  "formSuffix": "پسوند",
+  "formNickname": "نام مستعار",
+  "contactsListTitle": "مخاطبین",
+  "contactsListEmpty": "هنوز مخاطبی وجود ندارد",
+  "contactsImportButton": "وارد کردن مخاطبین",
+  "mergeContactsTitle": "ادغام مخاطبین",
+  "mergeContactsSubtitle": "مخاطبین را برای ادغام در یکی انتخاب کنید",
+  "exportPasswordHint": "رمز عبور",
+  "exportPasswordConfirmHint": "رمز عبور را تایید کنید",
+  "exportPasswordHelper": "حداقل {min} کاراکتر",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "رمز عبور بایگانی",
+  "activateDemoAccessCodeLabel": "کد دسترسی",
+  "subscriptionExpiredTitle": "اشتراک منقضی شده است",
+  "subscriptionExpiredBody": "برای ادامه استفاده از همه ویژگی‌ها، تمدید کنید.",
+  "contactsLoadError": "مخاطبین بارگیری نشد.",
+  "contactsListError": "مخاطبین بارگیری نشد.",
+  "contactsSearchNoResults": "مخاطبی یافت نشد",
+  "supportPageIntro": "سؤال، بازخورد یا مشکلی دارید؟ تیم Savelon هر پیام را می‌خواند.",
+  "supportCtaMessageTeam": "پیام به تیم",
+  "importFromDeviceContacts": "از مخاطبین شما",
+  "importFromFileVcfZip": "از پرونده (VCF، ZIP)",
+  "exportCreateUniquePasswordTitle": "ایجاد گذرواژهٔ یکتا",
+  "exportPasswordIrrecoverableHint": "این گذرواژه قابل بازیابی نیست.",
+  "exportProtectedArchiveCta": "صادرات بایگانی محافظت‌شده",
+  "exportIosSavedFileWarning": "این پرونده در پوشهٔ Savelon ذخیره می‌شود. با حذف برنامه، پرونده هم حذف می‌شود. برای نگه‌داشتن آن به جای دیگری منتقل کنید.",
+  "importContactsConfirmBody": "{count} مخاطب به Savelon وارد شود؟",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "تنظیم گذرواژه",
+  "settingsChangePasswordPageTitle": "تغییر گذرواژه",
+  "settingsRemovePasswordPageTitle": "حذف گذرواژه",
+  "settingsNewPasswordLabel": "گذرواژهٔ جدید",
+  "settingsConfirmNewPasswordLabel": "تأیید گذرواژهٔ جدید",
+  "settingsReenterNewPasswordHelper": "گذرواژهٔ جدید را دوباره وارد کنید",
+  "settingsSetPasswordCta": "تنظیم گذرواژه",
+  "settingsChangePasswordCta": "تغییر گذرواژه",
+  "settingsRemovePasswordCta": "حذف گذرواژه",
+  "settingsCurrentPasswordLabel": "گذرواژهٔ فعلی",
+  "settingsEnterCurrentPasswordHelper": "گذرواژهٔ فعلی را وارد کنید",
+  "settingsNewPasswordMustDiffer": "گذرواژهٔ جدید باید با فعلی متفاوت باشد",
+  "settingsFailedToSetPassword": "تنظیم گذرواژه ناموفق بود: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "تغییر گذرواژه ناموفق بود: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "حذف گذرواژه ناموفق بود: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "گذرواژه نامعتبر است",
+  "settingsCurrentPasswordIncorrect": "گذرواژهٔ فعلی نادرست است",
+  "settingsCurrentPasswordRequired": "گذرواژهٔ فعلی لازم است",
+  "authPasswordRequiredWhenProtectionEnabled": "با فعال بودن محافظت با گذرواژه، گذرواژه لازم است",
+  "authPasswordRequiredWhenEnablePassword": "با فعال کردن گزینهٔ گذرواژه، گذرواژه لازم است",
+  "authPasswordRequiredForAccount": "برای این حساب گذرواژه لازم است",
+  "visit": "بازدید",
+  "unlockPro": "فعال‌سازی Pro",
+  "lifetimeThanksTitle": "ممنون که با ما هستید",
+  "lifetimeThanksSubtitle": "ما دسترسی Pro مادام‌العمر را به شما هدیه می‌دهیم",
+  "lifetimeThanksGift": "هدیه",
+  "lifetimeThanksCta": "دریافت دسترسی مادام‌العمر"
+}
