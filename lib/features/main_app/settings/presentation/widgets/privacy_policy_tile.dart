@@ -17,6 +17,7 @@ class PrivacyPolicyTile extends StatelessWidget {
       title: const Text('Privacy Policy'),
       trailing: Icon(
         Icons.chevron_right_rounded,
+        size: 20,
         color: Theme.of(context).colorScheme.onSurfaceVariant,
       ),
       onTap: () => _openPrivacyPolicy(context),
