@@ -6,6 +6,7 @@ import 'package:contacts/core/theme/app_theme.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/import_contacts_capabilities.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
 import 'package:contacts/features/main_app/settings/presentation/widgets/export_contacts_tile.dart';
+import 'package:contacts/features/main_app/settings/presentation/widgets/github_tile.dart';
 import 'package:contacts/features/main_app/settings/presentation/widgets/language_settings_tile.dart';
 import 'package:contacts/features/main_app/settings/presentation/widgets/import_contacts_tile.dart';
 import 'package:contacts/features/main_app/settings/presentation/widgets/password_settings_tile.dart';
@@ -69,6 +70,7 @@ class SettingsPage extends ConsumerWidget {
     }
     items.add(const LanguageSettingsTile());
     items.add(const PasswordSettingsTile());
+    items.add(const GithubTile());
     items.add(const PrivacyPolicyTile());
     items.add(const ResetAppButton());
 
