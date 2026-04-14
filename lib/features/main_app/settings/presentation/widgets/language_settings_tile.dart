@@ -17,7 +17,11 @@ class LanguageSettingsTile extends ConsumerWidget {
         : labelForLocale(current);
 
     return ListTile(
-      leading: const Icon(Icons.language_outlined),
+      leading: Icon(
+        Icons.language_outlined,
+        size: 20,
+        color: Theme.of(context).colorScheme.onSurface,
+      ),
       title: Text(l10n.language),
       subtitle: Text(subtitle),
       onTap: () => context.push('/main_app/settings/language'),

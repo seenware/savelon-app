@@ -17,6 +17,7 @@ class GithubTile extends StatelessWidget {
       title: const Text('Github'),
       trailing: Icon(
         Icons.chevron_right_rounded,
+        size: 20,
         color: Theme.of(context).colorScheme.onSurfaceVariant,
       ),
       onTap: () => _openGithub(context),

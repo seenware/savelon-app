@@ -34,7 +34,8 @@ const _kLifetimeThanksShownKey = 'lifetime_thanks_shown_once';
 /// - [PaywallOverrideMode.forcePaywall]: always show paywall (no access)
 /// - [PaywallOverrideMode.forceNoPaywall]: always grant access (skip paywall)
 /// - [PaywallOverrideMode.normal]: production behavior
-const PaywallOverrideMode kDebugPaywallOverride = PaywallOverrideMode.normal;
+const PaywallOverrideMode kDebugPaywallOverride =
+    PaywallOverrideMode.forceNoPaywall;
 
 enum PaywallOverrideMode { forcePaywall, forceNoPaywall, normal }
 
@@ -63,11 +64,7 @@ enum SubscriptionRefreshResult {
 /// Access decision based on locally cached entitlement data.
 enum OfflineAccessState { active, softWarning, hardBlock }
 
-enum DemoCodeRedeemStatus {
-  success,
-  invalidCode,
-  outsideValidityWindow,
-}
+enum DemoCodeRedeemStatus { success, invalidCode, outsideValidityWindow }
 
 class DemoCodeDefinition {
   final String code;
@@ -130,7 +127,10 @@ class PurchasesService {
     if (code.isEmpty) return const <DemoCodeDefinition>[];
     final hours = _kDemoCodeDurationHours <= 0 ? 72 : _kDemoCodeDurationHours;
     return <DemoCodeDefinition>[
-      DemoCodeDefinition(code: code, duration: Duration(hours: hours)),
+      DemoCodeDefinition(
+        code: code,
+        duration: Duration(hours: hours),
+      ),
     ];
   }
 
