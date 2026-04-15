@@ -191,7 +191,6 @@
     }
   },
   "setupPasswordTitle": "Добавить защиту паролем",
-  "setupPasswordShortError": "Используйте не менее 4 символов",
   "setupPasswordMismatch": "Пароли не совпадают",
   "setupPasswordFailedSeed": "Не удалось создать начальное значение. Пожалуйста, попробуйте еще раз.",
   "setupPasswordFailedInit": "Не удалось инициализировать. Ошибка: {error}",
@@ -204,7 +203,6 @@
   },
   "setupPasswordInfo": "Ваши контакты по-прежнему будут надежно зашифрованы длинным секретным ключом, хранящимся только на вашем устройстве. Но пароль добавляет дополнительную защиту.",
   "setupPasswordLabel": "Пароль",
-  "setupPasswordHelper": "Минимум 4 символа",
   "setupPasswordConfirmLabel": "Подтвердите пароль",
   "setupPasswordWarning": "Этот пароль невозможно восстановить. Запишите его и храните в безопасности!",
   "setupPasswordPageTitle": "Создать пароль",

@@ -377,9 +377,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get setupPasswordTitle => 'Şifre koruması ekleyin';
 
   @override
-  String get setupPasswordShortError => 'En az 4 karakter kullanın';
-
-  @override
   String get setupPasswordMismatch => 'Şifreler eşleşmiyor';
 
   @override
@@ -397,9 +394,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Şifre';
-
-  @override
-  String get setupPasswordHelper => 'En az 4 karakter';
 
   @override
   String get setupPasswordConfirmLabel => 'Şifreyi Onayla';

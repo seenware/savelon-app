@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Şifre koruması ekleyin",
-  "setupPasswordShortError": "En az 4 karakter kullanın",
   "setupPasswordMismatch": "Şifreler eşleşmiyor",
   "setupPasswordFailedSeed": "Tohum oluşturulamadı. Lütfen tekrar deneyin.",
   "setupPasswordFailedInit": "Başlatılamadı. Hata: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Kişileriniz yalnızca cihazınızda saklanan uzun bir gizli anahtarla güçlü bir şekilde şifrelenmeye devam edecektir. Ancak şifre ekstra koruma sağlar.",
   "setupPasswordLabel": "Şifre",
-  "setupPasswordHelper": "En az 4 karakter",
   "setupPasswordConfirmLabel": "Şifreyi Onayla",
   "setupPasswordWarning": "Bu şifre kurtarılamaz. Bunu bir yere yazın ve güvende tutun!",
   "setupPasswordPageTitle": "Şifre Oluştur",

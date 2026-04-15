@@ -191,7 +191,6 @@
     }
   },
   "setupPasswordTitle": "Add password protection",
-  "setupPasswordShortError": "Use at least 4 characters",
   "setupPasswordMismatch": "Passwords do not match",
   "setupPasswordFailedSeed": "Failed to generate seed. Please try again.",
   "setupPasswordFailedInit": "Failed to initialize. Error: {error}",
@@ -204,7 +203,6 @@
   },
   "setupPasswordInfo": "Your contacts will still be strongly encrypted by a long secret key, stored on your device only. But password adds extra protection.",
   "setupPasswordLabel": "Password",
-  "setupPasswordHelper": "At least 4 characters",
   "setupPasswordConfirmLabel": "Confirm Password",
   "setupPasswordWarning": "This password cannot be recovered. Write it down and keep it safe!",
   "setupPasswordPageTitle": "Create Password",

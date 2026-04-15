@@ -34,8 +34,7 @@ const _kLifetimeThanksShownKey = 'lifetime_thanks_shown_once';
 /// - [PaywallOverrideMode.forcePaywall]: always show paywall (no access)
 /// - [PaywallOverrideMode.forceNoPaywall]: always grant access (skip paywall)
 /// - [PaywallOverrideMode.normal]: production behavior
-const PaywallOverrideMode kDebugPaywallOverride =
-    PaywallOverrideMode.forceNoPaywall;
+const PaywallOverrideMode kDebugPaywallOverride = PaywallOverrideMode.normal;
 
 enum PaywallOverrideMode { forcePaywall, forceNoPaywall, normal }
 

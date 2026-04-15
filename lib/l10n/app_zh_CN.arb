@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "添加密码保护",
-  "setupPasswordShortError": "至少使用 4 个字符",
   "setupPasswordMismatch": "密码不匹配",
   "setupPasswordFailedSeed": "无法生成种子。请再试一次。",
   "setupPasswordFailedInit": "初始化失败。错误：{error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "您的联系人仍将通过长密钥进行高度加密，仅存储在您的设备上。但密码增加了额外的保护。",
   "setupPasswordLabel": "密码",
-  "setupPasswordHelper": "至少 4 个字符",
   "setupPasswordConfirmLabel": "确认密码",
   "setupPasswordWarning": "该密码无法恢复。写下来并妥善保管！",
   "setupPasswordPageTitle": "创建密码",

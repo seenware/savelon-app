@@ -378,9 +378,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get setupPasswordTitle => 'Добавить защиту паролем';
 
   @override
-  String get setupPasswordShortError => 'Используйте не менее 4 символов';
-
-  @override
   String get setupPasswordMismatch => 'Пароли не совпадают';
 
   @override
@@ -398,9 +395,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Пароль';
-
-  @override
-  String get setupPasswordHelper => 'Минимум 4 символа';
 
   @override
   String get setupPasswordConfirmLabel => 'Подтвердите пароль';

@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Agregar protección con contraseña",
-  "setupPasswordShortError": "Utilice al menos 4 caracteres",
   "setupPasswordMismatch": "Las contraseñas no coinciden",
   "setupPasswordFailedSeed": "No se pudo generar semilla. Por favor inténtalo de nuevo.",
   "setupPasswordFailedInit": "No se pudo inicializar. Error: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Sus contactos seguirán estando fuertemente cifrados mediante una clave secreta larga, almacenada únicamente en su dispositivo. Pero la contraseña añade protección adicional.",
   "setupPasswordLabel": "Contraseña",
-  "setupPasswordHelper": "Al menos 4 caracteres",
   "setupPasswordConfirmLabel": "Confirmar contraseña",
   "setupPasswordWarning": "Esta contraseña no se puede recuperar. Escríbela y guárdala en un lugar seguro.",
   "setupPasswordPageTitle": "Crear contraseña",

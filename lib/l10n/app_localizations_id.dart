@@ -377,9 +377,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get setupPasswordTitle => 'Tambahkan perlindungan kata sandi';
 
   @override
-  String get setupPasswordShortError => 'Gunakan minimal 4 karakter';
-
-  @override
   String get setupPasswordMismatch => 'Kata sandi tidak cocok';
 
   @override
@@ -397,9 +394,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Kata sandi';
-
-  @override
-  String get setupPasswordHelper => 'Setidaknya 4 karakter';
 
   @override
   String get setupPasswordConfirmLabel => 'Konfirmasi Kata Sandi';

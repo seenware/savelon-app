@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Tambahkan perlindungan kata sandi",
-  "setupPasswordShortError": "Gunakan minimal 4 karakter",
   "setupPasswordMismatch": "Kata sandi tidak cocok",
   "setupPasswordFailedSeed": "Gagal membuat seed. Silakan coba lagi.",
   "setupPasswordFailedInit": "Gagal melakukan inisialisasi. Kesalahan: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Kontak Anda akan tetap dienkripsi dengan kuat oleh kunci rahasia panjang, yang hanya disimpan di perangkat Anda. Namun kata sandi menambah perlindungan ekstra.",
   "setupPasswordLabel": "Kata sandi",
-  "setupPasswordHelper": "Setidaknya 4 karakter",
   "setupPasswordConfirmLabel": "Konfirmasi Kata Sandi",
   "setupPasswordWarning": "Kata sandi ini tidak dapat dipulihkan. Tuliskan dan simpan dengan aman!",
   "setupPasswordPageTitle": "Buat Kata Sandi",

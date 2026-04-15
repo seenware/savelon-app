@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "पासवर्ड सुरक्षा जोड़ें",
-  "setupPasswordShortError": "कम से कम 4 अक्षरों का प्रयोग करें",
   "setupPasswordMismatch": "पासवर्ड मेल नहीं खाते",
   "setupPasswordFailedSeed": "बीज उत्पन्न करने में विफल. कृपया पुन: प्रयास करें।",
   "setupPasswordFailedInit": "प्रारंभ करने में विफल. त्रुटि: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "आपके संपर्क अभी भी केवल आपके डिवाइस पर संग्रहीत एक लंबी गुप्त कुंजी द्वारा दृढ़ता से एन्क्रिप्ट किए जाएंगे। लेकिन पासवर्ड अतिरिक्त सुरक्षा जोड़ता है।",
   "setupPasswordLabel": "पासवर्ड",
-  "setupPasswordHelper": "कम से कम 4 अक्षर",
   "setupPasswordConfirmLabel": "पासवर्ड की पुष्टि कीजिये",
   "setupPasswordWarning": "यह पासवर्ड पुनर्प्राप्त नहीं किया जा सकता. इसे लिख लें और सुरक्षित रखें!",
   "setupPasswordPageTitle": "पासवर्ड बनाएं",

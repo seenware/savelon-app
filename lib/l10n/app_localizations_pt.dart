@@ -378,9 +378,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get setupPasswordTitle => 'Adicionar proteção por senha';
 
   @override
-  String get setupPasswordShortError => 'Use pelo menos 4 caracteres';
-
-  @override
   String get setupPasswordMismatch => 'As senhas não coincidem';
 
   @override
@@ -398,9 +395,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Senha';
-
-  @override
-  String get setupPasswordHelper => 'Pelo menos 4 caracteres';
 
   @override
   String get setupPasswordConfirmLabel => 'Confirme sua senha';
@@ -1267,9 +1261,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get setupPasswordTitle => 'Adicionar proteção por senha';
 
   @override
-  String get setupPasswordShortError => 'Use pelo menos 4 caracteres';
-
-  @override
   String get setupPasswordMismatch => 'As senhas não coincidem';
 
   @override
@@ -1287,9 +1278,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get setupPasswordLabel => 'Senha';
-
-  @override
-  String get setupPasswordHelper => 'Pelo menos 4 caracteres';
 
   @override
   String get setupPasswordConfirmLabel => 'Confirme sua senha';

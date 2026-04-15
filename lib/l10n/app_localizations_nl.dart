@@ -379,9 +379,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get setupPasswordTitle => 'Voeg wachtwoordbeveiliging toe';
 
   @override
-  String get setupPasswordShortError => 'Gebruik minimaal 4 tekens';
-
-  @override
   String get setupPasswordMismatch => 'Wachtwoorden komen niet overeen';
 
   @override
@@ -399,9 +396,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Wachtwoord';
-
-  @override
-  String get setupPasswordHelper => 'Minimaal 4 tekens';
 
   @override
   String get setupPasswordConfirmLabel => 'Bevestig wachtwoord';

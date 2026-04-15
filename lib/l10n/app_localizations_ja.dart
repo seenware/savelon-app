@@ -367,9 +367,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get setupPasswordTitle => 'パスワード保護を追加する';
 
   @override
-  String get setupPasswordShortError => '少なくとも 4 文字を使用してください';
-
-  @override
   String get setupPasswordMismatch => 'パスワードが一致しません';
 
   @override
@@ -386,9 +383,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'パスワード';
-
-  @override
-  String get setupPasswordHelper => '少なくとも 4 文字';
 
   @override
   String get setupPasswordConfirmLabel => 'パスワード（確認）';

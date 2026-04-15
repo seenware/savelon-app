@@ -56,9 +56,7 @@ class ExportContactsPasswordPage extends HookConsumerWidget {
     String? passwordError() {
       if (!showErrors.value) return null;
       if (p.length < kExportProtectedPasswordMinLength) {
-        return l10n.exportErrorPasswordTooShort(
-          kExportProtectedPasswordMinLength,
-        );
+        return l10n.exportPasswordHelper(kExportProtectedPasswordMinLength);
       }
       return null;
     }

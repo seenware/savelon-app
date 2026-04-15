@@ -376,9 +376,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get setupPasswordTitle => 'محافظت از رمز عبور را اضافه کنید';
 
   @override
-  String get setupPasswordShortError => 'حداقل از 4 کاراکتر استفاده کنید';
-
-  @override
   String get setupPasswordMismatch => 'گذرواژه ها مطابقت ندارند';
 
   @override
@@ -396,9 +393,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'رمز عبور';
-
-  @override
-  String get setupPasswordHelper => 'حداقل 4 کاراکتر';
 
   @override
   String get setupPasswordConfirmLabel => 'رمز عبور را تایید کنید';

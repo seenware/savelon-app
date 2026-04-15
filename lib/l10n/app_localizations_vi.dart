@@ -375,9 +375,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get setupPasswordTitle => 'Thêm mật khẩu bảo vệ';
 
   @override
-  String get setupPasswordShortError => 'Sử dụng ít nhất 4 ký tự';
-
-  @override
   String get setupPasswordMismatch => 'Mật khẩu không khớp';
 
   @override
@@ -395,9 +392,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Mật khẩu';
-
-  @override
-  String get setupPasswordHelper => 'Ít nhất 4 ký tự';
 
   @override
   String get setupPasswordConfirmLabel => 'Xác nhận mật khẩu';

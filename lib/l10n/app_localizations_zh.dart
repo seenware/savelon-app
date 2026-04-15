@@ -364,9 +364,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get setupPasswordTitle => '添加密码保护';
 
   @override
-  String get setupPasswordShortError => '至少使用 4 个字符';
-
-  @override
   String get setupPasswordMismatch => '密码不匹配';
 
   @override
@@ -382,9 +379,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => '密码';
-
-  @override
-  String get setupPasswordHelper => '至少 4 个字符';
 
   @override
   String get setupPasswordConfirmLabel => '确认密码';
@@ -1209,9 +1203,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get setupPasswordTitle => '添加密码保护';
 
   @override
-  String get setupPasswordShortError => '至少使用 4 个字符';
-
-  @override
   String get setupPasswordMismatch => '密码不匹配';
 
   @override
@@ -1227,9 +1218,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get setupPasswordLabel => '密码';
-
-  @override
-  String get setupPasswordHelper => '至少 4 个字符';
 
   @override
   String get setupPasswordConfirmLabel => '确认密码';

@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "পাসওয়ার্ড সুরক্ষা যোগ করুন",
-  "setupPasswordShortError": "কমপক্ষে 4টি অক্ষর ব্যবহার করুন",
   "setupPasswordMismatch": "পাসওয়ার্ড মেলে না",
   "setupPasswordFailedSeed": "বীজ উৎপন্ন করতে ব্যর্থ। আবার চেষ্টা করুন.",
   "setupPasswordFailedInit": "আরম্ভ করতে ব্যর্থ হয়েছে. ত্রুটি: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "আপনার পরিচিতিগুলি এখনও একটি দীর্ঘ গোপন কী দ্বারা দৃঢ়ভাবে এনক্রিপ্ট করা হবে, শুধুমাত্র আপনার ডিভাইসে সংরক্ষিত। কিন্তু পাসওয়ার্ড অতিরিক্ত সুরক্ষা যোগ করে।",
   "setupPasswordLabel": "পাসওয়ার্ড",
-  "setupPasswordHelper": "কমপক্ষে 4টি অক্ষর",
   "setupPasswordConfirmLabel": "পাসওয়ার্ড নিশ্চিত করুন",
   "setupPasswordWarning": "এই পাসওয়ার্ড পুনরুদ্ধার করা যাবে না. এটি লিখুন এবং এটি নিরাপদ রাখুন!",
   "setupPasswordPageTitle": "পাসওয়ার্ড তৈরি করুন",

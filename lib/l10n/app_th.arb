@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "เพิ่มการป้องกันด้วยรหัสผ่าน",
-  "setupPasswordShortError": "ใช้อย่างน้อย 4 ตัวอักษร",
   "setupPasswordMismatch": "รหัสผ่านไม่ตรงกัน",
   "setupPasswordFailedSeed": "ไม่สามารถสร้าง seed ได้ โปรดลองอีกครั้ง",
   "setupPasswordFailedInit": "ไม่สามารถเริ่มต้นได้ ข้อผิดพลาด: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "ผู้ติดต่อของคุณจะยังคงได้รับการเข้ารหัสอย่างแน่นหนาด้วยรหัสลับขนาดยาวที่จัดเก็บไว้ในอุปกรณ์ของคุณเท่านั้น แต่รหัสผ่านเพิ่มการป้องกันพิเศษ",
   "setupPasswordLabel": "รหัสผ่าน",
-  "setupPasswordHelper": "อย่างน้อย 4 ตัวอักษร",
   "setupPasswordConfirmLabel": "ยืนยันรหัสผ่าน",
   "setupPasswordWarning": "รหัสผ่านนี้ไม่สามารถกู้คืนได้ เขียนมันลงไปและเก็บไว้อย่างปลอดภัย!",
   "setupPasswordPageTitle": "สร้างรหัสผ่าน",

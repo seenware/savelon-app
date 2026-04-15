@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Passwortschutz hinzufügen",
-  "setupPasswordShortError": "Verwenden Sie mindestens 4 Zeichen",
   "setupPasswordMismatch": "Passwörter stimmen nicht überein",
   "setupPasswordFailedSeed": "Die Seed-Generierung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
   "setupPasswordFailedInit": "Initialisierung fehlgeschlagen. Fehler: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Ihre Kontakte werden weiterhin durch einen langen geheimen Schlüssel stark verschlüsselt, der nur auf Ihrem Gerät gespeichert wird. Aber das Passwort bietet zusätzlichen Schutz.",
   "setupPasswordLabel": "Passwort",
-  "setupPasswordHelper": "Mindestens 4 Zeichen",
   "setupPasswordConfirmLabel": "Passwort bestätigen",
   "setupPasswordWarning": "Dieses Passwort kann nicht wiederhergestellt werden. Schreiben Sie es auf und bewahren Sie es gut auf!",
   "setupPasswordPageTitle": "Passwort erstellen",

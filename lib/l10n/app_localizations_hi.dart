@@ -376,9 +376,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get setupPasswordTitle => 'पासवर्ड सुरक्षा जोड़ें';
 
   @override
-  String get setupPasswordShortError => 'कम से कम 4 अक्षरों का प्रयोग करें';
-
-  @override
   String get setupPasswordMismatch => 'पासवर्ड मेल नहीं खाते';
 
   @override
@@ -396,9 +393,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'पासवर्ड';
-
-  @override
-  String get setupPasswordHelper => 'कम से कम 4 अक्षर';
 
   @override
   String get setupPasswordConfirmLabel => 'पासवर्ड की पुष्टि कीजिये';
