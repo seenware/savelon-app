@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "비밀번호 보호 추가",
-  "setupPasswordShortError": "4자 이상 사용하세요",
   "setupPasswordMismatch": "비밀번호가 일치하지 않습니다.",
   "setupPasswordFailedSeed": "시드를 생성하지 못했습니다. 다시 시도해 주세요.",
   "setupPasswordFailedInit": "초기화하지 못했습니다. 오류: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "연락처는 기기에만 저장되는 긴 비밀 키로 강하게 암호화됩니다. 비밀번호는 여기에 더해지는 추가 보호입니다.",
   "setupPasswordLabel": "비밀번호",
-  "setupPasswordHelper": "최소 4자 이상",
   "setupPasswordConfirmLabel": "비밀번호 확인",
   "setupPasswordWarning": "이 비밀번호는 복구할 수 없습니다. 꼭 적어서 보관하세요!",
   "setupPasswordPageTitle": "비밀번호 생성",

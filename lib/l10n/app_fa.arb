@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "محافظت از رمز عبور را اضافه کنید",
-  "setupPasswordShortError": "حداقل از 4 کاراکتر استفاده کنید",
   "setupPasswordMismatch": "گذرواژه ها مطابقت ندارند",
   "setupPasswordFailedSeed": "تولید دانه انجام نشد. لطفا دوباره امتحان کنید.",
   "setupPasswordFailedInit": "مقداردهی اولیه ناموفق بود. خطا: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "مخاطبین شما همچنان با یک کلید مخفی طولانی که فقط در دستگاه شما ذخیره می شود، به شدت رمزگذاری می شوند. اما رمز عبور محافظت بیشتری را اضافه می کند.",
   "setupPasswordLabel": "رمز عبور",
-  "setupPasswordHelper": "حداقل 4 کاراکتر",
   "setupPasswordConfirmLabel": "رمز عبور را تایید کنید",
   "setupPasswordWarning": "این رمز عبور قابل بازیابی نیست. آن را یادداشت کنید و از آن محافظت کنید!",
   "setupPasswordPageTitle": "رمز عبور ایجاد کنید",

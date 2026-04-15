@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "إضافة حماية كلمة المرور",
-  "setupPasswordShortError": "استخدم 4 أحرف على الأقل",
   "setupPasswordMismatch": "كلمات المرور غير متطابقة",
   "setupPasswordFailedSeed": "فشل في توليد البذور. يرجى المحاولة مرة أخرى.",
   "setupPasswordFailedInit": "فشل في التهيئة. خطأ: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "ستظل جهات الاتصال الخاصة بك مشفرة بقوة باستخدام مفتاح سري طويل، يتم تخزينه على جهازك فقط. لكن كلمة المرور تضيف حماية إضافية.",
   "setupPasswordLabel": "كلمة المرور",
-  "setupPasswordHelper": "4 أحرف على الأقل",
   "setupPasswordConfirmLabel": "تأكيد كلمة المرور",
   "setupPasswordWarning": "لا يمكن استعادة كلمة المرور هذه. اكتبها واحتفظ بها آمنة!",
   "setupPasswordPageTitle": "إنشاء كلمة المرور",

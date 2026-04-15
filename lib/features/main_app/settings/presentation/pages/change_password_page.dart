@@ -63,7 +63,7 @@ class ChangePasswordPage extends HookConsumerWidget {
       if (!showErrors.value) return null;
       final currentPassword = currentPasswordController.text;
       final newPassword = newPasswordController.text;
-      if (newPassword.length < 4) return l10n.setupPasswordShortError;
+      if (newPassword.length < 4) return l10n.exportPasswordHelper(4);
       if (currentPassword == newPassword) {
         return l10n.settingsNewPasswordMustDiffer;
       }
@@ -195,7 +195,7 @@ class ChangePasswordPage extends HookConsumerWidget {
             focusNode: newFocusNode,
             textInputAction: TextInputAction.next,
             label: l10n.settingsNewPasswordLabel,
-            helperText: l10n.setupPasswordHelper,
+            helperText: l10n.exportPasswordHelper(4),
             errorText: newPasswordError(),
             shakeSignal: errorShakeTick.value,
             onFocusLost: () {

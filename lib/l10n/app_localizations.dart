@@ -802,12 +802,6 @@ abstract class AppLocalizations {
   /// **'Add password protection'**
   String get setupPasswordTitle;
 
-  /// No description provided for @setupPasswordShortError.
-  ///
-  /// In en, this message translates to:
-  /// **'Use at least 4 characters'**
-  String get setupPasswordShortError;
-
   /// No description provided for @setupPasswordMismatch.
   ///
   /// In en, this message translates to:
@@ -837,12 +831,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Password'**
   String get setupPasswordLabel;
-
-  /// No description provided for @setupPasswordHelper.
-  ///
-  /// In en, this message translates to:
-  /// **'At least 4 characters'**
-  String get setupPasswordHelper;
 
   /// No description provided for @setupPasswordConfirmLabel.
   ///

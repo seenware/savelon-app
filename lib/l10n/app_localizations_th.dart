@@ -375,9 +375,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get setupPasswordTitle => 'เพิ่มการป้องกันด้วยรหัสผ่าน';
 
   @override
-  String get setupPasswordShortError => 'ใช้อย่างน้อย 4 ตัวอักษร';
-
-  @override
   String get setupPasswordMismatch => 'รหัสผ่านไม่ตรงกัน';
 
   @override
@@ -395,9 +392,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'รหัสผ่าน';
-
-  @override
-  String get setupPasswordHelper => 'อย่างน้อย 4 ตัวอักษร';
 
   @override
   String get setupPasswordConfirmLabel => 'ยืนยันรหัสผ่าน';

@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Ajouter une protection par mot de passe",
-  "setupPasswordShortError": "Utilisez au moins 4 caractères",
   "setupPasswordMismatch": "Les mots de passe ne correspondent pas",
   "setupPasswordFailedSeed": "Échec de la génération de la graine. Veuillez réessayer.",
   "setupPasswordFailedInit": "Échec de l'initialisation. Erreur : {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Vos contacts restent fortement chiffrés par une longue clé secrète, stockée uniquement sur votre appareil. Le mot de passe ajoute une protection supplémentaire.",
   "setupPasswordLabel": "Mot de passe",
-  "setupPasswordHelper": "Au moins 4 caractères",
   "setupPasswordConfirmLabel": "Confirmez le mot de passe",
   "setupPasswordWarning": "Ce mot de passe ne peut pas être récupéré. Écrivez-le et conservez-le en sécurité !",
   "setupPasswordPageTitle": "Créer un mot de passe",

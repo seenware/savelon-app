@@ -368,9 +368,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get setupPasswordTitle => '비밀번호 보호 추가';
 
   @override
-  String get setupPasswordShortError => '4자 이상 사용하세요';
-
-  @override
   String get setupPasswordMismatch => '비밀번호가 일치하지 않습니다.';
 
   @override
@@ -387,9 +384,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => '비밀번호';
-
-  @override
-  String get setupPasswordHelper => '최소 4자 이상';
 
   @override
   String get setupPasswordConfirmLabel => '비밀번호 확인';

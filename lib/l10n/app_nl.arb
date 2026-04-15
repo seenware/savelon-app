@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Voeg wachtwoordbeveiliging toe",
-  "setupPasswordShortError": "Gebruik minimaal 4 tekens",
   "setupPasswordMismatch": "Wachtwoorden komen niet overeen",
   "setupPasswordFailedSeed": "Sleutel aanmaken mislukt. Probeer het opnieuw.",
   "setupPasswordFailedInit": "Initialiseren is mislukt. Fout: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Uw contacten blijven sterk versleuteld met een lange geheime sleutel die alleen op uw apparaat wordt opgeslagen. Het wachtwoord voegt extra bescherming toe.",
   "setupPasswordLabel": "Wachtwoord",
-  "setupPasswordHelper": "Minimaal 4 tekens",
   "setupPasswordConfirmLabel": "Bevestig wachtwoord",
   "setupPasswordWarning": "Dit wachtwoord kan niet worden hersteld. Schrijf het op en bewaar het veilig!",
   "setupPasswordPageTitle": "Wachtwoord aanmaken",

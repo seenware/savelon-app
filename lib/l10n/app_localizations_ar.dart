@@ -377,9 +377,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get setupPasswordTitle => 'إضافة حماية كلمة المرور';
 
   @override
-  String get setupPasswordShortError => 'استخدم 4 أحرف على الأقل';
-
-  @override
   String get setupPasswordMismatch => 'كلمات المرور غير متطابقة';
 
   @override
@@ -397,9 +394,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'كلمة المرور';
-
-  @override
-  String get setupPasswordHelper => '4 أحرف على الأقل';
 
   @override
   String get setupPasswordConfirmLabel => 'تأكيد كلمة المرور';

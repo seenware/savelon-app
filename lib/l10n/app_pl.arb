@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Dodaj ochronę hasłem",
-  "setupPasswordShortError": "Użyj co najmniej 4 znaków",
   "setupPasswordMismatch": "Hasła nie pasują",
   "setupPasswordFailedSeed": "Nie udało się wygenerować ziarna losowości. Spróbuj ponownie.",
   "setupPasswordFailedInit": "Nie udało się zainicjować. Błąd: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Twoje kontakty będą nadal silnie szyfrowane długim tajnym kluczem przechowywanym tylko na Twoim urządzeniu. Ale hasło zapewnia dodatkową ochronę.",
   "setupPasswordLabel": "Hasło",
-  "setupPasswordHelper": "Co najmniej 4 znaki",
   "setupPasswordConfirmLabel": "Potwierdź hasło",
   "setupPasswordWarning": "Tego hasła nie można odzyskać. Zapisz to i zachowaj bezpieczeństwo!",
   "setupPasswordPageTitle": "Utwórz hasło",

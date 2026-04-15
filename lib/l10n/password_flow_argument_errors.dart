@@ -14,7 +14,7 @@ String localizePasswordFlowArgumentError(
     case PasswordFlowArgumentMessages.currentPasswordRequired:
       return l10n.settingsCurrentPasswordRequired;
     case PasswordFlowArgumentMessages.passwordMinLength:
-      return l10n.setupPasswordShortError;
+      return l10n.exportPasswordHelper(4);
     case PasswordFlowArgumentMessages.newPasswordMustDiffer:
       return l10n.settingsNewPasswordMustDiffer;
     case PasswordFlowArgumentMessages.passwordRequiredWhenProtectionEnabled:

@@ -381,9 +381,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get setupPasswordTitle => 'Agregar protección con contraseña';
 
   @override
-  String get setupPasswordShortError => 'Utilice al menos 4 caracteres';
-
-  @override
   String get setupPasswordMismatch => 'Las contraseñas no coinciden';
 
   @override
@@ -401,9 +398,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Contraseña';
-
-  @override
-  String get setupPasswordHelper => 'Al menos 4 caracteres';
 
   @override
   String get setupPasswordConfirmLabel => 'Confirmar contraseña';

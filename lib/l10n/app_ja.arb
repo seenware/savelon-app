@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "パスワード保護を追加する",
-  "setupPasswordShortError": "少なくとも 4 文字を使用してください",
   "setupPasswordMismatch": "パスワードが一致しません",
   "setupPasswordFailedSeed": "シードの生成に失敗しました。もう一度試してください。",
   "setupPasswordFailedInit": "初期化に失敗しました。エラー: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "連絡先は、デバイスにのみ保存される長い秘密キーによって強力に暗号化されます。ただし、パスワードを使用するとさらに保護が強化されます。",
   "setupPasswordLabel": "パスワード",
-  "setupPasswordHelper": "少なくとも 4 文字",
   "setupPasswordConfirmLabel": "パスワード（確認）",
   "setupPasswordWarning": "このパスワードは回復できません。書き留めて安全に保管してください。",
   "setupPasswordPageTitle": "パスワードの作成",

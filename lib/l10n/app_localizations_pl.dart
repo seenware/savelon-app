@@ -376,9 +376,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get setupPasswordTitle => 'Dodaj ochronę hasłem';
 
   @override
-  String get setupPasswordShortError => 'Użyj co najmniej 4 znaków';
-
-  @override
   String get setupPasswordMismatch => 'Hasła nie pasują';
 
   @override
@@ -396,9 +393,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Hasło';
-
-  @override
-  String get setupPasswordHelper => 'Co najmniej 4 znaki';
 
   @override
   String get setupPasswordConfirmLabel => 'Potwierdź hasło';

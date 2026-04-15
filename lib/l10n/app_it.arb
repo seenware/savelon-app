@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Aggiungi la protezione tramite password",
-  "setupPasswordShortError": "Utilizza almeno 4 caratteri",
   "setupPasswordMismatch": "Le password non corrispondono",
   "setupPasswordFailedSeed": "Impossibile generare il seed. Riprova.",
   "setupPasswordFailedInit": "Impossibile inizializzare. Errore: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "I tuoi contatti saranno comunque fortemente crittografati da una lunga chiave segreta, memorizzata solo sul tuo dispositivo. Ma la password aggiunge ulteriore protezione.",
   "setupPasswordLabel": "Password",
-  "setupPasswordHelper": "Almeno 4 caratteri",
   "setupPasswordConfirmLabel": "Conferma password",
   "setupPasswordWarning": "Questa password non può essere recuperata. Scrivila e tienila al sicuro!",
   "setupPasswordPageTitle": "Crea password",

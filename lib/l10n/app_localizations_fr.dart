@@ -382,9 +382,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get setupPasswordTitle => 'Ajouter une protection par mot de passe';
 
   @override
-  String get setupPasswordShortError => 'Utilisez au moins 4 caractères';
-
-  @override
   String get setupPasswordMismatch => 'Les mots de passe ne correspondent pas';
 
   @override
@@ -402,9 +399,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get setupPasswordLabel => 'Mot de passe';
-
-  @override
-  String get setupPasswordHelper => 'Au moins 4 caractères';
 
   @override
   String get setupPasswordConfirmLabel => 'Confirmez le mot de passe';

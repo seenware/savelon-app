@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Thêm mật khẩu bảo vệ",
-  "setupPasswordShortError": "Sử dụng ít nhất 4 ký tự",
   "setupPasswordMismatch": "Mật khẩu không khớp",
   "setupPasswordFailedSeed": "Không thể tạo hạt giống. Vui lòng thử lại.",
   "setupPasswordFailedInit": "Không khởi tạo được. Lỗi: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Danh bạ của bạn sẽ vẫn được mã hóa mạnh bằng một khóa bí mật dài, chỉ được lưu trữ trên thiết bị của bạn. Nhưng mật khẩu bổ sung thêm sự bảo vệ.",
   "setupPasswordLabel": "Mật khẩu",
-  "setupPasswordHelper": "Ít nhất 4 ký tự",
   "setupPasswordConfirmLabel": "Xác nhận mật khẩu",
   "setupPasswordWarning": "Mật khẩu này không thể phục hồi được. Hãy viết nó ra và giữ nó an toàn!",
   "setupPasswordPageTitle": "Tạo mật khẩu",

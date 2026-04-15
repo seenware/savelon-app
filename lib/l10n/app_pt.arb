@@ -189,7 +189,6 @@
     }
   },
   "setupPasswordTitle": "Adicionar proteção por senha",
-  "setupPasswordShortError": "Use pelo menos 4 caracteres",
   "setupPasswordMismatch": "As senhas não coincidem",
   "setupPasswordFailedSeed": "Falha ao gerar semente. Por favor, tente novamente.",
   "setupPasswordFailedInit": "Falha ao inicializar. Erro: {error}",
@@ -202,7 +201,6 @@
   },
   "setupPasswordInfo": "Seus contatos ainda serão fortemente criptografados por uma chave secreta longa, armazenada apenas no seu dispositivo. Mas a senha adiciona proteção extra.",
   "setupPasswordLabel": "Senha",
-  "setupPasswordHelper": "Pelo menos 4 caracteres",
   "setupPasswordConfirmLabel": "Confirme sua senha",
   "setupPasswordWarning": "Esta senha não pode ser recuperada. Anote-a e mantenha-a em segurança!",
   "setupPasswordPageTitle": "Criar senha",
