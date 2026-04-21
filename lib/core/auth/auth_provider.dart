@@ -75,10 +75,11 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       return _resolvePostGateState(passwordRequired: passwordRequired);
     }
 
-    // Early adopters and lifetime users have permanent access.
-    final paywallValue =
-        await SecureStorageService.instance.read('paywall_access');
-    if (paywallValue == 'early_adopter' || paywallValue == 'lifetime') {
+    // Early adopters get a one-time gratitude screen.
+    final paywallValue = await SecureStorageService.instance.read(
+      'paywall_access',
+    );
+    if (paywallValue == 'early_adopter') {
       if (await PurchasesService.shouldShowLifetimeThanks()) {
         return AuthStateNeedsLifetimeThanks(passwordEnabled: passwordRequired);
       }
@@ -118,7 +119,8 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
 
     if (access == OfflineAccessState.softWarning) {
       return AuthStateSubscriptionSoftWarning(
-          passwordEnabled: passwordRequired);
+        passwordEnabled: passwordRequired,
+      );
     }
     if (access == OfflineAccessState.hardBlock) {
       return AuthStateSubscriptionExpired(passwordEnabled: passwordRequired);
@@ -320,7 +322,9 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       );
       final testKeys = await KeyDerivationService().deriveKeys(testSeed);
       if (!_bytesEqual(testKeys.localDbKey, crypto.localDbKey)) {
-        throw ArgumentError(PasswordFlowArgumentMessages.currentPasswordIncorrect);
+        throw ArgumentError(
+          PasswordFlowArgumentMessages.currentPasswordIncorrect,
+        );
       }
     }
 
@@ -476,7 +480,9 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
 
     // Cold-start path: DB is not open yet.
     if (passwordEnabled) {
-      state = const AsyncValue.data(AuthStateNeedsLogin(passwordRequired: true));
+      state = const AsyncValue.data(
+        AuthStateNeedsLogin(passwordRequired: true),
+      );
     } else {
       // No password — auto-open DB now.
       final crypto = ref.read(cryptoServiceProvider);
@@ -505,7 +511,9 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     }
 
     if (passwordRequired) {
-      state = const AsyncValue.data(AuthStateNeedsLogin(passwordRequired: true));
+      state = const AsyncValue.data(
+        AuthStateNeedsLogin(passwordRequired: true),
+      );
     } else {
       final crypto = ref.read(cryptoServiceProvider);
       await crypto.initialize();
@@ -585,7 +593,9 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     return ContactsRepositoryImpl(database: db, imageStorage: imageStorage);
   }
 
-  Future<AuthState> _resolvePostGateState({required bool passwordRequired}) async {
+  Future<AuthState> _resolvePostGateState({
+    required bool passwordRequired,
+  }) async {
     if (passwordRequired) {
       return const AuthStateNeedsLogin(passwordRequired: true);
     }
