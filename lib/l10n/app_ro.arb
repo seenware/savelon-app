@@ -1,0 +1,445 @@
+{
+  "@@locale": "ro",
+  "appTitle": "Savelon",
+  "encryptedContactsTitle": "Contacte criptate",
+  "navContacts": "Contacte",
+  "navOrganize": "Organizare",
+  "navSupport": "Asistență",
+  "navSettings": "Setări",
+  "settingsTitle": "Setări",
+  "language": "Limbă",
+  "languageSystemDefault": "Implicit sistem",
+  "organizeTitle": "Organizare",
+  "supportTitle": "Asistență",
+  "search": "Caută",
+  "commonCancel": "Anulează",
+  "commonDelete": "Șterge",
+  "commonSave": "Salvează",
+  "commonEdit": "Editează",
+  "commonMerge": "Combină",
+  "commonSkip": "Omite",
+  "commonRetry": "Reîncearcă",
+  "commonClose": "Închide",
+  "commonNext": "Următorul",
+  "commonBack": "Înapoi",
+  "commonYes": "Da",
+  "commonNo": "Nu",
+  "commonContinue": "Continuă",
+  "commonTryAgain": "Încearcă din nou",
+  "commonApply": "Aplică",
+  "commonDiscard": "Renunță",
+  "commonUnlock": "Deblochează",
+  "commonLoading": "Se încarcă...",
+  "commonErrorWithDetails": "Eroare: {error}",
+  "@commonErrorWithDetails": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "brandSlogan": "Contactele tale. Doar ale tale.",
+  "contactNotFound": "Contactul nu a fost găsit",
+  "contactDeleted": "Contact șters",
+  "contactUpdated": "Contact actualizat",
+  "contactSaved": "Contact salvat",
+  "contactsMerged": "Contactele au fost combinate",
+  "deleteContactTitle": "Șterge contactul",
+  "deleteContactConfirm": "Sigur vrei să ștergi {name}?",
+  "@deleteContactConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteContactConfirmQuoted": "Sigur vrei să ștergi „{name}”?",
+  "@deleteContactConfirmQuoted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToDelete": "Nu s-a putut șterge: {error}",
+  "@failedToDelete": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdate": "Nu s-a putut actualiza: {error}",
+  "@failedToUpdate": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToSave": "Nu s-a putut salva: {error}",
+  "@failedToSave": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noName": "Fără nume",
+  "noNameTitle": "Fără nume",
+  "noNameBody": "Acest contact nu are nume. Vrei să-l salvezi oricum?",
+  "discardChangesTitle": "Renunți la modificări?",
+  "discardChangesBody": "Ai modificări nesalvate care se vor pierde.",
+  "newContact": "Contact nou",
+  "editContact": "Editează contactul",
+  "addMore": "Adaugă mai multe",
+  "addNameFieldsTitle": "Adaugă câmpuri pentru nume",
+  "call": "Apelează",
+  "sendEmail": "Trimite e-mail",
+  "copy": "Copiază",
+  "visit": "Deschide",
+  "copiedToClipboard": "Copiat în clipboard",
+  "importContacts": "Importă contacte",
+  "importing": "Se importă...",
+  "importedCount": "S-au importat {count} contacte",
+  "@importedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importedCountWithSkipped": "S-au importat {imported} contacte, {skipped} omise",
+  "@importedCountWithSkipped": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      }
+    }
+  },
+  "failedToImportContacts": "Nu s-au putut importa contactele",
+  "noContactsToImport": "Nu există contacte de importat.",
+  "contactsPermissionRequiredImport": "Este necesară permisiunea pentru contacte pentru a importa contacte",
+  "importDialogTitle": "Importă contacte",
+  "importDialogBody": "Vrei să imporți contacte de pe dispozitiv sau dintr-un fișier?",
+  "importSourceTitle": "Import",
+  "importZipPasswordTitle": "Parola arhivei",
+  "importZipPasswordChecking": "Se verifică...",
+  "exportContacts": "Exportă contacte",
+  "unlockPro": "Deblochează Pro",
+  "exportContactsTitle": "Exportă contacte",
+  "exportSubtitle": "Alege cum vrei să-ți salvezi contactele.",
+  "exportFormatVcfTitle": "Salvează ca fișier .vcf",
+  "exportFormatVcfSubtitle": "Un singur fișier compatibil cu Apple Contacts, Google Contacts și altele.",
+  "exportFormatZipTitle": "Salvează într-o arhivă protejată cu parolă",
+  "exportFormatZipSubtitle": "Un fișier .zip cu .vcf-ul în interior — e nevoie de o parolă pentru a-l deschide.",
+  "exportProtectedTitle": "Export protejat",
+  "exportCompleteTitle": "Export finalizat",
+  "stillLoadingContacts": "Contactele încă se încarcă. Te rugăm să aștepți.",
+  "couldNotLoadContacts": "Contactele nu au putut fi încărcate.",
+  "passwordChangedSuccess": "Parola a fost schimbată cu succes",
+  "passwordProtectionEnabled": "Protecția prin parolă a fost activată cu succes",
+  "passwordProtectionRemoved": "Protecția prin parolă a fost eliminată cu succes",
+  "removePasswordProtectionButton": "Elimină protecția prin parolă",
+  "changePasswordTitle": "Schimbă parola",
+  "setPasswordTitle": "Setează parola",
+  "passwordSettingsChangeTitle": "Schimbă parola",
+  "passwordSettingsSetTitle": "Setează parola",
+  "privacyPolicy": "Politica de confidențialitate",
+  "privacyPolicyOpenFailed": "Nu s-a putut deschide politica de confidențialitate: {error}",
+  "@privacyPolicyOpenFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "resetAppTitle": "Resetează aplicația",
+  "resetAppConfirmTitle": "Ștergi toate contactele și resetezi aplicația?",
+  "resetAppCannotUndo": "Această acțiune nu poate fi anulată",
+  "resetAppError": "Eroare la resetarea aplicației: {error}",
+  "@resetAppError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "photoPickerNewImage": "Selectează o imagine nouă",
+  "photoPickerRemoveImage": "Elimină imaginea",
+  "onboardingHeadline1": "Cine îți poate accesa contactele?",
+  "onboardingSubline1": "Unele aplicații le încarcă în cloud. Asta poate crea riscuri suplimentare pentru confidențialitate.",
+  "onboardingHeadline2": "Multe aplicații cer acces la contacte",
+  "onboardingSubline2": "Poate fi util, dar contactele importante ar trebui să rămână private.",
+  "onboardingHeadline3": "Păstrează separat contactele sensibile",
+  "onboardingSubline3": "Îți recomandăm să păstrezi contactele importante și folosite rar în afara aplicației principale de contacte.",
+  "onboardingHeadline4": "Protejează-ți contactele importante",
+  "onboardingSubline4": "Savelon le stochează pe dispozitivul tău, criptate și ferite de alte aplicații.",
+  "onboardingGetStarted": "Începe",
+  "onboardingNext": "Următorul",
+  "activateDemoTitle": "Activează demo",
+  "activateDemoCancel": "Anulează",
+  "demoAccessGranted": "Ai acum acces demo până la {dateTime}",
+  "@demoAccessGranted": {
+    "placeholders": {
+      "dateTime": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordTitle": "Adaugă protecție prin parolă",
+  "setupPasswordMismatch": "Parolele nu se potrivesc",
+  "setupPasswordFailedSeed": "Nu s-a putut genera cheia inițială. Încearcă din nou.",
+  "setupPasswordFailedInit": "Nu s-a putut inițializa aplicația. Eroare: {error}",
+  "@setupPasswordFailedInit": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "setupPasswordInfo": "Contactele tale vor rămâne criptate puternic cu o cheie secretă lungă, stocată doar pe dispozitiv. Parola adaugă un nivel suplimentar de protecție.",
+  "setupPasswordLabel": "Parolă",
+  "setupPasswordConfirmLabel": "Confirmă parola",
+  "setupPasswordWarning": "Această parolă nu poate fi recuperată. Noteaz-o și păstreaz-o în siguranță!",
+  "setupPasswordPageTitle": "Creează parola",
+  "setupPasswordNext": "Următorul",
+  "setupPasswordSkip": "Omite",
+  "confirmationCheckboxTitle": "Înțeleg că parola mea nu poate fi recuperată",
+  "loginWelcomeBack": "Bine ai revenit",
+  "loginPasswordLabel": "Parolă",
+  "loginUnlock": "Deblochează",
+  "loginPasswordRequired": "Introdu parola",
+  "loginIncorrectPassword": "Parolă incorectă. Încearcă din nou.",
+  "paywallNoSubscription": "Nu a fost găsit niciun abonament activ. Cumpără unul pentru a continua.",
+  "lifetimeThanksTitle": "Îți mulțumim că ești alături de noi",
+  "lifetimeThanksSubtitle": "Îți oferim acces Pro pe viață",
+  "lifetimeThanksGift": "cadou",
+  "lifetimeThanksCta": "Solicită acces pe viață",
+  "paywallNoInternetTitle": "Fără conexiune la internet",
+  "paywallNoInternetBody": "Este nevoie de o conexiune la internet pentru a accesa aplicația prima dată. Conectează-te și încearcă din nou.",
+  "paywallStoreUnavailableTitle": "Magazin indisponibil",
+  "paywallStoreUnavailableBody": "Nu s-au putut încărca opțiunile de abonament. Încearcă din nou.",
+  "subscriptionVerifyTitle": "Verifică abonamentul",
+  "subscriptionSoftWarningTitle": "Este nevoie de verificarea abonamentului",
+  "subscriptionContinueAnyway": "Continuă oricum",
+  "subscriptionLastVerified": "Ultima verificare: {date}.",
+  "@subscriptionLastVerified": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionNotVerifiedOnline": "Abonamentul nu a putut fi verificat online.",
+  "subscriptionAccessUntil": "Accesul tău rămâne activ până la {date} — conectează-te înainte de atunci pentru verificare.",
+  "@subscriptionAccessUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionConnectToVerify": "Conectează-te la internet pentru a-ți verifica abonamentul.",
+  "organizeNoDuplicates": "Nu s-au găsit duplicate potențiale",
+  "organizeSkippedShownAgain": "Duplicatele omise sunt afișate din nou.",
+  "organizeShowSkippedTooltip": "Arată din nou grupurile de duplicate omise",
+  "organizeFailedToLoad": "Nu s-au putut încărca grupurile de duplicate: {error}",
+  "@organizeFailedToLoad": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicatesCount": "{count} duplicate",
+  "@duplicatesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSubtitlePlaceholder": "Atinge pentru a vedea detaliile",
+  "organizeConflictMostlyIdentical": "În mare parte identice",
+  "organizeConflictFieldVariants": "{field}: {count} variante",
+  "@organizeConflictFieldVariants": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "fieldLabelName": "nume",
+  "fieldLabelCompany": "companie",
+  "fieldLabelPhone": "telefon",
+  "fieldLabelEmail": "e-mail",
+  "importErrorUnsupportedSource": "Importul nu este disponibil aici.",
+  "importErrorPermissionDenied": "Este necesară permisiunea pentru contacte pentru a importa contacte.",
+  "importErrorNoContacts": "Nu există contacte de importat.",
+  "importErrorUnsupportedFileType": "Selectează un fișier .vcf sau o arhivă .zip.",
+  "importErrorInvalidFile": "Fișierul selectat este invalid sau nu poate fi citit.",
+  "importErrorWrongPassword": "Parola arhivei este incorectă. Încearcă din nou.",
+  "importErrorNoVcfInArchive": "Nu au fost găsite fișiere .vcf în arhiva selectată.",
+  "importErrorFailed": "Nu s-au putut importa contactele: {detail}",
+  "@importErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportErrorContactsUnavailable": "Contactele nu sunt disponibile încă.",
+  "exportErrorNoContacts": "Nu există contacte de exportat.",
+  "exportErrorPasswordRequired": "Este necesară o parolă pentru un export protejat.",
+  "exportErrorPasswordTooShort": "Exportul protejat necesită o parolă de cel puțin {min} caractere.",
+  "@exportErrorPasswordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "exportErrorFailed": "Exportul a eșuat: {detail}",
+  "@exportErrorFailed": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "exportNoticeDownloadStarted": "Descărcarea a început.",
+  "exportNoticeFileSaved": "Fișierul a fost salvat cu succes.",
+  "phoneTypeMobile": "mobil",
+  "phoneTypeHome": "acasă",
+  "phoneTypeWork": "serviciu",
+  "phoneTypeSchool": "școală",
+  "phoneTypeOther": "altul",
+  "emailTypePersonal": "personal",
+  "emailTypeWork": "serviciu",
+  "emailTypeSchool": "școală",
+  "emailTypeOther": "altul",
+  "addressTypeHome": "Acasă",
+  "addressTypeWork": "Serviciu",
+  "addressTypeSchool": "Școală",
+  "addressTypeBirth": "Locul nașterii",
+  "linkTypeWebsite": "Site web",
+  "linkTypeLinkedIn": "LinkedIn",
+  "linkTypeX": "X",
+  "linkTypeFacebook": "Facebook",
+  "linkTypeInstagram": "Instagram",
+  "linkTypeOther": "Altul",
+  "dateTypeCreated": "Creat",
+  "dateTypeBirthday": "Zi de naștere",
+  "dateTypeMet": "Data întâlnirii",
+  "dateTypeGraduation": "Absolvire",
+  "dateTypeMarriage": "Căsătorie",
+  "dateTypeOther": "Altul",
+  "noNameInList": "(Fără nume)",
+  "formAddPhone": "Adaugă telefon",
+  "formAddEmail": "Adaugă e-mail",
+  "formAddAddress": "Adaugă adresă",
+  "formAddLink": "Adaugă link",
+  "formAddDate": "Adaugă dată",
+  "formHintPhoneNumber": "Număr de telefon",
+  "formHintEmail": "E-mail",
+  "formHintUrl": "URL",
+  "formHintAddress": "Adresă",
+  "formHintSelectDate": "Selectează data",
+  "formHintNotes": "Adaugă note",
+  "formCompany": "Companie",
+  "formDepartment": "Departament",
+  "formJobTitle": "Funcție",
+  "formPrefix": "Prefix",
+  "formFirstName": "Prenume",
+  "formMiddleName": "Al doilea prenume",
+  "formLastName": "Nume",
+  "formSuffix": "Sufix",
+  "formNickname": "Poreclă",
+  "contactsListTitle": "Contacte",
+  "contactsListEmpty": "Nu ai încă niciun contact",
+  "contactsImportButton": "Importă contacte",
+  "mergeContactsTitle": "Combină contacte",
+  "mergeContactsSubtitle": "Selectează contactele pe care vrei să le unești într-unul singur",
+  "exportPasswordHint": "Parolă",
+  "exportPasswordConfirmHint": "Confirmă parola",
+  "exportPasswordHelper": "Cel puțin {min} caractere",
+  "@exportPasswordHelper": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "zipPasswordHint": "Parola arhivei",
+  "activateDemoAccessCodeLabel": "Cod de acces",
+  "subscriptionExpiredTitle": "Abonamentul a expirat",
+  "subscriptionExpiredBody": "Reînnoiește abonamentul ca să poți folosi în continuare toate funcțiile.",
+  "contactsLoadError": "Contactele nu au putut fi încărcate.",
+  "contactsListError": "Contactele nu au putut fi încărcate.",
+  "contactsSearchNoResults": "Nu s-au găsit contacte",
+  "supportPageIntro": "Ai întrebări, feedback sau ceva ce nu funcționează? Echipa Savelon citește fiecare mesaj.",
+  "supportCtaMessageTeam": "Trimite un mesaj echipei",
+  "importFromDeviceContacts": "Din contactele tale",
+  "importFromFileVcfZip": "Dintr-un fișier (VCF, ZIP)",
+  "exportCreateUniquePasswordTitle": "Creează o parolă unică",
+  "exportPasswordIrrecoverableHint": "Această parolă nu poate fi recuperată.",
+  "exportProtectedArchiveCta": "Exportă arhiva protejată",
+  "exportIosSavedFileWarning": "Acest fișier este salvat în folderul Savelon. Dacă ștergi aplicația, fișierul va fi șters și el. Mută-l într-o altă locație dacă vrei să-l păstrezi.",
+  "importContactsConfirmBody": "Importi {count} contacte în Savelon?",
+  "@importContactsConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSetPasswordPageTitle": "Setează parola",
+  "settingsChangePasswordPageTitle": "Schimbă parola",
+  "settingsRemovePasswordPageTitle": "Elimină parola",
+  "settingsNewPasswordLabel": "Parolă nouă",
+  "settingsConfirmNewPasswordLabel": "Confirmă noua parolă",
+  "settingsReenterNewPasswordHelper": "Introdu din nou noua parolă",
+  "settingsSetPasswordCta": "Setează parola",
+  "settingsChangePasswordCta": "Schimbă parola",
+  "settingsRemovePasswordCta": "Elimină parola",
+  "settingsCurrentPasswordLabel": "Parola actuală",
+  "settingsEnterCurrentPasswordHelper": "Introdu parola actuală",
+  "settingsNewPasswordMustDiffer": "Noua parolă trebuie să fie diferită de parola actuală",
+  "settingsFailedToSetPassword": "Nu s-a putut seta parola: {error}",
+  "@settingsFailedToSetPassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToChangePassword": "Nu s-a putut schimba parola: {error}",
+  "@settingsFailedToChangePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsFailedToRemovePassword": "Nu s-a putut elimina parola: {error}",
+  "@settingsFailedToRemovePassword": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPasswordInvalidFallback": "Parola nu este validă",
+  "settingsCurrentPasswordIncorrect": "Parola actuală este incorectă",
+  "settingsCurrentPasswordRequired": "Este necesară parola actuală",
+  "authPasswordRequiredWhenProtectionEnabled": "Parola este necesară când protecția prin parolă este activată",
+  "authPasswordRequiredWhenEnablePassword": "Parola este necesară când opțiunea enablePassword este activată",
+  "authPasswordRequiredForAccount": "Este necesară o parolă pentru acest cont"
+}

@@ -15,6 +15,7 @@ const kLanguageNativeNames = <String, String>{
   'ja': '日本語',
   'ko': '한국어',
   'ru': 'Русский',
+  'ro': 'Română',
   'id': 'Bahasa Indonesia',
   'tr': 'Türkçe',
   'it': 'Italiano',
