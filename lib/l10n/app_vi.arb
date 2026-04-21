@@ -146,7 +146,7 @@
   "setPasswordTitle": "Đặt mật khẩu",
   "passwordSettingsChangeTitle": "Thay đổi mật khẩu",
   "passwordSettingsSetTitle": "Đặt mật khẩu",
-  "privacyPolicy": "Chính sách bảo mật",
+  "privacyPolicy": "Chính sách riêng tư",
   "privacyPolicyOpenFailed": "Không mở được chính sách quyền riêng tư: {error}",
   "@privacyPolicyOpenFailed": {
     "placeholders": {
@@ -155,7 +155,7 @@
       }
     }
   },
-  "resetAppTitle": "Đặt lại ứng dụng",
+  "resetAppTitle": "Xoá mọi thông tin",
   "resetAppConfirmTitle": "Xóa tất cả danh bạ và đặt lại ứng dụng?",
   "resetAppCannotUndo": "Việc này không thể hoàn tác được",
   "resetAppError": "Lỗi đặt lại ứng dụng: {error}",
@@ -238,7 +238,7 @@
     }
   },
   "subscriptionConnectToVerify": "Kết nối với Internet để xác minh đăng ký của bạn.",
-  "organizeNoDuplicates": "Không tìm thấy bản sao tiềm năng",
+  "organizeNoDuplicates": "Không tìm thấy thông tin liên lạc bị trùng",
   "organizeSkippedShownAgain": "Các bản sao bị bỏ qua sẽ được hiển thị lại.",
   "organizeShowSkippedTooltip": "Hiển thị lại các nhóm trùng lặp bị bỏ qua",
   "organizeFailedToLoad": "Không thể tải các nhóm trùng lặp: {error}",
@@ -339,7 +339,7 @@
   "formAddPhone": "Thêm điện thoại",
   "formAddEmail": "Thêm email",
   "formAddAddress": "Thêm địa chỉ",
-  "formAddLink": "Thêm liên kết",
+  "formAddLink": "Thêm địa chỉ web",
   "formAddDate": "Thêm ngày",
   "formHintPhoneNumber": "Số điện thoại",
   "formHintEmail": "E-mail",
@@ -378,7 +378,7 @@
   "contactsLoadError": "Không thể tải danh bạ.",
   "contactsListError": "Không thể tải danh bạ.",
   "contactsSearchNoResults": "Không tìm thấy liên hệ",
-  "supportPageIntro": "Câu hỏi, phản hồi hoặc có gì không hoạt động? Đội Savelon đọc mọi tin nhắn.",
+  "supportPageIntro": "Câu hỏi, phản hồi hoặc có gì không hoạt động? Đội ngũ Savelon đọc mọi tin nhắn từ bạn.",
   "supportCtaMessageTeam": "Nhắn cho đội ngũ",
   "importFromDeviceContacts": "Từ danh bạ của bạn",
   "importFromFileVcfZip": "Từ tệp (VCF, ZIP)",

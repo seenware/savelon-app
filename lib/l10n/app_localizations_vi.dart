@@ -298,7 +298,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get passwordSettingsSetTitle => 'Đặt mật khẩu';
 
   @override
-  String get privacyPolicy => 'Chính sách bảo mật';
+  String get privacyPolicy => 'Chính sách riêng tư';
 
   @override
   String privacyPolicyOpenFailed(String error) {
@@ -306,7 +306,7 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get resetAppTitle => 'Đặt lại ứng dụng';
+  String get resetAppTitle => 'Xoá mọi thông tin';
 
   @override
   String get resetAppConfirmTitle => 'Xóa tất cả danh bạ và đặt lại ứng dụng?';
@@ -488,7 +488,8 @@ class AppLocalizationsVi extends AppLocalizations {
       'Kết nối với Internet để xác minh đăng ký của bạn.';
 
   @override
-  String get organizeNoDuplicates => 'Không tìm thấy bản sao tiềm năng';
+  String get organizeNoDuplicates =>
+      'Không tìm thấy thông tin liên lạc bị trùng';
 
   @override
   String get organizeSkippedShownAgain =>
@@ -676,7 +677,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get formAddAddress => 'Thêm địa chỉ';
 
   @override
-  String get formAddLink => 'Thêm liên kết';
+  String get formAddLink => 'Thêm địa chỉ web';
 
   @override
   String get formAddDate => 'Thêm ngày';
@@ -776,7 +777,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get supportPageIntro =>
-      'Câu hỏi, phản hồi hoặc có gì không hoạt động? Đội Savelon đọc mọi tin nhắn.';
+      'Câu hỏi, phản hồi hoặc có gì không hoạt động? Đội ngũ Savelon đọc mọi tin nhắn từ bạn.';
 
   @override
   String get supportCtaMessageTeam => 'Nhắn cho đội ngũ';
