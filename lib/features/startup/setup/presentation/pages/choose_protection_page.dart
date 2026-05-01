@@ -1,10 +1,7 @@
 import 'dart:async';
-import 'dart:convert';
-import 'dart:io';
 
 import 'package:contacts/core/layout/widgets/message_card.dart';
 import 'package:contacts/core/layout/widgets/password_input_field.dart';
-import 'package:contacts/core/security/app_biometric_lock_storage.dart';
 import 'package:contacts/features/startup/setup/presentation/setup_provider.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/protection_switch_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
@@ -12,31 +9,6 @@ import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:local_auth/local_auth.dart';
-
-void _debugLogProtection({
-  required String runId,
-  required String hypothesisId,
-  required String location,
-  required String message,
-  required Map<String, Object?> data,
-}) {
-  try {
-    final payload = <String, Object?>{
-      'sessionId': 'ccdec5',
-      'runId': runId,
-      'hypothesisId': hypothesisId,
-      'location': location,
-      'message': message,
-      'data': data,
-      'timestamp': DateTime.now().millisecondsSinceEpoch,
-    };
-    final line = '${jsonEncode(payload)}\n';
-    File(
-      '/Users/seenware/root-folder/04-dev/savelon/contacts/.cursor/debug-ccdec5.log',
-    ).writeAsStringSync(line, mode: FileMode.append, flush: true);
-  } catch (_) {}
-}
 
 class ChooseProtectionPage extends HookConsumerWidget {
   const ChooseProtectionPage({
@@ -52,8 +24,6 @@ class ChooseProtectionPage extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final setupState = ref.watch(setupNotifierProvider);
     final notifier = ref.read(setupNotifierProvider.notifier);
-
-    final localAuth = useMemoized(LocalAuthentication.new);
     final passwordController = useTextEditingController();
     final confirmPasswordController = useTextEditingController();
     final passwordFocusNode = useFocusNode();
@@ -63,35 +33,6 @@ class ChooseProtectionPage extends HookConsumerWidget {
     useListenable(passwordController);
     useListenable(confirmPasswordController);
 
-    final biometricSupported = useState(false);
-    final biometricRowLabel = useState<String>('none');
-
-    useEffect(() {
-      Future<void>(() async {
-        final enabledPref = await AppBiometricLockStorage().readEnabled();
-        if (!context.mounted) return;
-        notifier.setAppBiometricLockEnabled(enabledPref);
-
-        final can = await localAuth.canCheckBiometrics;
-        if (!context.mounted) return;
-        if (!can) {
-          biometricSupported.value = false;
-          biometricRowLabel.value = 'none';
-          return;
-        }
-        final types = await localAuth.getAvailableBiometrics();
-        if (!context.mounted) return;
-        biometricSupported.value = true;
-        if (types.contains(BiometricType.face)) {
-          biometricRowLabel.value = 'Require Face ID';
-        } else if (types.contains(BiometricType.fingerprint)) {
-          biometricRowLabel.value = 'Require fingerprint';
-        } else {
-          biometricRowLabel.value = 'Require biometrics';
-        }
-      });
-      return null;
-    }, const []);
 
     bool passwordValid() {
       if (!setupState.addPasswordEnabled) return true;
@@ -134,9 +75,6 @@ class ChooseProtectionPage extends HookConsumerWidget {
       } else {
         notifier.setPassword(null);
       }
-      await AppBiometricLockStorage().writeEnabled(
-        setupState.appBiometricLockEnabled,
-      );
       onProceedToCreatingVault();
     }
 
@@ -186,32 +124,6 @@ class ChooseProtectionPage extends HookConsumerWidget {
                         label: '256-bit encryption',
                         enabled: false,
                         value: true,
-                      ),
-                      ProtectionSwitchRow(
-                        label: biometricRowLabel.value,
-                        enabled: biometricSupported.value,
-                        value: biometricSupported.value &&
-                            setupState.appBiometricLockEnabled,
-                        onChanged: biometricSupported.value
-                            ? (value) {
-                                notifier.setAppBiometricLockEnabled(value);
-                                unawaited(
-                                  AppBiometricLockStorage().writeEnabled(value),
-                                );
-                                // #region agent log
-                                _debugLogProtection(
-                                  runId: 'initial-debug',
-                                  hypothesisId: 'H3',
-                                  location:
-                                      'choose_protection_page.dart:biometricToggle',
-                                  message: 'biometric lock toggle changed',
-                                  data: <String, Object?>{
-                                    'value': value,
-                                  },
-                                );
-                                // #endregion
-                              }
-                            : null,
                       ),
                       ProtectionSwitchRow(
                         label: 'Require password',

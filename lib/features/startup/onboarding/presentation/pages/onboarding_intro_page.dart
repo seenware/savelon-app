@@ -138,7 +138,7 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                                       dimension: illustrationSize,
                                       child: Image.asset(
                                         data.imageAsset,
-                                        fit: BoxFit.cover,
+                                        fit: BoxFit.contain,
                                       ),
                                     ),
                                   ),

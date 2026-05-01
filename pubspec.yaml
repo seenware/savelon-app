@@ -2,7 +2,7 @@ name: contacts
 description: "Secure way to store your contacts"
 publish_to: "none"
 
-version: 5.0.0+132
+version: 5.0.0+133
 
 environment:
   sdk: ^3.9.2
@@ -36,7 +36,6 @@ dependencies:
   image_picker: ^1.2.0
   in_app_review: ^2.0.11
   intl: ^0.20.2
-  local_auth: ^3.0.0
   path: ^1.9.1
   path_provider: ^2.1.5
   phone_numbers_parser: ^9.0.20

@@ -1,8 +1,5 @@
-import 'dart:async';
-
 import 'package:contacts/core/auth/auth_provider.dart';
 import 'package:contacts/core/profile/profile_service.dart';
-import 'package:contacts/core/security/app_biometric_lock_storage.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/choose_protection_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/create_vault_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/creating_vault_page.dart';
@@ -51,9 +48,6 @@ GoRoute setupRoute(String path) => GoRoute(
                   onFirstFrame: freshStart
                       ? () {
                           notifier.reset();
-                          unawaited(
-                            AppBiometricLockStorage().writeEnabled(false),
-                          );
                         }
                       : null,
                   onBack: () => context.go(

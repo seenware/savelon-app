@@ -7,14 +7,12 @@ class SetupState {
   final String username;
   final String avatarId;
   final bool addPasswordEnabled;
-  final bool appBiometricLockEnabled;
 
   const SetupState({
     this.password,
     this.username = 'My vault',
     this.avatarId = 'cat',
     this.addPasswordEnabled = false,
-    this.appBiometricLockEnabled = false,
   });
 
   SetupState copyWith({
@@ -22,15 +20,12 @@ class SetupState {
     String? username,
     String? avatarId,
     bool? addPasswordEnabled,
-    bool? appBiometricLockEnabled,
   }) {
     return SetupState(
       password: password ?? this.password,
       username: username ?? this.username,
       avatarId: avatarId ?? this.avatarId,
       addPasswordEnabled: addPasswordEnabled ?? this.addPasswordEnabled,
-      appBiometricLockEnabled:
-          appBiometricLockEnabled ?? this.appBiometricLockEnabled,
     );
   }
 
@@ -40,7 +35,6 @@ class SetupState {
       username: username,
       avatarId: avatarId,
       addPasswordEnabled: addPasswordEnabled,
-      appBiometricLockEnabled: appBiometricLockEnabled,
     );
   }
 
@@ -69,10 +63,6 @@ class SetupNotifier extends Notifier<SetupState> {
     state = state.copyWith(addPasswordEnabled: enabled);
   }
 
-  void setAppBiometricLockEnabled(bool enabled) {
-    state = state.copyWith(appBiometricLockEnabled: enabled);
-  }
-
   void reset() {
     state = const SetupState();
   }
@@ -81,7 +71,6 @@ class SetupNotifier extends Notifier<SetupState> {
   String get username => state.username;
   String get avatarId => state.avatarId;
   bool get addPasswordEnabled => state.addPasswordEnabled;
-  bool get appBiometricLockEnabled => state.appBiometricLockEnabled;
   bool get usePassword => state.usePassword;
 }
 
