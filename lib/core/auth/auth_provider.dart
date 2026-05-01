@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:contacts/core/crypto/crypto_provider.dart';
 import 'package:contacts/core/crypto/key_derivation_service.dart';
 import 'package:contacts/core/database/database_provider.dart';
@@ -15,6 +17,7 @@ import 'package:contacts/core/purchases/purchases_service.dart'
 import 'package:contacts/core/storage/private_storage_migration.dart';
 import 'package:contacts/core/storage/secure_storage_service.dart';
 import 'package:contacts/core/review/app_review_service.dart';
+import 'package:contacts/core/profile/profile_migration_service.dart';
 import 'package:contacts/features/main_app/contacts/data/repositories/contacts_repository_impl.dart';
 import 'package:contacts/features/main_app/contacts/data/services/migration_service.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
@@ -33,6 +36,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     // that can occur during migration setup).
     final db = ref.read(databaseProvider);
     if (db != null && crypto.isInitialized) {
+      await _runProfileMigrationSafe();
       return const AuthStateAuthenticated();
     }
 
@@ -45,6 +49,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     // Fast local check (no network). Once purchased or auto-granted the flag
     // stays set across launches.
     final passwordRequired = await crypto.isPasswordEnabled();
+    await _runProfileMigrationSafe();
 
     // Debug override: completely bypass paywall + subscription gates.
     // This must happen BEFORE any subscription refresh that could revoke access.
@@ -62,17 +67,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     final paywallCompleted = await PurchasesService.isPaywallCompleted();
 
     if (!paywallCompleted) {
-      if (PurchasesService.hasNewSetupGraceThisLaunch()) {
-        return _resolvePostGateState(passwordRequired: passwordRequired);
-      }
-      if (!await PurchasesService.hasCompletedFirstSession()) {
-        await PurchasesService.markFirstSessionCompleted();
-        return _resolvePostGateState(passwordRequired: passwordRequired);
-      }
-      if (!PurchasesService.hasShownStartupSoftPaywallThisLaunch()) {
-        return AuthStateNeedsSoftPaywall(passwordEnabled: passwordRequired);
-      }
-      return _resolvePostGateState(passwordRequired: passwordRequired);
+      return AuthStateNeedsLogin(passwordRequired: passwordRequired);
     }
 
     // Early adopters get a one-time gratitude screen.
@@ -181,6 +176,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
 
     // Ensure any early contactsProvider listeners refresh after migration.
     ref.invalidate(contactsProvider);
+    await _runProfileMigrationSafe();
 
     return const AuthStateAuthenticated();
   }
@@ -207,7 +203,8 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       await dbNotifier.initialize(crypto.localDbKey);
       ref.read(imageStorageProvider.notifier).initialize(crypto.localDbKey);
 
-      state = const AsyncValue.data(AuthStateAuthenticated());
+      await _runProfileMigrationSafe();
+      state = const AsyncValue.data(AuthStateLoginSuccess());
       return true;
     } catch (_) {
       // A wrong password causes crypto.initialize() to derive the wrong
@@ -263,8 +260,8 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
 
     // Ensure any early contactsProvider listeners refresh after migration.
     ref.invalidate(contactsProvider);
-
-    state = const AsyncValue.data(AuthStateAuthenticated());
+    await _runProfileMigrationSafe();
+    state = const AsyncValue.data(AuthStateLoginSuccess());
     return true;
   }
 
@@ -377,6 +374,21 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     );
   }
 
+  Future<void> completeLoginSuccess() async {
+    final postLoginState = await _resolvePostLoginState();
+    state = AsyncValue.data(postLoginState);
+  }
+
+  void completeSetupFlow() {
+    state = const AsyncValue.data(AuthStateAuthenticated());
+  }
+
+  /// After first-time vault setup, show the same login-success celebration UI
+  /// before [completeLoginSuccess] resolves paywall / main app.
+  void completeSetupOpeningVault() {
+    state = const AsyncValue.data(AuthStateLoginSuccess());
+  }
+
   Future<void> factoryReset() async {
     state = const AsyncValue.loading();
 
@@ -398,6 +410,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
   Future<String?> setupNewSeed({
     required bool enablePassword,
     String? password,
+    bool stayInSetupFlow = false,
   }) async {
     try {
       state = const AsyncValue.loading();
@@ -422,7 +435,11 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       await PurchasesService.markFirstSessionCompleted();
       // Setup is part of an active trusted flow, so once seed + DB are ready
       // the user should enter the app directly, even if password protection is enabled.
-      state = const AsyncValue.data(AuthStateAuthenticated());
+      state = AsyncValue.data(
+        stayInSetupFlow
+            ? const AuthStateNeedsOnboarding()
+            : const AuthStateAuthenticated(),
+      );
       return mnemonic;
     } catch (e, st) {
       state = AsyncValue.error(e, st);
@@ -596,15 +613,47 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
   Future<AuthState> _resolvePostGateState({
     required bool passwordRequired,
   }) async {
+    final db = ref.read(databaseProvider);
+    final crypto = ref.read(cryptoServiceProvider);
+    if (db != null && crypto.isInitialized) {
+      return const AuthStateAuthenticated();
+    }
+
     if (passwordRequired) {
       return const AuthStateNeedsLogin(passwordRequired: true);
     }
-    final crypto = ref.read(cryptoServiceProvider);
     final dbNotifier = ref.read(databaseProvider.notifier);
     await crypto.initialize();
     await dbNotifier.initialize(crypto.localDbKey);
     ref.read(imageStorageProvider.notifier).initialize(crypto.localDbKey);
     return const AuthStateAuthenticated();
+  }
+
+  Future<AuthState> _resolvePostLoginState() async {
+    final passwordRequired = await ref
+        .read(cryptoServiceProvider)
+        .isPasswordEnabled();
+    final paywallCompleted = await PurchasesService.isPaywallCompleted();
+    if (!paywallCompleted) {
+      if (PurchasesService.hasNewSetupGraceThisLaunch()) {
+        return const AuthStateAuthenticated();
+      }
+      if (!await PurchasesService.hasCompletedFirstSession()) {
+        await PurchasesService.markFirstSessionCompleted();
+        return const AuthStateAuthenticated();
+      }
+      if (!PurchasesService.hasShownStartupSoftPaywallThisLaunch()) {
+        return AuthStateNeedsSoftPaywall(passwordEnabled: passwordRequired);
+      }
+      return AuthStateNeedsPaywall(passwordEnabled: passwordRequired);
+    }
+    return const AuthStateAuthenticated();
+  }
+
+  Future<void> _runProfileMigrationSafe() async {
+    try {
+      await ProfileMigrationService().migrateDefaultsIfNeeded();
+    } catch (_) {}
   }
 
   bool _bytesEqual(Uint8List a, Uint8List b) {

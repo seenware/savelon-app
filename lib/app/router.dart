@@ -44,7 +44,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       final authState = authAsync.value;
 
       if (authState is AuthStateNeedsOnboarding) {
-        if (state.matchedLocation != '/startup/onboarding' &&
+        if (!state.matchedLocation.startsWith('/startup/onboarding') &&
             !state.matchedLocation.startsWith('/startup/setup')) {
           return '/startup/onboarding';
         }
@@ -74,6 +74,10 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           return '/startup/subscription_expired';
         }
       } else if (authState is AuthStateNeedsLogin) {
+        if (state.matchedLocation != '/startup/login') {
+          return '/startup/login';
+        }
+      } else if (authState is AuthStateLoginSuccess) {
         if (state.matchedLocation != '/startup/login') {
           return '/startup/login';
         }

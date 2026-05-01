@@ -2,6 +2,7 @@
 
 import 'dart:io';
 
+import 'package:contacts/app/app_biometric_resume_lock.dart';
 import 'package:contacts/app/router.dart';
 import 'package:contacts/core/locale/locale_provider.dart';
 import 'package:contacts/core/locale/locale_resolution.dart';
@@ -57,7 +58,7 @@ class EncryptedContactsApp extends ConsumerWidget {
         final brightness = Theme.of(context).brightness;
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: _systemUiOverlayForBrightness(brightness),
-          child: child!,
+          child: AppBiometricResumeLock(child: child!),
         );
       },
     );

@@ -12,7 +12,15 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class PasswordPage extends HookConsumerWidget {
   final VoidCallback onNext;
-  const PasswordPage({super.key, required this.onNext});
+  final Future<bool> Function(String password)? onSavePassword;
+  final bool setupMode;
+
+  const PasswordPage({
+    super.key,
+    required this.onNext,
+    this.onSavePassword,
+    this.setupMode = true,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -24,13 +32,14 @@ class PasswordPage extends HookConsumerWidget {
     final showErrors = useState(false);
     final errorShakeTick = useState(0);
     final unexpectedError = useState<String?>(null);
-    final usePassword = useState(false);
+    final usePassword = useState(!setupMode);
     final showLoading = useState(false);
 
     useListenable(passwordController);
     useListenable(confirmPasswordController);
 
     bool isFormValid() {
+      if (!setupMode && !usePassword.value) return false;
       if (!usePassword.value) return true;
 
       return passwordController.text.length >= 4 &&
@@ -69,7 +78,17 @@ class PasswordPage extends HookConsumerWidget {
         unexpectedError.value = null;
         showLoading.value = true;
 
-        // Store password choice in setup state
+        if (!setupMode && onSavePassword != null) {
+          final ok = await onSavePassword!(password);
+          if (ok) {
+            onNext();
+          } else {
+            unexpectedError.value = l10n.setupPasswordFailedSeed;
+            showLoading.value = false;
+          }
+          return;
+        }
+
         final setupNotifier = ref.read(setupNotifierProvider.notifier);
         setupNotifier.setPassword(usePassword.value ? password : null);
 
@@ -81,8 +100,6 @@ class PasswordPage extends HookConsumerWidget {
         );
 
         if (mnemonic != null) {
-          // Store mnemonic in setup state for display on complete page
-          setupNotifier.setSecretKey(mnemonic);
           onNext();
         } else {
           unexpectedError.value = l10n.setupPasswordFailedSeed;
@@ -97,21 +114,22 @@ class PasswordPage extends HookConsumerWidget {
     final children = [
       const SizedBox(height: 16),
 
-      CheckboxListTile(
-        value: usePassword.value,
-        onChanged: (value) {
-          usePassword.value = value ?? false;
-          showErrors.value = false;
-          unexpectedError.value = null;
-          passwordController.clear();
-          confirmPasswordController.clear();
-        },
-        title: Text(l10n.setupPasswordTitle),
-        controlAffinity: ListTileControlAffinity.leading,
-        contentPadding: EdgeInsets.zero,
-      ),
-
-      const SizedBox(height: 8),
+      if (setupMode) ...[
+        CheckboxListTile(
+          value: usePassword.value,
+          onChanged: (value) {
+            usePassword.value = value ?? false;
+            showErrors.value = false;
+            unexpectedError.value = null;
+            passwordController.clear();
+            confirmPasswordController.clear();
+          },
+          title: Text(l10n.setupPasswordTitle),
+          controlAffinity: ListTileControlAffinity.leading,
+          contentPadding: EdgeInsets.zero,
+        ),
+        const SizedBox(height: 8),
+      ],
 
       if (!usePassword.value) ...[
         MessageCard(
@@ -172,8 +190,8 @@ class PasswordPage extends HookConsumerWidget {
     ];
 
     return PageShell(
-      title: l10n.setupPasswordPageTitle,
-      showBackButton: false,
+      title: setupMode ? l10n.setupPasswordPageTitle : 'Add password',
+      showBackButton: !setupMode,
       onNext: isFormValid() ? validateAndContinue : null,
       onDisabledNext: () {
         if (showLoading.value || !usePassword.value) return;
@@ -185,7 +203,11 @@ class PasswordPage extends HookConsumerWidget {
         }
       },
       nextButtonText:
-          usePassword.value ? l10n.setupPasswordNext : l10n.setupPasswordSkip,
+          setupMode
+              ? (usePassword.value
+                    ? l10n.setupPasswordNext
+                    : l10n.setupPasswordSkip)
+              : 'Save password',
       isLoading: showLoading.value,
       children: children,
     );

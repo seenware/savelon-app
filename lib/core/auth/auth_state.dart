@@ -58,3 +58,7 @@ class AuthStateSubscriptionExpired extends AuthState {
 class AuthStateAuthenticated extends AuthState {
   const AuthStateAuthenticated();
 }
+
+class AuthStateLoginSuccess extends AuthState {
+  const AuthStateLoginSuccess();
+}
