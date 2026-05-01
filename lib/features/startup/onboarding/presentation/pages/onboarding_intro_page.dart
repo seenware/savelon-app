@@ -6,6 +6,7 @@ import 'package:contacts/core/purchases/purchases_service.dart';
 import 'package:contacts/features/startup/onboarding/presentation/utils/onboarding_constants.dart';
 import 'package:contacts/features/startup/onboarding/presentation/widgets/activate_demo_dialog.dart';
 import 'package:contacts/l10n/app_localizations.dart';
+import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -114,6 +115,12 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                   final data = kOnboardingSteps[index];
                   return LayoutBuilder(
                     builder: (context, constraints) {
+                      final media = MediaQuery.of(context);
+                      final isLandscape = media.orientation == Orientation.landscape;
+                      final isWide = AppBreakpoints.isWide(context);
+                      final illustrationSize = isWide && isLandscape
+                          ? (constraints.maxHeight * 0.42).clamp(170.0, 250.0)
+                          : (constraints.maxHeight * 0.54).clamp(210.0, 420.0);
                       return SingleChildScrollView(
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: ConstrainedBox(
@@ -127,8 +134,8 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                                   padding: const EdgeInsets.symmetric(vertical: 8),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),
-                                    child: AspectRatio(
-                                      aspectRatio: 1,
+                                    child: SizedBox.square(
+                                      dimension: illustrationSize,
                                       child: Image.asset(
                                         data.imageAsset,
                                         fit: BoxFit.cover,
@@ -162,7 +169,10 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
               enableHapticFeedback: true,
               onPressed: () {
                 if (isLast) {
-                  context.go('/startup/setup/create_vault');
+                  context.go(
+                    '/startup/setup/create_vault',
+                    extra: <String, dynamic>{'freshStart': true},
+                  );
                 } else {
                   _goNext();
                 }

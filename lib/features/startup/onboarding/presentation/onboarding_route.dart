@@ -1,5 +1,4 @@
 import 'package:contacts/features/startup/onboarding/presentation/pages/onboarding_intro_page.dart';
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 GoRoute onboardingRoute(String path) => GoRoute(
@@ -19,6 +18,6 @@ GoRoute onboardingRoute(String path) => GoRoute(
         if (noTransition) {
           return NoTransitionPage(child: child);
         }
-        return MaterialPage(child: child);
+        return NoTransitionPage(child: child);
       },
     );

@@ -21,7 +21,7 @@ class ProtectionSwitchRow extends StatelessWidget {
       child: SwitchListTile(
         value: value,
         onChanged: enabled ? onChanged : null,
-        title: Text(label, style: const TextStyle(fontSize: 20)),
+        title: Text(label),
         contentPadding: EdgeInsets.zero,
       ),
     );

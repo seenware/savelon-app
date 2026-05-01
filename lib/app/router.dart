@@ -23,7 +23,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
   });
 
   return GoRouter(
-    initialLocation: '/main_app',
+    initialLocation: '/startup/onboarding',
     refreshListenable: notifier,
     redirect: (context, state) {
       final authAsync = ref.read(authProvider);

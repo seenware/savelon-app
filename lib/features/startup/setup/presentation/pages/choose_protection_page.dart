@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:convert';
+import 'dart:io';
 
 import 'package:contacts/core/layout/widgets/message_card.dart';
 import 'package:contacts/core/layout/widgets/password_input_field.dart';
@@ -11,6 +13,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:local_auth/local_auth.dart';
+
+void _debugLogProtection({
+  required String runId,
+  required String hypothesisId,
+  required String location,
+  required String message,
+  required Map<String, Object?> data,
+}) {
+  try {
+    final payload = <String, Object?>{
+      'sessionId': 'ccdec5',
+      'runId': runId,
+      'hypothesisId': hypothesisId,
+      'location': location,
+      'message': message,
+      'data': data,
+      'timestamp': DateTime.now().millisecondsSinceEpoch,
+    };
+    final line = '${jsonEncode(payload)}\n';
+    File(
+      '/Users/seenware/root-folder/04-dev/savelon/contacts/.cursor/debug-ccdec5.log',
+    ).writeAsStringSync(line, mode: FileMode.append, flush: true);
+  } catch (_) {}
+}
 
 class ChooseProtectionPage extends HookConsumerWidget {
   const ChooseProtectionPage({
@@ -172,6 +198,18 @@ class ChooseProtectionPage extends HookConsumerWidget {
                                 unawaited(
                                   AppBiometricLockStorage().writeEnabled(value),
                                 );
+                                // #region agent log
+                                _debugLogProtection(
+                                  runId: 'initial-debug',
+                                  hypothesisId: 'H3',
+                                  location:
+                                      'choose_protection_page.dart:biometricToggle',
+                                  message: 'biometric lock toggle changed',
+                                  data: <String, Object?>{
+                                    'value': value,
+                                  },
+                                );
+                                // #endregion
                               }
                             : null,
                       ),

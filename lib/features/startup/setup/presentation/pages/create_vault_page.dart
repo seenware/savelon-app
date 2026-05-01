@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 import 'dart:math';
 
+import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:contacts/features/startup/setup/presentation/models/avatar_catalog.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
@@ -18,6 +19,7 @@ class CreateVaultPage extends StatefulWidget {
     required this.onUsernameChanged,
     required this.onBack,
     required this.onContinue,
+    this.onFirstFrame,
   });
 
   final String initialUsername;
@@ -26,6 +28,7 @@ class CreateVaultPage extends StatefulWidget {
   final ValueChanged<String> onUsernameChanged;
   final VoidCallback onBack;
   final VoidCallback onContinue;
+  final VoidCallback? onFirstFrame;
 
   @override
   State<CreateVaultPage> createState() => _CreateVaultPageState();
@@ -73,10 +76,20 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
     _controller.addListener(() => widget.onUsernameChanged(_controller.text));
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
+      widget.onFirstFrame?.call();
       if (randomizedAvatar != widget.initialAvatarId) {
         widget.onAvatarChanged(randomizedAvatar);
       }
-      _usernameFocusNode.requestFocus();
+      final media = MediaQuery.maybeOf(context);
+      if (media != null) {
+        final isLandscape = media.orientation == Orientation.landscape;
+        final isLarge = AppBreakpoints.isWide(context);
+        if (!(isLandscape && isLarge)) {
+          _usernameFocusNode.requestFocus();
+        }
+      } else {
+        _usernameFocusNode.requestFocus();
+      }
     });
   }
 
@@ -117,7 +130,20 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                         width: 3,
                       ),
                     ),
-                    child: Icon(option.icon, color: Colors.white, size: 28),
+                    child: LayoutBuilder(
+                      builder: (context, constraints) {
+                        final iconSize =
+                            (constraints.biggest.shortestSide * 0.46).clamp(
+                              26.0,
+                              42.0,
+                            );
+                        return Icon(
+                          option.icon,
+                          color: Colors.white,
+                          size: iconSize,
+                        );
+                      },
+                    ),
                   ),
                 );
               }),
@@ -139,7 +165,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                   child: Icon(
                     Icons.add_photo_alternate_rounded,
                     color: theme.colorScheme.primary,
-                    size: 32,
+                    size: 36,
                   ),
                 ),
               ),
@@ -248,68 +274,79 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                   color: theme.colorScheme.onSurfaceVariant.withValues(
                     alpha: 0.74,
                   ),
-                  fontSize: 18,
                 ),
               ),
             ),
             Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SetupEntrance(
-                    index: 3,
-                    child: GestureDetector(
-                      onTap: _openAvatarPicker,
-                      child: Container(
-                        width: 168,
-                        height: 168,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: _photoBytes == null
-                                ? _darker(avatar.background)
-                                : theme.colorScheme.outline,
-                            width: 4,
-                          ),
-                          color: _photoBytes == null
-                              ? avatar.background
-                              : theme.colorScheme.surfaceContainerHighest,
-                        ),
-                        child: _photoBytes == null
-                            ? Icon(avatar.icon, size: 86, color: Colors.white)
-                            : ClipOval(
-                                child: SizedBox.square(
-                                  dimension: 160,
-                                  child: Image.memory(
-                                    _photoBytes!,
-                                    fit: BoxFit.cover,
+              child: LayoutBuilder(
+                builder: (context, constraints) => SingleChildScrollView(
+                  padding: EdgeInsets.only(
+                    bottom: MediaQuery.viewInsetsOf(context).bottom,
+                  ),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                    child: IntrinsicHeight(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SetupEntrance(
+                            index: 3,
+                            child: GestureDetector(
+                              onTap: _openAvatarPicker,
+                              child: Container(
+                                width: 168,
+                                height: 168,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: _photoBytes == null
+                                        ? _darker(avatar.background)
+                                        : theme.colorScheme.outline,
+                                    width: 4,
                                   ),
+                                  color: _photoBytes == null
+                                      ? avatar.background
+                                      : theme.colorScheme.surfaceContainerHighest,
                                 ),
+                                child: _photoBytes == null
+                                    ? Icon(avatar.icon, size: 86, color: Colors.white)
+                                    : ClipOval(
+                                        child: SizedBox.square(
+                                          dimension: 160,
+                                          child: Image.memory(
+                                            _photoBytes!,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
                               ),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          SetupEntrance(
+                            index: 4,
+                            child: TextField(
+                              controller: _controller,
+                              focusNode: _usernameFocusNode,
+                              textAlign: TextAlign.center,
+                              style: theme.textTheme.headlineSmall?.copyWith(
+                                fontSize: 30,
+                              ),
+                              decoration: InputDecoration(
+                                hintText: 'My vault',
+                                hintStyle: theme.textTheme.headlineSmall?.copyWith(
+                                  color: Colors.grey,
+                                  fontSize: 30,
+                                ),
+                                border: InputBorder.none,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                  const SizedBox(height: 10),
-                  SetupEntrance(
-                    index: 4,
-                    child: TextField(
-                      controller: _controller,
-                      focusNode: _usernameFocusNode,
-                      textAlign: TextAlign.center,
-                      style: theme.textTheme.headlineSmall?.copyWith(
-                        fontSize: 30,
-                      ),
-                      decoration: InputDecoration(
-                        hintText: 'My vault',
-                        hintStyle: theme.textTheme.headlineSmall?.copyWith(
-                          color: Colors.grey,
-                          fontSize: 30,
-                        ),
-                        border: InputBorder.none,
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ],

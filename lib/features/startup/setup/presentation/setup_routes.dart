@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:contacts/core/auth/auth_provider.dart';
 import 'package:contacts/core/profile/profile_service.dart';
+import 'package:contacts/core/security/app_biometric_lock_storage.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/choose_protection_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/create_vault_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/creating_vault_page.dart';
@@ -28,11 +31,31 @@ GoRoute setupRoute(String path) => GoRoute(
               builder: (context, ref, _) {
                 final setupState = ref.watch(setupNotifierProvider);
                 final notifier = ref.read(setupNotifierProvider.notifier);
+                final extra = state.extra;
+                final freshStart = switch (extra) {
+                  Map<String, dynamic> map =>
+                    (map['freshStart'] as bool?) ?? false,
+                  _ => false,
+                };
+                final initialUsername = freshStart
+                    ? const SetupState().username
+                    : setupState.username;
+                final initialAvatarId = freshStart
+                    ? const SetupState().avatarId
+                    : setupState.avatarId;
                 return CreateVaultPage(
-                  initialUsername: setupState.username,
-                  initialAvatarId: setupState.avatarId,
+                  initialUsername: initialUsername,
+                  initialAvatarId: initialAvatarId,
                   onAvatarChanged: notifier.setAvatarId,
                   onUsernameChanged: notifier.setUsername,
+                  onFirstFrame: freshStart
+                      ? () {
+                          notifier.reset();
+                          unawaited(
+                            AppBiometricLockStorage().writeEnabled(false),
+                          );
+                        }
+                      : null,
                   onBack: () => context.go(
                     '/startup/onboarding',
                     extra: <String, dynamic>{
