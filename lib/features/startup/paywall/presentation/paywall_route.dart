@@ -7,7 +7,7 @@ GoRoute paywallRoute(String path) => GoRoute(
       path: path,
       pageBuilder: (context, state) => NoTransitionPage(
         child: PaywallPage(
-          softMode: state.uri.queryParameters['mode'] == 'soft',
+          softMode: true,
           startupEntry: state.uri.queryParameters['entry'] == 'startup',
         ),
       ),

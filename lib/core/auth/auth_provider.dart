@@ -97,7 +97,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
 
     if (refreshResult == SubscriptionRefreshResult.notEntitled) {
       await PurchasesService.revokeAccess();
-      return AuthStateNeedsPaywall(passwordEnabled: passwordRequired);
+      return AuthStateNeedsSoftPaywall(passwordEnabled: passwordRequired);
     }
 
     // entitled → cache was just updated; staleCache / offline / error → use
@@ -463,7 +463,6 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
   }) async {
     final currentState = state.value;
     final passwordEnabled = switch (currentState) {
-      AuthStateNeedsPaywall s => s.passwordEnabled,
       AuthStateNeedsSoftPaywall s => s.passwordEnabled,
       AuthStateNeedsLifetimeThanks s => s.passwordEnabled,
       AuthStateNeedsLogin s => s.passwordRequired,
@@ -584,7 +583,9 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       case SubscriptionRefreshResult.notEntitled:
         await PurchasesService.revokeAccess();
         state = AsyncValue.data(
-          AuthStateNeedsPaywall(passwordEnabled: currentState.passwordEnabled),
+          AuthStateNeedsSoftPaywall(
+            passwordEnabled: currentState.passwordEnabled,
+          ),
         );
         return null;
 
@@ -642,10 +643,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
         await PurchasesService.markFirstSessionCompleted();
         return const AuthStateAuthenticated();
       }
-      if (!PurchasesService.hasShownStartupSoftPaywallThisLaunch()) {
-        return AuthStateNeedsSoftPaywall(passwordEnabled: passwordRequired);
-      }
-      return AuthStateNeedsPaywall(passwordEnabled: passwordRequired);
+      return AuthStateNeedsSoftPaywall(passwordEnabled: passwordRequired);
     }
     return const AuthStateAuthenticated();
   }

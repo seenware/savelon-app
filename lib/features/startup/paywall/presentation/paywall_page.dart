@@ -105,14 +105,13 @@ class PaywallPage extends HookConsumerWidget {
               grantPermanent: s.permanent,
               purchasedPaidThrough: s.purchasedPaidThrough,
             );
-        if (softMode && context.mounted) {
+        if (softMode && context.mounted && Navigator.of(context).canPop()) {
           Navigator.of(context).pop(true);
         }
       }
       return null;
     }, [accessState.value]);
 
-    // Hard paywall — Android back button disabled.
     return PopScope(
       canPop: softMode,
       child: Scaffold(
@@ -188,7 +187,12 @@ class PaywallPage extends HookConsumerWidget {
         },
         onDismiss: () {
           if (!softMode) return;
-          _closeSoftPaywall(context, ref, unlockResult: false, source: 'sdkDismiss');
+          _closeSoftPaywall(
+            context,
+            ref,
+            unlockResult: false,
+            source: 'sdkDismiss',
+          );
         },
       );
       content = paywall;

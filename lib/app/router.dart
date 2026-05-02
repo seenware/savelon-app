@@ -48,12 +48,6 @@ final goRouterProvider = Provider<GoRouter>((ref) {
             !state.matchedLocation.startsWith('/startup/setup')) {
           return '/startup/onboarding';
         }
-      } else if (authState is AuthStateNeedsPaywall) {
-        final loc = state.matchedLocation;
-        final mode = state.uri.queryParameters['mode'];
-        if (loc != '/startup/paywall' || mode == 'soft') {
-          return '/startup/paywall';
-        }
       } else if (authState is AuthStateNeedsSoftPaywall) {
         final loc = state.matchedLocation;
         final mode = state.uri.queryParameters['mode'];
