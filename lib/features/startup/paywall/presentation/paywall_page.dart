@@ -6,6 +6,7 @@ import 'package:contacts/core/purchases/purchases_service.dart'
     show PurchasesService, SubscriptionRefreshResult, kRcEntitlementId;
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:purchases_ui_flutter/purchases_ui_flutter.dart';
@@ -231,10 +232,7 @@ class PaywallPage extends HookConsumerWidget {
   }) {
     ref.read(authProvider.notifier).dismissSoftPaywall();
     if (!context.mounted) return;
-    final canPop = Navigator.of(context).canPop();
-    if (canPop) {
-      Navigator.of(context).pop(unlockResult);
-    }
+    context.go('/main_app/contacts');
   }
 }
 

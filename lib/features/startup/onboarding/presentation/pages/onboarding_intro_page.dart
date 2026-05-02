@@ -1,5 +1,7 @@
 // lib/features/startup/onboarding/presentation/pages/onboarding_intro_page.dart
 
+import 'dart:math' as math;
+
 import 'package:contacts/core/layout/widgets/app_scaffold.dart';
 import 'package:contacts/core/layout/widgets/primary_button.dart';
 import 'package:contacts/core/purchases/purchases_service.dart';
@@ -118,9 +120,16 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                       final media = MediaQuery.of(context);
                       final isLandscape = media.orientation == Orientation.landscape;
                       final isWide = AppBreakpoints.isWide(context);
-                      final illustrationSize = isWide && isLandscape
+                      final targetByHeight = isWide && isLandscape
                           ? (constraints.maxHeight * 0.42).clamp(170.0, 250.0)
                           : (constraints.maxHeight * 0.54).clamp(210.0, 420.0);
+                      // Keep illustration strictly square on all screens by
+                      // fitting to both width and height constraints.
+                      final maxByWidth = constraints.maxWidth - 48; // 24 + 24 horizontal padding
+                      final illustrationSize = math.max(
+                        120.0,
+                        math.min(targetByHeight, maxByWidth),
+                      );
                       return SingleChildScrollView(
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: ConstrainedBox(
@@ -132,10 +141,14 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                                 onTap: _handleIllustrationTap,
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 8),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(20),
-                                    child: SizedBox.square(
-                                      dimension: illustrationSize,
+                                  child: Container(
+                                    width: illustrationSize,
+                                    height: illustrationSize,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(20),
                                       child: Image.asset(
                                         data.imageAsset,
                                         fit: BoxFit.contain,

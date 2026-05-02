@@ -5,8 +5,10 @@ import 'package:go_router/go_router.dart';
 
 GoRoute paywallRoute(String path) => GoRoute(
       path: path,
-      builder: (context, state) => PaywallPage(
-        softMode: state.uri.queryParameters['mode'] == 'soft',
-        startupEntry: state.uri.queryParameters['entry'] == 'startup',
+      pageBuilder: (context, state) => NoTransitionPage(
+        child: PaywallPage(
+          softMode: state.uri.queryParameters['mode'] == 'soft',
+          startupEntry: state.uri.queryParameters['entry'] == 'startup',
+        ),
       ),
     );

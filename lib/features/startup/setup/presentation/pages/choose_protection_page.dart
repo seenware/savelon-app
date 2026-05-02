@@ -33,7 +33,6 @@ class ChooseProtectionPage extends HookConsumerWidget {
     useListenable(passwordController);
     useListenable(confirmPasswordController);
 
-
     bool passwordValid() {
       if (!setupState.addPasswordEnabled) return true;
       return passwordController.text.length >= 4 &&
@@ -127,6 +126,7 @@ class ChooseProtectionPage extends HookConsumerWidget {
                       ),
                       ProtectionSwitchRow(
                         label: 'Require password',
+                        optionalSuffix: 'optional',
                         enabled: true,
                         value: setupState.addPasswordEnabled,
                         onChanged: (value) {

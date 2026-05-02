@@ -51,6 +51,9 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final inactiveRingColor = theme.brightness == Brightness.dark
+        ? const Color(0xFF333333)
+        : const Color(0xFFBDBDBD);
     return SetupPageScaffold(
       showBackButton: true,
       onBack: widget.onBack,
@@ -93,6 +96,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                               return CustomPaint(
                                 painter: _ProgressPainter(
                                   progress: _controller.value,
+                                  baseColor: inactiveRingColor,
                                 ),
                                 child: SizedBox(
                                   width: 240,
@@ -102,6 +106,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                                       '$percent%',
                                       style: theme.textTheme.displaySmall
                                           ?.copyWith(
+                                            fontSize: 56,
                                             fontWeight: FontWeight.bold,
                                           ),
                                     ),
@@ -225,8 +230,12 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
 }
 
 class _ProgressPainter extends CustomPainter {
-  const _ProgressPainter({required this.progress});
+  const _ProgressPainter({
+    required this.progress,
+    required this.baseColor,
+  });
   final double progress;
+  final Color baseColor;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -236,7 +245,7 @@ class _ProgressPainter extends CustomPainter {
     final rect = Rect.fromCircle(center: center, radius: radius);
 
     final basePaint = Paint()
-      ..color = const Color(0xFFBDBDBD)
+      ..color = baseColor
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke;
 
@@ -258,6 +267,7 @@ class _ProgressPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _ProgressPainter oldDelegate) {
-    return oldDelegate.progress != progress;
+    return oldDelegate.progress != progress ||
+        oldDelegate.baseColor != baseColor;
   }
 }

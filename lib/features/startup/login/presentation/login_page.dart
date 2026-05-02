@@ -27,8 +27,6 @@ class LoginPage extends HookConsumerWidget {
     final errorShakeTick = useState(0);
     final passwordApiError = useState<String?>(null);
     final showLoading = useState(false);
-    final profileUsername = useState('Anonymous');
-    final profileAvatarId = useState('cat');
 
     useListenable(passwordController);
 
@@ -36,14 +34,13 @@ class LoginPage extends HookConsumerWidget {
     final authState = authAsync.value;
     final isLoginSuccess = authState is AuthStateLoginSuccess;
 
-    useEffect(() {
-      Future<void>(() async {
-        final profileService = ProfileService();
-        profileUsername.value = await profileService.readUsername();
-        profileAvatarId.value = await profileService.readAvatarId();
-      });
-      return null;
+    final profileFuture = useMemoized(() async {
+      final profileService = ProfileService();
+      final username = await profileService.readUsername();
+      final avatarId = await profileService.readAvatarId();
+      return (username: username, avatarId: avatarId);
     }, const []);
+    final profileSnapshot = useFuture(profileFuture);
 
     useEffect(() {
       if (!isLoginSuccess) return null;
@@ -108,7 +105,16 @@ class LoginPage extends HookConsumerWidget {
       }
     }
 
-    final avatar = avatarById(profileAvatarId.value);
+    if (!profileSnapshot.hasData) {
+      return const AppScaffold(
+        resizeToAvoidBottomInset: false,
+        limitWidth: true,
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
+
+    final profileData = profileSnapshot.data!;
+    final avatar = avatarById(profileData.avatarId);
     final theme = Theme.of(context);
     final needsPasswordField =
         authState is AuthStateNeedsLogin && authState.passwordRequired;
@@ -133,7 +139,7 @@ class LoginPage extends HookConsumerWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              profileUsername.value,
+              profileData.username,
               style: theme.textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.w600,
               ),

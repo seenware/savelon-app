@@ -626,7 +626,7 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
     await crypto.initialize();
     await dbNotifier.initialize(crypto.localDbKey);
     ref.read(imageStorageProvider.notifier).initialize(crypto.localDbKey);
-    return const AuthStateAuthenticated();
+    return const AuthStateNeedsLogin(passwordRequired: false);
   }
 
   Future<AuthState> _resolvePostLoginState() async {

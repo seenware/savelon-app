@@ -23,7 +23,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
   });
 
   return GoRouter(
-    initialLocation: '/startup/onboarding',
+    initialLocation: '/startup',
     refreshListenable: notifier,
     redirect: (context, state) {
       final authAsync = ref.read(authProvider);
@@ -91,6 +91,11 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/startup',
+        pageBuilder: (context, state) =>
+            const NoTransitionPage(child: SizedBox.shrink()),
+      ),
       onboardingRoute('/startup/onboarding'),
       setupRoute('/startup/setup'),
       paywallRoute('/startup/paywall'),

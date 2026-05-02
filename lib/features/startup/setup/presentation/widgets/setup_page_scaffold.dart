@@ -46,7 +46,7 @@ class SetupPageScaffold extends StatelessWidget {
                     onPressed: onBottomButtonPressed,
                     onDisabledPressed: onBottomButtonDisabledPressed,
                     isLoading: bottomButtonLoading,
-                    maxWidth: null,
+                    maxWidth: 400,
                   ),
               ],
             ),
