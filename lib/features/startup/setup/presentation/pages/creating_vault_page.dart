@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
+import 'package:contacts/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class CreatingVaultPage extends StatefulWidget {
@@ -50,6 +51,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final inactiveRingColor = theme.brightness == Brightness.dark
         ? const Color(0xFF333333)
@@ -72,7 +74,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                         const SizedBox(width: 48),
                         Expanded(
                           child: Text(
-                            'Creating your vault',
+                            l10n.setupCreatingVaultTitle,
                             textAlign: TextAlign.center,
                             style: theme.textTheme.headlineMedium,
                           ),
@@ -103,7 +105,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                                   height: 240,
                                   child: Center(
                                     child: Text(
-                                      '$percent%',
+                                      l10n.setupCreatingVaultPercent(percent),
                                       style: theme.textTheme.displaySmall
                                           ?.copyWith(
                                             fontSize: 56,
@@ -123,15 +125,15 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                             final value = _controller.value;
                             final entries = <({String text, bool visible})>[
                               (
-                                text: 'Creating your key',
+                                text: l10n.setupCreatingKeyLabel,
                                 visible: value > 0.08,
                               ),
                               (
-                                text: 'Encrypting your data',
+                                text: l10n.setupEncryptingDataLabel,
                                 visible: value > 0.4,
                               ),
                               (
-                                text: 'Checking security',
+                                text: l10n.setupCheckingSecurityLabel,
                                 visible: value > 0.72,
                               ),
                             ];
@@ -210,7 +212,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                         if (_failed) ...[
                           const SizedBox(height: 16),
                           Text(
-                            'Something went wrong. Please try again.',
+                            l10n.setupCreatingVaultError,
                             style: TextStyle(color: theme.colorScheme.error),
                           ),
                         ],

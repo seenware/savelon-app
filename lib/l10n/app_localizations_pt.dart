@@ -364,6 +364,34 @@ class AppLocalizationsPt extends AppLocalizations {
   String get onboardingNext => 'Próximo';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Código aberto';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Qualquer pessoa pode verificar o nosso código no ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privado';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Nem nós conseguimos ver os seus contactos';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Outras aplicações não conseguem ver lá dentro';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Mantém-no longe da nuvem, intermediários de dados e sistemas de vigilância';
+
+  @override
   String get activateDemoTitle => 'Ativar demonstração';
 
   @override
@@ -411,6 +439,82 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Pular';
+
+  @override
+  String get setupCreateVaultTitle => 'Criar o seu cofre';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Guardado apenas no seu dispositivo. Encriptado e privado.';
+
+  @override
+  String get setupDefaultVaultName => 'O meu cofre';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Cofre$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Recortar foto';
+
+  @override
+  String get setupProtectionTitle => 'Proteção';
+
+  @override
+  String get setupEncryption256Label => 'Encriptação de 256 bits';
+
+  @override
+  String get setupRequirePasswordLabel => 'Exigir palavra-passe';
+
+  @override
+  String get setupOptionalSuffix => 'opcional';
+
+  @override
+  String get setupCreateVaultButton => 'Criar cofre';
+
+  @override
+  String get setupCreatingVaultTitle => 'A criar o seu cofre';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'A criar a sua chave';
+
+  @override
+  String get setupEncryptingDataLabel => 'A encriptar os seus dados';
+
+  @override
+  String get setupCheckingSecurityLabel => 'A verificar a segurança';
+
+  @override
+  String get setupCreatingVaultError => 'Algo correu mal. Tente novamente.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Cofre criado';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'O seu cofre está pronto. Está encriptado e seguro.';
+
+  @override
+  String get setupOpenVaultButton => 'Abrir cofre';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Guardei a minha chave secreta em segurança';
+
+  @override
+  String get setupContinue => 'Continuar';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Adicionar palavra-passe';
+
+  @override
+  String get setupSavePasswordButton => 'Guardar palavra-passe';
 
   @override
   String get confirmationCheckboxTitle =>
@@ -1247,6 +1351,34 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get onboardingNext => 'Próximo';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Código aberto';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Qualquer pessoa pode conferir nosso código no ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privado';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Nem mesmo nós podemos ver seus contatos';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Outros apps não conseguem olhar para dentro';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Te mantém longe da nuvem, corretores de dados e sistemas de vigilância';
+
+  @override
   String get activateDemoTitle => 'Ativar demonstração';
 
   @override
@@ -1294,6 +1426,82 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get setupPasswordSkip => 'Pular';
+
+  @override
+  String get setupCreateVaultTitle => 'Criar seu cofre';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Armazenado apenas no seu dispositivo. Criptografado e privado.';
+
+  @override
+  String get setupDefaultVaultName => 'Meu cofre';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Cofre$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Recortar foto';
+
+  @override
+  String get setupProtectionTitle => 'Proteção';
+
+  @override
+  String get setupEncryption256Label => 'Criptografia de 256 bits';
+
+  @override
+  String get setupRequirePasswordLabel => 'Exigir senha';
+
+  @override
+  String get setupOptionalSuffix => 'opcional';
+
+  @override
+  String get setupCreateVaultButton => 'Criar cofre';
+
+  @override
+  String get setupCreatingVaultTitle => 'Criando seu cofre';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Criando sua chave';
+
+  @override
+  String get setupEncryptingDataLabel => 'Criptografando seus dados';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Verificando a segurança';
+
+  @override
+  String get setupCreatingVaultError => 'Algo deu errado. Tente novamente.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Cofre criado';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Seu cofre está pronto. Está criptografado e seguro.';
+
+  @override
+  String get setupOpenVaultButton => 'Abrir cofre';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Guardei minha chave secreta com segurança';
+
+  @override
+  String get setupContinue => 'Continuar';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Adicionar senha';
+
+  @override
+  String get setupSavePasswordButton => 'Salvar senha';
 
   @override
   String get confirmationCheckboxTitle =>

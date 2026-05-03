@@ -365,6 +365,34 @@ class AppLocalizationsNl extends AppLocalizations {
   String get onboardingNext => 'Volgende';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Open source';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Iedereen kan onze code op ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' bekijken.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privé';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Zelfs wij kunnen uw contacten niet zien';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Andere apps kunnen niet naar binnen kijken';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Houdt u uit de buurt van de cloud, datamakelaars en surveillance';
+
+  @override
   String get activateDemoTitle => 'Activeer de demo';
 
   @override
@@ -412,6 +440,83 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Overslaan';
+
+  @override
+  String get setupCreateVaultTitle => 'Maak je kluis';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Alleen op je apparaat opgeslagen. Versleuteld en privé.';
+
+  @override
+  String get setupDefaultVaultName => 'Mijn kluis';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Kluis$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Foto bijsnijden';
+
+  @override
+  String get setupProtectionTitle => 'Beveiliging';
+
+  @override
+  String get setupEncryption256Label => '256-bits encryptie';
+
+  @override
+  String get setupRequirePasswordLabel => 'Wachtwoord vereisen';
+
+  @override
+  String get setupOptionalSuffix => 'optioneel';
+
+  @override
+  String get setupCreateVaultButton => 'Kluis aanmaken';
+
+  @override
+  String get setupCreatingVaultTitle => 'Je kluis wordt aangemaakt';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Je sleutel wordt aangemaakt';
+
+  @override
+  String get setupEncryptingDataLabel => 'Je gegevens worden versleuteld';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Beveiliging wordt gecontroleerd';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Er ging iets mis. Probeer het opnieuw.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Kluis aangemaakt';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Je kluis is klaar. Hij is versleuteld en veilig.';
+
+  @override
+  String get setupOpenVaultButton => 'Kluis openen';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Ik heb mijn geheime sleutel veilig bewaard';
+
+  @override
+  String get setupContinue => 'Doorgaan';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Wachtwoord toevoegen';
+
+  @override
+  String get setupSavePasswordButton => 'Wachtwoord opslaan';
 
   @override
   String get confirmationCheckboxTitle =>

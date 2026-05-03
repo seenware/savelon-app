@@ -1,5 +1,6 @@
 // lib/features/startup/setup/presentation/setup_provider.dart
 
+import 'package:contacts/core/profile/profile_constants.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class SetupState {
@@ -10,7 +11,7 @@ class SetupState {
 
   const SetupState({
     this.password,
-    this.username = 'My vault',
+    this.username = ProfileConstants.defaultUsername,
     this.avatarId = 'cat',
     this.addPasswordEnabled = false,
   });

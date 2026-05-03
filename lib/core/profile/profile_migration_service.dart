@@ -10,22 +10,25 @@ class ProfileMigrationService {
   final SecureStorageService _storage;
 
   Future<void> migrateDefaultsIfNeeded() async {
-    final done = await _storage.read(ProfileConstants.storageKeyMigrationV1);
-    if (done == '1') return;
-
     final existingUsername = await _storage.read(
       ProfileConstants.storageKeyUsername,
     );
-    final existingAvatar = await _storage.read(
-      ProfileConstants.storageKeyAvatarId,
-    );
-
-    if (existingUsername == null || existingUsername.trim().isEmpty) {
+    final trimmedUsername = existingUsername?.trim() ?? '';
+    final needsDefaultUsername = trimmedUsername.isEmpty ||
+        trimmedUsername.toLowerCase() == 'anonymous';
+    if (needsDefaultUsername) {
       await _storage.write(
         ProfileConstants.storageKeyUsername,
         ProfileConstants.defaultUsername,
       );
     }
+
+    final done = await _storage.read(ProfileConstants.storageKeyMigrationV1);
+    if (done == '1') return;
+
+    final existingAvatar = await _storage.read(
+      ProfileConstants.storageKeyAvatarId,
+    );
 
     if (existingAvatar == null ||
         !ProfileConstants.animalAvatarIds.contains(existingAvatar)) {

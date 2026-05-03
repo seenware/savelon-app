@@ -34,7 +34,10 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
   @override
   void initState() {
     super.initState();
-    _currentIndex = widget.initialIndex.clamp(0, kOnboardingSteps.length - 1);
+    _currentIndex = widget.initialIndex.clamp(
+      0,
+      kOnboardingIntroImageAssets.length - 1,
+    );
     _controller = PageController(initialPage: _currentIndex);
   }
 
@@ -48,7 +51,7 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final showBack = _currentIndex > 0;
-    final isLast = _currentIndex == kOnboardingSteps.length - 1;
+    final isLast = _currentIndex == kOnboardingIntroImageAssets.length - 1;
     final base = Theme.of(context).brightness == Brightness.dark
         ? ThemeData(
             colorScheme: ColorScheme.fromSeed(
@@ -112,9 +115,9 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                 onPageChanged: (index) {
                   setState(() => _currentIndex = index);
                 },
-                itemCount: kOnboardingSteps.length,
+                itemCount: kOnboardingIntroImageAssets.length,
                 itemBuilder: (context, index) {
-                  final data = kOnboardingSteps[index];
+                  final imageAsset = kOnboardingIntroImageAssets[index];
                   return LayoutBuilder(
                     builder: (context, constraints) {
                       final media = MediaQuery.of(context);
@@ -150,7 +153,7 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(20),
                                       child: Image.asset(
-                                        data.imageAsset,
+                                        imageAsset,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
@@ -159,14 +162,17 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                               ),
                               const SizedBox(height: 20),
                               Text(
-                                data.title,
+                                _benefitsTitle(l10n, index),
                                 textAlign: TextAlign.center,
                                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                                       fontWeight: FontWeight.w700,
                                     ),
                               ),
                               const SizedBox(height: 12),
-                              _DescriptionWidget(stepIndex: index),
+                              _DescriptionWidget(
+                                stepIndex: index,
+                                l10n: l10n,
+                              ),
                             ],
                           ),
                         ),
@@ -225,7 +231,7 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
   }
 
   Future<void> _goNext() async {
-    if (_currentIndex >= kOnboardingSteps.length - 1) return;
+    if (_currentIndex >= kOnboardingIntroImageAssets.length - 1) return;
     await _controller.animateToPage(
       _currentIndex + 1,
       duration: const Duration(milliseconds: 300),
@@ -241,12 +247,31 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
       curve: Curves.easeOutCubic,
     );
   }
+
+  static String _benefitsTitle(AppLocalizations l10n, int index) {
+    switch (index) {
+      case 0:
+        return l10n.onboardingBenefitsOpenSourceTitle;
+      case 1:
+        return l10n.onboardingBenefitsPrivateTitle;
+      case 2:
+        return l10n.onboardingBenefitsSandboxTitle;
+      case 3:
+        return l10n.onboardingBenefitsOfflineTitle;
+      default:
+        return '';
+    }
+  }
 }
 
 class _DescriptionWidget extends StatelessWidget {
-  const _DescriptionWidget({required this.stepIndex});
+  const _DescriptionWidget({
+    required this.stepIndex,
+    required this.l10n,
+  });
 
   final int stepIndex;
+  final AppLocalizations l10n;
 
   @override
   Widget build(BuildContext context) {
@@ -258,11 +283,19 @@ class _DescriptionWidget extends StatelessWidget {
     );
 
     if (stepIndex == 0) {
-      return _OpenSourceDescription(style: mutedStyle);
+      return _OpenSourceDescription(style: mutedStyle, l10n: l10n);
     }
 
-    final text = kOnboardingSteps[stepIndex].descriptionSimple;
-    if (text == null || text.isEmpty) {
+    if (stepIndex == 2) {
+      return const SizedBox.shrink();
+    }
+
+    final text = switch (stepIndex) {
+      1 => l10n.onboardingBenefitsPrivateDescription,
+      3 => l10n.onboardingBenefitsOfflineDescription,
+      _ => '',
+    };
+    if (text.isEmpty) {
       return const SizedBox.shrink();
     }
 
@@ -275,9 +308,13 @@ class _DescriptionWidget extends StatelessWidget {
 }
 
 class _OpenSourceDescription extends StatefulWidget {
-  const _OpenSourceDescription({required this.style});
+  const _OpenSourceDescription({
+    required this.style,
+    required this.l10n,
+  });
 
   final TextStyle? style;
+  final AppLocalizations l10n;
 
   @override
   State<_OpenSourceDescription> createState() => _OpenSourceDescriptionState();
@@ -317,13 +354,13 @@ class _OpenSourceDescriptionState extends State<_OpenSourceDescription> {
       TextSpan(
         style: widget.style,
         children: [
-          const TextSpan(text: 'Anyone can check our code on '),
+          TextSpan(text: widget.l10n.onboardingBenefitsOpenSourceBeforeLink),
           TextSpan(
             text: 'GitHub',
             style: linkStyle,
             recognizer: _githubTap,
           ),
-          const TextSpan(text: '.'),
+          TextSpan(text: widget.l10n.onboardingBenefitsOpenSourceAfterLink),
         ],
       ),
       textAlign: TextAlign.center,

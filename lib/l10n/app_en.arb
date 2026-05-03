@@ -180,6 +180,14 @@
   "onboardingSubline4": "Savelon stores them on your device, encrypted and private from other apps.",
   "onboardingGetStarted": "Get Started",
   "onboardingNext": "Next",
+  "onboardingBenefitsOpenSourceTitle": "Open source",
+  "onboardingBenefitsOpenSourceBeforeLink": "Anyone can check our code on ",
+  "onboardingBenefitsOpenSourceAfterLink": ".",
+  "onboardingBenefitsPrivateTitle": "Private",
+  "onboardingBenefitsPrivateDescription": "Even we cannot see your contacts",
+  "onboardingBenefitsSandboxTitle": "Other apps cannot look inside",
+  "onboardingBenefitsOfflineTitle": "Offline",
+  "onboardingBenefitsOfflineDescription": "Keeps you away from the cloud, data brokers, and surveillance systems",
   "activateDemoTitle": "Activate Demo",
   "activateDemoCancel": "Cancel",
   "demoAccessGranted": "You now have demo access until {dateTime}",
@@ -208,6 +216,45 @@
   "setupPasswordPageTitle": "Create Password",
   "setupPasswordNext": "Next",
   "setupPasswordSkip": "Skip",
+  "setupCreateVaultTitle": "Create your vault",
+  "setupCreateVaultSubtitle": "Stored on your device only. Encrypted and private.",
+  "setupDefaultVaultName": "My vault",
+  "setupRandomVaultName": "Vault{number}",
+  "@setupRandomVaultName": {
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "042"
+      }
+    }
+  },
+  "setupCropPhotoTitle": "Crop photo",
+  "setupProtectionTitle": "Protection",
+  "setupEncryption256Label": "256-bit encryption",
+  "setupRequirePasswordLabel": "Require password",
+  "setupOptionalSuffix": "optional",
+  "setupCreateVaultButton": "Create vault",
+  "setupCreatingVaultTitle": "Creating your vault",
+  "setupCreatingVaultPercent": "{percent}%",
+  "@setupCreatingVaultPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "42"
+      }
+    }
+  },
+  "setupCreatingKeyLabel": "Creating your key",
+  "setupEncryptingDataLabel": "Encrypting your data",
+  "setupCheckingSecurityLabel": "Checking security",
+  "setupCreatingVaultError": "Something went wrong. Please try again.",
+  "setupVaultCreatedTitle": "Vault created",
+  "setupVaultCreatedSubtitle": "Your vault is ready. It is encrypted and secure.",
+  "setupOpenVaultButton": "Open vault",
+  "setupSavedSecretKeyCheckbox": "I saved my secret key safely",
+  "setupContinue": "Continue",
+  "setupAddPasswordPageTitle": "Add password",
+  "setupSavePasswordButton": "Save password",
   "confirmationCheckboxTitle": "I understand my password cannot be recovered",
   "loginWelcomeBack": "Welcome Back",
   "loginPasswordLabel": "Password",

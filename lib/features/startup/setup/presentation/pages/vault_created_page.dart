@@ -1,6 +1,7 @@
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
 import 'package:contacts/core/theme/app_breakpoints.dart';
+import 'package:contacts/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class VaultCreatedPage extends StatelessWidget {
@@ -15,11 +16,12 @@ class VaultCreatedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     return SetupPageScaffold(
       showBackButton: true,
       onBack: onBack,
-      bottomButtonText: 'Open vault',
+      bottomButtonText: l10n.setupOpenVaultButton,
       onBottomButtonPressed: onOpenVault,
       body: LayoutBuilder(
         builder: (context, constraints) {
@@ -42,7 +44,7 @@ class VaultCreatedPage extends StatelessWidget {
                       child: SetupEntrance(
                         index: 0,
                         child: Text(
-                          'Vault created',
+                          l10n.setupVaultCreatedTitle,
                           textAlign: TextAlign.center,
                           style: theme.textTheme.headlineMedium,
                         ),
@@ -56,7 +58,7 @@ class VaultCreatedPage extends StatelessWidget {
               SetupEntrance(
                 index: 1,
                 child: Text(
-                  'Your vault is ready. It is encrypted and secure.',
+                  l10n.setupVaultCreatedSubtitle,
                   textAlign: TextAlign.center,
                   style: theme.textTheme.titleMedium?.copyWith(
                     color: theme.colorScheme.onSurfaceVariant.withValues(

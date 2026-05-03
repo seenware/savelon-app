@@ -368,6 +368,34 @@ class AppLocalizationsFr extends AppLocalizations {
   String get onboardingNext => 'Suivant';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Open source';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Tout le monde peut consulter notre code sur ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privé';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Même nous ne pouvons pas voir vos contacts';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Les autres applications ne peuvent pas voir à l’intérieur';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Hors ligne';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Vous éloigne du cloud, des courtiers en données et des systèmes de surveillance';
+
+  @override
   String get activateDemoTitle => 'Activer la démo';
 
   @override
@@ -415,6 +443,83 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Sauter';
+
+  @override
+  String get setupCreateVaultTitle => 'Créer votre coffre';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Stocké uniquement sur votre appareil. Chiffré et privé.';
+
+  @override
+  String get setupDefaultVaultName => 'Mon coffre';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Coffre$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Recadrer la photo';
+
+  @override
+  String get setupProtectionTitle => 'Protection';
+
+  @override
+  String get setupEncryption256Label => 'Chiffrement 256 bits';
+
+  @override
+  String get setupRequirePasswordLabel => 'Exiger un mot de passe';
+
+  @override
+  String get setupOptionalSuffix => 'facultatif';
+
+  @override
+  String get setupCreateVaultButton => 'Créer le coffre';
+
+  @override
+  String get setupCreatingVaultTitle => 'Création de votre coffre';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent %';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Création de votre clé';
+
+  @override
+  String get setupEncryptingDataLabel => 'Chiffrement de vos données';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Vérification de la sécurité';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Une erreur s’est produite. Veuillez réessayer.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Coffre créé';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Votre coffre est prêt. Il est chiffré et sécurisé.';
+
+  @override
+  String get setupOpenVaultButton => 'Ouvrir le coffre';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'J’ai conservé ma clé secrète en lieu sûr';
+
+  @override
+  String get setupContinue => 'Continuer';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Ajouter un mot de passe';
+
+  @override
+  String get setupSavePasswordButton => 'Enregistrer le mot de passe';
 
   @override
   String get confirmationCheckboxTitle =>

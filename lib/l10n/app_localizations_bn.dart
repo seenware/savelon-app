@@ -365,6 +365,34 @@ class AppLocalizationsBn extends AppLocalizations {
   String get onboardingNext => 'পরবর্তী';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'ওপেন সোর্স';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'যে কেউ আমাদের কোড দেখতে পারেন ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '।';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'ব্যক্তিগত';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'আমরাও আপনার পরিচিতিগুলি দেখতে পারি না';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'অন্যান্য অ্যাপ ভেতরে দেখতে পারে না';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'অফলাইন';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'ক্লাউড, ডেটা ব্রোকার ও নজরদারি সিস্টেম থেকে আপনাকে দূরে রাখে';
+
+  @override
   String get activateDemoTitle => 'ডেমো সক্রিয় করুন';
 
   @override
@@ -412,6 +440,81 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'এড়িয়ে যান';
+
+  @override
+  String get setupCreateVaultTitle => 'আপনার ভল্ট তৈরি করুন';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'শুধু আপনার ডিভাইসে সংরক্ষিত। এনক্রিপ্টেড ও ব্যক্তিগত।';
+
+  @override
+  String get setupDefaultVaultName => 'আমার ভল্ট';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'ভল্ট$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'ছবি ক্রপ করুন';
+
+  @override
+  String get setupProtectionTitle => 'সুরক্ষা';
+
+  @override
+  String get setupEncryption256Label => '২৫৬-বিট এনক্রিপশন';
+
+  @override
+  String get setupRequirePasswordLabel => 'পাসওয়ার্ড প্রয়োজন';
+
+  @override
+  String get setupOptionalSuffix => 'ঐচ্ছিক';
+
+  @override
+  String get setupCreateVaultButton => 'ভল্ট তৈরি করুন';
+
+  @override
+  String get setupCreatingVaultTitle => 'আপনার ভল্ট তৈরি হচ্ছে';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'আপনার কী তৈরি হচ্ছে';
+
+  @override
+  String get setupEncryptingDataLabel => 'আপনার ডেটা এনক্রিপ্ট করা হচ্ছে';
+
+  @override
+  String get setupCheckingSecurityLabel => 'নিরাপত্তা যাচাই করা হচ্ছে';
+
+  @override
+  String get setupCreatingVaultError => 'কিছু ভুল হয়েছে। আবার চেষ্টা করুন।';
+
+  @override
+  String get setupVaultCreatedTitle => 'ভল্ট তৈরি হয়েছে';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'আপনার ভল্ট প্রস্তুত। এটি এনক্রিপ্টেড ও নিরাপদ।';
+
+  @override
+  String get setupOpenVaultButton => 'ভল্ট খুলুন';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => 'আমি আমার গোপন চাবি নিরাপদে রেখেছি';
+
+  @override
+  String get setupContinue => 'চালিয়ে যান';
+
+  @override
+  String get setupAddPasswordPageTitle => 'পাসওয়ার্ড যোগ করুন';
+
+  @override
+  String get setupSavePasswordButton => 'পাসওয়ার্ড সংরক্ষণ করুন';
 
   @override
   String get confirmationCheckboxTitle =>

@@ -354,6 +354,31 @@ class AppLocalizationsKo extends AppLocalizations {
   String get onboardingNext => '다음';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => '오픈 소스';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink => '누구나 ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '에서 우리 코드를 확인할 수 있습니다.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => '비공개';
+
+  @override
+  String get onboardingBenefitsPrivateDescription => '저희도 사용자의 연락처를 볼 수 없습니다';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => '다른 앱은 안을 들여다볼 수 없습니다';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => '오프라인';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      '클라우드, 데이터 브로커, 감시 시스템으로부터 사용자를 멀어지게 합니다';
+
+  @override
   String get activateDemoTitle => '데모 활성화';
 
   @override
@@ -399,6 +424,79 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => '건너뛰기';
+
+  @override
+  String get setupCreateVaultTitle => '금고 만들기';
+
+  @override
+  String get setupCreateVaultSubtitle => '기기에만 저장됩니다. 암호화되어 비공개입니다.';
+
+  @override
+  String get setupDefaultVaultName => '내 금고';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return '금고$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => '사진 자르기';
+
+  @override
+  String get setupProtectionTitle => '보호';
+
+  @override
+  String get setupEncryption256Label => '256비트 암호화';
+
+  @override
+  String get setupRequirePasswordLabel => '비밀번호 필요';
+
+  @override
+  String get setupOptionalSuffix => '선택';
+
+  @override
+  String get setupCreateVaultButton => '금고 만들기';
+
+  @override
+  String get setupCreatingVaultTitle => '금고를 만드는 중';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => '키를 만드는 중';
+
+  @override
+  String get setupEncryptingDataLabel => '데이터를 암호화하는 중';
+
+  @override
+  String get setupCheckingSecurityLabel => '보안을 확인하는 중';
+
+  @override
+  String get setupCreatingVaultError => '문제가 발생했습니다. 다시 시도하세요.';
+
+  @override
+  String get setupVaultCreatedTitle => '금고가 만들어졌습니다';
+
+  @override
+  String get setupVaultCreatedSubtitle => '금고가 준비되었습니다. 암호화되어 안전합니다.';
+
+  @override
+  String get setupOpenVaultButton => '금고 열기';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => '비밀 키를 안전하게 보관했습니다';
+
+  @override
+  String get setupContinue => '계속';
+
+  @override
+  String get setupAddPasswordPageTitle => '비밀번호 추가';
+
+  @override
+  String get setupSavePasswordButton => '비밀번호 저장';
 
   @override
   String get confirmationCheckboxTitle => '내 비밀번호를 복구할 수 없음을 이해합니다.';

@@ -363,6 +363,34 @@ class AppLocalizationsTr extends AppLocalizations {
   String get onboardingNext => 'Sonraki';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Açık kaynak';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink => 'Herkes kodumuzu ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink =>
+      ' üzerinde inceleyebilir.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Gizli';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Biz bile kişilerinizi göremeyiz';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Diğer uygulamalar içeri bakamaz';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Çevrimdışı';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Sizi bulut, veri aracıları ve gözetim sistemlerinden uzak tutar';
+
+  @override
   String get activateDemoTitle => 'Demoyu Etkinleştir';
 
   @override
@@ -410,6 +438,82 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Atla';
+
+  @override
+  String get setupCreateVaultTitle => 'Kasanızı oluşturun';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Yalnızca cihazınızda saklanır. Şifreli ve gizlidir.';
+
+  @override
+  String get setupDefaultVaultName => 'Kasam';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Kasa$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Fotoğrafı kırp';
+
+  @override
+  String get setupProtectionTitle => 'Koruma';
+
+  @override
+  String get setupEncryption256Label => '256 bit şifreleme';
+
+  @override
+  String get setupRequirePasswordLabel => 'Şifre gerekli';
+
+  @override
+  String get setupOptionalSuffix => 'isteğe bağlı';
+
+  @override
+  String get setupCreateVaultButton => 'Kasa oluştur';
+
+  @override
+  String get setupCreatingVaultTitle => 'Kasanız oluşturuluyor';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Anahtarınız oluşturuluyor';
+
+  @override
+  String get setupEncryptingDataLabel => 'Verileriniz şifreleniyor';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Güvenlik denetleniyor';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Bir şeyler ters gitti. Lütfen tekrar deneyin.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Kasa oluşturuldu';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Kasanız hazır. Şifreli ve güvendedir.';
+
+  @override
+  String get setupOpenVaultButton => 'Kasayı aç';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => 'Gizli anahtarımı güvenle sakladım';
+
+  @override
+  String get setupContinue => 'Devam';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Şifre ekle';
+
+  @override
+  String get setupSavePasswordButton => 'Şifreyi kaydet';
 
   @override
   String get confirmationCheckboxTitle =>

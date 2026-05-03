@@ -21,7 +21,7 @@ class PageShell extends StatelessWidget {
     this.onDisabledNext,
     this.showBackButton = true,
     required this.children,
-    this.nextButtonText = 'Continue',
+    required this.nextButtonText,
     this.isLoading = false,
   });
 

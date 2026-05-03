@@ -780,6 +780,54 @@ abstract class AppLocalizations {
   /// **'Next'**
   String get onboardingNext;
 
+  /// No description provided for @onboardingBenefitsOpenSourceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open source'**
+  String get onboardingBenefitsOpenSourceTitle;
+
+  /// No description provided for @onboardingBenefitsOpenSourceBeforeLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone can check our code on '**
+  String get onboardingBenefitsOpenSourceBeforeLink;
+
+  /// No description provided for @onboardingBenefitsOpenSourceAfterLink.
+  ///
+  /// In en, this message translates to:
+  /// **'.'**
+  String get onboardingBenefitsOpenSourceAfterLink;
+
+  /// No description provided for @onboardingBenefitsPrivateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Private'**
+  String get onboardingBenefitsPrivateTitle;
+
+  /// No description provided for @onboardingBenefitsPrivateDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Even we cannot see your contacts'**
+  String get onboardingBenefitsPrivateDescription;
+
+  /// No description provided for @onboardingBenefitsSandboxTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Other apps cannot look inside'**
+  String get onboardingBenefitsSandboxTitle;
+
+  /// No description provided for @onboardingBenefitsOfflineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline'**
+  String get onboardingBenefitsOfflineTitle;
+
+  /// No description provided for @onboardingBenefitsOfflineDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Keeps you away from the cloud, data brokers, and surveillance systems'**
+  String get onboardingBenefitsOfflineDescription;
+
   /// No description provided for @activateDemoTitle.
   ///
   /// In en, this message translates to:
@@ -863,6 +911,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Skip'**
   String get setupPasswordSkip;
+
+  /// No description provided for @setupCreateVaultTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your vault'**
+  String get setupCreateVaultTitle;
+
+  /// No description provided for @setupCreateVaultSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stored on your device only. Encrypted and private.'**
+  String get setupCreateVaultSubtitle;
+
+  /// No description provided for @setupDefaultVaultName.
+  ///
+  /// In en, this message translates to:
+  /// **'My vault'**
+  String get setupDefaultVaultName;
+
+  /// No description provided for @setupRandomVaultName.
+  ///
+  /// In en, this message translates to:
+  /// **'Vault{number}'**
+  String setupRandomVaultName(String number);
+
+  /// No description provided for @setupCropPhotoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Crop photo'**
+  String get setupCropPhotoTitle;
+
+  /// No description provided for @setupProtectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Protection'**
+  String get setupProtectionTitle;
+
+  /// No description provided for @setupEncryption256Label.
+  ///
+  /// In en, this message translates to:
+  /// **'256-bit encryption'**
+  String get setupEncryption256Label;
+
+  /// No description provided for @setupRequirePasswordLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Require password'**
+  String get setupRequirePasswordLabel;
+
+  /// No description provided for @setupOptionalSuffix.
+  ///
+  /// In en, this message translates to:
+  /// **'optional'**
+  String get setupOptionalSuffix;
+
+  /// No description provided for @setupCreateVaultButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Create vault'**
+  String get setupCreateVaultButton;
+
+  /// No description provided for @setupCreatingVaultTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Creating your vault'**
+  String get setupCreatingVaultTitle;
+
+  /// No description provided for @setupCreatingVaultPercent.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent}%'**
+  String setupCreatingVaultPercent(int percent);
+
+  /// No description provided for @setupCreatingKeyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Creating your key'**
+  String get setupCreatingKeyLabel;
+
+  /// No description provided for @setupEncryptingDataLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Encrypting your data'**
+  String get setupEncryptingDataLabel;
+
+  /// No description provided for @setupCheckingSecurityLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking security'**
+  String get setupCheckingSecurityLabel;
+
+  /// No description provided for @setupCreatingVaultError.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong. Please try again.'**
+  String get setupCreatingVaultError;
+
+  /// No description provided for @setupVaultCreatedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Vault created'**
+  String get setupVaultCreatedTitle;
+
+  /// No description provided for @setupVaultCreatedSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your vault is ready. It is encrypted and secure.'**
+  String get setupVaultCreatedSubtitle;
+
+  /// No description provided for @setupOpenVaultButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Open vault'**
+  String get setupOpenVaultButton;
+
+  /// No description provided for @setupSavedSecretKeyCheckbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I saved my secret key safely'**
+  String get setupSavedSecretKeyCheckbox;
+
+  /// No description provided for @setupContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get setupContinue;
+
+  /// No description provided for @setupAddPasswordPageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Add password'**
+  String get setupAddPasswordPageTitle;
+
+  /// No description provided for @setupSavePasswordButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Save password'**
+  String get setupSavePasswordButton;
 
   /// No description provided for @confirmationCheckboxTitle.
   ///

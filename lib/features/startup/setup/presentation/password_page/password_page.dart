@@ -190,7 +190,9 @@ class PasswordPage extends HookConsumerWidget {
     ];
 
     return PageShell(
-      title: setupMode ? l10n.setupPasswordPageTitle : 'Add password',
+      title: setupMode
+          ? l10n.setupPasswordPageTitle
+          : l10n.setupAddPasswordPageTitle,
       showBackButton: !setupMode,
       onNext: isFormValid() ? validateAndContinue : null,
       onDisabledNext: () {
@@ -202,12 +204,11 @@ class PasswordPage extends HookConsumerWidget {
           showErrors.value = true;
         }
       },
-      nextButtonText:
-          setupMode
-              ? (usePassword.value
-                    ? l10n.setupPasswordNext
-                    : l10n.setupPasswordSkip)
-              : 'Save password',
+      nextButtonText: setupMode
+          ? (usePassword.value
+              ? l10n.setupPasswordNext
+              : l10n.setupPasswordSkip)
+          : l10n.setupSavePasswordButton,
       isLoading: showLoading.value,
       children: children,
     );

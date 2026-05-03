@@ -14,7 +14,12 @@ class ProfileService {
     if (value == null || value.trim().isEmpty) {
       return ProfileConstants.defaultUsername;
     }
-    return value.trim();
+    final trimmed = value.trim();
+    // Legacy installs had no vault name; some builds stored a generic label.
+    if (trimmed.toLowerCase() == 'anonymous') {
+      return ProfileConstants.defaultUsername;
+    }
+    return trimmed;
   }
 
   Future<String> readAvatarId() async {

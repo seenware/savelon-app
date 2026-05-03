@@ -364,6 +364,34 @@ class AppLocalizationsRu extends AppLocalizations {
   String get onboardingNext => 'Далее';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Открытый код';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Любой может посмотреть наш код на ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Приватно';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Даже мы не видим ваши контакты';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Другие приложения не могут заглянуть внутрь';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Офлайн';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Держит вас подальше от облака, брокеров данных и систем слежки';
+
+  @override
   String get activateDemoTitle => 'Активировать демо';
 
   @override
@@ -411,6 +439,82 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Пропускать';
+
+  @override
+  String get setupCreateVaultTitle => 'Создайте хранилище';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Только на вашем устройстве. Зашифровано и конфиденциально.';
+
+  @override
+  String get setupDefaultVaultName => 'Моё хранилище';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Хранилище$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Обрезать фото';
+
+  @override
+  String get setupProtectionTitle => 'Защита';
+
+  @override
+  String get setupEncryption256Label => 'Шифрование 256 бит';
+
+  @override
+  String get setupRequirePasswordLabel => 'Требовать пароль';
+
+  @override
+  String get setupOptionalSuffix => 'необязательно';
+
+  @override
+  String get setupCreateVaultButton => 'Создать хранилище';
+
+  @override
+  String get setupCreatingVaultTitle => 'Создаём хранилище';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Создаём ключ';
+
+  @override
+  String get setupEncryptingDataLabel => 'Шифруем данные';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Проверяем безопасность';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Что-то пошло не так. Попробуйте снова.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Хранилище создано';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Ваше хранилище готово. Оно зашифровано и надёжно защищено.';
+
+  @override
+  String get setupOpenVaultButton => 'Открыть хранилище';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => 'Я надёжно сохранил секретный ключ';
+
+  @override
+  String get setupContinue => 'Продолжить';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Добавить пароль';
+
+  @override
+  String get setupSavePasswordButton => 'Сохранить пароль';
 
   @override
   String get confirmationCheckboxTitle =>

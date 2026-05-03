@@ -1,10 +1,12 @@
 import 'dart:typed_data';
 import 'dart:math';
 
+import 'package:contacts/core/profile/profile_constants.dart';
 import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:contacts/features/startup/setup/presentation/models/avatar_catalog.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
+import 'package:contacts/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:image_cropper/image_cropper.dart';
@@ -45,10 +47,16 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
   late final FocusNode _usernameFocusNode;
   late String _avatarId;
   Uint8List? _photoBytes;
+  bool _appliedL10nDefaults = false;
 
-  String _randomVaultName() {
+  String _randomVaultName(AppLocalizations l10n) {
     final n = Random().nextInt(1000);
-    return 'Vault${n.toString().padLeft(3, '0')}';
+    return l10n.setupRandomVaultName(n.toString().padLeft(3, '0'));
+  }
+
+  String _autoVaultPrefix(AppLocalizations l10n) {
+    final sample = l10n.setupRandomVaultName('000');
+    return sample.substring(0, sample.length - 3);
   }
 
   String _randomAvatarId() {
@@ -64,15 +72,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
         : widget.initialAvatarId;
     _avatarId = randomizedAvatar;
     _usernameFocusNode = FocusNode();
-    final initial = widget.initialUsername.trim();
-    final generated = _randomVaultName();
-    final shouldGenerate =
-        initial.isEmpty ||
-        initial == 'My vault' ||
-        RegExp(r'^Vault\d{3}$').hasMatch(initial);
-    _controller = TextEditingController(
-      text: shouldGenerate ? generated : initial,
-    );
+    _controller = TextEditingController();
     _controller.addListener(() => widget.onUsernameChanged(_controller.text));
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
@@ -90,6 +90,31 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
       } else {
         _usernameFocusNode.requestFocus();
       }
+    });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_appliedL10nDefaults) return;
+    _appliedL10nDefaults = true;
+    final l10n = AppLocalizations.of(context)!;
+    final initial = widget.initialUsername.trim();
+    final generated = _randomVaultName(l10n);
+    final localizedDefault = l10n.setupDefaultVaultName;
+    final prefix = _autoVaultPrefix(l10n);
+    final autoPattern = RegExp('^${RegExp.escape(prefix)}\\d{3}\$');
+    final shouldGenerate = initial.isEmpty ||
+        initial == ProfileConstants.defaultUsername ||
+        initial == localizedDefault ||
+        RegExp(r'^Vault\d{3}$').hasMatch(initial) ||
+        autoPattern.hasMatch(initial);
+    final text = shouldGenerate ? generated : initial;
+    // Assign after build: setting .text notifies listeners → setupNotifier,
+    // which Riverpod forbids during didChangeDependencies / build.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      _controller.text = text;
     });
   }
 
@@ -184,6 +209,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
   }
 
   Future<void> _pickPhoto() async {
+    final l10n = AppLocalizations.of(context)!;
     final picker = ImagePicker();
     final picked = await picker.pickImage(
       source: ImageSource.gallery,
@@ -195,7 +221,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
       aspectRatio: const CropAspectRatio(ratioX: 1, ratioY: 1),
       uiSettings: [
         AndroidUiSettings(
-          toolbarTitle: 'Crop photo',
+          toolbarTitle: l10n.setupCropPhotoTitle,
           lockAspectRatio: true,
           hideBottomControls: true,
           showCropGrid: false,
@@ -203,7 +229,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
           aspectRatioPresets: [],
         ),
         IOSUiSettings(
-          title: 'Crop photo',
+          title: l10n.setupCropPhotoTitle,
           aspectRatioLockEnabled: true,
           resetAspectRatioEnabled: false,
           resetButtonHidden: true,
@@ -231,6 +257,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final avatar = avatarById(_avatarId);
     final theme = Theme.of(context);
 
@@ -240,7 +267,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
       child: SetupPageScaffold(
         showBackButton: true,
         onBack: widget.onBack,
-        bottomButtonText: 'Next',
+        bottomButtonText: l10n.onboardingNext,
         onBottomButtonPressed: widget.onContinue,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -254,7 +281,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                     child: SetupEntrance(
                       index: 0,
                       child: Text(
-                        'Create your vault',
+                        l10n.setupCreateVaultTitle,
                         textAlign: TextAlign.center,
                         style: theme.textTheme.headlineMedium,
                       ),
@@ -268,7 +295,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
             SetupEntrance(
               index: 1,
               child: Text(
-                'Stored on your device only. Encrypted and private.',
+                l10n.setupCreateVaultSubtitle,
                 textAlign: TextAlign.center,
                 style: theme.textTheme.titleMedium?.copyWith(
                   color: theme.colorScheme.onSurfaceVariant.withValues(
@@ -333,7 +360,7 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                                 fontSize: 30,
                               ),
                               decoration: InputDecoration(
-                                hintText: 'My vault',
+                                hintText: l10n.setupDefaultVaultName,
                                 hintStyle: theme.textTheme.headlineSmall?.copyWith(
                                   color: Colors.grey,
                                   fontSize: 30,
