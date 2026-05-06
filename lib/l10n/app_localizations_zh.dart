@@ -350,6 +350,30 @@ class AppLocalizationsZh extends AppLocalizations {
   String get onboardingNext => '下一个';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => '开源';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink => '任何人都可以在 ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' 查看我们的代码。';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => '私密';
+
+  @override
+  String get onboardingBenefitsPrivateDescription => '连我们也无法看到你的联系人';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => '其他应用无法窥探内部';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => '离线';
+
+  @override
+  String get onboardingBenefitsOfflineDescription => '让你远离云端、数据经纪人和监控系统';
+
+  @override
   String get activateDemoTitle => '激活演示';
 
   @override
@@ -394,6 +418,79 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => '跳过';
+
+  @override
+  String get setupCreateVaultTitle => '创建你的保险库';
+
+  @override
+  String get setupCreateVaultSubtitle => '仅保存在你的设备上。已加密且私密。';
+
+  @override
+  String get setupDefaultVaultName => '我的保险库';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return '保险库$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => '裁剪照片';
+
+  @override
+  String get setupProtectionTitle => '保护';
+
+  @override
+  String get setupEncryption256Label => '256 位加密';
+
+  @override
+  String get setupRequirePasswordLabel => '需要密码';
+
+  @override
+  String get setupOptionalSuffix => '可选';
+
+  @override
+  String get setupCreateVaultButton => '创建保险库';
+
+  @override
+  String get setupCreatingVaultTitle => '正在创建保险库';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => '正在创建密钥';
+
+  @override
+  String get setupEncryptingDataLabel => '正在加密数据';
+
+  @override
+  String get setupCheckingSecurityLabel => '正在检查安全性';
+
+  @override
+  String get setupCreatingVaultError => '出现问题，请重试。';
+
+  @override
+  String get setupVaultCreatedTitle => '保险库已创建';
+
+  @override
+  String get setupVaultCreatedSubtitle => '你的保险库已就绪。已加密且安全。';
+
+  @override
+  String get setupOpenVaultButton => '打开保险库';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => '我已安全保存我的密钥';
+
+  @override
+  String get setupContinue => '继续';
+
+  @override
+  String get setupAddPasswordPageTitle => '添加密码';
+
+  @override
+  String get setupSavePasswordButton => '保存密码';
 
   @override
   String get confirmationCheckboxTitle => '我了解我的密码无法恢复';
@@ -1189,6 +1286,30 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get onboardingNext => '下一个';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => '开源';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink => '任何人都可以在 ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' 查看我们的代码。';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => '私密';
+
+  @override
+  String get onboardingBenefitsPrivateDescription => '连我们也无法看到你的联系人';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => '其他应用无法窥探内部';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => '离线';
+
+  @override
+  String get onboardingBenefitsOfflineDescription => '让你远离云端、数据经纪人和监控系统';
+
+  @override
   String get activateDemoTitle => '激活演示';
 
   @override
@@ -1233,6 +1354,79 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get setupPasswordSkip => '跳过';
+
+  @override
+  String get setupCreateVaultTitle => '创建你的保险库';
+
+  @override
+  String get setupCreateVaultSubtitle => '仅保存在你的设备上。已加密且私密。';
+
+  @override
+  String get setupDefaultVaultName => '我的保险库';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return '保险库$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => '裁剪照片';
+
+  @override
+  String get setupProtectionTitle => '保护';
+
+  @override
+  String get setupEncryption256Label => '256 位加密';
+
+  @override
+  String get setupRequirePasswordLabel => '需要密码';
+
+  @override
+  String get setupOptionalSuffix => '可选';
+
+  @override
+  String get setupCreateVaultButton => '创建保险库';
+
+  @override
+  String get setupCreatingVaultTitle => '正在创建保险库';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => '正在创建密钥';
+
+  @override
+  String get setupEncryptingDataLabel => '正在加密数据';
+
+  @override
+  String get setupCheckingSecurityLabel => '正在检查安全性';
+
+  @override
+  String get setupCreatingVaultError => '出现问题，请重试。';
+
+  @override
+  String get setupVaultCreatedTitle => '保险库已创建';
+
+  @override
+  String get setupVaultCreatedSubtitle => '你的保险库已就绪。已加密且安全。';
+
+  @override
+  String get setupOpenVaultButton => '打开保险库';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => '我已安全保存我的密钥';
+
+  @override
+  String get setupContinue => '继续';
+
+  @override
+  String get setupAddPasswordPageTitle => '添加密码';
+
+  @override
+  String get setupSavePasswordButton => '保存密码';
 
   @override
   String get confirmationCheckboxTitle => '我了解我的密码无法恢复';

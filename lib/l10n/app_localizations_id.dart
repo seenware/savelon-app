@@ -363,6 +363,34 @@ class AppLocalizationsId extends AppLocalizations {
   String get onboardingNext => 'Berikutnya';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Sumber terbuka';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Siapa pun dapat memeriksa kode kami di ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privat';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Bahkan kami tidak dapat melihat kontak Anda';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Aplikasi lain tidak bisa melihat ke dalam';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Luring';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Menjauhkan Anda dari cloud, broker data, dan sistem pengawasan';
+
+  @override
   String get activateDemoTitle => 'Aktifkan Demo';
 
   @override
@@ -410,6 +438,82 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Lewati';
+
+  @override
+  String get setupCreateVaultTitle => 'Buat brankas Anda';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Hanya disimpan di perangkat Anda. Terenkripsi dan privat.';
+
+  @override
+  String get setupDefaultVaultName => 'Brankas saya';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Brankas$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Pangkas foto';
+
+  @override
+  String get setupProtectionTitle => 'Perlindungan';
+
+  @override
+  String get setupEncryption256Label => 'Enkripsi 256-bit';
+
+  @override
+  String get setupRequirePasswordLabel => 'Wajibkan kata sandi';
+
+  @override
+  String get setupOptionalSuffix => 'opsional';
+
+  @override
+  String get setupCreateVaultButton => 'Buat brankas';
+
+  @override
+  String get setupCreatingVaultTitle => 'Membuat brankas Anda';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Membuat kunci Anda';
+
+  @override
+  String get setupEncryptingDataLabel => 'Mengenkripsi data Anda';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Memeriksa keamanan';
+
+  @override
+  String get setupCreatingVaultError => 'Terjadi kesalahan. Coba lagi.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Brankas dibuat';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Brankas Anda siap. Terenkripsi dan aman.';
+
+  @override
+  String get setupOpenVaultButton => 'Buka brankas';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Saya menyimpan kunci rahasia saya dengan aman';
+
+  @override
+  String get setupContinue => 'Lanjutkan';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Tambah kata sandi';
+
+  @override
+  String get setupSavePasswordButton => 'Simpan kata sandi';
 
   @override
   String get confirmationCheckboxTitle =>

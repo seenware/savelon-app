@@ -360,6 +360,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onboardingNext => 'Next';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Open source';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Anyone can check our code on ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Private';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Even we cannot see your contacts';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => 'Other apps cannot look inside';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Keeps you away from the cloud, data brokers, and surveillance systems';
+
+  @override
   String get activateDemoTitle => 'Activate Demo';
 
   @override
@@ -407,6 +434,82 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Skip';
+
+  @override
+  String get setupCreateVaultTitle => 'Create your vault';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Stored on your device only. Encrypted and private.';
+
+  @override
+  String get setupDefaultVaultName => 'My vault';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Vault$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Crop photo';
+
+  @override
+  String get setupProtectionTitle => 'Protection';
+
+  @override
+  String get setupEncryption256Label => '256-bit encryption';
+
+  @override
+  String get setupRequirePasswordLabel => 'Require password';
+
+  @override
+  String get setupOptionalSuffix => 'optional';
+
+  @override
+  String get setupCreateVaultButton => 'Create vault';
+
+  @override
+  String get setupCreatingVaultTitle => 'Creating your vault';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Creating your key';
+
+  @override
+  String get setupEncryptingDataLabel => 'Encrypting your data';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Checking security';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Something went wrong. Please try again.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Vault created';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Your vault is ready. It is encrypted and secure.';
+
+  @override
+  String get setupOpenVaultButton => 'Open vault';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => 'I saved my secret key safely';
+
+  @override
+  String get setupContinue => 'Continue';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Add password';
+
+  @override
+  String get setupSavePasswordButton => 'Save password';
 
   @override
   String get confirmationCheckboxTitle =>

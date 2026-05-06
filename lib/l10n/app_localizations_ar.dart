@@ -363,6 +363,34 @@ class AppLocalizationsAr extends AppLocalizations {
   String get onboardingNext => 'التالي';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'مفتوح المصدر';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'يمكن لأي شخص الاطلاع على شفرتنا على ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'خاص';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'حتى نحن لا نستطيع رؤية جهات اتصالك';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'تطبيقات أخرى لا يمكنها الاطلاع إلى الداخل';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'دون اتصال';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'يبعدك عن السحابة ووسطاء البيانات وأنظمة المراقبة';
+
+  @override
   String get activateDemoTitle => 'تفعيل النسخة التجريبية';
 
   @override
@@ -410,6 +438,79 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'تخطّي';
+
+  @override
+  String get setupCreateVaultTitle => 'أنشئ خزنتك';
+
+  @override
+  String get setupCreateVaultSubtitle => 'مخزنة على جهازك فقط. مشفرة وخاصة.';
+
+  @override
+  String get setupDefaultVaultName => 'خزنتي';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'خزنة$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'قص الصورة';
+
+  @override
+  String get setupProtectionTitle => 'الحماية';
+
+  @override
+  String get setupEncryption256Label => 'تشفير 256 بت';
+
+  @override
+  String get setupRequirePasswordLabel => 'يتطلب كلمة مرور';
+
+  @override
+  String get setupOptionalSuffix => 'اختياري';
+
+  @override
+  String get setupCreateVaultButton => 'إنشاء الخزنة';
+
+  @override
+  String get setupCreatingVaultTitle => 'جارٍ إنشاء خزنتك';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent٪';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'جارٍ إنشاء مفتاحك';
+
+  @override
+  String get setupEncryptingDataLabel => 'جارٍ تشفير بياناتك';
+
+  @override
+  String get setupCheckingSecurityLabel => 'جارٍ التحقق من الأمان';
+
+  @override
+  String get setupCreatingVaultError => 'حدث خطأ ما. حاول مرة أخرى.';
+
+  @override
+  String get setupVaultCreatedTitle => 'تم إنشاء الخزنة';
+
+  @override
+  String get setupVaultCreatedSubtitle => 'خزنتك جاهزة. هي مشفرة وآمنة.';
+
+  @override
+  String get setupOpenVaultButton => 'فتح الخزنة';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => 'لقد حفظت مفتاحي السري بأمان';
+
+  @override
+  String get setupContinue => 'متابعة';
+
+  @override
+  String get setupAddPasswordPageTitle => 'إضافة كلمة مرور';
+
+  @override
+  String get setupSavePasswordButton => 'حفظ كلمة المرور';
 
   @override
   String get confirmationCheckboxTitle =>

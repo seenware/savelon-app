@@ -361,6 +361,33 @@ class AppLocalizationsTh extends AppLocalizations {
   String get onboardingNext => 'ต่อไป';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'โอเพนซอร์ส';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'ทุกคนสามารถตรวจสอบโค้ดของเราบน ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' ได้';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'เป็นส่วนตัว';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'แม้แต่เราก็ไม่เห็นรายชื่อผู้ติดต่อของคุณ';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => 'แอปอื่นมองเข้าไม่ได้';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'ออฟไลน์';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'ช่วยให้คุณห่างจากคลาวด์ นายหน้าข้อมูล และระบบเฝ้าระวัง';
+
+  @override
   String get activateDemoTitle => 'เปิดใช้งานการสาธิต';
 
   @override
@@ -408,6 +435,81 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'ข้าม';
+
+  @override
+  String get setupCreateVaultTitle => 'สร้างตู้นิรภัยของคุณ';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'เก็บไว้บนอุปกรณ์ของคุณเท่านั้น เข้ารหัสและเป็นส่วนตัว';
+
+  @override
+  String get setupDefaultVaultName => 'ตู้นิรภัยของฉัน';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'ตู้นิรภัย$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'ครอปรูป';
+
+  @override
+  String get setupProtectionTitle => 'การป้องกัน';
+
+  @override
+  String get setupEncryption256Label => 'การเข้ารหัส 256 บิต';
+
+  @override
+  String get setupRequirePasswordLabel => 'ต้องใช้รหัสผ่าน';
+
+  @override
+  String get setupOptionalSuffix => 'ไม่บังคับ';
+
+  @override
+  String get setupCreateVaultButton => 'สร้างตู้นิรภัย';
+
+  @override
+  String get setupCreatingVaultTitle => 'กำลังสร้างตู้นิรภัยของคุณ';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'กำลังสร้างกุญแจของคุณ';
+
+  @override
+  String get setupEncryptingDataLabel => 'กำลังเข้ารหัสข้อมูลของคุณ';
+
+  @override
+  String get setupCheckingSecurityLabel => 'กำลังตรวจสอบความปลอดภัย';
+
+  @override
+  String get setupCreatingVaultError => 'เกิดข้อผิดพลาด โปรดลองอีกครั้ง';
+
+  @override
+  String get setupVaultCreatedTitle => 'สร้างตู้นิรภัยแล้ว';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'ตู้นิรภัยของคุณพร้อมแล้ว เข้ารหัสและปลอดภัย';
+
+  @override
+  String get setupOpenVaultButton => 'เปิดตู้นิรภัย';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => 'ฉันเก็บกุญแจลับของฉันอย่างปลอดภัย';
+
+  @override
+  String get setupContinue => 'ดำเนินการต่อ';
+
+  @override
+  String get setupAddPasswordPageTitle => 'เพิ่มรหัสผ่าน';
+
+  @override
+  String get setupSavePasswordButton => 'บันทึกรหัสผ่าน';
 
   @override
   String get confirmationCheckboxTitle =>

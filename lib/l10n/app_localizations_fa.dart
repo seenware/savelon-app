@@ -362,6 +362,34 @@ class AppLocalizationsFa extends AppLocalizations {
   String get onboardingNext => 'بعدی';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'متن باز';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'هر کس می‌تواند کد ما را در ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' ببیند.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'خصوصی';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'حتی ما هم نمی‌توانیم مخاطبین شما را ببینیم';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'برنامه‌های دیگر نمی‌توانند به درون نگاه کنند';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'آفلاین';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'شما را از ابر، دلالان داده و سامانه‌های نظارت دور نگه می‌دارد';
+
+  @override
   String get activateDemoTitle => 'دمو را فعال کنید';
 
   @override
@@ -409,6 +437,82 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'پرش کنید';
+
+  @override
+  String get setupCreateVaultTitle => 'گاوصندوق خود را بسازید';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'فقط روی دستگاه شما ذخیره می‌شود. رمزگذاری‌شده و خصوصی.';
+
+  @override
+  String get setupDefaultVaultName => 'گاوصندوق من';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'گاوصندوق$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'برش عکس';
+
+  @override
+  String get setupProtectionTitle => 'محافظت';
+
+  @override
+  String get setupEncryption256Label => 'رمزگذاری ۲۵۶ بیتی';
+
+  @override
+  String get setupRequirePasswordLabel => 'نیاز به رمز عبور';
+
+  @override
+  String get setupOptionalSuffix => 'اختیاری';
+
+  @override
+  String get setupCreateVaultButton => 'ساخت گاوصندوق';
+
+  @override
+  String get setupCreatingVaultTitle => 'در حال ساخت گاوصندوق';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent٪';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'در حال ساخت کلید';
+
+  @override
+  String get setupEncryptingDataLabel => 'در حال رمزگذاری داده‌ها';
+
+  @override
+  String get setupCheckingSecurityLabel => 'در حال بررسی امنیت';
+
+  @override
+  String get setupCreatingVaultError => 'مشکلی پیش آمد. دوباره تلاش کنید.';
+
+  @override
+  String get setupVaultCreatedTitle => 'گاوصندوق ساخته شد';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'گاوصندوق شما آماده است. رمزگذاری شده و امن است.';
+
+  @override
+  String get setupOpenVaultButton => 'باز کردن گاوصندوق';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'کلید مخفی خود را ایمن نگه داشته‌ام';
+
+  @override
+  String get setupContinue => 'ادامه';
+
+  @override
+  String get setupAddPasswordPageTitle => 'افزودن رمز عبور';
+
+  @override
+  String get setupSavePasswordButton => 'ذخیره رمز عبور';
 
   @override
   String get confirmationCheckboxTitle =>

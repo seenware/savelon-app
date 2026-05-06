@@ -367,6 +367,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get onboardingNext => 'Weiter';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Open Source';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Jeder kann unseren Code auf ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' einsehen.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privat';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Sogar wir können deine Kontakte nicht sehen';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Andere Apps können nicht hineinsehen';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Hält dich von der Cloud, Datenmaklern und Überwachungssystemen fern';
+
+  @override
   String get activateDemoTitle => 'Demo aktivieren';
 
   @override
@@ -414,6 +442,83 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Überspringen';
+
+  @override
+  String get setupCreateVaultTitle => 'Erstelle deinen Tresor';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Nur auf deinem Gerät gespeichert. Verschlüsselt und privat.';
+
+  @override
+  String get setupDefaultVaultName => 'Mein Tresor';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Tresor$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Foto zuschneiden';
+
+  @override
+  String get setupProtectionTitle => 'Schutz';
+
+  @override
+  String get setupEncryption256Label => '256-Bit-Verschlüsselung';
+
+  @override
+  String get setupRequirePasswordLabel => 'Passwort erforderlich';
+
+  @override
+  String get setupOptionalSuffix => 'optional';
+
+  @override
+  String get setupCreateVaultButton => 'Tresor erstellen';
+
+  @override
+  String get setupCreatingVaultTitle => 'Dein Tresor wird erstellt';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Schlüssel wird erstellt';
+
+  @override
+  String get setupEncryptingDataLabel => 'Daten werden verschlüsselt';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Sicherheit wird geprüft';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Etwas ist schiefgegangen. Bitte versuche es erneut.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Tresor erstellt';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Dein Tresor ist bereit. Er ist verschlüsselt und sicher.';
+
+  @override
+  String get setupOpenVaultButton => 'Tresor öffnen';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Ich habe meinen geheimen Schlüssel sicher aufbewahrt';
+
+  @override
+  String get setupContinue => 'Weiter';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Passwort hinzufügen';
+
+  @override
+  String get setupSavePasswordButton => 'Passwort speichern';
 
   @override
   String get confirmationCheckboxTitle =>

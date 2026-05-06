@@ -8,6 +8,7 @@ class AppBreakpoints {
 
   /// Wide-screen breakpoint (700px and above — tablets, desktop windows)
   static const double wide = 700;
+  static const double setupMaxContentWidth = 560;
 
   /// Returns true for wide screens (tablets in landscape, desktop windows)
   static bool isWide(BuildContext context) {
@@ -26,5 +27,14 @@ class AppBreakpoints {
     required T wide,
   }) {
     return isWide(context) ? wide : compact;
+  }
+
+  static Widget constrainSetupContent({required Widget child}) {
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: setupMaxContentWidth),
+        child: child,
+      ),
+    );
   }
 }

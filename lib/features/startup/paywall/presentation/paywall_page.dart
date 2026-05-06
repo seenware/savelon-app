@@ -6,6 +6,7 @@ import 'package:contacts/core/purchases/purchases_service.dart'
     show PurchasesService, SubscriptionRefreshResult, kRcEntitlementId;
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:purchases_ui_flutter/purchases_ui_flutter.dart';
@@ -104,14 +105,13 @@ class PaywallPage extends HookConsumerWidget {
               grantPermanent: s.permanent,
               purchasedPaidThrough: s.purchasedPaidThrough,
             );
-        if (softMode && context.mounted) {
+        if (softMode && context.mounted && Navigator.of(context).canPop()) {
           Navigator.of(context).pop(true);
         }
       }
       return null;
     }, [accessState.value]);
 
-    // Hard paywall — Android back button disabled.
     return PopScope(
       canPop: softMode,
       child: Scaffold(
@@ -187,7 +187,12 @@ class PaywallPage extends HookConsumerWidget {
         },
         onDismiss: () {
           if (!softMode) return;
-          _closeSoftPaywall(context, ref, unlockResult: false, source: 'sdkDismiss');
+          _closeSoftPaywall(
+            context,
+            ref,
+            unlockResult: false,
+            source: 'sdkDismiss',
+          );
         },
       );
       content = paywall;
@@ -231,10 +236,7 @@ class PaywallPage extends HookConsumerWidget {
   }) {
     ref.read(authProvider.notifier).dismissSoftPaywall();
     if (!context.mounted) return;
-    final canPop = Navigator.of(context).canPop();
-    if (canPop) {
-      Navigator.of(context).pop(unlockResult);
-    }
+    context.go('/main_app/contacts');
   }
 }
 

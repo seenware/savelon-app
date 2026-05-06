@@ -1,36 +1,12 @@
 // lib/features/startup/onboarding/presentation/utils/onboarding_constants.dart
 
-import 'package:flutter/material.dart';
+/// GitHub URL for open-source screen (inline link and settings).
+const String kOnboardingGithubUrl = 'https://github.com/seenware/savelon-app';
 
-class CarouselsData {
-  static const List<List<ScreenData>> carousels = [_carousel];
-}
-
-const _carousel = [
-  ScreenData(
-    iconData: Icons.question_mark_rounded,
-    themeSeedColor: Colors.red,
-  ),
-  ScreenData(
-    iconData: Icons.warning_rounded,
-    themeSeedColor: Colors.red,
-  ),
-  ScreenData(
-    iconData: Icons.folder_special_rounded,
-    themeSeedColor: Colors.green,
-  ),
-  ScreenData(
-    iconData: Icons.lock_rounded,
-    themeSeedColor: Colors.green,
-  ),
+/// Image for each of the four intro benefit screens (order matches page indices).
+const List<String> kOnboardingIntroImageAssets = <String>[
+  'assets/onboarding/open-source.png',
+  'assets/onboarding/private.png',
+  'assets/onboarding/other-apps.png',
+  'assets/onboarding/offline.png',
 ];
-
-class ScreenData {
-  final IconData iconData;
-  final Color themeSeedColor;
-
-  const ScreenData({
-    required this.iconData,
-    required this.themeSeedColor,
-  });
-}

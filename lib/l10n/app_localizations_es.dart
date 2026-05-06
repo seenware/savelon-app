@@ -367,6 +367,34 @@ class AppLocalizationsEs extends AppLocalizations {
   String get onboardingNext => 'Próximo';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Código abierto';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Cualquiera puede revisar nuestro código en ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privado';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Ni siquiera nosotros podemos ver tus contactos';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Otras apps no pueden mirar adentro';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Sin conexión';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Te mantiene alejado de la nube, intermediarios de datos y sistemas de vigilancia';
+
+  @override
   String get activateDemoTitle => 'Activar demostración';
 
   @override
@@ -414,6 +442,82 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Saltar';
+
+  @override
+  String get setupCreateVaultTitle => 'Crea tu bóveda';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Guardada solo en tu dispositivo. Cifrada y privada.';
+
+  @override
+  String get setupDefaultVaultName => 'Mi bóveda';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Bóveda$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Recortar foto';
+
+  @override
+  String get setupProtectionTitle => 'Protección';
+
+  @override
+  String get setupEncryption256Label => 'Cifrado de 256 bits';
+
+  @override
+  String get setupRequirePasswordLabel => 'Requerir contraseña';
+
+  @override
+  String get setupOptionalSuffix => 'opcional';
+
+  @override
+  String get setupCreateVaultButton => 'Crear bóveda';
+
+  @override
+  String get setupCreatingVaultTitle => 'Creando tu bóveda';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Creando tu clave';
+
+  @override
+  String get setupEncryptingDataLabel => 'Cifrando tus datos';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Comprobando la seguridad';
+
+  @override
+  String get setupCreatingVaultError => 'Algo salió mal. Inténtalo de nuevo.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Bóveda creada';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Tu bóveda está lista. Está cifrada y es segura.';
+
+  @override
+  String get setupOpenVaultButton => 'Abrir bóveda';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'He guardado mi clave secreta de forma segura';
+
+  @override
+  String get setupContinue => 'Continuar';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Añadir contraseña';
+
+  @override
+  String get setupSavePasswordButton => 'Guardar contraseña';
 
   @override
   String get confirmationCheckboxTitle =>

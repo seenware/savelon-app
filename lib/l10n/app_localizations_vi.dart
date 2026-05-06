@@ -361,6 +361,34 @@ class AppLocalizationsVi extends AppLocalizations {
   String get onboardingNext => 'Kế tiếp';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Mã nguồn mở';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Mọi người đều có thể xem mã của chúng tôi trên ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Riêng tư';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Ngay cả chúng tôi cũng không thể thấy danh bạ của bạn';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Ứng dụng khác không thể nhìn vào bên trong';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Ngoại tuyến';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Giúp bạn tránh xa đám mây, môi giới dữ liệu và hệ thống giám sát';
+
+  @override
   String get activateDemoTitle => 'Kích hoạt bản demo';
 
   @override
@@ -408,6 +436,82 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Bỏ qua';
+
+  @override
+  String get setupCreateVaultTitle => 'Tạo kho lưu trữ của bạn';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Chỉ lưu trên thiết bị của bạn. Đã mã hóa và riêng tư.';
+
+  @override
+  String get setupDefaultVaultName => 'Kho của tôi';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Kho$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Cắt ảnh';
+
+  @override
+  String get setupProtectionTitle => 'Bảo vệ';
+
+  @override
+  String get setupEncryption256Label => 'Mã hóa 256 bit';
+
+  @override
+  String get setupRequirePasswordLabel => 'Yêu cầu mật khẩu';
+
+  @override
+  String get setupOptionalSuffix => 'tùy chọn';
+
+  @override
+  String get setupCreateVaultButton => 'Tạo kho';
+
+  @override
+  String get setupCreatingVaultTitle => 'Đang tạo kho của bạn';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Đang tạo khóa của bạn';
+
+  @override
+  String get setupEncryptingDataLabel => 'Đang mã hóa dữ liệu của bạn';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Đang kiểm tra bảo mật';
+
+  @override
+  String get setupCreatingVaultError => 'Đã xảy ra lỗi. Vui lòng thử lại.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Đã tạo kho';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Kho của bạn đã sẵn sàng. Đã mã hóa và an toàn.';
+
+  @override
+  String get setupOpenVaultButton => 'Mở kho';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Tôi đã cất giữ khóa bí mật an toàn';
+
+  @override
+  String get setupContinue => 'Tiếp tục';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Thêm mật khẩu';
+
+  @override
+  String get setupSavePasswordButton => 'Lưu mật khẩu';
 
   @override
   String get confirmationCheckboxTitle =>

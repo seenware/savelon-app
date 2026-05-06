@@ -8,15 +8,8 @@ sealed class AuthState {
   const AuthState();
 }
 
-/// Paywall not yet cleared — shown once after setup or on cold-start when
-/// the paywall_completed flag is absent.
-class AuthStateNeedsPaywall extends AuthState {
-  final bool passwordEnabled;
-  const AuthStateNeedsPaywall({required this.passwordEnabled});
-}
-
-/// Soft paywall shown on app launch after the first free session.
-/// User can dismiss and continue using non-premium features.
+/// Paywall shown when subscription access is required; user may dismiss and
+/// continue using non-premium features.
 class AuthStateNeedsSoftPaywall extends AuthState {
   final bool passwordEnabled;
   const AuthStateNeedsSoftPaywall({required this.passwordEnabled});
@@ -57,4 +50,8 @@ class AuthStateSubscriptionExpired extends AuthState {
 /// Fully authenticated and ready
 class AuthStateAuthenticated extends AuthState {
   const AuthStateAuthenticated();
+}
+
+class AuthStateLoginSuccess extends AuthState {
+  const AuthStateLoginSuccess();
 }

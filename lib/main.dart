@@ -3,6 +3,7 @@
 import 'package:contacts/core/crypto/crypto_constants.dart';
 import 'package:contacts/core/locale/locale_provider.dart';
 import 'package:contacts/core/locale/locale_storage.dart';
+import 'package:contacts/core/profile/profile_constants.dart';
 import 'package:contacts/core/purchases/purchases_config.dart';
 import 'package:contacts/core/storage/secure_storage_service.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,9 @@ void main() async {
     await storage.delete(CryptoConstants.secureStorageKeySeed);
     await storage.delete(CryptoConstants.secureStorageKeyPasswordEnabled);
     await storage.delete(CryptoConstants.secureStorageKeyPublicKey);
+    await storage.delete(ProfileConstants.storageKeyUsername);
+    await storage.delete(ProfileConstants.storageKeyAvatarId);
+    await storage.delete(ProfileConstants.storageKeyMigrationV1);
     await prefs.setBool('app_installed', true);
   }
 

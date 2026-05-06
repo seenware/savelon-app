@@ -366,6 +366,34 @@ class AppLocalizationsIt extends AppLocalizations {
   String get onboardingNext => 'Prossimo';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Open source';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Chiunque può controllare il nostro codice su ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privato';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Nemmeno noi possiamo vedere i tuoi contatti';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Le altre app non possono guardare dentro';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Ti tiene lontano dal cloud, dai rivenditori di dati e dai sistemi di sorveglianza';
+
+  @override
   String get activateDemoTitle => 'Attiva Demo';
 
   @override
@@ -413,6 +441,82 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Saltare';
+
+  @override
+  String get setupCreateVaultTitle => 'Crea la tua cassaforte';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Memorizzata solo sul tuo dispositivo. Crittografata e privata.';
+
+  @override
+  String get setupDefaultVaultName => 'La mia cassaforte';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Cassaforte$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Ritaglia foto';
+
+  @override
+  String get setupProtectionTitle => 'Protezione';
+
+  @override
+  String get setupEncryption256Label => 'Crittografia a 256 bit';
+
+  @override
+  String get setupRequirePasswordLabel => 'Richiedi password';
+
+  @override
+  String get setupOptionalSuffix => 'facoltativo';
+
+  @override
+  String get setupCreateVaultButton => 'Crea cassaforte';
+
+  @override
+  String get setupCreatingVaultTitle => 'Creazione della cassaforte';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Creazione della chiave';
+
+  @override
+  String get setupEncryptingDataLabel => 'Crittografia dei dati';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Verifica della sicurezza';
+
+  @override
+  String get setupCreatingVaultError => 'Qualcosa è andato storto. Riprova.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Cassaforte creata';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'La tua cassaforte è pronta. È crittografata e al sicuro.';
+
+  @override
+  String get setupOpenVaultButton => 'Apri cassaforte';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Ho conservato la mia chiave segreta in modo sicuro';
+
+  @override
+  String get setupContinue => 'Continua';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Aggiungi password';
+
+  @override
+  String get setupSavePasswordButton => 'Salva password';
 
   @override
   String get confirmationCheckboxTitle =>

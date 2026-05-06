@@ -365,6 +365,34 @@ class AppLocalizationsRo extends AppLocalizations {
   String get onboardingNext => 'Următorul';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Sursă deschisă';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Oricine poate verifica codul nostru pe ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Privat';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Nici măcar noi nu putem vedea contactele tale';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Alte aplicații nu pot privi înăuntru';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Te ține departe de cloud, brokeri de date și sisteme de supraveghere';
+
+  @override
   String get activateDemoTitle => 'Activează demo';
 
   @override
@@ -412,6 +440,83 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Omite';
+
+  @override
+  String get setupCreateVaultTitle => 'Creează seiful tău';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Stocat doar pe dispozitivul tău. Criptat și privat.';
+
+  @override
+  String get setupDefaultVaultName => 'Seiful meu';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Seif$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Decupează fotografia';
+
+  @override
+  String get setupProtectionTitle => 'Protecție';
+
+  @override
+  String get setupEncryption256Label => 'Criptare pe 256 de biți';
+
+  @override
+  String get setupRequirePasswordLabel => 'Necesită parolă';
+
+  @override
+  String get setupOptionalSuffix => 'opțional';
+
+  @override
+  String get setupCreateVaultButton => 'Creează seiful';
+
+  @override
+  String get setupCreatingVaultTitle => 'Seiful tău se creează';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Cheia ta se creează';
+
+  @override
+  String get setupEncryptingDataLabel => 'Datele tale se criptează';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Se verifică securitatea';
+
+  @override
+  String get setupCreatingVaultError =>
+      'Ceva nu a mers bine. Încearcă din nou.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Seiful a fost creat';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Seiful tău este gata. Este criptat și sigur.';
+
+  @override
+  String get setupOpenVaultButton => 'Deschide seiful';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Mi-am păstrat cheia secretă în siguranță';
+
+  @override
+  String get setupContinue => 'Continuă';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Adaugă parolă';
+
+  @override
+  String get setupSavePasswordButton => 'Salvează parola';
 
   @override
   String get confirmationCheckboxTitle =>

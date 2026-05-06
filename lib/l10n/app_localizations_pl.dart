@@ -362,6 +362,34 @@ class AppLocalizationsPl extends AppLocalizations {
   String get onboardingNext => 'Następny';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'Otwarty kod';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink =>
+      'Każdy może sprawdzić nasz kod na ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => '.';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'Prywatne';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'Nawet my nie widzimy Twoich kontaktów';
+
+  @override
+  String get onboardingBenefitsSandboxTitle =>
+      'Inne aplikacje nie mogą zajrzeć do środka';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'Offline';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'Chroni Cię przed chmurą, brokerami danych i systemami inwigilacji';
+
+  @override
   String get activateDemoTitle => 'Aktywuj wersję demonstracyjną';
 
   @override
@@ -409,6 +437,82 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'Pomiń';
+
+  @override
+  String get setupCreateVaultTitle => 'Utwórz swój sejf';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'Przechowywany tylko na urządzeniu. Szyfrowany i prywatny.';
+
+  @override
+  String get setupDefaultVaultName => 'Mój sejf';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'Sejf$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'Przytnij zdjęcie';
+
+  @override
+  String get setupProtectionTitle => 'Ochrona';
+
+  @override
+  String get setupEncryption256Label => 'Szyfrowanie 256-bitowe';
+
+  @override
+  String get setupRequirePasswordLabel => 'Wymagaj hasła';
+
+  @override
+  String get setupOptionalSuffix => 'opcjonalnie';
+
+  @override
+  String get setupCreateVaultButton => 'Utwórz sejf';
+
+  @override
+  String get setupCreatingVaultTitle => 'Tworzenie sejfu';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'Tworzenie klucza';
+
+  @override
+  String get setupEncryptingDataLabel => 'Szyfrowanie danych';
+
+  @override
+  String get setupCheckingSecurityLabel => 'Sprawdzanie zabezpieczeń';
+
+  @override
+  String get setupCreatingVaultError => 'Coś poszło nie tak. Spróbuj ponownie.';
+
+  @override
+  String get setupVaultCreatedTitle => 'Sejf utworzony';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'Twój sejf jest gotowy. Jest zaszyfrowany i bezpieczny.';
+
+  @override
+  String get setupOpenVaultButton => 'Otwórz sejf';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'Bezpiecznie zapisałem swój tajny klucz';
+
+  @override
+  String get setupContinue => 'Kontynuuj';
+
+  @override
+  String get setupAddPasswordPageTitle => 'Dodaj hasło';
+
+  @override
+  String get setupSavePasswordButton => 'Zapisz hasło';
 
   @override
   String get confirmationCheckboxTitle =>

@@ -353,6 +353,31 @@ class AppLocalizationsJa extends AppLocalizations {
   String get onboardingNext => '次';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'オープンソース';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink => '誰でも ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' でコードを確認できます。';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => '非公開';
+
+  @override
+  String get onboardingBenefitsPrivateDescription => '私たちにもあなたの連絡先は見えません';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => '他のアプリの中身を覗けません';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'オフライン';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'クラウド、データ仲介業者、監視システムからあなたを遠ざけます';
+
+  @override
   String get activateDemoTitle => 'デモをアクティブ化する';
 
   @override
@@ -398,6 +423,79 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'スキップ';
+
+  @override
+  String get setupCreateVaultTitle => '金庫を作成';
+
+  @override
+  String get setupCreateVaultSubtitle => 'お使いの端末にのみ保存。暗号化されプライベートです。';
+
+  @override
+  String get setupDefaultVaultName => 'マイ金庫';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return '金庫$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => '写真を切り抜く';
+
+  @override
+  String get setupProtectionTitle => '保護';
+
+  @override
+  String get setupEncryption256Label => '256ビット暗号化';
+
+  @override
+  String get setupRequirePasswordLabel => 'パスワードを必須にする';
+
+  @override
+  String get setupOptionalSuffix => '任意';
+
+  @override
+  String get setupCreateVaultButton => '金庫を作成';
+
+  @override
+  String get setupCreatingVaultTitle => '金庫を作成しています';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => '鍵を作成しています';
+
+  @override
+  String get setupEncryptingDataLabel => 'データを暗号化しています';
+
+  @override
+  String get setupCheckingSecurityLabel => 'セキュリティを確認しています';
+
+  @override
+  String get setupCreatingVaultError => '問題が発生しました。もう一度お試しください。';
+
+  @override
+  String get setupVaultCreatedTitle => '金庫が作成されました';
+
+  @override
+  String get setupVaultCreatedSubtitle => '金庫の準備ができました。暗号化され安全です。';
+
+  @override
+  String get setupOpenVaultButton => '金庫を開く';
+
+  @override
+  String get setupSavedSecretKeyCheckbox => '秘密鍵を安全に保存しました';
+
+  @override
+  String get setupContinue => '続ける';
+
+  @override
+  String get setupAddPasswordPageTitle => 'パスワードを追加';
+
+  @override
+  String get setupSavePasswordButton => 'パスワードを保存';
 
   @override
   String get confirmationCheckboxTitle => 'パスワードを回復できないことを理解しています';

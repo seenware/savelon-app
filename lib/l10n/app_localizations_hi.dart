@@ -362,6 +362,32 @@ class AppLocalizationsHi extends AppLocalizations {
   String get onboardingNext => 'अगला';
 
   @override
+  String get onboardingBenefitsOpenSourceTitle => 'ओपन सोर्स';
+
+  @override
+  String get onboardingBenefitsOpenSourceBeforeLink => 'कोई भी हमारा कोड ';
+
+  @override
+  String get onboardingBenefitsOpenSourceAfterLink => ' पर देख सकता है।';
+
+  @override
+  String get onboardingBenefitsPrivateTitle => 'निजी';
+
+  @override
+  String get onboardingBenefitsPrivateDescription =>
+      'हम भी आपके संपर्क नहीं देख सकते';
+
+  @override
+  String get onboardingBenefitsSandboxTitle => 'अन्य ऐप अंदर नहीं देख सकते';
+
+  @override
+  String get onboardingBenefitsOfflineTitle => 'ऑफ़लाइन';
+
+  @override
+  String get onboardingBenefitsOfflineDescription =>
+      'आपको क्लाउड, डेटा दलालों और निगरानी प्रणालियों से दूर रखता है';
+
+  @override
   String get activateDemoTitle => 'डेमो सक्रिय करें';
 
   @override
@@ -409,6 +435,83 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get setupPasswordSkip => 'छोडना';
+
+  @override
+  String get setupCreateVaultTitle => 'अपना वॉल्ट बनाएं';
+
+  @override
+  String get setupCreateVaultSubtitle =>
+      'केवल आपके डिवाइस पर संग्रहीत। एन्क्रिप्टेड और निजी।';
+
+  @override
+  String get setupDefaultVaultName => 'मेरा वॉल्ट';
+
+  @override
+  String setupRandomVaultName(String number) {
+    return 'वॉल्ट$number';
+  }
+
+  @override
+  String get setupCropPhotoTitle => 'फोटो क्रॉप करें';
+
+  @override
+  String get setupProtectionTitle => 'सुरक्षा';
+
+  @override
+  String get setupEncryption256Label => '256-बिट एन्क्रिप्शन';
+
+  @override
+  String get setupRequirePasswordLabel => 'पासवर्ड आवश्यक';
+
+  @override
+  String get setupOptionalSuffix => 'वैकल्पिक';
+
+  @override
+  String get setupCreateVaultButton => 'वॉल्ट बनाएं';
+
+  @override
+  String get setupCreatingVaultTitle => 'आपका वॉल्ट बनाया जा रहा है';
+
+  @override
+  String setupCreatingVaultPercent(int percent) {
+    return '$percent%';
+  }
+
+  @override
+  String get setupCreatingKeyLabel => 'आपकी कुंजी बनाई जा रही है';
+
+  @override
+  String get setupEncryptingDataLabel => 'आपका डेटा एन्क्रिप्ट किया जा रहा है';
+
+  @override
+  String get setupCheckingSecurityLabel => 'सुरक्षा जाँची जा रही है';
+
+  @override
+  String get setupCreatingVaultError =>
+      'कुछ गलत हो गया। कृपया पुनः प्रयास करें।';
+
+  @override
+  String get setupVaultCreatedTitle => 'वॉल्ट बन गया';
+
+  @override
+  String get setupVaultCreatedSubtitle =>
+      'आपका वॉल्ट तैयार है। यह एन्क्रिप्टेड और सुरक्षित है।';
+
+  @override
+  String get setupOpenVaultButton => 'वॉल्ट खोलें';
+
+  @override
+  String get setupSavedSecretKeyCheckbox =>
+      'मैंने अपनी गुप्त कुंजी सुरक्षित रखी है';
+
+  @override
+  String get setupContinue => 'जारी रखें';
+
+  @override
+  String get setupAddPasswordPageTitle => 'पासवर्ड जोड़ें';
+
+  @override
+  String get setupSavePasswordButton => 'पासवर्ड सहेजें';
 
   @override
   String get confirmationCheckboxTitle =>
