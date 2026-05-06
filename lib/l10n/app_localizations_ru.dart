@@ -374,7 +374,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get onboardingBenefitsOpenSourceAfterLink => '.';
 
   @override
-  String get onboardingBenefitsPrivateTitle => 'Приватно';
+  String get onboardingBenefitsPrivateTitle => 'Приватность';
 
   @override
   String get onboardingBenefitsPrivateDescription =>
@@ -389,7 +389,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get onboardingBenefitsOfflineDescription =>
-      'Держит вас подальше от облака, брокеров данных и систем слежки';
+      'Это держит вас подальше от облака, брокеров данных и систем слежки';
 
   @override
   String get activateDemoTitle => 'Активировать демо';

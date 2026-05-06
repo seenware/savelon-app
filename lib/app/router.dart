@@ -7,7 +7,7 @@ import 'package:contacts/features/startup/lifetime_thanks/presentation/lifetime_
 import 'package:contacts/features/startup/login/presentation/login_route.dart';
 import 'package:contacts/features/startup/onboarding/presentation/onboarding_route.dart';
 import 'package:contacts/features/startup/paywall/presentation/paywall_route.dart';
-import 'package:contacts/features/startup/setup/presentation/setup_routes.dart';
+import 'package:contacts/features/startup/setup/presentation/router/setup_route.dart';
 import 'package:contacts/features/startup/subscription/presentation/subscription_expired_route.dart';
 import 'package:contacts/features/startup/subscription/presentation/subscription_soft_warning_route.dart';
 import 'package:flutter/material.dart';

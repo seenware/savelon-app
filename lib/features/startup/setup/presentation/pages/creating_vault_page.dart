@@ -1,5 +1,4 @@
-import 'dart:math' as math;
-
+import 'package:contacts/features/startup/setup/presentation/widgets/creating_vault_progress_ring.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
 import 'package:contacts/l10n/app_localizations.dart';
@@ -96,7 +95,7 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                             builder: (context, _) {
                               final percent = (_controller.value * 100).round();
                               return CustomPaint(
-                                painter: _ProgressPainter(
+                                painter: CreatingVaultProgressRingPainter(
                                   progress: _controller.value,
                                   baseColor: inactiveRingColor,
                                 ),
@@ -161,10 +160,9 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
                                   (sum, painter) => sum + painter.height,
                                 ) +
                                 (entries.length * 8);
-                            final statusBoxHeight = math.max(
-                              84.0,
-                              totalRequiredHeight,
-                            );
+                            final statusBoxHeight = totalRequiredHeight < 84.0
+                                ? 84.0
+                                : totalRequiredHeight;
                             return SizedBox(
                               height: statusBoxHeight,
                               child: Column(
@@ -228,48 +226,5 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
         },
       ),
     );
-  }
-}
-
-class _ProgressPainter extends CustomPainter {
-  const _ProgressPainter({
-    required this.progress,
-    required this.baseColor,
-  });
-  final double progress;
-  final Color baseColor;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    const stroke = 14.0;
-    final center = size.center(Offset.zero);
-    final radius = (math.min(size.width, size.height) - stroke) / 2;
-    final rect = Rect.fromCircle(center: center, radius: radius);
-
-    final basePaint = Paint()
-      ..color = baseColor
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = stroke;
-
-    final fillPaint = Paint()
-      ..color = const Color(0xFF36D17F)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = stroke
-      ..strokeCap = StrokeCap.round;
-
-    canvas.drawArc(rect, 0, math.pi * 2, false, basePaint);
-    canvas.drawArc(
-      rect,
-      -math.pi / 2,
-      math.pi * 2 * progress.clamp(0, 1),
-      false,
-      fillPaint,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant _ProgressPainter oldDelegate) {
-    return oldDelegate.progress != progress ||
-        oldDelegate.baseColor != baseColor;
   }
 }

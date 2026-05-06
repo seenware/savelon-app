@@ -1,8 +1,6 @@
-import 'dart:async';
-
 import 'package:contacts/core/layout/widgets/message_card.dart';
 import 'package:contacts/core/layout/widgets/password_input_field.dart';
-import 'package:contacts/features/startup/setup/presentation/setup_provider.dart';
+import 'package:contacts/features/startup/setup/application/setup_notifier.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/protection_switch_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';

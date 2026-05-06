@@ -1,10 +1,11 @@
 import 'package:contacts/core/auth/auth_provider.dart';
 import 'package:contacts/core/profile/profile_service.dart';
+import 'package:contacts/features/startup/setup/application/setup_notifier.dart';
+import 'package:contacts/features/startup/setup/domain/setup_state.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/choose_protection_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/create_vault_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/creating_vault_page.dart';
 import 'package:contacts/features/startup/setup/presentation/pages/vault_created_page.dart';
-import 'package:contacts/features/startup/setup/presentation/setup_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -23,7 +24,7 @@ GoRoute setupRoute(String path) => GoRoute(
       routes: [
         GoRoute(
           path: 'create_vault',
-          pageBuilder: (context, state) => _transition(
+          pageBuilder: (context, state) => _setupTransitionPage(
             child: Consumer(
               builder: (context, ref, _) {
                 final setupState = ref.watch(setupNotifierProvider);
@@ -65,7 +66,7 @@ GoRoute setupRoute(String path) => GoRoute(
         ),
         GoRoute(
           path: 'choose_protection',
-          pageBuilder: (context, state) => _transition(
+          pageBuilder: (context, state) => _setupTransitionPage(
             child: Consumer(
               builder: (context, ref, _) {
                 return ChooseProtectionPage(
@@ -79,7 +80,7 @@ GoRoute setupRoute(String path) => GoRoute(
         ),
         GoRoute(
           path: 'creating_vault',
-          pageBuilder: (context, state) => _transition(
+          pageBuilder: (context, state) => _setupTransitionPage(
             child: Consumer(
               builder: (context, ref, _) {
                 return CreatingVaultPage(
@@ -112,7 +113,7 @@ GoRoute setupRoute(String path) => GoRoute(
         ),
         GoRoute(
           path: 'vault_created',
-          pageBuilder: (context, state) => _transition(
+          pageBuilder: (context, state) => _setupTransitionPage(
             child: Consumer(
               builder: (context, ref, _) {
                 return VaultCreatedPage(
@@ -130,7 +131,7 @@ GoRoute setupRoute(String path) => GoRoute(
       ],
     );
 
-CustomTransitionPage<void> _transition({required Widget child}) {
+CustomTransitionPage<void> _setupTransitionPage({required Widget child}) {
   return CustomTransitionPage<void>(
     child: child,
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
