@@ -1,5 +1,6 @@
 import 'package:contacts/features/startup/setup/presentation/widgets/creating_vault_progress_ring.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
+import 'package:contacts/features/startup/setup/presentation/widgets/setup_headline_title_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
 import 'package:contacts/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
@@ -58,172 +59,154 @@ class _CreatingVaultPageState extends State<CreatingVaultPage>
     return SetupPageScaffold(
       showBackButton: true,
       onBack: widget.onBack,
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          return SingleChildScrollView(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(minHeight: constraints.maxHeight),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  SizedBox(
-                    height: 44,
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 48),
-                        Expanded(
-                          child: Text(
-                            l10n.setupCreatingVaultTitle,
-                            textAlign: TextAlign.center,
-                            style: theme.textTheme.headlineMedium,
-                          ),
-                        ),
-                        const SizedBox(width: 48),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: constraints.maxHeight - 44,
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                        SetupEntrance(
-                          index: 0,
-                          child: AnimatedBuilder(
-                            animation: _controller,
-                            builder: (context, _) {
-                              final percent = (_controller.value * 100).round();
-                              return CustomPaint(
-                                painter: CreatingVaultProgressRingPainter(
-                                  progress: _controller.value,
-                                  baseColor: inactiveRingColor,
-                                ),
-                                child: SizedBox(
-                                  width: 240,
-                                  height: 240,
-                                  child: Center(
-                                    child: Text(
-                                      l10n.setupCreatingVaultPercent(percent),
-                                      style: theme.textTheme.displaySmall
-                                          ?.copyWith(
-                                            fontSize: 56,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                        const SizedBox(height: 20),
-                        AnimatedBuilder(
-                          animation: _controller,
-                          builder: (context, _) {
-                            final value = _controller.value;
-                            final entries = <({String text, bool visible})>[
-                              (
-                                text: l10n.setupCreatingKeyLabel,
-                                visible: value > 0.08,
-                              ),
-                              (
-                                text: l10n.setupEncryptingDataLabel,
-                                visible: value > 0.4,
-                              ),
-                              (
-                                text: l10n.setupCheckingSecurityLabel,
-                                visible: value > 0.72,
-                              ),
-                            ];
-                            final rowTextStyle = theme.textTheme.titleMedium
-                                ?.copyWith(
-                                  fontSize: 18,
-                                  color: theme.colorScheme.onSurfaceVariant
-                                      .withValues(alpha: 0.72),
-                                );
-                            final availableWidth = MediaQuery.sizeOf(context).width;
-                            final painters = entries
-                                .map(
-                                  (entry) => TextPainter(
-                                    text: TextSpan(
-                                      text: entry.text,
-                                      style: rowTextStyle,
-                                    ),
-                                    textDirection: TextDirection.ltr,
-                                    maxLines: 2,
-                                  )..layout(maxWidth: availableWidth),
-                                )
-                                .toList();
-                            final totalRequiredHeight = painters.fold<double>(
-                                  0,
-                                  (sum, painter) => sum + painter.height,
-                                ) +
-                                (entries.length * 8);
-                            final statusBoxHeight = totalRequiredHeight < 84.0
-                                ? 84.0
-                                : totalRequiredHeight;
-                            return SizedBox(
-                              height: statusBoxHeight,
-                              child: Column(
-                                children: entries
-                                    .map(
-                                      (entry) => AnimatedSlide(
-                                        duration: const Duration(
-                                          milliseconds: 260,
-                                        ),
-                                        curve: Curves.easeOutCubic,
-                                        offset: entry.visible
-                                            ? Offset.zero
-                                            : const Offset(0, 0.2),
-                                        child: AnimatedOpacity(
-                                          duration: const Duration(
-                                            milliseconds: 260,
-                                          ),
-                                          opacity: entry.visible ? 1 : 0,
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(
-                                              bottom: 8,
-                                            ),
-                                            child: Text(
-                                              entry.text,
-                                              style: theme.textTheme.titleMedium
-                                                  ?.copyWith(
-                                                    fontSize: 18,
-                                                    color: theme
-                                                        .colorScheme
-                                                        .onSurfaceVariant
-                                                        .withValues(
-                                                          alpha: 0.72,
-                                                        ),
-                                                  ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    )
-                                    .toList(),
-                              ),
-                            );
-                          },
-                        ),
-                        if (_failed) ...[
-                          const SizedBox(height: 16),
-                          Text(
-                            l10n.setupCreatingVaultError,
-                            style: TextStyle(color: theme.colorScheme.error),
-                          ),
-                        ],
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                ],
+      body: CustomScrollView(
+        physics: const AlwaysScrollableScrollPhysics(),
+        slivers: [
+          SliverToBoxAdapter(
+            child: SetupHeadlineTitleRow(
+              child: Text(
+                l10n.setupCreatingVaultTitle,
+                textAlign: TextAlign.center,
+                style: theme.textTheme.headlineMedium,
               ),
             ),
-          );
-        },
+          ),
+          SliverFillRemaining(
+            hasScrollBody: true,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    SetupEntrance(
+                      index: 0,
+                      child: AnimatedBuilder(
+                        animation: _controller,
+                        builder: (context, _) {
+                          final percent = (_controller.value * 100).round();
+                          return CustomPaint(
+                            painter: CreatingVaultProgressRingPainter(
+                              progress: _controller.value,
+                              baseColor: inactiveRingColor,
+                            ),
+                            child: SizedBox(
+                              width: 240,
+                              height: 240,
+                              child: Center(
+                                child: Text(
+                                  l10n.setupCreatingVaultPercent(percent),
+                                  style: theme.textTheme.displaySmall?.copyWith(
+                                    fontSize: 56,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    AnimatedBuilder(
+                      animation: _controller,
+                      builder: (context, _) {
+                        final value = _controller.value;
+                        final entries = <({String text, bool visible})>[
+                          (
+                            text: l10n.setupCreatingKeyLabel,
+                            visible: value > 0.08,
+                          ),
+                          (
+                            text: l10n.setupEncryptingDataLabel,
+                            visible: value > 0.4,
+                          ),
+                          (
+                            text: l10n.setupCheckingSecurityLabel,
+                            visible: value > 0.72,
+                          ),
+                        ];
+                        final rowTextStyle = theme.textTheme.titleMedium
+                            ?.copyWith(
+                              fontSize: 18,
+                              color: theme.colorScheme.onSurfaceVariant
+                                  .withValues(alpha: 0.72),
+                            );
+                        final availableWidth = MediaQuery.sizeOf(context).width;
+                        final painters = entries
+                            .map(
+                              (entry) => TextPainter(
+                                text: TextSpan(
+                                  text: entry.text,
+                                  style: rowTextStyle,
+                                ),
+                                textDirection: TextDirection.ltr,
+                                maxLines: 2,
+                              )..layout(maxWidth: availableWidth),
+                            )
+                            .toList();
+                        final totalRequiredHeight =
+                            painters.fold<double>(
+                              0,
+                              (sum, painter) => sum + painter.height,
+                            ) +
+                            (entries.length * 8);
+                        final statusBoxHeight = totalRequiredHeight < 84.0
+                            ? 84.0
+                            : totalRequiredHeight;
+                        return SizedBox(
+                          height: statusBoxHeight,
+                          child: Column(
+                            children: entries
+                                .map(
+                                  (entry) => AnimatedSlide(
+                                    duration: const Duration(milliseconds: 260),
+                                    curve: Curves.easeOutCubic,
+                                    offset: entry.visible
+                                        ? Offset.zero
+                                        : const Offset(0, 0.2),
+                                    child: AnimatedOpacity(
+                                      duration: const Duration(
+                                        milliseconds: 260,
+                                      ),
+                                      opacity: entry.visible ? 1 : 0,
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(
+                                          bottom: 8,
+                                        ),
+                                        child: Text(
+                                          entry.text,
+                                          style: theme.textTheme.titleMedium
+                                              ?.copyWith(
+                                                fontSize: 18,
+                                                color: theme
+                                                    .colorScheme
+                                                    .onSurfaceVariant
+                                                    .withValues(alpha: 0.72),
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                                .toList(),
+                          ),
+                        );
+                      },
+                    ),
+                    if (_failed) ...[
+                      const SizedBox(height: 16),
+                      Text(
+                        l10n.setupCreatingVaultError,
+                        style: TextStyle(color: theme.colorScheme.error),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

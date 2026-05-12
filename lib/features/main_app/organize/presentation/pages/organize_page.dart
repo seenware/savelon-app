@@ -9,6 +9,7 @@ import 'package:contacts/features/main_app/organize/presentation/state/organize_
 import 'package:contacts/features/main_app/organize/presentation/widgets/duplicate_group_card.dart';
 import 'package:contacts/core/layout/widgets/app_scaffold.dart';
 import 'package:contacts/core/purchases/premium_gate.dart';
+import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:contacts/core/theme/app_spacings.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -78,6 +79,16 @@ class OrganizePage extends HookConsumerWidget {
 
     final spacing = Theme.of(context).extension<AppSpacings>()!;
     final theme = Theme.of(context);
+    final pageHorizontalPadding = AppBreakpoints.responsive<double>(
+      context,
+      compact: 12,
+      wide: spacing.screenPaddingH,
+    );
+    final listHorizontalPadding = AppBreakpoints.responsive<double>(
+      context,
+      compact: 8,
+      wide: 16,
+    );
 
     void onClearSkipped() {
       ref.read(skippedDuplicateGroupIdsProvider.notifier).clearAll().then((_) {
@@ -93,6 +104,7 @@ class OrganizePage extends HookConsumerWidget {
     const actionSlotWidth = 48.0;
 
     return AppScaffold(
+      minimumScreenPaddingH: pageHorizontalPadding,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -133,7 +145,12 @@ class OrganizePage extends HookConsumerWidget {
                   );
                 }
                 return ListView.builder(
-                  padding: const EdgeInsets.all(16),
+                  padding: EdgeInsets.fromLTRB(
+                    listHorizontalPadding,
+                    16,
+                    listHorizontalPadding,
+                    16,
+                  ),
                   itemCount: groupsToRender.length,
                   itemBuilder: (context, index) {
                     final group = groupsToRender[index];

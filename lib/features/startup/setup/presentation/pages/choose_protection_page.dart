@@ -3,6 +3,7 @@ import 'package:contacts/core/layout/widgets/password_input_field.dart';
 import 'package:contacts/features/startup/setup/application/setup_notifier.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/protection_switch_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
+import 'package:contacts/features/startup/setup/presentation/widgets/setup_headline_title_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
 import 'package:contacts/l10n/l10n_context.dart';
 import 'package:flutter/material.dart';
@@ -101,23 +102,14 @@ class ChooseProtectionPage extends HookConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SizedBox(
-                    height: 44,
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 48),
-                        Expanded(
-                          child: SetupEntrance(
-                            index: 0,
-                            child: Text(
-                              l10n.setupProtectionTitle,
-                              textAlign: TextAlign.center,
-                              style: theme.textTheme.headlineMedium,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 48),
-                      ],
+                  SetupHeadlineTitleRow(
+                    child: SetupEntrance(
+                      index: 0,
+                      child: Text(
+                        l10n.setupProtectionTitle,
+                        textAlign: TextAlign.center,
+                        style: theme.textTheme.headlineMedium,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 16),
