@@ -99,6 +99,11 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       await PurchasesService.revokeAccess();
       return AuthStateNeedsSoftPaywall(passwordEnabled: passwordRequired);
     }
+    if (refreshResult == SubscriptionRefreshResult.storeAccountUnavailable) {
+      // Play account/billing is unavailable on this device. Keep premium locked
+      // by cached rules but do not force startup paywall for core app usage.
+      return _resolvePostGateState(passwordRequired: passwordRequired);
+    }
 
     // entitled → cache was just updated; staleCache / offline / error → use
     // whatever is in storage.
@@ -592,6 +597,11 @@ class AuthNotifier extends AsyncNotifier<AuthState> {
       case SubscriptionRefreshResult.offline:
         state = AsyncValue.data(currentState);
         return 'No internet connection. Please connect and try again.';
+
+      case SubscriptionRefreshResult.storeAccountUnavailable:
+        state = AsyncValue.data(currentState);
+        return 'Google Play account is required to verify purchases. '
+            'You can continue using free features.';
 
       case SubscriptionRefreshResult.staleCache:
       case SubscriptionRefreshResult.error:

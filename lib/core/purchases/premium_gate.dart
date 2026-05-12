@@ -14,14 +14,16 @@ class PremiumGate {
       return true;
     }
     if (!context.mounted) return false;
-    final unlocked = await Navigator.of(context, rootNavigator: true).push<bool>(
-      PageRouteBuilder<bool>(
-        transitionDuration: Duration.zero,
-        reverseTransitionDuration: Duration.zero,
-        pageBuilder: (context, animation, secondaryAnimation) =>
-            const PaywallPage(softMode: true),
-      ),
-    );
-    return unlocked ?? false;
+    final unlocked = await Navigator.of(context, rootNavigator: true)
+        .push<bool>(
+          PageRouteBuilder<bool>(
+            transitionDuration: Duration.zero,
+            reverseTransitionDuration: Duration.zero,
+            pageBuilder: (context, animation, secondaryAnimation) =>
+                const PaywallPage(softMode: true),
+          ),
+        );
+    if (unlocked != true) return false;
+    return PurchasesService.hasPremiumAccess();
   }
 }
