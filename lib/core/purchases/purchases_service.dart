@@ -1,6 +1,7 @@
 // lib/core/purchases/purchases_service.dart
 
 import 'dart:async';
+import 'dart:io';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:contacts/core/storage/secure_storage_service.dart';
@@ -56,6 +57,9 @@ enum SubscriptionRefreshResult {
   /// Device is offline. No network request was attempted.
   offline,
 
+  /// Android Play billing cannot be used (e.g. no signed-in Play account).
+  storeAccountUnavailable,
+
   /// An unexpected error occurred. Treat the same as staleCache.
   error,
 }
@@ -101,6 +105,28 @@ class DemoCodeRedeemResult {
 // ── PurchasesService ──────────────────────────────────────────────────────────
 
 class PurchasesService {
+  static bool isStoreAccountUnavailableError(Object error, {bool? isAndroid}) {
+    final android = isAndroid ?? Platform.isAndroid;
+    if (!android) return false;
+    final value = error.toString().toLowerCase();
+    return value.contains('billing unavailable') ||
+        value.contains('play account') ||
+        value.contains('google play') ||
+        value.contains('sign in') ||
+        value.contains('signin') ||
+        value.contains('not allowed to make purchases');
+  }
+
+  static SubscriptionRefreshResult classifyRefreshError(
+    Object error, {
+    bool? isAndroid,
+  }) {
+    if (isStoreAccountUnavailableError(error, isAndroid: isAndroid)) {
+      return SubscriptionRefreshResult.storeAccountUnavailable;
+    }
+    return SubscriptionRefreshResult.error;
+  }
+
   PurchasesService._();
   static bool _startupSoftPaywallShownThisLaunch = false;
   static bool _lifetimeThanksHandledThisLaunch = false;
@@ -413,8 +439,8 @@ class PurchasesService {
       // The server did not respond in time. The data is uncertain; do NOT
       // revoke — fall back to the cached values in storage.
       return SubscriptionRefreshResult.staleCache;
-    } catch (_) {
-      return SubscriptionRefreshResult.error;
+    } catch (error) {
+      return classifyRefreshError(error);
     } finally {
       Purchases.removeCustomerInfoUpdateListener(listener);
     }

@@ -36,6 +36,8 @@ class _ShowPaywall extends _AccessState {
 
 class _NoOffering extends _AccessState {}
 
+class _StoreAccountUnavailable extends _AccessState {}
+
 // ---------------------------------------------------------------------------
 // Page
 // ---------------------------------------------------------------------------
@@ -43,7 +45,11 @@ class _NoOffering extends _AccessState {}
 class PaywallPage extends HookConsumerWidget {
   final bool softMode;
   final bool startupEntry;
-  const PaywallPage({super.key, this.softMode = false, this.startupEntry = false});
+  const PaywallPage({
+    super.key,
+    this.softMode = false,
+    this.startupEntry = false,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -72,8 +78,14 @@ class PaywallPage extends HookConsumerWidget {
       final refresh = await PurchasesService.refreshIfOnline();
       if (refresh == SubscriptionRefreshResult.entitled) {
         final paidThrough = await PurchasesService.getCachedPaidThrough();
-        accessState.value =
-            _AutoGranted(permanent: false, purchasedPaidThrough: paidThrough);
+        accessState.value = _AutoGranted(
+          permanent: false,
+          purchasedPaidThrough: paidThrough,
+        );
+        return;
+      }
+      if (refresh == SubscriptionRefreshResult.storeAccountUnavailable) {
+        accessState.value = _StoreAccountUnavailable();
         return;
       }
 
@@ -86,7 +98,11 @@ class PaywallPage extends HookConsumerWidget {
           return;
         }
         accessState.value = _ShowPaywall(offering);
-      } catch (_) {
+      } catch (error) {
+        if (PurchasesService.isStoreAccountUnavailableError(error)) {
+          accessState.value = _StoreAccountUnavailable();
+          return;
+        }
         accessState.value = _Offline();
       }
     }
@@ -101,7 +117,9 @@ class PaywallPage extends HookConsumerWidget {
     useEffect(() {
       final s = accessState.value;
       if (s is _AutoGranted) {
-        ref.read(authProvider.notifier).completePaywall(
+        ref
+            .read(authProvider.notifier)
+            .completePaywall(
               grantPermanent: s.permanent,
               purchasedPaidThrough: s.purchasedPaidThrough,
             );
@@ -115,16 +133,11 @@ class PaywallPage extends HookConsumerWidget {
     return PopScope(
       canPop: softMode,
       child: Scaffold(
-        backgroundColor: softMode && Theme.of(context).brightness == Brightness.light
+        backgroundColor:
+            softMode && Theme.of(context).brightness == Brightness.light
             ? const Color(0xFFFAFAFA)
             : null,
-        body: _buildBody(
-          context,
-          ref,
-          accessState,
-          purchaseError,
-          checkAccess,
-        ),
+        body: _buildBody(context, ref, accessState, purchaseError, checkAccess),
       ),
     );
   }
@@ -143,36 +156,64 @@ class PaywallPage extends HookConsumerWidget {
       content = const Center(child: CircularProgressIndicator());
     } else if (state is _Offline) {
       content = _OfflineView(onRetry: retry);
+    } else if (state is _StoreAccountUnavailable) {
+      content = _StoreAccountUnavailableView(
+        onRetry: retry,
+        onContinueFree: () => _closeSoftPaywall(
+          context,
+          ref,
+          unlockResult: false,
+          source: 'storeAccountUnavailable',
+        ),
+      );
     } else if (state is _NoOffering) {
       content = _NoOfferingView(onRetry: retry);
     } else if (state is _ShowPaywall) {
       final paywall = PaywallView(
         offering: state.offering,
         onPurchaseCompleted: (customerInfo, _) {
-          final expiry = customerInfo.entitlements
+          final expiry = customerInfo
+              .entitlements
               .active[kRcEntitlementId]
               ?.expirationDate;
-          ref.read(authProvider.notifier).completePaywall(
+          ref
+              .read(authProvider.notifier)
+              .completePaywall(
                 grantPermanent: false,
-                purchasedPaidThrough:
-                    expiry != null ? DateTime.tryParse(expiry) : null,
+                purchasedPaidThrough: expiry != null
+                    ? DateTime.tryParse(expiry)
+                    : null,
               );
           if (softMode) {
-            _closeSoftPaywall(context, ref, unlockResult: true, source: 'purchase');
+            _closeSoftPaywall(
+              context,
+              ref,
+              unlockResult: true,
+              source: 'purchase',
+            );
           }
         },
         onRestoreCompleted: (customerInfo) {
           if (customerInfo.entitlements.active.containsKey(kRcEntitlementId)) {
-            final expiry = customerInfo.entitlements
+            final expiry = customerInfo
+                .entitlements
                 .active[kRcEntitlementId]
                 ?.expirationDate;
-            ref.read(authProvider.notifier).completePaywall(
+            ref
+                .read(authProvider.notifier)
+                .completePaywall(
                   grantPermanent: false,
-                  purchasedPaidThrough:
-                      expiry != null ? DateTime.tryParse(expiry) : null,
+                  purchasedPaidThrough: expiry != null
+                      ? DateTime.tryParse(expiry)
+                      : null,
                 );
             if (softMode) {
-              _closeSoftPaywall(context, ref, unlockResult: true, source: 'restore');
+              _closeSoftPaywall(
+                context,
+                ref,
+                unlockResult: true,
+                source: 'restore',
+              );
             }
           } else {
             purchaseError.value =
@@ -236,6 +277,12 @@ class PaywallPage extends HookConsumerWidget {
   }) {
     ref.read(authProvider.notifier).dismissSoftPaywall();
     if (!context.mounted) return;
+    // Modal soft paywalls (e.g. opened from Settings) must pop back to caller.
+    if (!startupEntry && Navigator.of(context).canPop()) {
+      Navigator.of(context).pop(unlockResult);
+      return;
+    }
+    // Startup soft paywall is part of router flow, not a pushed modal.
     context.go('/main_app/contacts');
   }
 }
@@ -324,6 +371,61 @@ class _NoOfferingView extends StatelessWidget {
               onPressed: onRetry,
               icon: const Icon(Icons.refresh_rounded),
               label: const Text('Try Again'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _StoreAccountUnavailableView extends StatelessWidget {
+  final Future<void> Function() onRetry;
+  final VoidCallback onContinueFree;
+
+  const _StoreAccountUnavailableView({
+    required this.onRetry,
+    required this.onContinueFree,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.account_circle_outlined,
+              size: 72,
+              color: Theme.of(context).colorScheme.outline,
+            ),
+            const SizedBox(height: 24),
+            Text(
+              'Google Play Account Required',
+              style: Theme.of(context).textTheme.headlineSmall,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 12),
+            Text(
+              'Purchases and restores need a signed-in Google Play account. '
+              'You can continue using free features without signing in.',
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 24),
+            FilledButton.icon(
+              onPressed: onRetry,
+              icon: const Icon(Icons.refresh_rounded),
+              label: const Text('Try Again'),
+            ),
+            const SizedBox(height: 12),
+            TextButton(
+              onPressed: onContinueFree,
+              child: const Text('Continue with Free Version'),
             ),
           ],
         ),
