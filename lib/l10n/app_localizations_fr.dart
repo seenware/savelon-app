@@ -998,4 +998,7 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Mot de passe requis pour ce compte';
+
+  @override
+  String get loginLoggedInSecurely => 'Connecté en toute sécurité';
 }

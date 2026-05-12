@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "私たちと一緒にいてくれてありがとうございます",
   "lifetimeThanksSubtitle": "生涯 Pro アクセスをプレゼントします",
   "lifetimeThanksGift": "ギフト",
-  "lifetimeThanksCta": "生涯アクセスを受け取る"
+  "lifetimeThanksCta": "生涯アクセスを受け取る",
+  "loginLoggedInSecurely": "安全にログインしました"
 }

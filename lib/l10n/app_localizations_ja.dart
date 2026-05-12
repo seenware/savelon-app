@@ -950,4 +950,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'このアカウントにはパスワードが必要です';
+
+  @override
+  String get loginLoggedInSecurely => '安全にログインしました';
 }

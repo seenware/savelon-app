@@ -999,4 +999,7 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Für dieses Konto ist ein Passwort erforderlich';
+
+  @override
+  String get loginLoggedInSecurely => 'Sicher angemeldet';
 }

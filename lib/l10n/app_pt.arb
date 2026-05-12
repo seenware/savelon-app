@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "Obrigado por estar com a gente",
   "lifetimeThanksSubtitle": "Estamos te presenteando com acesso Pro vitalício",
   "lifetimeThanksGift": "presente",
-  "lifetimeThanksCta": "Resgatar acesso vitalício"
+  "lifetimeThanksCta": "Resgatar acesso vitalício",
+  "loginLoggedInSecurely": "Sessão iniciada com segurança"
 }

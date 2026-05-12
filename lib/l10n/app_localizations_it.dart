@@ -993,4 +993,7 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Password richiesta per questo account';
+
+  @override
+  String get loginLoggedInSecurely => 'Accesso effettuato in modo sicuro';
 }

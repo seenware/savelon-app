@@ -1889,6 +1889,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Password required for this account'**
   String get authPasswordRequiredForAccount;
+
+  /// No description provided for @loginLoggedInSecurely.
+  ///
+  /// In en, this message translates to:
+  /// **'Logged in securely'**
+  String get loginLoggedInSecurely;
 }
 
 class _AppLocalizationsDelegate

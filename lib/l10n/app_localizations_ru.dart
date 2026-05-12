@@ -986,4 +986,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Для этой учётной записи требуется пароль';
+
+  @override
+  String get loginLoggedInSecurely => 'Вход выполнен безопасно';
 }

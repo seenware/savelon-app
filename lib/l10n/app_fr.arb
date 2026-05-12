@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "Merci d'être avec nous",
   "lifetimeThanksSubtitle": "Nous vous offrons un accès Pro à vie",
   "lifetimeThanksGift": "cadeau",
-  "lifetimeThanksCta": "Obtenir l'accès à vie"
+  "lifetimeThanksCta": "Obtenir l'accès à vie",
+  "loginLoggedInSecurely": "Connecté en toute sécurité"
 }

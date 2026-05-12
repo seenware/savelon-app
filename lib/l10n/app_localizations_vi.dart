@@ -982,4 +982,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'Cần mật khẩu cho tài khoản này';
+
+  @override
+  String get loginLoggedInSecurely => 'Đã đăng nhập an toàn';
 }

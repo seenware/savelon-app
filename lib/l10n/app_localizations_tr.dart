@@ -983,4 +983,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'Bu hesap için şifre gerekir';
+
+  @override
+  String get loginLoggedInSecurely => 'Güvenli şekilde giriş yapıldı';
 }

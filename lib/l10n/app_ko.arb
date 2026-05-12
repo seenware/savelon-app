@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "함께해 주셔서 감사합니다",
   "lifetimeThanksSubtitle": "평생 Pro 이용권을 선물해 드립니다",
   "lifetimeThanksGift": "선물",
-  "lifetimeThanksCta": "평생 이용권 받기"
+  "lifetimeThanksCta": "평생 이용권 받기",
+  "loginLoggedInSecurely": "안전하게 로그인되었습니다"
 }

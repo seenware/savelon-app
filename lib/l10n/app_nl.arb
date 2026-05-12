@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "Bedankt dat je bij ons bent",
   "lifetimeThanksSubtitle": "We geven je levenslange Pro-toegang cadeau",
   "lifetimeThanksGift": "cadeau",
-  "lifetimeThanksCta": "Levenslange toegang claimen"
+  "lifetimeThanksCta": "Levenslange toegang claimen",
+  "loginLoggedInSecurely": "Veilig ingelogd"
 }

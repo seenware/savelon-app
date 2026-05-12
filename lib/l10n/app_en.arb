@@ -488,5 +488,6 @@
   "settingsCurrentPasswordRequired": "Current password is required",
   "authPasswordRequiredWhenProtectionEnabled": "Password required when password protection is enabled",
   "authPasswordRequiredWhenEnablePassword": "Password required when enablePassword is true",
-  "authPasswordRequiredForAccount": "Password required for this account"
+  "authPasswordRequiredForAccount": "Password required for this account",
+  "loginLoggedInSecurely": "Logged in securely"
 }

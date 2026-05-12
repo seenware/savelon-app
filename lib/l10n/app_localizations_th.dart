@@ -975,4 +975,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'บัญชีนี้ต้องใช้รหัสผ่าน';
+
+  @override
+  String get loginLoggedInSecurely => 'เข้าสู่ระบบอย่างปลอดภัยแล้ว';
 }

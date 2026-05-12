@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "Dziękujemy, że jesteś z nami",
   "lifetimeThanksSubtitle": "Dajemy Ci dożywotni dostęp Pro w prezencie",
   "lifetimeThanksGift": "prezent",
-  "lifetimeThanksCta": "Odbierz dożywotni dostęp"
+  "lifetimeThanksCta": "Odbierz dożywotni dostęp",
+  "loginLoggedInSecurely": "Zalogowano bezpiecznie"
 }

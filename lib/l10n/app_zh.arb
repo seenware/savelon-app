@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "感谢一路有你",
   "lifetimeThanksSubtitle": "我们赠送你终身 Pro 权限",
   "lifetimeThanksGift": "赠送",
-  "lifetimeThanksCta": "领取终身权限"
+  "lifetimeThanksCta": "领取终身权限",
+  "loginLoggedInSecurely": "已安全登录"
 }

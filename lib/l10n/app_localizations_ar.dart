@@ -980,4 +980,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'كلمة المرور مطلوبة لهذا الحساب';
+
+  @override
+  String get loginLoggedInSecurely => 'تم تسجيل الدخول بأمان';
 }

@@ -994,4 +994,7 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Wachtwoord vereist voor dit account';
+
+  @override
+  String get loginLoggedInSecurely => 'Veilig ingelogd';
 }

@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "ขอบคุณที่อยู่กับเรา",
   "lifetimeThanksSubtitle": "เรามอบสิทธิ์ Pro ตลอดชีพให้คุณ",
   "lifetimeThanksGift": "ของขวัญ",
-  "lifetimeThanksCta": "รับสิทธิ์ตลอดชีพ"
+  "lifetimeThanksCta": "รับสิทธิ์ตลอดชีพ",
+  "loginLoggedInSecurely": "เข้าสู่ระบบอย่างปลอดภัยแล้ว"
 }

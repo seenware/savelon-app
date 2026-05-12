@@ -982,4 +982,7 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'इस खाते के लिए पासवर्ड आवश्यक है';
+
+  @override
+  String get loginLoggedInSecurely => 'सुरक्षित रूप से लॉग इन किया गया';
 }

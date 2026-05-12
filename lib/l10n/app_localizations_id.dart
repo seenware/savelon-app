@@ -989,4 +989,7 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Kata sandi diperlukan untuk akun ini';
+
+  @override
+  String get loginLoggedInSecurely => 'Berhasil masuk dengan aman';
 }

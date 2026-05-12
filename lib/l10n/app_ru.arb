@@ -472,5 +472,6 @@
   "settingsCurrentPasswordRequired": "Требуется текущий пароль",
   "authPasswordRequiredWhenProtectionEnabled": "Пароль требуется при включённой защите паролем",
   "authPasswordRequiredWhenEnablePassword": "Пароль требуется при включении опции пароля",
-  "authPasswordRequiredForAccount": "Для этой учётной записи требуется пароль"
+  "authPasswordRequiredForAccount": "Для этой учётной записи требуется пароль",
+  "loginLoggedInSecurely": "Вход выполнен безопасно"
 }

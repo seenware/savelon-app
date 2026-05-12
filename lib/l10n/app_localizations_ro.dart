@@ -990,4 +990,7 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Este necesară o parolă pentru acest cont';
+
+  @override
+  String get loginLoggedInSecurely => 'Autentificare realizată în siguranță';
 }

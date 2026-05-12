@@ -938,6 +938,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => '此账户需要密码';
+
+  @override
+  String get loginLoggedInSecurely => '已安全登录';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1874,4 +1877,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get authPasswordRequiredForAccount => '此账户需要密码';
+
+  @override
+  String get loginLoggedInSecurely => '已安全登录';
 }

@@ -157,7 +157,7 @@ class LoginPage extends HookConsumerWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            'Logged in securely',
+                            l10n.loginLoggedInSecurely,
                             style: theme.textTheme.headlineMedium?.copyWith(
                               fontWeight: FontWeight.w700,
                             ),

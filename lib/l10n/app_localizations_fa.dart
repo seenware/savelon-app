@@ -983,4 +983,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'برای این حساب گذرواژه لازم است';
+
+  @override
+  String get loginLoggedInSecurely => 'با امنیت وارد شدید';
 }

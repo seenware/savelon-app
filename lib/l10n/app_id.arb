@@ -472,5 +472,6 @@
   "lifetimeThanksTitle": "Terima kasih telah bersama kami",
   "lifetimeThanksSubtitle": "Kami menghadiahkan akses Pro seumur hidup untuk Anda",
   "lifetimeThanksGift": "hadiah",
-  "lifetimeThanksCta": "Klaim akses seumur hidup"
+  "lifetimeThanksCta": "Klaim akses seumur hidup",
+  "loginLoggedInSecurely": "Berhasil masuk dengan aman"
 }
