@@ -224,7 +224,6 @@
   "setupProtectionTitle": "Защита",
   "setupEncryption256Label": "Шифрование 256 бит",
   "setupRequirePasswordLabel": "Требовать пароль",
-  "setupOptionalSuffix": "необязательно",
   "setupCreateVaultButton": "Создать хранилище",
   "setupCreatingVaultTitle": "Создаём хранилище",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "settingsCurrentPasswordRequired": "Требуется текущий пароль",
   "authPasswordRequiredWhenProtectionEnabled": "Пароль требуется при включённой защите паролем",
   "authPasswordRequiredWhenEnablePassword": "Пароль требуется при включении опции пароля",
-  "authPasswordRequiredForAccount": "Для этой учётной записи требуется пароль"
+  "authPasswordRequiredForAccount": "Для этой учётной записи требуется пароль",
+  "loginLoggedInSecurely": "Вход выполнен безопасно"
 }

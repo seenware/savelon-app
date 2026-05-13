@@ -469,9 +469,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Necesită parolă';
 
   @override
-  String get setupOptionalSuffix => 'opțional';
-
-  @override
   String get setupCreateVaultButton => 'Creează seiful';
 
   @override
@@ -990,4 +987,7 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Este necesară o parolă pentru acest cont';
+
+  @override
+  String get loginLoggedInSecurely => 'Autentificare realizată în siguranță';
 }

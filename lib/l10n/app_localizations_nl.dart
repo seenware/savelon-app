@@ -469,9 +469,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Wachtwoord vereisen';
 
   @override
-  String get setupOptionalSuffix => 'optioneel';
-
-  @override
   String get setupCreateVaultButton => 'Kluis aanmaken';
 
   @override
@@ -994,4 +991,7 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Wachtwoord vereist voor dit account';
+
+  @override
+  String get loginLoggedInSecurely => 'Veilig ingelogd';
 }

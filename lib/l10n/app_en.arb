@@ -232,7 +232,6 @@
   "setupProtectionTitle": "Protection",
   "setupEncryption256Label": "256-bit encryption",
   "setupRequirePasswordLabel": "Require password",
-  "setupOptionalSuffix": "optional",
   "setupCreateVaultButton": "Create vault",
   "setupCreatingVaultTitle": "Creating your vault",
   "setupCreatingVaultPercent": "{percent}%",
@@ -488,5 +487,6 @@
   "settingsCurrentPasswordRequired": "Current password is required",
   "authPasswordRequiredWhenProtectionEnabled": "Password required when password protection is enabled",
   "authPasswordRequiredWhenEnablePassword": "Password required when enablePassword is true",
-  "authPasswordRequiredForAccount": "Password required for this account"
+  "authPasswordRequiredForAccount": "Password required for this account",
+  "loginLoggedInSecurely": "Logged in securely"
 }

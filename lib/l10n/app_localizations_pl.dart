@@ -466,9 +466,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Wymagaj hasła';
 
   @override
-  String get setupOptionalSuffix => 'opcjonalnie';
-
-  @override
   String get setupCreateVaultButton => 'Utwórz sejf';
 
   @override
@@ -984,4 +981,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'Hasło wymagane dla tego konta';
+
+  @override
+  String get loginLoggedInSecurely => 'Zalogowano bezpiecznie';
 }

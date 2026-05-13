@@ -222,7 +222,6 @@
   "setupProtectionTitle": "محافظت",
   "setupEncryption256Label": "رمزگذاری ۲۵۶ بیتی",
   "setupRequirePasswordLabel": "نیاز به رمز عبور",
-  "setupOptionalSuffix": "اختیاری",
   "setupCreateVaultButton": "ساخت گاوصندوق",
   "setupCreatingVaultTitle": "در حال ساخت گاوصندوق",
   "setupCreatingVaultPercent": "{percent}٪",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "ممنون که با ما هستید",
   "lifetimeThanksSubtitle": "ما دسترسی Pro مادام‌العمر را به شما هدیه می‌دهیم",
   "lifetimeThanksGift": "هدیه",
-  "lifetimeThanksCta": "دریافت دسترسی مادام‌العمر"
+  "lifetimeThanksCta": "دریافت دسترسی مادام‌العمر",
+  "loginLoggedInSecurely": "با امنیت وارد شدید"
 }

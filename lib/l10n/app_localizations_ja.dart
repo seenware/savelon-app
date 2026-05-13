@@ -451,9 +451,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get setupRequirePasswordLabel => 'パスワードを必須にする';
 
   @override
-  String get setupOptionalSuffix => '任意';
-
-  @override
   String get setupCreateVaultButton => '金庫を作成';
 
   @override
@@ -950,4 +947,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'このアカウントにはパスワードが必要です';
+
+  @override
+  String get loginLoggedInSecurely => '安全にログインしました';
 }

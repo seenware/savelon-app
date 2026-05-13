@@ -446,9 +446,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get setupRequirePasswordLabel => '需要密码';
 
   @override
-  String get setupOptionalSuffix => '可选';
-
-  @override
   String get setupCreateVaultButton => '创建保险库';
 
   @override
@@ -938,6 +935,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => '此账户需要密码';
+
+  @override
+  String get loginLoggedInSecurely => '已安全登录';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -1382,9 +1382,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get setupRequirePasswordLabel => '需要密码';
 
   @override
-  String get setupOptionalSuffix => '可选';
-
-  @override
   String get setupCreateVaultButton => '创建保险库';
 
   @override
@@ -1874,4 +1871,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get authPasswordRequiredForAccount => '此账户需要密码';
+
+  @override
+  String get loginLoggedInSecurely => '已安全登录';
 }

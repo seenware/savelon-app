@@ -468,9 +468,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Требовать пароль';
 
   @override
-  String get setupOptionalSuffix => 'необязательно';
-
-  @override
   String get setupCreateVaultButton => 'Создать хранилище';
 
   @override
@@ -986,4 +983,7 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Для этой учётной записи требуется пароль';
+
+  @override
+  String get loginLoggedInSecurely => 'Вход выполнен безопасно';
 }

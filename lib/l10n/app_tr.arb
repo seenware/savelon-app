@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Koruma",
   "setupEncryption256Label": "256 bit şifreleme",
   "setupRequirePasswordLabel": "Şifre gerekli",
-  "setupOptionalSuffix": "isteğe bağlı",
   "setupCreateVaultButton": "Kasa oluştur",
   "setupCreatingVaultTitle": "Kasanız oluşturuluyor",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "Bizimle olduğunuz için teşekkür ederiz",
   "lifetimeThanksSubtitle": "Size ömür boyu Pro erişimi hediye ediyoruz",
   "lifetimeThanksGift": "hediye",
-  "lifetimeThanksCta": "Ömür boyu erişimi al"
+  "lifetimeThanksCta": "Ömür boyu erişimi al",
+  "loginLoggedInSecurely": "Güvenli şekilde giriş yapıldı"
 }

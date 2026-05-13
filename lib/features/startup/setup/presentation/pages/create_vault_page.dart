@@ -5,6 +5,7 @@ import 'package:contacts/core/profile/profile_constants.dart';
 import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:contacts/features/startup/setup/presentation/models/avatar_catalog.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
+import 'package:contacts/features/startup/setup/presentation/widgets/setup_headline_title_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
 import 'package:contacts/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,8 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
   @override
   void initState() {
     super.initState();
-    final randomizedAvatar = widget.initialAvatarId == setupAvatarCatalog.first.id
+    final randomizedAvatar =
+        widget.initialAvatarId == setupAvatarCatalog.first.id
         ? _randomAvatarId()
         : widget.initialAvatarId;
     _avatarId = randomizedAvatar;
@@ -104,7 +106,8 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
     final localizedDefault = l10n.setupDefaultVaultName;
     final prefix = _autoVaultPrefix(l10n);
     final autoPattern = RegExp('^${RegExp.escape(prefix)}\\d{3}\$');
-    final shouldGenerate = initial.isEmpty ||
+    final shouldGenerate =
+        initial.isEmpty ||
         initial == ProfileConstants.defaultUsername ||
         initial == localizedDefault ||
         RegExp(r'^Vault\d{3}$').hasMatch(initial) ||
@@ -272,23 +275,14 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(
-              height: 44,
-              child: Row(
-                children: [
-                  const SizedBox(width: 48),
-                  Expanded(
-                    child: SetupEntrance(
-                      index: 0,
-                      child: Text(
-                        l10n.setupCreateVaultTitle,
-                        textAlign: TextAlign.center,
-                        style: theme.textTheme.headlineMedium,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 48),
-                ],
+            SetupHeadlineTitleRow(
+              child: SetupEntrance(
+                index: 0,
+                child: Text(
+                  l10n.setupCreateVaultTitle,
+                  textAlign: TextAlign.center,
+                  style: theme.textTheme.headlineMedium,
+                ),
               ),
             ),
             const SizedBox(height: 8),
@@ -311,7 +305,9 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                     bottom: MediaQuery.viewInsetsOf(context).bottom,
                   ),
                   child: ConstrainedBox(
-                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                    constraints: BoxConstraints(
+                      minHeight: constraints.maxHeight,
+                    ),
                     child: IntrinsicHeight(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -333,10 +329,16 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                                   ),
                                   color: _photoBytes == null
                                       ? avatar.background
-                                      : theme.colorScheme.surfaceContainerHighest,
+                                      : theme
+                                            .colorScheme
+                                            .surfaceContainerHighest,
                                 ),
                                 child: _photoBytes == null
-                                    ? Icon(avatar.icon, size: 86, color: Colors.white)
+                                    ? Icon(
+                                        avatar.icon,
+                                        size: 86,
+                                        color: Colors.white,
+                                      )
                                     : ClipOval(
                                         child: SizedBox.square(
                                           dimension: 160,
@@ -361,10 +363,11 @@ class _CreateVaultPageState extends State<CreateVaultPage> {
                               ),
                               decoration: InputDecoration(
                                 hintText: l10n.setupDefaultVaultName,
-                                hintStyle: theme.textTheme.headlineSmall?.copyWith(
-                                  color: Colors.grey,
-                                  fontSize: 30,
-                                ),
+                                hintStyle: theme.textTheme.headlineSmall
+                                    ?.copyWith(
+                                      color: Colors.grey,
+                                      fontSize: 30,
+                                    ),
                                 border: InputBorder.none,
                               ),
                             ),

@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Schutz",
   "setupEncryption256Label": "256-Bit-Verschlüsselung",
   "setupRequirePasswordLabel": "Passwort erforderlich",
-  "setupOptionalSuffix": "optional",
   "setupCreateVaultButton": "Tresor erstellen",
   "setupCreatingVaultTitle": "Dein Tresor wird erstellt",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "Danke, dass du bei uns bist",
   "lifetimeThanksSubtitle": "Wir schenken dir lebenslangen Pro-Zugang",
   "lifetimeThanksGift": "Geschenk",
-  "lifetimeThanksCta": "Lebenslangen Zugang sichern"
+  "lifetimeThanksCta": "Lebenslangen Zugang sichern",
+  "loginLoggedInSecurely": "Sicher angemeldet"
 }

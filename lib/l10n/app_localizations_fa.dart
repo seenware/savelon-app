@@ -466,9 +466,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get setupRequirePasswordLabel => 'نیاز به رمز عبور';
 
   @override
-  String get setupOptionalSuffix => 'اختیاری';
-
-  @override
   String get setupCreateVaultButton => 'ساخت گاوصندوق';
 
   @override
@@ -983,4 +980,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'برای این حساب گذرواژه لازم است';
+
+  @override
+  String get loginLoggedInSecurely => 'با امنیت وارد شدید';
 }

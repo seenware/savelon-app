@@ -222,7 +222,6 @@
   "setupProtectionTitle": "保护",
   "setupEncryption256Label": "256 位加密",
   "setupRequirePasswordLabel": "需要密码",
-  "setupOptionalSuffix": "可选",
   "setupCreateVaultButton": "创建保险库",
   "setupCreatingVaultTitle": "正在创建保险库",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "感谢一路有你",
   "lifetimeThanksSubtitle": "我们赠送你终身 Pro 权限",
   "lifetimeThanksGift": "赠送",
-  "lifetimeThanksCta": "领取终身权限"
+  "lifetimeThanksCta": "领取终身权限",
+  "loginLoggedInSecurely": "已安全登录"
 }

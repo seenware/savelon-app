@@ -452,9 +452,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get setupRequirePasswordLabel => '비밀번호 필요';
 
   @override
-  String get setupOptionalSuffix => '선택';
-
-  @override
   String get setupCreateVaultButton => '금고 만들기';
 
   @override
@@ -947,4 +944,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => '이 계정에는 비밀번호가 필요합니다';
+
+  @override
+  String get loginLoggedInSecurely => '안전하게 로그인되었습니다';
 }

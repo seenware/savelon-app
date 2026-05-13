@@ -464,9 +464,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get setupRequirePasswordLabel => 'पासवर्ड आवश्यक';
 
   @override
-  String get setupOptionalSuffix => 'वैकल्पिक';
-
-  @override
   String get setupCreateVaultButton => 'वॉल्ट बनाएं';
 
   @override
@@ -982,4 +979,7 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'इस खाते के लिए पासवर्ड आवश्यक है';
+
+  @override
+  String get loginLoggedInSecurely => 'सुरक्षित रूप से लॉग इन किया गया';
 }

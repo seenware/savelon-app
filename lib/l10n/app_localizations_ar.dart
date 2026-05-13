@@ -466,9 +466,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get setupRequirePasswordLabel => 'يتطلب كلمة مرور';
 
   @override
-  String get setupOptionalSuffix => 'اختياري';
-
-  @override
   String get setupCreateVaultButton => 'إنشاء الخزنة';
 
   @override
@@ -980,4 +977,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get authPasswordRequiredForAccount => 'كلمة المرور مطلوبة لهذا الحساب';
+
+  @override
+  String get loginLoggedInSecurely => 'تم تسجيل الدخول بأمان';
 }

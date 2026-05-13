@@ -472,9 +472,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Exiger un mot de passe';
 
   @override
-  String get setupOptionalSuffix => 'facultatif';
-
-  @override
   String get setupCreateVaultButton => 'Créer le coffre';
 
   @override
@@ -998,4 +995,7 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Mot de passe requis pour ce compte';
+
+  @override
+  String get loginLoggedInSecurely => 'Connecté en toute sécurité';
 }

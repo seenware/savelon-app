@@ -471,9 +471,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Requerir contraseña';
 
   @override
-  String get setupOptionalSuffix => 'opcional';
-
-  @override
   String get setupCreateVaultButton => 'Crear bóveda';
 
   @override
@@ -995,4 +992,7 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Se requiere contraseña para esta cuenta';
+
+  @override
+  String get loginLoggedInSecurely => 'Has iniciado sesión de forma segura';
 }

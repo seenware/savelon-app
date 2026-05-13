@@ -1,4 +1,5 @@
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_entrance.dart';
+import 'package:contacts/features/startup/setup/presentation/widgets/setup_headline_title_row.dart';
 import 'package:contacts/features/startup/setup/presentation/widgets/setup_page_scaffold.dart';
 import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:contacts/l10n/app_localizations.dart';
@@ -35,23 +36,14 @@ class VaultCreatedPage extends StatelessWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(
-                height: 44,
-                child: Row(
-                  children: [
-                    const SizedBox(width: 48),
-                    Expanded(
-                      child: SetupEntrance(
-                        index: 0,
-                        child: Text(
-                          l10n.setupVaultCreatedTitle,
-                          textAlign: TextAlign.center,
-                          style: theme.textTheme.headlineMedium,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 48),
-                  ],
+              SetupHeadlineTitleRow(
+                child: SetupEntrance(
+                  index: 0,
+                  child: Text(
+                    l10n.setupVaultCreatedTitle,
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.headlineMedium,
+                  ),
                 ),
               ),
               const SizedBox(height: 14),
@@ -72,7 +64,9 @@ class VaultCreatedPage extends StatelessWidget {
                 index: 2,
                 child: Center(
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: horizontalPadding,
+                    ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(18),
                       child: SizedBox(

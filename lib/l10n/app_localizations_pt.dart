@@ -468,9 +468,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Exigir palavra-passe';
 
   @override
-  String get setupOptionalSuffix => 'opcional';
-
-  @override
   String get setupCreateVaultButton => 'Criar cofre';
 
   @override
@@ -989,6 +986,9 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Senha necessária para esta conta';
+
+  @override
+  String get loginLoggedInSecurely => 'Sessão iniciada com segurança';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -1453,9 +1453,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get setupRequirePasswordLabel => 'Exigir senha';
-
-  @override
-  String get setupOptionalSuffix => 'opcional';
 
   @override
   String get setupCreateVaultButton => 'Criar cofre';
@@ -1976,4 +1973,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get authPasswordRequiredForAccount =>
       'Senha necessária para esta conta';
+
+  @override
+  String get loginLoggedInSecurely => 'Login realizado com segurança';
 }

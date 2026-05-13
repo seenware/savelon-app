@@ -224,7 +224,6 @@
   "setupProtectionTitle": "Protecție",
   "setupEncryption256Label": "Criptare pe 256 de biți",
   "setupRequirePasswordLabel": "Necesită parolă",
-  "setupOptionalSuffix": "opțional",
   "setupCreateVaultButton": "Creează seiful",
   "setupCreatingVaultTitle": "Seiful tău se creează",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "settingsCurrentPasswordRequired": "Este necesară parola actuală",
   "authPasswordRequiredWhenProtectionEnabled": "Parola este necesară când protecția prin parolă este activată",
   "authPasswordRequiredWhenEnablePassword": "Parola este necesară când opțiunea enablePassword este activată",
-  "authPasswordRequiredForAccount": "Este necesară o parolă pentru acest cont"
+  "authPasswordRequiredForAccount": "Este necesară o parolă pentru acest cont",
+  "loginLoggedInSecurely": "Autentificare realizată în siguranță"
 }

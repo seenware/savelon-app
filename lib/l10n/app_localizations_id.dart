@@ -467,9 +467,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Wajibkan kata sandi';
 
   @override
-  String get setupOptionalSuffix => 'opsional';
-
-  @override
   String get setupCreateVaultButton => 'Buat brankas';
 
   @override
@@ -989,4 +986,7 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get authPasswordRequiredForAccount =>
       'Kata sandi diperlukan untuk akun ini';
+
+  @override
+  String get loginLoggedInSecurely => 'Berhasil masuk dengan aman';
 }

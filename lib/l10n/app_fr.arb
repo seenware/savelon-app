@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Protection",
   "setupEncryption256Label": "Chiffrement 256 bits",
   "setupRequirePasswordLabel": "Exiger un mot de passe",
-  "setupOptionalSuffix": "facultatif",
   "setupCreateVaultButton": "Créer le coffre",
   "setupCreatingVaultTitle": "Création de votre coffre",
   "setupCreatingVaultPercent": "{percent} %",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "Merci d'être avec nous",
   "lifetimeThanksSubtitle": "Nous vous offrons un accès Pro à vie",
   "lifetimeThanksGift": "cadeau",
-  "lifetimeThanksCta": "Obtenir l'accès à vie"
+  "lifetimeThanksCta": "Obtenir l'accès à vie",
+  "loginLoggedInSecurely": "Connecté en toute sécurité"
 }

@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Protección",
   "setupEncryption256Label": "Cifrado de 256 bits",
   "setupRequirePasswordLabel": "Requerir contraseña",
-  "setupOptionalSuffix": "opcional",
   "setupCreateVaultButton": "Crear bóveda",
   "setupCreatingVaultTitle": "Creando tu bóveda",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "Gracias por estar con nosotros",
   "lifetimeThanksSubtitle": "Te regalamos acceso Pro de por vida",
   "lifetimeThanksGift": "regalo",
-  "lifetimeThanksCta": "Reclamar acceso de por vida"
+  "lifetimeThanksCta": "Reclamar acceso de por vida",
+  "loginLoggedInSecurely": "Has iniciado sesión de forma segura"
 }

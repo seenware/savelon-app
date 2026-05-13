@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Protezione",
   "setupEncryption256Label": "Crittografia a 256 bit",
   "setupRequirePasswordLabel": "Richiedi password",
-  "setupOptionalSuffix": "facoltativo",
   "setupCreateVaultButton": "Crea cassaforte",
   "setupCreatingVaultTitle": "Creazione della cassaforte",
   "setupCreatingVaultPercent": "{percent}%",
@@ -472,5 +471,6 @@
   "lifetimeThanksTitle": "Grazie per essere con noi",
   "lifetimeThanksSubtitle": "Ti regaliamo l'accesso Pro a vita",
   "lifetimeThanksGift": "regalo",
-  "lifetimeThanksCta": "Richiedi accesso a vita"
+  "lifetimeThanksCta": "Richiedi accesso a vita",
+  "loginLoggedInSecurely": "Accesso effettuato in modo sicuro"
 }
