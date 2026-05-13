@@ -469,9 +469,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Wachtwoord vereisen';
 
   @override
-  String get setupOptionalSuffix => 'optioneel';
-
-  @override
   String get setupCreateVaultButton => 'Kluis aanmaken';
 
   @override

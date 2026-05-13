@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Beveiliging",
   "setupEncryption256Label": "256-bits encryptie",
   "setupRequirePasswordLabel": "Wachtwoord vereisen",
-  "setupOptionalSuffix": "optioneel",
   "setupCreateVaultButton": "Kluis aanmaken",
   "setupCreatingVaultTitle": "Je kluis wordt aangemaakt",
   "setupCreatingVaultPercent": "{percent}%",

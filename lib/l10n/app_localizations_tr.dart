@@ -467,9 +467,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Şifre gerekli';
 
   @override
-  String get setupOptionalSuffix => 'isteğe bağlı';
-
-  @override
   String get setupCreateVaultButton => 'Kasa oluştur';
 
   @override

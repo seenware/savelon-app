@@ -222,7 +222,6 @@
   "setupProtectionTitle": "保護",
   "setupEncryption256Label": "256ビット暗号化",
   "setupRequirePasswordLabel": "パスワードを必須にする",
-  "setupOptionalSuffix": "任意",
   "setupCreateVaultButton": "金庫を作成",
   "setupCreatingVaultTitle": "金庫を作成しています",
   "setupCreatingVaultPercent": "{percent}%",

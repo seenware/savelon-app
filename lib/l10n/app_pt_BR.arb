@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Proteção",
   "setupEncryption256Label": "Criptografia de 256 bits",
   "setupRequirePasswordLabel": "Exigir senha",
-  "setupOptionalSuffix": "opcional",
   "setupCreateVaultButton": "Criar cofre",
   "setupCreatingVaultTitle": "Criando seu cofre",
   "setupCreatingVaultPercent": "{percent}%",

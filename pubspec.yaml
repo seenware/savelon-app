@@ -2,7 +2,7 @@ name: contacts
 description: "Secure way to store your contacts"
 publish_to: "none"
 
-version: 5.0.0+137
+version: 5.0.0+138
 
 environment:
   sdk: ^3.9.2

@@ -464,9 +464,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get setupRequirePasswordLabel => 'ต้องใช้รหัสผ่าน';
 
   @override
-  String get setupOptionalSuffix => 'ไม่บังคับ';
-
-  @override
   String get setupCreateVaultButton => 'สร้างตู้นิรภัย';
 
   @override

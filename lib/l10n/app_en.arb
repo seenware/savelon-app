@@ -232,7 +232,6 @@
   "setupProtectionTitle": "Protection",
   "setupEncryption256Label": "256-bit encryption",
   "setupRequirePasswordLabel": "Require password",
-  "setupOptionalSuffix": "optional",
   "setupCreateVaultButton": "Create vault",
   "setupCreatingVaultTitle": "Creating your vault",
   "setupCreatingVaultPercent": "{percent}%",

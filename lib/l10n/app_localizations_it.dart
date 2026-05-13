@@ -470,9 +470,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Richiedi password';
 
   @override
-  String get setupOptionalSuffix => 'facoltativo';
-
-  @override
   String get setupCreateVaultButton => 'Crea cassaforte';
 
   @override

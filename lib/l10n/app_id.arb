@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Perlindungan",
   "setupEncryption256Label": "Enkripsi 256-bit",
   "setupRequirePasswordLabel": "Wajibkan kata sandi",
-  "setupOptionalSuffix": "opsional",
   "setupCreateVaultButton": "Buat brankas",
   "setupCreatingVaultTitle": "Membuat brankas Anda",
   "setupCreatingVaultPercent": "{percent}%",

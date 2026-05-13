@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Protección",
   "setupEncryption256Label": "Cifrado de 256 bits",
   "setupRequirePasswordLabel": "Requerir contraseña",
-  "setupOptionalSuffix": "opcional",
   "setupCreateVaultButton": "Crear bóveda",
   "setupCreatingVaultTitle": "Creando tu bóveda",
   "setupCreatingVaultPercent": "{percent}%",

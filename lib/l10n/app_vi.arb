@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Bảo vệ",
   "setupEncryption256Label": "Mã hóa 256 bit",
   "setupRequirePasswordLabel": "Yêu cầu mật khẩu",
-  "setupOptionalSuffix": "tùy chọn",
   "setupCreateVaultButton": "Tạo kho",
   "setupCreatingVaultTitle": "Đang tạo kho của bạn",
   "setupCreatingVaultPercent": "{percent}%",

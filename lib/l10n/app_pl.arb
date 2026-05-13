@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Ochrona",
   "setupEncryption256Label": "Szyfrowanie 256-bitowe",
   "setupRequirePasswordLabel": "Wymagaj hasła",
-  "setupOptionalSuffix": "opcjonalnie",
   "setupCreateVaultButton": "Utwórz sejf",
   "setupCreatingVaultTitle": "Tworzenie sejfu",
   "setupCreatingVaultPercent": "{percent}%",

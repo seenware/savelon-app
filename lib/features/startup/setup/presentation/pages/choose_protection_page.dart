@@ -124,7 +124,6 @@ class ChooseProtectionPage extends HookConsumerWidget {
                         ),
                         ProtectionSwitchRow(
                           label: l10n.setupRequirePasswordLabel,
-                          optionalSuffix: l10n.setupOptionalSuffix,
                           enabled: true,
                           value: setupState.addPasswordEnabled,
                           onChanged: (value) {

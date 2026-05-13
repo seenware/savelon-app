@@ -464,9 +464,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get setupRequirePasswordLabel => 'पासवर्ड आवश्यक';
 
   @override
-  String get setupOptionalSuffix => 'वैकल्पिक';
-
-  @override
   String get setupCreateVaultButton => 'वॉल्ट बनाएं';
 
   @override

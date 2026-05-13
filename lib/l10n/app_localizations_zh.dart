@@ -446,9 +446,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get setupRequirePasswordLabel => '需要密码';
 
   @override
-  String get setupOptionalSuffix => '可选';
-
-  @override
   String get setupCreateVaultButton => '创建保险库';
 
   @override
@@ -1383,9 +1380,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get setupRequirePasswordLabel => '需要密码';
-
-  @override
-  String get setupOptionalSuffix => '可选';
 
   @override
   String get setupCreateVaultButton => '创建保险库';

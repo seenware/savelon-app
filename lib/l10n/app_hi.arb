@@ -222,7 +222,6 @@
   "setupProtectionTitle": "सुरक्षा",
   "setupEncryption256Label": "256-बिट एन्क्रिप्शन",
   "setupRequirePasswordLabel": "पासवर्ड आवश्यक",
-  "setupOptionalSuffix": "वैकल्पिक",
   "setupCreateVaultButton": "वॉल्ट बनाएं",
   "setupCreatingVaultTitle": "आपका वॉल्ट बनाया जा रहा है",
   "setupCreatingVaultPercent": "{percent}%",

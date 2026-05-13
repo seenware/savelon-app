@@ -465,9 +465,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Yêu cầu mật khẩu';
 
   @override
-  String get setupOptionalSuffix => 'tùy chọn';
-
-  @override
   String get setupCreateVaultButton => 'Tạo kho';
 
   @override

@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Protezione",
   "setupEncryption256Label": "Crittografia a 256 bit",
   "setupRequirePasswordLabel": "Richiedi password",
-  "setupOptionalSuffix": "facoltativo",
   "setupCreateVaultButton": "Crea cassaforte",
   "setupCreatingVaultTitle": "Creazione della cassaforte",
   "setupCreatingVaultPercent": "{percent}%",

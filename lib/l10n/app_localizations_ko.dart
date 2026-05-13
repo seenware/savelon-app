@@ -452,9 +452,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get setupRequirePasswordLabel => '비밀번호 필요';
 
   @override
-  String get setupOptionalSuffix => '선택';
-
-  @override
   String get setupCreateVaultButton => '금고 만들기';
 
   @override

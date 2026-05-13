@@ -468,9 +468,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Exigir palavra-passe';
 
   @override
-  String get setupOptionalSuffix => 'opcional';
-
-  @override
   String get setupCreateVaultButton => 'Criar cofre';
 
   @override
@@ -1456,9 +1453,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get setupRequirePasswordLabel => 'Exigir senha';
-
-  @override
-  String get setupOptionalSuffix => 'opcional';
 
   @override
   String get setupCreateVaultButton => 'Criar cofre';

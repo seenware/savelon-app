@@ -224,7 +224,6 @@
   "setupProtectionTitle": "Защита",
   "setupEncryption256Label": "Шифрование 256 бит",
   "setupRequirePasswordLabel": "Требовать пароль",
-  "setupOptionalSuffix": "необязательно",
   "setupCreateVaultButton": "Создать хранилище",
   "setupCreatingVaultTitle": "Создаём хранилище",
   "setupCreatingVaultPercent": "{percent}%",

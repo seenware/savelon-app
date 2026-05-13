@@ -466,9 +466,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get setupRequirePasswordLabel => 'نیاز به رمز عبور';
 
   @override
-  String get setupOptionalSuffix => 'اختیاری';
-
-  @override
   String get setupCreateVaultButton => 'ساخت گاوصندوق';
 
   @override

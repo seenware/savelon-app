@@ -222,7 +222,6 @@
   "setupProtectionTitle": "الحماية",
   "setupEncryption256Label": "تشفير 256 بت",
   "setupRequirePasswordLabel": "يتطلب كلمة مرور",
-  "setupOptionalSuffix": "اختياري",
   "setupCreateVaultButton": "إنشاء الخزنة",
   "setupCreatingVaultTitle": "جارٍ إنشاء خزنتك",
   "setupCreatingVaultPercent": "{percent}٪",

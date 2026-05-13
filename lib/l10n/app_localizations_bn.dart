@@ -469,9 +469,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get setupRequirePasswordLabel => 'পাসওয়ার্ড প্রয়োজন';
 
   @override
-  String get setupOptionalSuffix => 'ঐচ্ছিক';
-
-  @override
   String get setupCreateVaultButton => 'ভল্ট তৈরি করুন';
 
   @override

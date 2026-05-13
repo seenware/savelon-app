@@ -222,7 +222,6 @@
   "setupProtectionTitle": "保护",
   "setupEncryption256Label": "256 位加密",
   "setupRequirePasswordLabel": "需要密码",
-  "setupOptionalSuffix": "可选",
   "setupCreateVaultButton": "创建保险库",
   "setupCreatingVaultTitle": "正在创建保险库",
   "setupCreatingVaultPercent": "{percent}%",

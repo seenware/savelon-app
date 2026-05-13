@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Schutz",
   "setupEncryption256Label": "256-Bit-Verschlüsselung",
   "setupRequirePasswordLabel": "Passwort erforderlich",
-  "setupOptionalSuffix": "optional",
   "setupCreateVaultButton": "Tresor erstellen",
   "setupCreatingVaultTitle": "Dein Tresor wird erstellt",
   "setupCreatingVaultPercent": "{percent}%",

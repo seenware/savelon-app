@@ -467,9 +467,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Wajibkan kata sandi';
 
   @override
-  String get setupOptionalSuffix => 'opsional';
-
-  @override
   String get setupCreateVaultButton => 'Buat brankas';
 
   @override

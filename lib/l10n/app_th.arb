@@ -222,7 +222,6 @@
   "setupProtectionTitle": "การป้องกัน",
   "setupEncryption256Label": "การเข้ารหัส 256 บิต",
   "setupRequirePasswordLabel": "ต้องใช้รหัสผ่าน",
-  "setupOptionalSuffix": "ไม่บังคับ",
   "setupCreateVaultButton": "สร้างตู้นิรภัย",
   "setupCreatingVaultTitle": "กำลังสร้างตู้นิรภัยของคุณ",
   "setupCreatingVaultPercent": "{percent}%",

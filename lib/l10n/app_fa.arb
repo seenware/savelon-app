@@ -222,7 +222,6 @@
   "setupProtectionTitle": "محافظت",
   "setupEncryption256Label": "رمزگذاری ۲۵۶ بیتی",
   "setupRequirePasswordLabel": "نیاز به رمز عبور",
-  "setupOptionalSuffix": "اختیاری",
   "setupCreateVaultButton": "ساخت گاوصندوق",
   "setupCreatingVaultTitle": "در حال ساخت گاوصندوق",
   "setupCreatingVaultPercent": "{percent}٪",

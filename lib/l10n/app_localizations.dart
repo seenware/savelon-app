@@ -960,12 +960,6 @@ abstract class AppLocalizations {
   /// **'Require password'**
   String get setupRequirePasswordLabel;
 
-  /// No description provided for @setupOptionalSuffix.
-  ///
-  /// In en, this message translates to:
-  /// **'optional'**
-  String get setupOptionalSuffix;
-
   /// No description provided for @setupCreateVaultButton.
   ///
   /// In en, this message translates to:

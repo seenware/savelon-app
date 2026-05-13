@@ -222,7 +222,6 @@
   "setupProtectionTitle": "보호",
   "setupEncryption256Label": "256비트 암호화",
   "setupRequirePasswordLabel": "비밀번호 필요",
-  "setupOptionalSuffix": "선택",
   "setupCreateVaultButton": "금고 만들기",
   "setupCreatingVaultTitle": "금고를 만드는 중",
   "setupCreatingVaultPercent": "{percent}%",

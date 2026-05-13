@@ -468,9 +468,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Требовать пароль';
 
   @override
-  String get setupOptionalSuffix => 'необязательно';
-
-  @override
   String get setupCreateVaultButton => 'Создать хранилище';
 
   @override

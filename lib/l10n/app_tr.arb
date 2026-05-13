@@ -222,7 +222,6 @@
   "setupProtectionTitle": "Koruma",
   "setupEncryption256Label": "256 bit şifreleme",
   "setupRequirePasswordLabel": "Şifre gerekli",
-  "setupOptionalSuffix": "isteğe bağlı",
   "setupCreateVaultButton": "Kasa oluştur",
   "setupCreatingVaultTitle": "Kasanız oluşturuluyor",
   "setupCreatingVaultPercent": "{percent}%",

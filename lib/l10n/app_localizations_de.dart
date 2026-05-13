@@ -471,9 +471,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get setupRequirePasswordLabel => 'Passwort erforderlich';
 
   @override
-  String get setupOptionalSuffix => 'optional';
-
-  @override
   String get setupCreateVaultButton => 'Tresor erstellen';
 
   @override

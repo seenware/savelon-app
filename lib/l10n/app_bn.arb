@@ -222,7 +222,6 @@
   "setupProtectionTitle": "সুরক্ষা",
   "setupEncryption256Label": "২৫৬-বিট এনক্রিপশন",
   "setupRequirePasswordLabel": "পাসওয়ার্ড প্রয়োজন",
-  "setupOptionalSuffix": "ঐচ্ছিক",
   "setupCreateVaultButton": "ভল্ট তৈরি করুন",
   "setupCreatingVaultTitle": "আপনার ভল্ট তৈরি হচ্ছে",
   "setupCreatingVaultPercent": "{percent}%",
