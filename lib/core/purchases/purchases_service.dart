@@ -132,19 +132,26 @@ class PurchasesService {
   static bool _lifetimeThanksHandledThisLaunch = false;
   static bool _newSetupGraceThisLaunch = false;
 
-  /// Optional override via `--dart-define` / `--dart-define-from-file`.
-  /// Defaults to empty so repo clones have no usable access code.
+  /// Optional compile-time demo code (never commit real values).
+  ///
+  /// Set via `--dart-define=SAVELON_DEMO_CODE=...` or a **gitignored** file
+  /// `dart_defines.local.json` at the project root, then:
+  /// `flutter build appbundle --dart-define-from-file=dart_defines.local.json`
+  ///
+  /// When empty (default for repo checkouts), [accessCodes] is empty and the
+  /// onboarding "Activate Demo" flow is inert.
   static const String _kDemoCodeFromEnv = String.fromEnvironment(
     'SAVELON_DEMO_CODE',
     defaultValue: '',
   );
 
-  /// Duration for the single demo code. Defaults to 72h.
+  /// Duration for the demo code from [SAVELON_DEMO_CODE]. Defaults to 72 hours.
   static const int _kDemoCodeDurationHours = int.fromEnvironment(
     'SAVELON_DEMO_CODE_DURATION_HOURS',
     defaultValue: 72,
   );
 
+  /// Non-empty only when a demo code was compiled in (see [_kDemoCodeFromEnv]).
   static final List<DemoCodeDefinition> accessCodes = _buildAccessCodes();
 
   static List<DemoCodeDefinition> _buildAccessCodes() {
@@ -184,7 +191,7 @@ class PurchasesService {
 
   static Future<bool> hasPremiumAccess() async {
     if (await hasPurchasedAccess()) return true;
-    return hasActiveDemoAccess();
+    return await hasActiveDemoAccess();
   }
 
   static Future<bool> hasPurchasedAccess() async {

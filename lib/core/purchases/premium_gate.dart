@@ -7,6 +7,16 @@ final premiumAccessProvider = FutureProvider<bool>((ref) async {
   return PurchasesService.hasPremiumAccess();
 });
 
+/// True when Settings should list the "Unlock Pro" row.
+///
+/// Hidden for paid subscribers and for [PurchasesService.hasActiveDemoAccess]
+/// (temporary demo), even if other grace paths exist.
+final settingsShowUnlockProTileProvider = FutureProvider<bool>((ref) async {
+  if (await PurchasesService.hasPurchasedAccess()) return false;
+  if (await PurchasesService.hasActiveDemoAccess()) return false;
+  return true;
+});
+
 class PremiumGate {
   static Future<bool> ensurePremium(BuildContext context) async {
     final hasPremium = await PurchasesService.hasPremiumAccess();

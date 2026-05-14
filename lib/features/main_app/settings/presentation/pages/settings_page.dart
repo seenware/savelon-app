@@ -24,9 +24,9 @@ class SettingsPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final items = <Widget>[];
-    final hasPremiumAsync = ref.watch(premiumAccessProvider);
-    final showUnlockProTile = hasPremiumAsync.maybeWhen(
-      data: (value) => !value,
+    final showUnlockProAsync = ref.watch(settingsShowUnlockProTileProvider);
+    final showUnlockProTile = showUnlockProAsync.maybeWhen(
+      data: (show) => show,
       orElse: () => false,
     );
 
