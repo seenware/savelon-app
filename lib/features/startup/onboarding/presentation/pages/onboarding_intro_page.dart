@@ -4,6 +4,7 @@ import 'dart:math' as math;
 
 import 'package:contacts/core/layout/widgets/app_scaffold.dart';
 import 'package:contacts/core/layout/widgets/primary_button.dart';
+import 'package:contacts/core/purchases/premium_gate.dart';
 import 'package:contacts/core/purchases/purchases_service.dart';
 import 'package:contacts/features/startup/onboarding/presentation/utils/onboarding_constants.dart';
 import 'package:contacts/features/startup/onboarding/presentation/widgets/activate_demo_dialog.dart';
@@ -11,6 +12,7 @@ import 'package:contacts/l10n/app_localizations.dart';
 import 'package:contacts/core/theme/app_breakpoints.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -113,6 +115,7 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                 controller: _controller,
                 physics: const NeverScrollableScrollPhysics(),
                 onPageChanged: (index) {
+                  if (index != 0) _iconTapCount = 0;
                   setState(() => _currentIndex = index);
                 },
                 itemCount: kOnboardingIntroImageAssets.length,
@@ -141,7 +144,7 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               GestureDetector(
-                                onTap: _handleIllustrationTap,
+                                onTap: () => _handleIllustrationTap(index),
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 8),
                                   child: Container(
@@ -203,8 +206,11 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
     );
   }
 
-  Future<void> _handleIllustrationTap() async {
-    if (!PurchasesService.accessCodes.isNotEmpty) return;
+  Future<void> _handleIllustrationTap(int slideIndex) async {
+    // Easter egg: only the first onboarding slide ("Open source" title).
+    if (slideIndex != 0) return;
+    if (PurchasesService.accessCodes.isEmpty) return;
+
     _iconTapCount++;
     if (_iconTapCount < 5) return;
     _iconTapCount = 0;
@@ -212,6 +218,10 @@ class _OnboardingIntroPageState extends State<OnboardingIntroPage> {
     if (!mounted) return;
     final accessUntil = await ActivateDemoDialog.show(context);
     if (!mounted || accessUntil == null) return;
+
+    ProviderScope.containerOf(context, listen: false)
+      ..invalidate(premiumAccessProvider)
+      ..invalidate(settingsShowUnlockProTileProvider);
 
     final local = accessUntil.toLocal();
     final localizations = MaterialLocalizations.of(context);
