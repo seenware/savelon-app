@@ -129,7 +129,7 @@ class SideNavigationDrawer extends StatelessWidget {
     required int? count,
   }) {
     final icon = Icon(
-      isSelected ? Icons.group_rounded : Icons.group_outlined,
+      isSelected ? Icons.people_rounded : Icons.people_outline_rounded,
     );
     if (count == null || count <= 0) return icon;
     final colorScheme = Theme.of(context).colorScheme;

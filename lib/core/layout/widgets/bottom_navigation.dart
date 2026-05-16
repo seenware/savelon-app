@@ -5,8 +5,23 @@ import 'dart:math' as math;
 import 'package:contacts/l10n/l10n_context.dart';
 import 'package:flutter/material.dart';
 
-/// Content height for icons + labels; [NavigationBar] adds bottom safe inset.
-const double _kBarHeight = 64;
+/// Content height for icons + labels; bottom safe inset is added separately.
+const double _kBarHeight = 60;
+
+const double _kIconLabelGap = 6;
+
+const Duration _kNavColorTransitionDuration = Duration(milliseconds: 200);
+
+const double _kIconSize = 24;
+
+/// Slot size fits a slightly scaled-up selected icon without shifting layout.
+const double _kIconSlotSize = 28;
+
+/// Subtle emphasis when a tab is selected.
+const double _kSelectedIconScale = 1.07;
+
+/// Duplicates outline→filled glyphs already read slightly larger when selected.
+const double _kDuplicatesSelectedIconScale = 1.02;
 
 class BottomNavigation extends StatelessWidget {
   final int selectedIndex;
@@ -22,14 +37,14 @@ class BottomNavigation extends StatelessWidget {
     this.duplicatesCount,
   });
 
-  /// Trims excess bottom inset for [NavigationBar]'s internal [SafeArea] while
-  /// staying at or above a practical minimum for home-indicator devices.
+  /// Trims excess bottom inset for the bar's [SafeArea] while staying at or
+  /// above a practical minimum for home-indicator devices.
   static double compactBottomInset(MediaQueryData mediaQuery) {
     final viewBottom = mediaQuery.viewPadding.bottom;
     final padBottom = mediaQuery.padding.bottom;
     if (viewBottom <= 0) return padBottom;
     final base = padBottom > viewBottom ? viewBottom : padBottom;
-    return math.max(6, base - 8);
+    return math.max(4, base - 12);
   }
 
   @override
@@ -38,29 +53,12 @@ class BottomNavigation extends StatelessWidget {
     final colorScheme = theme.colorScheme;
     final l10n = context.l10n;
     final mediaQuery = MediaQuery.of(context);
-
-    final selectedColor = colorScheme.onSurfaceVariant;
-    final unselectedColor = colorScheme.outline;
-
-    final labelTextStyle = WidgetStateProperty.resolveWith<TextStyle?>((
-      states,
-    ) {
-      final selected = states.contains(WidgetState.selected);
-      return theme.textTheme.labelMedium?.copyWith(
-        fontSize: 11,
-        height: 1.1,
-        letterSpacing: 0.1,
-        color: selected ? selectedColor : unselectedColor,
-      );
-    });
-
-    final iconTheme = WidgetStateProperty.resolveWith<IconThemeData?>((states) {
-      final selected = states.contains(WidgetState.selected);
-      return IconThemeData(
-        size: 24,
-        color: selected ? selectedColor : unselectedColor,
-      );
-    });
+    final transitionDuration = MediaQuery.disableAnimationsOf(context)
+        ? Duration.zero
+        : _kNavColorTransitionDuration;
+    final backgroundColor =
+        theme.navigationBarTheme.backgroundColor ??
+        colorScheme.surfaceContainer;
 
     return MediaQuery(
       data: mediaQuery.copyWith(
@@ -68,97 +66,161 @@ class BottomNavigation extends StatelessWidget {
           bottom: compactBottomInset(mediaQuery),
         ),
       ),
-      child: Theme(
-        data: theme.copyWith(
-          splashFactory: NoSplash.splashFactory,
-          highlightColor: Colors.transparent,
-          navigationBarTheme: NavigationBarThemeData(
+      child: Material(
+        color: backgroundColor,
+        child: SafeArea(
+          top: false,
+          child: SizedBox(
             height: _kBarHeight,
-            indicatorColor: Colors.transparent,
-            iconTheme: iconTheme,
-            labelTextStyle: labelTextStyle,
-            labelPadding: EdgeInsets.zero,
+            child: Row(
+              children: [
+                _BottomNavItem(
+                  index: 0,
+                  selectedIndex: selectedIndex,
+                  label: l10n.navContacts,
+                  duration: transitionDuration,
+                  icon: Icons.person_outline_rounded,
+                  selectedIcon: Icons.person_rounded,
+                  badgeCount: contactsCount,
+                  onTap: () => onDestinationSelected(0),
+                ),
+                _BottomNavItem(
+                  index: 1,
+                  selectedIndex: selectedIndex,
+                  label: l10n.navDuplicates,
+                  duration: transitionDuration,
+                  icon: Icons.people_outline_rounded,
+                  selectedIcon: Icons.people_rounded,
+                  selectedIconScale: _kDuplicatesSelectedIconScale,
+                  badgeCount: duplicatesCount,
+                  onTap: () => onDestinationSelected(1),
+                ),
+                _BottomNavItem(
+                  index: 2,
+                  selectedIndex: selectedIndex,
+                  label: l10n.navSupport,
+                  duration: transitionDuration,
+                  icon: Icons.favorite_outline_rounded,
+                  selectedIcon: Icons.favorite_rounded,
+                  onTap: () => onDestinationSelected(2),
+                ),
+                _BottomNavItem(
+                  index: 3,
+                  selectedIndex: selectedIndex,
+                  label: l10n.navSettings,
+                  duration: transitionDuration,
+                  icon: Icons.settings_outlined,
+                  selectedIcon: Icons.settings_rounded,
+                  onTap: () => onDestinationSelected(3),
+                ),
+              ],
+            ),
           ),
-        ),
-        child: NavigationBar(
-          height: _kBarHeight,
-          indicatorColor: Colors.transparent,
-          labelPadding: EdgeInsets.zero,
-          labelTextStyle: labelTextStyle,
-          selectedIndex: selectedIndex,
-          onDestinationSelected: onDestinationSelected,
-          overlayColor: WidgetStateProperty.resolveWith((states) {
-            if (states.contains(WidgetState.pressed)) {
-              return Colors.transparent;
-            }
-            return null;
-          }),
-          destinations: [
-            NavigationDestination(
-              icon: _contactsIcon(context, isSelected: false),
-              selectedIcon: _contactsIcon(context, isSelected: true),
-              label: l10n.navContacts,
-              tooltip: '',
-            ),
-            NavigationDestination(
-              icon: _duplicatesIcon(context, isSelected: false),
-              selectedIcon: _duplicatesIcon(context, isSelected: true),
-              label: l10n.navDuplicates,
-              tooltip: '',
-            ),
-            NavigationDestination(
-              icon: const Icon(Icons.favorite_outline_rounded),
-              selectedIcon: const Icon(Icons.favorite_rounded),
-              label: l10n.navSupport,
-              tooltip: '',
-            ),
-            NavigationDestination(
-              icon: const Icon(Icons.settings_outlined),
-              selectedIcon: const Icon(Icons.settings_rounded),
-              label: l10n.navSettings,
-              tooltip: '',
-            ),
-          ],
         ),
       ),
     );
   }
+}
 
-  Widget _contactsIcon(BuildContext context, {required bool isSelected}) {
-    final icon = Icon(
-      isSelected ? Icons.person_rounded : Icons.person_outline_rounded,
+class _BottomNavItem extends StatelessWidget {
+  const _BottomNavItem({
+    required this.index,
+    required this.selectedIndex,
+    required this.label,
+    required this.duration,
+    required this.icon,
+    required this.selectedIcon,
+    required this.onTap,
+    this.selectedIconScale = _kSelectedIconScale,
+    this.badgeCount,
+  });
+
+  final int index;
+  final int selectedIndex;
+  final String label;
+  final Duration duration;
+  final IconData icon;
+  final IconData selectedIcon;
+  final double selectedIconScale;
+  final VoidCallback onTap;
+  final int? badgeCount;
+
+  bool get _isSelected => index == selectedIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    final selectedColor = colorScheme.onSurfaceVariant;
+    final unselectedColor = colorScheme.outline;
+    final targetColor = _isSelected ? selectedColor : unselectedColor;
+    final labelStyle = theme.textTheme.labelMedium?.copyWith(
+      fontSize: 11,
+      height: 1.1,
+      letterSpacing: 0.1,
     );
-    final count = contactsCount;
-    if (count == null || count <= 0) return icon;
-    final colorScheme = Theme.of(context).colorScheme;
 
-    return Badge(
-      backgroundColor: colorScheme.tertiaryContainer,
-      textColor: colorScheme.onTertiaryContainer,
-      alignment: Alignment.topRight,
-      offset: const Offset(8, -8),
-      padding: const EdgeInsets.symmetric(horizontal: 4),
-      label: Text(_badgeLabel(count)),
-      child: icon,
+    Widget iconWidget = AnimatedTheme(
+      duration: duration,
+      curve: Curves.easeInOut,
+      data: theme.copyWith(
+        iconTheme: IconThemeData(
+          size: _kIconSize,
+          color: targetColor,
+        ),
+      ),
+      child: Icon(_isSelected ? selectedIcon : icon),
     );
-  }
 
-  Widget _duplicatesIcon(BuildContext context, {required bool isSelected}) {
-    final icon = Icon(
-      isSelected ? Icons.group_rounded : Icons.group_outlined,
+    iconWidget = AnimatedScale(
+      scale: _isSelected ? selectedIconScale : 1,
+      duration: duration,
+      curve: Curves.easeInOut,
+      alignment: Alignment.center,
+      child: iconWidget,
     );
-    final count = duplicatesCount;
-    if (count == null || count <= 0) return icon;
-    final colorScheme = Theme.of(context).colorScheme;
 
-    return Badge(
-      backgroundColor: colorScheme.tertiaryContainer,
-      textColor: colorScheme.onTertiaryContainer,
-      alignment: Alignment.topRight,
-      offset: const Offset(8, -8),
-      padding: const EdgeInsets.symmetric(horizontal: 4),
-      label: Text(_badgeLabel(count)),
-      child: icon,
+    iconWidget = SizedBox(
+      width: _kIconSlotSize,
+      height: _kIconSlotSize,
+      child: Center(child: iconWidget),
+    );
+
+    final count = badgeCount;
+    if (count != null && count > 0) {
+      iconWidget = Badge(
+        backgroundColor: colorScheme.tertiaryContainer,
+        textColor: colorScheme.onTertiaryContainer,
+        alignment: Alignment.topRight,
+        offset: const Offset(8, -8),
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        label: Text(_badgeLabel(count)),
+        child: iconWidget,
+      );
+    }
+
+    return Expanded(
+      child: InkWell(
+        onTap: onTap,
+        splashFactory: NoSplash.splashFactory,
+        highlightColor: Colors.transparent,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              iconWidget,
+              SizedBox(height: _kIconLabelGap),
+              AnimatedDefaultTextStyle(
+                duration: duration,
+                curve: Curves.easeInOut,
+                style: labelStyle!.copyWith(color: targetColor),
+                child: Text(label),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
