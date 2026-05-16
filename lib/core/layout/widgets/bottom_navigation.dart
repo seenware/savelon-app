@@ -44,7 +44,7 @@ class BottomNavigation extends StatelessWidget {
     final padBottom = mediaQuery.padding.bottom;
     if (viewBottom <= 0) return padBottom;
     final base = padBottom > viewBottom ? viewBottom : padBottom;
-    return math.max(4, base - 12);
+    return math.max(4, base - 8);
   }
 
   @override
@@ -164,10 +164,7 @@ class _BottomNavItem extends StatelessWidget {
       duration: duration,
       curve: Curves.easeInOut,
       data: theme.copyWith(
-        iconTheme: IconThemeData(
-          size: _kIconSize,
-          color: targetColor,
-        ),
+        iconTheme: IconThemeData(size: _kIconSize, color: targetColor),
       ),
       child: Icon(_isSelected ? selectedIcon : icon),
     );
