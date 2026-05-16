@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Contacte criptate",
   "navContacts": "Contacte",
-  "navOrganize": "Organizare",
+  "navDuplicates": "Duplicate",
   "navSupport": "Asistență",
   "navSettings": "Setări",
   "settingsTitle": "Setări",
   "language": "Limbă",
   "languageSystemDefault": "Implicit sistem",
-  "organizeTitle": "Organizare",
+  "duplicatesTitle": "Duplicate",
   "supportTitle": "Asistență",
   "search": "Caută",
   "commonCancel": "Anulează",
@@ -274,11 +274,11 @@
     }
   },
   "subscriptionConnectToVerify": "Conectează-te la internet pentru a-ți verifica abonamentul.",
-  "organizeNoDuplicates": "Nu s-au găsit duplicate potențiale",
-  "organizeSkippedShownAgain": "Duplicatele omise sunt afișate din nou.",
-  "organizeShowSkippedTooltip": "Arată din nou grupurile de duplicate omise",
-  "organizeFailedToLoad": "Nu s-au putut încărca grupurile de duplicate: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Nu s-au găsit duplicate potențiale",
+  "duplicatesSkippedShownAgain": "Duplicatele omise sunt afișate din nou.",
+  "duplicatesShowSkippedTooltip": "Arată din nou grupurile de duplicate omise",
+  "duplicatesFailedToLoad": "Nu s-au putut încărca grupurile de duplicate: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -293,10 +293,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Atinge pentru a vedea detaliile",
-  "organizeConflictMostlyIdentical": "În mare parte identice",
-  "organizeConflictFieldVariants": "{field}: {count} variante",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Atinge pentru a vedea detaliile",
+  "duplicatesConflictMostlyIdentical": "În mare parte identice",
+  "duplicatesConflictFieldVariants": "{field}: {count} variante",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

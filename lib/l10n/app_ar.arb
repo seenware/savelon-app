@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "جهات الاتصال المشفرة",
   "navContacts": "جهات الاتصال",
-  "navOrganize": "تنظيم",
+  "navDuplicates": "التكرارات",
   "navSupport": "الدعم",
   "navSettings": "إعدادات",
   "settingsTitle": "إعدادات",
   "language": "لغة",
   "languageSystemDefault": "الافتراضي للنظام",
-  "organizeTitle": "تنظم",
+  "duplicatesTitle": "التكرارات",
   "supportTitle": "الدعم",
   "search": "بحث",
   "commonCancel": "إلغاء",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "اتصل بالإنترنت للتحقق من اشتراكك.",
-  "organizeNoDuplicates": "لم يتم العثور على التكرارات المحتملة",
-  "organizeSkippedShownAgain": "يتم عرض التكرارات التي تم تخطيها مرة أخرى.",
-  "organizeShowSkippedTooltip": "إظهار المجموعات المكررة التي تم تخطيها مرة أخرى",
-  "organizeFailedToLoad": "فشل تحميل المجموعات المكررة: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "لم يتم العثور على التكرارات المحتملة",
+  "duplicatesSkippedShownAgain": "يتم عرض التكرارات التي تم تخطيها مرة أخرى.",
+  "duplicatesShowSkippedTooltip": "إظهار المجموعات المكررة التي تم تخطيها مرة أخرى",
+  "duplicatesFailedToLoad": "فشل تحميل المجموعات المكررة: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "انقر لعرض التفاصيل",
-  "organizeConflictMostlyIdentical": "متطابقة في الغالب",
-  "organizeConflictFieldVariants": "{field}: {count} متغيرات",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "انقر لعرض التفاصيل",
+  "duplicatesConflictMostlyIdentical": "متطابقة في الغالب",
+  "duplicatesConflictFieldVariants": "{field}: {count} متغيرات",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

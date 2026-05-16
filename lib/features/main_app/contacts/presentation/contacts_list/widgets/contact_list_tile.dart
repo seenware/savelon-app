@@ -2,7 +2,7 @@
 
 import 'package:contacts/core/utils/phone_formatter.dart';
 import 'package:contacts/l10n/l10n_context.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

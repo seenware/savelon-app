@@ -5,7 +5,7 @@ import 'package:contacts/features/main_app/contacts/domain/entities/date.dart' a
 import 'package:contacts/features/main_app/contacts/domain/entities/link.dart';
 import 'package:contacts/features/main_app/contacts/domain/entities/phone.dart';
 import 'package:contacts/features/main_app/contacts/domain/entities/email.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -31,7 +31,7 @@ Contact _contact(String id, String firstName) {
 }
 
 void main() {
-  test('organizeCountProvider returns visible groups count', () {
+  test('duplicatesCountProvider returns visible groups count', () {
     final groups = <DuplicateGroup>[
       DuplicateGroup(
         id: 'g1',
@@ -54,7 +54,7 @@ void main() {
     );
     addTearDown(container.dispose);
 
-    final countAsync = container.read(organizeCountProvider);
+    final countAsync = container.read(duplicatesCountProvider);
     expect(countAsync.value, 2);
   });
 }

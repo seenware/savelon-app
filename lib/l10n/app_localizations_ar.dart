@@ -18,7 +18,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get navContacts => 'جهات الاتصال';
 
   @override
-  String get navOrganize => 'تنظيم';
+  String get navDuplicates => 'التكرارات';
 
   @override
   String get navSupport => 'الدعم';
@@ -36,7 +36,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get languageSystemDefault => 'الافتراضي للنظام';
 
   @override
-  String get organizeTitle => 'تنظم';
+  String get duplicatesTitle => 'التكرارات';
 
   @override
   String get supportTitle => 'الدعم';
@@ -586,18 +586,18 @@ class AppLocalizationsAr extends AppLocalizations {
   String get subscriptionConnectToVerify => 'اتصل بالإنترنت للتحقق من اشتراكك.';
 
   @override
-  String get organizeNoDuplicates => 'لم يتم العثور على التكرارات المحتملة';
+  String get duplicatesNoDuplicates => 'لم يتم العثور على التكرارات المحتملة';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'يتم عرض التكرارات التي تم تخطيها مرة أخرى.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'إظهار المجموعات المكررة التي تم تخطيها مرة أخرى';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'فشل تحميل المجموعات المكررة: $error';
   }
 
@@ -607,13 +607,13 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'انقر لعرض التفاصيل';
+  String get duplicatesSubtitlePlaceholder => 'انقر لعرض التفاصيل';
 
   @override
-  String get organizeConflictMostlyIdentical => 'متطابقة في الغالب';
+  String get duplicatesConflictMostlyIdentical => 'متطابقة في الغالب';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count متغيرات';
   }
 

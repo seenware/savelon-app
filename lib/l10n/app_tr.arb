@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Şifrelenmiş Kişiler",
   "navContacts": "Kişiler",
-  "navOrganize": "Düzenle",
+  "navDuplicates": "Yinelenenler",
   "navSupport": "Destek",
   "navSettings": "Ayarlar",
   "settingsTitle": "Ayarlar",
   "language": "Dil",
   "languageSystemDefault": "Sistem varsayılanı",
-  "organizeTitle": "Düzenle",
+  "duplicatesTitle": "Yinelenenler",
   "supportTitle": "Destek",
   "search": "Ara",
   "commonCancel": "İptal",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Aboneliğinizi doğrulamak için internete bağlanın.",
-  "organizeNoDuplicates": "Potansiyel kopya bulunamadı",
-  "organizeSkippedShownAgain": "Atlanan kopyalar tekrar gösterilir.",
-  "organizeShowSkippedTooltip": "Atlanan yinelenen grupları tekrar göster",
-  "organizeFailedToLoad": "Yinelenen gruplar yüklenemedi: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Potansiyel kopya bulunamadı",
+  "duplicatesSkippedShownAgain": "Atlanan kopyalar tekrar gösterilir.",
+  "duplicatesShowSkippedTooltip": "Atlanan yinelenen grupları tekrar göster",
+  "duplicatesFailedToLoad": "Yinelenen gruplar yüklenemedi: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Ayrıntıları görüntülemek için dokunun",
-  "organizeConflictMostlyIdentical": "Çoğunlukla aynı",
-  "organizeConflictFieldVariants": "{field}: {count} varyant",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Ayrıntıları görüntülemek için dokunun",
+  "duplicatesConflictMostlyIdentical": "Çoğunlukla aynı",
+  "duplicatesConflictFieldVariants": "{field}: {count} varyant",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

@@ -18,7 +18,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get navContacts => 'পরিচিতি';
 
   @override
-  String get navOrganize => 'সংগঠিত করুন';
+  String get navDuplicates => 'ডুপ্লিকেট';
 
   @override
   String get navSupport => 'সহায়তা';
@@ -36,7 +36,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get languageSystemDefault => 'সিস্টেম ডিফল্ট';
 
   @override
-  String get organizeTitle => 'সংগঠিত করুন';
+  String get duplicatesTitle => 'ডুপ্লিকেট';
 
   @override
   String get supportTitle => 'সহায়তা';
@@ -591,18 +591,18 @@ class AppLocalizationsBn extends AppLocalizations {
       'আপনার সদস্যতা যাচাই করতে ইন্টারনেটে সংযোগ করুন৷';
 
   @override
-  String get organizeNoDuplicates => 'কোন সম্ভাব্য সদৃশ পাওয়া যায়নি';
+  String get duplicatesNoDuplicates => 'কোন সম্ভাব্য সদৃশ পাওয়া যায়নি';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'এড়িয়ে যাওয়া সদৃশগুলি আবার দেখানো হয়।';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'এড়িয়ে যাওয়া সদৃশ গোষ্ঠীগুলি আবার দেখান৷';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'সদৃশ গোষ্ঠীগুলি লোড করতে ব্যর্থ হয়েছে: $error';
   }
 
@@ -612,13 +612,13 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'বিস্তারিত দেখতে আলতো চাপুন';
+  String get duplicatesSubtitlePlaceholder => 'বিস্তারিত দেখতে আলতো চাপুন';
 
   @override
-  String get organizeConflictMostlyIdentical => 'বেশিরভাগই অভিন্ন';
+  String get duplicatesConflictMostlyIdentical => 'বেশিরভাগই অভিন্ন';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count ভেরিয়েন্ট';
   }
 

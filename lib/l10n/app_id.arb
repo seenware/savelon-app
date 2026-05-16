@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Kontak Terenkripsi",
   "navContacts": "Kontak",
-  "navOrganize": "Mengatur",
+  "navDuplicates": "Duplikat",
   "navSupport": "Dukungan",
   "navSettings": "Pengaturan",
   "settingsTitle": "Pengaturan",
   "language": "Bahasa",
   "languageSystemDefault": "Bawaan sistem",
-  "organizeTitle": "Mengatur",
+  "duplicatesTitle": "Duplikat",
   "supportTitle": "Dukungan",
   "search": "Cari",
   "commonCancel": "Batal",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Hubungkan ke internet untuk memverifikasi langganan Anda.",
-  "organizeNoDuplicates": "Tidak ada potensi duplikat yang ditemukan",
-  "organizeSkippedShownAgain": "Duplikat yang dilewati akan ditampilkan lagi.",
-  "organizeShowSkippedTooltip": "Tampilkan lagi grup duplikat yang dilewati",
-  "organizeFailedToLoad": "Gagal memuat grup duplikat: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Tidak ada potensi duplikat yang ditemukan",
+  "duplicatesSkippedShownAgain": "Duplikat yang dilewati akan ditampilkan lagi.",
+  "duplicatesShowSkippedTooltip": "Tampilkan lagi grup duplikat yang dilewati",
+  "duplicatesFailedToLoad": "Gagal memuat grup duplikat: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Ketuk untuk melihat detailnya",
-  "organizeConflictMostlyIdentical": "Sebagian besar identik",
-  "organizeConflictFieldVariants": "{field}: {count} varian",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Ketuk untuk melihat detailnya",
+  "duplicatesConflictMostlyIdentical": "Sebagian besar identik",
+  "duplicatesConflictFieldVariants": "{field}: {count} varian",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

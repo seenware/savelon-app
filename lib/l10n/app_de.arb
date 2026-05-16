@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Verschlüsselte Kontakte",
   "navContacts": "Kontakte",
-  "navOrganize": "Organisieren",
+  "navDuplicates": "Duplikate",
   "navSupport": "Support",
   "navSettings": "Einstellungen",
   "settingsTitle": "Einstellungen",
   "language": "Sprache",
   "languageSystemDefault": "Systemstandard",
-  "organizeTitle": "Organisieren",
+  "duplicatesTitle": "Duplikate",
   "supportTitle": "Support",
   "search": "Suchen",
   "commonCancel": "Abbrechen",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Stellen Sie eine Verbindung zum Internet her, um Ihr Abonnement zu überprüfen.",
-  "organizeNoDuplicates": "Keine potenziellen Duplikate gefunden",
-  "organizeSkippedShownAgain": "Übersprungene Duplikate werden erneut angezeigt.",
-  "organizeShowSkippedTooltip": "Übersprungene Duplikatgruppen erneut anzeigen",
-  "organizeFailedToLoad": "Doppelte Gruppen konnten nicht geladen werden: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Keine potenziellen Duplikate gefunden",
+  "duplicatesSkippedShownAgain": "Übersprungene Duplikate werden erneut angezeigt.",
+  "duplicatesShowSkippedTooltip": "Übersprungene Duplikatgruppen erneut anzeigen",
+  "duplicatesFailedToLoad": "Doppelte Gruppen konnten nicht geladen werden: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Tippen Sie, um Details anzuzeigen",
-  "organizeConflictMostlyIdentical": "Größtenteils identisch",
-  "organizeConflictFieldVariants": "{field}: {count} Varianten",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Tippen Sie, um Details anzuzeigen",
+  "duplicatesConflictMostlyIdentical": "Größtenteils identisch",
+  "duplicatesConflictFieldVariants": "{field}: {count} Varianten",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

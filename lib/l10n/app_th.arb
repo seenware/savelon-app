@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "ผู้ติดต่อที่เข้ารหัส",
   "navContacts": "รายชื่อผู้ติดต่อ",
-  "navOrganize": "จัดระเบียบ",
+  "navDuplicates": "รายการซ้ำ",
   "navSupport": "ช่วยเหลือ",
   "navSettings": "การตั้งค่า",
   "settingsTitle": "การตั้งค่า",
   "language": "ภาษา",
   "languageSystemDefault": "ค่าเริ่มต้นของระบบ",
-  "organizeTitle": "จัดระเบียบ",
+  "duplicatesTitle": "รายการซ้ำ",
   "supportTitle": "ช่วยเหลือ",
   "search": "ค้นหา",
   "commonCancel": "ยกเลิก",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "เชื่อมต่ออินเทอร์เน็ตเพื่อยืนยันการสมัครสมาชิกของคุณ",
-  "organizeNoDuplicates": "ไม่พบรายการที่ซ้ำกัน",
-  "organizeSkippedShownAgain": "รายการซ้ำที่ข้ามจะแสดงอีกครั้ง",
-  "organizeShowSkippedTooltip": "แสดงกลุ่มที่ซ้ำกันที่ถูกข้ามอีกครั้ง",
-  "organizeFailedToLoad": "ไม่สามารถโหลดกลุ่มที่ซ้ำกัน: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "ไม่พบรายการที่ซ้ำกัน",
+  "duplicatesSkippedShownAgain": "รายการซ้ำที่ข้ามจะแสดงอีกครั้ง",
+  "duplicatesShowSkippedTooltip": "แสดงกลุ่มที่ซ้ำกันที่ถูกข้ามอีกครั้ง",
+  "duplicatesFailedToLoad": "ไม่สามารถโหลดกลุ่มที่ซ้ำกัน: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "แตะเพื่อดูรายละเอียด",
-  "organizeConflictMostlyIdentical": "เหมือนกันเป็นส่วนใหญ่",
-  "organizeConflictFieldVariants": "{field}: {count} เวอร์ชัน",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "แตะเพื่อดูรายละเอียด",
+  "duplicatesConflictMostlyIdentical": "เหมือนกันเป็นส่วนใหญ่",
+  "duplicatesConflictFieldVariants": "{field}: {count} เวอร์ชัน",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

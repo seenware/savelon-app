@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:contacts/features/main_app/organize/data/skipped_duplicate_groups_store.dart';
+import 'package:contacts/features/main_app/duplicates/data/skipped_duplicate_groups_store.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:contacts/features/main_app/contacts/domain/contact_duplicates.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
@@ -50,7 +50,7 @@ final skippedDuplicateGroupIdsProvider =
       SkippedDuplicateGroupIdsNotifier.new,
     );
 
-class LastKnownOrganizeCountNotifier extends Notifier<int?> {
+class LastKnownDuplicatesCountNotifier extends Notifier<int?> {
   @override
   int? build() => null;
 
@@ -59,9 +59,9 @@ class LastKnownOrganizeCountNotifier extends Notifier<int?> {
   }
 }
 
-final lastKnownOrganizeCountProvider =
-    NotifierProvider<LastKnownOrganizeCountNotifier, int?>(
-      LastKnownOrganizeCountNotifier.new,
+final lastKnownDuplicatesCountProvider =
+    NotifierProvider<LastKnownDuplicatesCountNotifier, int?>(
+      LastKnownDuplicatesCountNotifier.new,
     );
 
 class DuplicateGroupsRefreshNotifier extends Notifier<int> {
@@ -108,7 +108,7 @@ final duplicateGroupsProvider = FutureProvider<List<DuplicateGroup>>((ref) async
   return groups;
 });
 
-/// Keeps duplicate cache warm in the background even when Organize is not open.
+/// Keeps duplicate cache warm in the background even when Duplicates is not open.
 final duplicateGroupsBackgroundSyncProvider = Provider<void>((ref) {
   ref.watch(duplicateGroupsRefreshProvider);
   final repository = ref.watch(contactsRepositoryProvider);
@@ -119,7 +119,7 @@ final duplicateGroupsBackgroundSyncProvider = Provider<void>((ref) {
     final skippedIds = await ref.read(skippedDuplicateGroupIdsProvider.future);
     final visibleCount =
         groups.where((group) => !skippedIds.contains(group.id)).length;
-    ref.read(lastKnownOrganizeCountProvider.notifier).setValue(visibleCount);
+    ref.read(lastKnownDuplicatesCountProvider.notifier).setValue(visibleCount);
   }());
 });
 
@@ -146,7 +146,7 @@ final visibleDuplicateGroupsProvider = Provider<AsyncValue<List<DuplicateGroup>>
   );
 });
 
-final organizeCountProvider = Provider<AsyncValue<int>>((ref) {
+final duplicatesCountProvider = Provider<AsyncValue<int>>((ref) {
   final groupsAsync = ref.watch(visibleDuplicateGroupsProvider);
   return groupsAsync.whenData((groups) => groups.length);
 });

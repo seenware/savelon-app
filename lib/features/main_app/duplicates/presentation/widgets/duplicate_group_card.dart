@@ -1,13 +1,13 @@
 import 'package:contacts/features/main_app/contacts/domain/contact_duplicates.dart';
 import 'package:contacts/features/main_app/contacts/domain/entities/contact.dart';
-import 'package:contacts/features/main_app/organize/presentation/mappers/organize_group_presenter.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/mappers/duplicates_group_presenter.dart';
 import 'package:contacts/l10n/l10n_context.dart';
 import 'package:flutter/material.dart';
 
 class DuplicateGroupCard extends StatelessWidget {
   final DuplicateGroup group;
   final Set<String> selectedIds;
-  final OrganizeGroupPresenter presenter;
+  final DuplicatesGroupPresenter presenter;
   final VoidCallback onSkip;
   final VoidCallback? onMerge;
   final ValueChanged<Contact> onContactTap;

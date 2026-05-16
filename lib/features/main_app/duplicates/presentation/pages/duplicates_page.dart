@@ -3,10 +3,10 @@ import 'package:contacts/features/main_app/contacts/domain/contact_merge_policy.
 import 'package:contacts/features/main_app/contacts/domain/contact_duplicates.dart';
 import 'package:contacts/features/main_app/contacts/domain/entities/contact.dart';
 import 'package:contacts/features/main_app/contacts/presentation/contact_form/contact_form.dart';
-import 'package:contacts/features/main_app/organize/presentation/mappers/organize_group_presenter.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
-import 'package:contacts/features/main_app/organize/presentation/state/organize_selection_controller.dart';
-import 'package:contacts/features/main_app/organize/presentation/widgets/duplicate_group_card.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/mappers/duplicates_group_presenter.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/state/duplicates_selection_controller.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/widgets/duplicate_group_card.dart';
 import 'package:contacts/core/layout/widgets/app_scaffold.dart';
 import 'package:contacts/core/purchases/premium_gate.dart';
 import 'package:contacts/core/theme/app_breakpoints.dart';
@@ -17,8 +17,8 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class OrganizePage extends HookConsumerWidget {
-  const OrganizePage({super.key});
+class DuplicatesPage extends HookConsumerWidget {
+  const DuplicatesPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -28,9 +28,9 @@ class OrganizePage extends HookConsumerWidget {
     final hasSkippedDuplicateGroups =
         skippedIds != null && skippedIds.isNotEmpty;
     final selectionRevision = useState(0);
-    final selectionController = useMemoized(OrganizeSelectionController.new);
+    final selectionController = useMemoized(DuplicatesSelectionController.new);
     final mergePolicy = useMemoized(() => const ContactMergePolicy());
-    final presenter = useMemoized(() => const OrganizeGroupPresenter());
+    final presenter = useMemoized(() => const DuplicatesGroupPresenter());
     final displayedGroups = useState<List<DuplicateGroup>>(const []);
     final exitingGroupIds = useState<Set<String>>(<String>{});
     final reduceMotion = MediaQuery.maybeOf(context)?.disableAnimations ?? false;
@@ -95,7 +95,7 @@ class OrganizePage extends HookConsumerWidget {
         if (!context.mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(context.l10n.organizeSkippedShownAgain),
+            content: Text(context.l10n.duplicatesSkippedShownAgain),
           ),
         );
       });
@@ -115,7 +115,7 @@ class OrganizePage extends HookConsumerWidget {
               const SizedBox(width: actionSlotWidth),
               Expanded(
                 child: Text(
-                  context.l10n.organizeTitle,
+                  context.l10n.duplicatesTitle,
                   style: theme.textTheme.headlineMedium,
                   textAlign: TextAlign.center,
                 ),
@@ -124,7 +124,7 @@ class OrganizePage extends HookConsumerWidget {
                 width: actionSlotWidth,
                 child: hasSkippedDuplicateGroups
                     ? IconButton(
-                        tooltip: context.l10n.organizeShowSkippedTooltip,
+                        tooltip: context.l10n.duplicatesShowSkippedTooltip,
                         onPressed:
                             skippedAsync.isLoading ? null : onClearSkipped,
                         icon: const Icon(Icons.refresh),
@@ -141,7 +141,7 @@ class OrganizePage extends HookConsumerWidget {
                     reduceMotion ? groups : displayedGroups.value;
                 if (groupsToRender.isEmpty) {
                   return Center(
-                    child: Text(context.l10n.organizeNoDuplicates),
+                    child: Text(context.l10n.duplicatesNoDuplicates),
                   );
                 }
                 return ListView.builder(
@@ -189,7 +189,7 @@ class OrganizePage extends HookConsumerWidget {
                               );
                             },
                       onContactTap: (contact) =>
-                          context.push('/main_app/organize/${contact.id}'),
+                          context.push('/main_app/duplicates/${contact.id}'),
                       onToggleSelection: (contact) {
                         selectionController.toggle(
                           groupId: group.id,
@@ -242,7 +242,7 @@ class OrganizePage extends HookConsumerWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: Text(
-                    context.l10n.organizeFailedToLoad(error.toString()),
+                    context.l10n.duplicatesFailedToLoad(error.toString()),
                   ),
                 ),
               ),
@@ -273,4 +273,3 @@ class OrganizePage extends HookConsumerWidget {
     );
   }
 }
-

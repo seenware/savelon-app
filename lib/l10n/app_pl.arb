@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Szyfrowane kontakty",
   "navContacts": "Kontakty",
-  "navOrganize": "Zorganizować",
+  "navDuplicates": "Duplikaty",
   "navSupport": "Wsparcie",
   "navSettings": "Ustawienia",
   "settingsTitle": "Ustawienia",
   "language": "Język",
   "languageSystemDefault": "Domyślne systemowe",
-  "organizeTitle": "Zorganizować",
+  "duplicatesTitle": "Duplikaty",
   "supportTitle": "Wsparcie",
   "search": "Szukaj",
   "commonCancel": "Anuluj",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Połącz się z Internetem, aby zweryfikować swoją subskrypcję.",
-  "organizeNoDuplicates": "Nie znaleziono potencjalnych duplikatów",
-  "organizeSkippedShownAgain": "Pominięte duplikaty zostaną ponownie wyświetlone.",
-  "organizeShowSkippedTooltip": "Pokaż ponownie pominięte zduplikowane grupy",
-  "organizeFailedToLoad": "Nie udało się załadować zduplikowanych grup: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Nie znaleziono potencjalnych duplikatów",
+  "duplicatesSkippedShownAgain": "Pominięte duplikaty zostaną ponownie wyświetlone.",
+  "duplicatesShowSkippedTooltip": "Pokaż ponownie pominięte zduplikowane grupy",
+  "duplicatesFailedToLoad": "Nie udało się załadować zduplikowanych grup: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Kliknij, aby wyświetlić szczegóły",
-  "organizeConflictMostlyIdentical": "W większości identyczne",
-  "organizeConflictFieldVariants": "{field}: warianty {count}",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Kliknij, aby wyświetlić szczegóły",
+  "duplicatesConflictMostlyIdentical": "W większości identyczne",
+  "duplicatesConflictFieldVariants": "{field}: warianty {count}",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

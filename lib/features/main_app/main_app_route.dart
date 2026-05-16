@@ -4,8 +4,8 @@ import 'package:contacts/core/layout/app_shell.dart';
 import 'package:contacts/features/main_app/contacts/presentation/contact_details/contact_details_page.dart';
 import 'package:contacts/features/main_app/contacts/presentation/contacts_list/contacts_list_page.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
-import 'package:contacts/features/main_app/organize/presentation/pages/organize_page.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/pages/duplicates_page.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
 import 'package:contacts/features/main_app/settings/presentation/pages/change_password_page.dart';
 import 'package:contacts/features/main_app/settings/presentation/pages/export_contacts_page.dart';
 import 'package:contacts/features/main_app/settings/presentation/pages/language_settings_page.dart';
@@ -27,8 +27,8 @@ final _shellNavigatorContactsKey = GlobalKey<NavigatorState>(
 final _shellNavigatorUpdatesKey = GlobalKey<NavigatorState>(
   debugLabel: 'shellUpdates',
 );
-final _shellNavigatorOrganizeKey = GlobalKey<NavigatorState>(
-  debugLabel: 'shellOrganize',
+final _shellNavigatorDuplicatesKey = GlobalKey<NavigatorState>(
+  debugLabel: 'shellDuplicates',
 );
 final _shellNavigatorSettingsKey = GlobalKey<NavigatorState>(
   debugLabel: 'shellSettings',
@@ -53,28 +53,32 @@ GoRoute mainAppRoute(String path) => GoRoute(
           builder: (context, ref, _) {
             ref.watch(duplicateGroupsBackgroundSyncProvider);
             final contactsCountAsync = ref.watch(contactsCountProvider);
-            final isOnOrganizeBranch = state.uri.path.startsWith('$path/organize');
-            final lastKnownOrganizeCount = ref.watch(lastKnownOrganizeCountProvider);
-            final organizeCountAsync = isOnOrganizeBranch
-                ? ref.watch(organizeCountProvider)
+            final isOnDuplicatesBranch =
+                state.uri.path.startsWith('$path/duplicates');
+            final lastKnownDuplicatesCount =
+                ref.watch(lastKnownDuplicatesCountProvider);
+            final duplicatesCountAsync = isOnDuplicatesBranch
+                ? ref.watch(duplicatesCountProvider)
                 : const AsyncValue<int>.loading();
-            if (isOnOrganizeBranch) {
-              final latest = organizeCountAsync.asData?.value;
-              if (!organizeCountAsync.isLoading &&
+            if (isOnDuplicatesBranch) {
+              final latest = duplicatesCountAsync.asData?.value;
+              if (!duplicatesCountAsync.isLoading &&
                   latest != null &&
-                  latest != lastKnownOrganizeCount) {
+                  latest != lastKnownDuplicatesCount) {
                 Future.microtask(
-                  () =>
-                      ref.read(lastKnownOrganizeCountProvider.notifier).setValue(latest),
+                  () => ref
+                      .read(lastKnownDuplicatesCountProvider.notifier)
+                      .setValue(latest),
                 );
               }
             }
             return AppShell(
               navigationShell: navigationShell,
               contactsCount: contactsCountAsync.asData?.value,
-              organizeCount: isOnOrganizeBranch
-                  ? organizeCountAsync.asData?.value ?? lastKnownOrganizeCount
-                  : lastKnownOrganizeCount,
+              duplicatesCount: isOnDuplicatesBranch
+                  ? duplicatesCountAsync.asData?.value ??
+                      lastKnownDuplicatesCount
+                  : lastKnownDuplicatesCount,
             );
           },
         );
@@ -102,14 +106,14 @@ GoRoute mainAppRoute(String path) => GoRoute(
           ],
         ),
 
-        // Organize branch
+        // Duplicates branch
         StatefulShellBranch(
-          navigatorKey: _shellNavigatorOrganizeKey,
+          navigatorKey: _shellNavigatorDuplicatesKey,
           routes: [
             GoRoute(
-              path: 'organize',
+              path: 'duplicates',
               pageBuilder: (context, state) =>
-                  const NoTransitionPage(child: OrganizePage()),
+                  const NoTransitionPage(child: DuplicatesPage()),
               routes: [
                 GoRoute(
                   path: ':contactId',

@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Contatti crittografati",
   "navContacts": "Contatti",
-  "navOrganize": "Organizza",
+  "navDuplicates": "Duplicati",
   "navSupport": "Supporto",
   "navSettings": "Impostazioni",
   "settingsTitle": "Impostazioni",
   "language": "Lingua",
   "languageSystemDefault": "Predefinito del sistema",
-  "organizeTitle": "Organizzare",
+  "duplicatesTitle": "Duplicati",
   "supportTitle": "Supporto",
   "search": "Ricerca",
   "commonCancel": "Annulla",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Connettiti a Internet per verificare il tuo abbonamento.",
-  "organizeNoDuplicates": "Nessun potenziale duplicato trovato",
-  "organizeSkippedShownAgain": "I duplicati saltati vengono visualizzati nuovamente.",
-  "organizeShowSkippedTooltip": "Mostra di nuovo i gruppi duplicati saltati",
-  "organizeFailedToLoad": "Impossibile caricare i gruppi duplicati: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Nessun potenziale duplicato trovato",
+  "duplicatesSkippedShownAgain": "I duplicati saltati vengono visualizzati nuovamente.",
+  "duplicatesShowSkippedTooltip": "Mostra di nuovo i gruppi duplicati saltati",
+  "duplicatesFailedToLoad": "Impossibile caricare i gruppi duplicati: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Tocca per visualizzare i dettagli",
-  "organizeConflictMostlyIdentical": "Per lo più identico",
-  "organizeConflictFieldVariants": "{field}: {count} varianti",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Tocca per visualizzare i dettagli",
+  "duplicatesConflictMostlyIdentical": "Per lo più identico",
+  "duplicatesConflictFieldVariants": "{field}: {count} varianti",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

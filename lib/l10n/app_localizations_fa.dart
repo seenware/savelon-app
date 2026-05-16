@@ -18,7 +18,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get navContacts => 'مخاطبین';
 
   @override
-  String get navOrganize => 'سازماندهی کنید';
+  String get navDuplicates => 'تکراری‌ها';
 
   @override
   String get navSupport => 'پشتیبانی';
@@ -36,7 +36,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get languageSystemDefault => 'پیش فرض سیستم';
 
   @override
-  String get organizeTitle => 'سازماندهی کنید';
+  String get duplicatesTitle => 'تکراری‌ها';
 
   @override
   String get supportTitle => 'پشتیبانی';
@@ -589,18 +589,18 @@ class AppLocalizationsFa extends AppLocalizations {
       'برای تأیید اشتراک خود به اینترنت متصل شوید.';
 
   @override
-  String get organizeNoDuplicates => 'هیچ مورد تکراری احتمالی یافت نشد';
+  String get duplicatesNoDuplicates => 'هیچ مورد تکراری احتمالی یافت نشد';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'موارد تکراری نادیده گرفته شده دوباره نشان داده می شوند.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'دوباره گروه های تکراری حذف شده را نشان دهید';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'بارگیری گروه های تکراری انجام نشد: $error';
   }
 
@@ -610,13 +610,13 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'برای مشاهده جزئیات ضربه بزنید';
+  String get duplicatesSubtitlePlaceholder => 'برای مشاهده جزئیات ضربه بزنید';
 
   @override
-  String get organizeConflictMostlyIdentical => 'اکثراً یکسان است';
+  String get duplicatesConflictMostlyIdentical => 'اکثراً یکسان است';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: انواع $count';
   }
 

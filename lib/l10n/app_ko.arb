@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "암호화된 연락처",
   "navContacts": "연락처",
-  "navOrganize": "정리",
+  "navDuplicates": "중복",
   "navSupport": "지원",
   "navSettings": "설정",
   "settingsTitle": "설정",
   "language": "언어",
   "languageSystemDefault": "시스템 기본값",
-  "organizeTitle": "정리",
+  "duplicatesTitle": "중복",
   "supportTitle": "지원",
   "search": "검색",
   "commonCancel": "취소",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "구독을 확인하려면 인터넷에 연결하세요.",
-  "organizeNoDuplicates": "잠재적인 중복 항목이 발견되지 않았습니다.",
-  "organizeSkippedShownAgain": "건너뛴 중복 항목이 다시 표시됩니다.",
-  "organizeShowSkippedTooltip": "건너뛴 중복 그룹을 다시 표시",
-  "organizeFailedToLoad": "중복 그룹을 로드하지 못했습니다: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "잠재적인 중복 항목이 발견되지 않았습니다.",
+  "duplicatesSkippedShownAgain": "건너뛴 중복 항목이 다시 표시됩니다.",
+  "duplicatesShowSkippedTooltip": "건너뛴 중복 그룹을 다시 표시",
+  "duplicatesFailedToLoad": "중복 그룹을 로드하지 못했습니다: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "세부정보를 보려면 탭하세요.",
-  "organizeConflictMostlyIdentical": "대부분 동일",
-  "organizeConflictFieldVariants": "{field}: {count} 변형",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "세부정보를 보려면 탭하세요.",
+  "duplicatesConflictMostlyIdentical": "대부분 동일",
+  "duplicatesConflictFieldVariants": "{field}: {count} 변형",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

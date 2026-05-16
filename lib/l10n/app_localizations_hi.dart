@@ -18,7 +18,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get navContacts => 'संपर्क';
 
   @override
-  String get navOrganize => 'आयोजन';
+  String get navDuplicates => 'डुप्लिकेट';
 
   @override
   String get navSupport => 'सहायता';
@@ -36,7 +36,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get languageSystemDefault => 'सिस्टम डिफ़ॉल्ट';
 
   @override
-  String get organizeTitle => 'आयोजन';
+  String get duplicatesTitle => 'डुप्लिकेट';
 
   @override
   String get supportTitle => 'सहायता';
@@ -588,18 +588,18 @@ class AppLocalizationsHi extends AppLocalizations {
       'अपनी सदस्यता सत्यापित करने के लिए इंटरनेट से कनेक्ट करें।';
 
   @override
-  String get organizeNoDuplicates => 'कोई संभावित डुप्लिकेट नहीं मिला';
+  String get duplicatesNoDuplicates => 'कोई संभावित डुप्लिकेट नहीं मिला';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'छोड़े गए डुप्लिकेट फिर से दिखाए जाते हैं।';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'छोड़े गए डुप्लिकेट समूहों को फिर से दिखाएं';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'डुप्लिकेट समूह लोड करने में विफल: $error';
   }
 
@@ -609,13 +609,13 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'विवरण देखने के लिए टैप करें';
+  String get duplicatesSubtitlePlaceholder => 'विवरण देखने के लिए टैप करें';
 
   @override
-  String get organizeConflictMostlyIdentical => 'अधिकतर समान';
+  String get duplicatesConflictMostlyIdentical => 'अधिकतर समान';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count वेरिएंट';
   }
 

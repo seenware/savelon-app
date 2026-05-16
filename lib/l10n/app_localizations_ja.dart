@@ -18,7 +18,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get navContacts => '連絡先';
 
   @override
-  String get navOrganize => '整理';
+  String get navDuplicates => '重複';
 
   @override
   String get navSupport => 'サポート';
@@ -36,7 +36,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get languageSystemDefault => 'システムのデフォルト';
 
   @override
-  String get organizeTitle => '整理';
+  String get duplicatesTitle => '重複';
 
   @override
   String get supportTitle => 'サポート';
@@ -568,16 +568,16 @@ class AppLocalizationsJa extends AppLocalizations {
       'サブスクリプションを確認するには、インターネットに接続してください。';
 
   @override
-  String get organizeNoDuplicates => '潜在的な重複は見つかりませんでした';
+  String get duplicatesNoDuplicates => '潜在的な重複は見つかりませんでした';
 
   @override
-  String get organizeSkippedShownAgain => 'スキップされた重複が再度表示されます。';
+  String get duplicatesSkippedShownAgain => 'スキップされた重複が再度表示されます。';
 
   @override
-  String get organizeShowSkippedTooltip => 'スキップされた重複グループを再度表示します';
+  String get duplicatesShowSkippedTooltip => 'スキップされた重複グループを再度表示します';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return '重複したグループのロードに失敗しました: $error';
   }
 
@@ -587,13 +587,13 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'タップして詳細を表示';
+  String get duplicatesSubtitlePlaceholder => 'タップして詳細を表示';
 
   @override
-  String get organizeConflictMostlyIdentical => 'ほとんど同一';
+  String get duplicatesConflictMostlyIdentical => 'ほとんど同一';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count 種類';
   }
 

@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "এনক্রিপ্ট করা পরিচিতি",
   "navContacts": "পরিচিতি",
-  "navOrganize": "সংগঠিত করুন",
+  "navDuplicates": "ডুপ্লিকেট",
   "navSupport": "সহায়তা",
   "navSettings": "সেটিংস",
   "settingsTitle": "সেটিংস",
   "language": "ভাষা",
   "languageSystemDefault": "সিস্টেম ডিফল্ট",
-  "organizeTitle": "সংগঠিত করুন",
+  "duplicatesTitle": "ডুপ্লিকেট",
   "supportTitle": "সহায়তা",
   "search": "অনুসন্ধান করুন",
   "commonCancel": "বাতিল করুন",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "আপনার সদস্যতা যাচাই করতে ইন্টারনেটে সংযোগ করুন৷",
-  "organizeNoDuplicates": "কোন সম্ভাব্য সদৃশ পাওয়া যায়নি",
-  "organizeSkippedShownAgain": "এড়িয়ে যাওয়া সদৃশগুলি আবার দেখানো হয়।",
-  "organizeShowSkippedTooltip": "এড়িয়ে যাওয়া সদৃশ গোষ্ঠীগুলি আবার দেখান৷",
-  "organizeFailedToLoad": "সদৃশ গোষ্ঠীগুলি লোড করতে ব্যর্থ হয়েছে: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "কোন সম্ভাব্য সদৃশ পাওয়া যায়নি",
+  "duplicatesSkippedShownAgain": "এড়িয়ে যাওয়া সদৃশগুলি আবার দেখানো হয়।",
+  "duplicatesShowSkippedTooltip": "এড়িয়ে যাওয়া সদৃশ গোষ্ঠীগুলি আবার দেখান৷",
+  "duplicatesFailedToLoad": "সদৃশ গোষ্ঠীগুলি লোড করতে ব্যর্থ হয়েছে: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "বিস্তারিত দেখতে আলতো চাপুন",
-  "organizeConflictMostlyIdentical": "বেশিরভাগই অভিন্ন",
-  "organizeConflictFieldVariants": "{field}: {count} ভেরিয়েন্ট",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "বিস্তারিত দেখতে আলতো চাপুন",
+  "duplicatesConflictMostlyIdentical": "বেশিরভাগই অভিন্ন",
+  "duplicatesConflictFieldVariants": "{field}: {count} ভেরিয়েন্ট",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Encrypted Contacts",
   "navContacts": "Contacts",
-  "navOrganize": "Organize",
+  "navDuplicates": "Duplicates",
   "navSupport": "Support",
   "navSettings": "Settings",
   "settingsTitle": "Settings",
   "language": "Language",
   "languageSystemDefault": "System default",
-  "organizeTitle": "Organize",
+  "duplicatesTitle": "Duplicates",
   "supportTitle": "Support",
   "search": "Search",
   "commonCancel": "Cancel",
@@ -290,11 +290,11 @@
     }
   },
   "subscriptionConnectToVerify": "Connect to the internet to verify your subscription.",
-  "organizeNoDuplicates": "No potential duplicates found",
-  "organizeSkippedShownAgain": "Skipped duplicates are shown again.",
-  "organizeShowSkippedTooltip": "Show skipped duplicate groups again",
-  "organizeFailedToLoad": "Failed to load duplicate groups: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "No potential duplicates found",
+  "duplicatesSkippedShownAgain": "Skipped duplicates are shown again.",
+  "duplicatesShowSkippedTooltip": "Show skipped duplicate groups again",
+  "duplicatesFailedToLoad": "Failed to load duplicate groups: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -309,10 +309,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Tap to view details",
-  "organizeConflictMostlyIdentical": "Mostly identical",
-  "organizeConflictFieldVariants": "{field}: {count} variants",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Tap to view details",
+  "duplicatesConflictMostlyIdentical": "Mostly identical",
+  "duplicatesConflictFieldVariants": "{field}: {count} variants",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

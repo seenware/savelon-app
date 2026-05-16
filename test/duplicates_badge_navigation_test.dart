@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('bottom navigation shows organize badge count', (tester) async {
+  testWidgets('bottom navigation shows duplicates badge count', (tester) async {
     await tester.pumpWidget(
       MaterialApp(
         localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -15,7 +15,7 @@ void main() {
             selectedIndex: 1,
             onDestinationSelected: (_) {},
             contactsCount: 0,
-            organizeCount: 5,
+            duplicatesCount: 5,
           ),
         ),
       ),
@@ -24,7 +24,7 @@ void main() {
     expect(find.text('5'), findsOneWidget);
   });
 
-  testWidgets('side navigation shows organize badge count', (tester) async {
+  testWidgets('side navigation shows duplicates badge count', (tester) async {
     await tester.pumpWidget(
       MaterialApp(
         localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -39,7 +39,7 @@ void main() {
               selectedIndex: 1,
               onDestinationSelected: (_) {},
               contactsCount: 0,
-              organizeCount: 3,
+              duplicatesCount: 3,
             ),
           ),
         ),

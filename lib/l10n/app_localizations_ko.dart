@@ -18,7 +18,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get navContacts => '연락처';
 
   @override
-  String get navOrganize => '정리';
+  String get navDuplicates => '중복';
 
   @override
   String get navSupport => '지원';
@@ -36,7 +36,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get languageSystemDefault => '시스템 기본값';
 
   @override
-  String get organizeTitle => '정리';
+  String get duplicatesTitle => '중복';
 
   @override
   String get supportTitle => '지원';
@@ -567,16 +567,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get subscriptionConnectToVerify => '구독을 확인하려면 인터넷에 연결하세요.';
 
   @override
-  String get organizeNoDuplicates => '잠재적인 중복 항목이 발견되지 않았습니다.';
+  String get duplicatesNoDuplicates => '잠재적인 중복 항목이 발견되지 않았습니다.';
 
   @override
-  String get organizeSkippedShownAgain => '건너뛴 중복 항목이 다시 표시됩니다.';
+  String get duplicatesSkippedShownAgain => '건너뛴 중복 항목이 다시 표시됩니다.';
 
   @override
-  String get organizeShowSkippedTooltip => '건너뛴 중복 그룹을 다시 표시';
+  String get duplicatesShowSkippedTooltip => '건너뛴 중복 그룹을 다시 표시';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return '중복 그룹을 로드하지 못했습니다: $error';
   }
 
@@ -586,13 +586,13 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => '세부정보를 보려면 탭하세요.';
+  String get duplicatesSubtitlePlaceholder => '세부정보를 보려면 탭하세요.';
 
   @override
-  String get organizeConflictMostlyIdentical => '대부분 동일';
+  String get duplicatesConflictMostlyIdentical => '대부분 동일';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count 변형';
   }
 

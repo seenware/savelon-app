@@ -11,14 +11,14 @@ class SideNavigationDrawer extends StatelessWidget {
   final int selectedIndex;
   final ValueChanged<int> onDestinationSelected;
   final int? contactsCount;
-  final int? organizeCount;
+  final int? duplicatesCount;
 
   const SideNavigationDrawer({
     super.key,
     required this.selectedIndex,
     required this.onDestinationSelected,
     this.contactsCount,
-    this.organizeCount,
+    this.duplicatesCount,
   });
 
   @override
@@ -70,7 +70,7 @@ class SideNavigationDrawer extends StatelessWidget {
 
   List<Widget> _buildNavigationDestinations(BuildContext context) {
     final count = contactsCount;
-    final organize = organizeCount;
+    final duplicates = duplicatesCount;
     final l10n = context.l10n;
 
     return [
@@ -80,9 +80,13 @@ class SideNavigationDrawer extends StatelessWidget {
         label: Text(l10n.navContacts),
       ),
       NavigationDrawerDestination(
-        icon: _organizeIcon(context, isSelected: false, count: organize),
-        selectedIcon: _organizeIcon(context, isSelected: true, count: organize),
-        label: Text(l10n.navOrganize),
+        icon: _duplicatesIcon(context, isSelected: false, count: duplicates),
+        selectedIcon: _duplicatesIcon(
+          context,
+          isSelected: true,
+          count: duplicates,
+        ),
+        label: Text(l10n.navDuplicates),
       ),
       NavigationDrawerDestination(
         icon: const Icon(Icons.favorite_outline_rounded),
@@ -119,15 +123,13 @@ class SideNavigationDrawer extends StatelessWidget {
     );
   }
 
-  Widget _organizeIcon(
+  Widget _duplicatesIcon(
     BuildContext context, {
     required bool isSelected,
     required int? count,
   }) {
     final icon = Icon(
-      isSelected
-          ? Icons.auto_awesome_mosaic_rounded
-          : Icons.auto_awesome_mosaic_outlined,
+      isSelected ? Icons.group_rounded : Icons.group_outlined,
     );
     if (count == null || count <= 0) return icon;
     final colorScheme = Theme.of(context).colorScheme;

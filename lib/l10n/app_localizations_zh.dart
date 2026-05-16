@@ -18,7 +18,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get navContacts => '联系人';
 
   @override
-  String get navOrganize => '组织';
+  String get navDuplicates => '重复项';
 
   @override
   String get navSupport => '支持';
@@ -36,7 +36,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get languageSystemDefault => '系统默认';
 
   @override
-  String get organizeTitle => '组织';
+  String get duplicatesTitle => '重复项';
 
   @override
   String get supportTitle => '支持';
@@ -560,16 +560,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get subscriptionConnectToVerify => '连接到互联网以验证您的订阅。';
 
   @override
-  String get organizeNoDuplicates => '未发现潜在的重复项';
+  String get duplicatesNoDuplicates => '未发现潜在的重复项';
 
   @override
-  String get organizeSkippedShownAgain => '跳过的重复项会再次显示。';
+  String get duplicatesSkippedShownAgain => '跳过的重复项会再次显示。';
 
   @override
-  String get organizeShowSkippedTooltip => '再次显示跳过的重复组';
+  String get duplicatesShowSkippedTooltip => '再次显示跳过的重复组';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return '无法加载重复组：$error';
   }
 
@@ -579,13 +579,13 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => '点击查看详情';
+  String get duplicatesSubtitlePlaceholder => '点击查看详情';
 
   @override
-  String get organizeConflictMostlyIdentical => '大部分相同';
+  String get duplicatesConflictMostlyIdentical => '大部分相同';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field：$count 变体';
   }
 
@@ -954,7 +954,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get navContacts => '联系人';
 
   @override
-  String get navOrganize => '组织';
+  String get navDuplicates => '重复项';
 
   @override
   String get navSupport => '支持';
@@ -972,7 +972,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get languageSystemDefault => '系统默认';
 
   @override
-  String get organizeTitle => '组织';
+  String get duplicatesTitle => '重复项';
 
   @override
   String get supportTitle => '支持';
@@ -1496,16 +1496,16 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get subscriptionConnectToVerify => '连接到互联网以验证您的订阅。';
 
   @override
-  String get organizeNoDuplicates => '未发现潜在的重复项';
+  String get duplicatesNoDuplicates => '未发现潜在的重复项';
 
   @override
-  String get organizeSkippedShownAgain => '跳过的重复项会再次显示。';
+  String get duplicatesSkippedShownAgain => '跳过的重复项会再次显示。';
 
   @override
-  String get organizeShowSkippedTooltip => '再次显示跳过的重复组';
+  String get duplicatesShowSkippedTooltip => '再次显示跳过的重复组';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return '无法加载重复组：$error';
   }
 
@@ -1515,13 +1515,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => '点击查看详情';
+  String get duplicatesSubtitlePlaceholder => '点击查看详情';
 
   @override
-  String get organizeConflictMostlyIdentical => '大部分相同';
+  String get duplicatesConflictMostlyIdentical => '大部分相同';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field：$count 变体';
   }
 

@@ -12,14 +12,14 @@ class BottomNavigation extends StatelessWidget {
   final int selectedIndex;
   final ValueChanged<int> onDestinationSelected;
   final int? contactsCount;
-  final int? organizeCount;
+  final int? duplicatesCount;
 
   const BottomNavigation({
     super.key,
     required this.selectedIndex,
     required this.onDestinationSelected,
     this.contactsCount,
-    this.organizeCount,
+    this.duplicatesCount,
   });
 
   /// Trims excess bottom inset for [NavigationBar]'s internal [SafeArea] while
@@ -101,9 +101,9 @@ class BottomNavigation extends StatelessWidget {
               tooltip: '',
             ),
             NavigationDestination(
-              icon: _organizeIcon(context, isSelected: false),
-              selectedIcon: _organizeIcon(context, isSelected: true),
-              label: l10n.navOrganize,
+              icon: _duplicatesIcon(context, isSelected: false),
+              selectedIcon: _duplicatesIcon(context, isSelected: true),
+              label: l10n.navDuplicates,
               tooltip: '',
             ),
             NavigationDestination(
@@ -143,13 +143,11 @@ class BottomNavigation extends StatelessWidget {
     );
   }
 
-  Widget _organizeIcon(BuildContext context, {required bool isSelected}) {
+  Widget _duplicatesIcon(BuildContext context, {required bool isSelected}) {
     final icon = Icon(
-      isSelected
-          ? Icons.auto_awesome_mosaic_rounded
-          : Icons.auto_awesome_mosaic_outlined,
+      isSelected ? Icons.group_rounded : Icons.group_outlined,
     );
-    final count = organizeCount;
+    final count = duplicatesCount;
     if (count == null || count <= 0) return icon;
     final colorScheme = Theme.of(context).colorScheme;
 

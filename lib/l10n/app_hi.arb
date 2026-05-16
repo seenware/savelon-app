@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "एन्क्रिप्टेड संपर्क",
   "navContacts": "संपर्क",
-  "navOrganize": "आयोजन",
+  "navDuplicates": "डुप्लिकेट",
   "navSupport": "सहायता",
   "navSettings": "सेटिंग्स",
   "settingsTitle": "सेटिंग्स",
   "language": "भाषा",
   "languageSystemDefault": "सिस्टम डिफ़ॉल्ट",
-  "organizeTitle": "आयोजन",
+  "duplicatesTitle": "डुप्लिकेट",
   "supportTitle": "सहायता",
   "search": "खोज",
   "commonCancel": "रद्द करना",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "अपनी सदस्यता सत्यापित करने के लिए इंटरनेट से कनेक्ट करें।",
-  "organizeNoDuplicates": "कोई संभावित डुप्लिकेट नहीं मिला",
-  "organizeSkippedShownAgain": "छोड़े गए डुप्लिकेट फिर से दिखाए जाते हैं।",
-  "organizeShowSkippedTooltip": "छोड़े गए डुप्लिकेट समूहों को फिर से दिखाएं",
-  "organizeFailedToLoad": "डुप्लिकेट समूह लोड करने में विफल: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "कोई संभावित डुप्लिकेट नहीं मिला",
+  "duplicatesSkippedShownAgain": "छोड़े गए डुप्लिकेट फिर से दिखाए जाते हैं।",
+  "duplicatesShowSkippedTooltip": "छोड़े गए डुप्लिकेट समूहों को फिर से दिखाएं",
+  "duplicatesFailedToLoad": "डुप्लिकेट समूह लोड करने में विफल: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "विवरण देखने के लिए टैप करें",
-  "organizeConflictMostlyIdentical": "अधिकतर समान",
-  "organizeConflictFieldVariants": "{field}: {count} वेरिएंट",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "विवरण देखने के लिए टैप करें",
+  "duplicatesConflictMostlyIdentical": "अधिकतर समान",
+  "duplicatesConflictFieldVariants": "{field}: {count} वेरिएंट",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

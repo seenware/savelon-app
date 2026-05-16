@@ -1,5 +1,5 @@
-import 'package:contacts/features/main_app/organize/data/skipped_duplicate_groups_store.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
+import 'package:contacts/features/main_app/duplicates/data/skipped_duplicate_groups_store.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

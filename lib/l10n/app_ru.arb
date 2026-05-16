@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Зашифрованные контакты",
   "navContacts": "Контакты",
-  "navOrganize": "Дубликаты",
+  "navDuplicates": "Дубликаты",
   "navSupport": "Поддержка",
   "navSettings": "Настройки",
   "settingsTitle": "Настройки",
   "language": "Язык",
   "languageSystemDefault": "Система по умолчанию",
-  "organizeTitle": "Дубликаты",
+  "duplicatesTitle": "Дубликаты",
   "supportTitle": "Поддержка",
   "search": "Поиск",
   "commonCancel": "Отмена",
@@ -274,11 +274,11 @@
     }
   },
   "subscriptionConnectToVerify": "Подключитесь к Интернету, чтобы подтвердить подписку.",
-  "organizeNoDuplicates": "Потенциальные дубликаты не найдены",
-  "organizeSkippedShownAgain": "Пропущенные дубликаты отображаются снова.",
-  "organizeShowSkippedTooltip": "Снова показать пропущенные повторяющиеся группы",
-  "organizeFailedToLoad": "Не удалось загрузить повторяющиеся группы: {error}.",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Потенциальные дубликаты не найдены",
+  "duplicatesSkippedShownAgain": "Пропущенные дубликаты отображаются снова.",
+  "duplicatesShowSkippedTooltip": "Снова показать пропущенные повторяющиеся группы",
+  "duplicatesFailedToLoad": "Не удалось загрузить повторяющиеся группы: {error}.",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -293,10 +293,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Нажмите, чтобы просмотреть подробности",
-  "organizeConflictMostlyIdentical": "В основном идентичны",
-  "organizeConflictFieldVariants": "{field}: варианты {count}",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Нажмите, чтобы просмотреть подробности",
+  "duplicatesConflictMostlyIdentical": "В основном идентичны",
+  "duplicatesConflictFieldVariants": "{field}: варианты {count}",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

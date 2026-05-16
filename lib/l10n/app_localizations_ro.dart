@@ -18,7 +18,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get navContacts => 'Contacte';
 
   @override
-  String get navOrganize => 'Organizare';
+  String get navDuplicates => 'Duplicate';
 
   @override
   String get navSupport => 'Asistență';
@@ -36,7 +36,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get languageSystemDefault => 'Implicit sistem';
 
   @override
-  String get organizeTitle => 'Organizare';
+  String get duplicatesTitle => 'Duplicate';
 
   @override
   String get supportTitle => 'Asistență';
@@ -593,18 +593,18 @@ class AppLocalizationsRo extends AppLocalizations {
       'Conectează-te la internet pentru a-ți verifica abonamentul.';
 
   @override
-  String get organizeNoDuplicates => 'Nu s-au găsit duplicate potențiale';
+  String get duplicatesNoDuplicates => 'Nu s-au găsit duplicate potențiale';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'Duplicatele omise sunt afișate din nou.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'Arată din nou grupurile de duplicate omise';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'Nu s-au putut încărca grupurile de duplicate: $error';
   }
 
@@ -614,13 +614,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'Atinge pentru a vedea detaliile';
+  String get duplicatesSubtitlePlaceholder => 'Atinge pentru a vedea detaliile';
 
   @override
-  String get organizeConflictMostlyIdentical => 'În mare parte identice';
+  String get duplicatesConflictMostlyIdentical => 'În mare parte identice';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count variante';
   }
 

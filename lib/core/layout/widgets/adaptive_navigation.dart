@@ -11,13 +11,13 @@ import 'side_navigation_drawer.dart';
 class AdaptiveNavigation extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
   final int? contactsCount;
-  final int? organizeCount;
+  final int? duplicatesCount;
 
   const AdaptiveNavigation({
     super.key,
     required this.navigationShell,
     this.contactsCount,
-    this.organizeCount,
+    this.duplicatesCount,
   });
 
   void _onDestinationSelected(int index) {
@@ -42,7 +42,7 @@ class AdaptiveNavigation extends StatelessWidget {
             selectedIndex: navigationShell.currentIndex,
             onDestinationSelected: _onDestinationSelected,
             contactsCount: contactsCount,
-            organizeCount: organizeCount,
+            duplicatesCount: duplicatesCount,
           ),
           Expanded(
             child: AppScaffold(body: navigationShell, minimumScreenPaddingH: 0),
@@ -62,7 +62,7 @@ class AdaptiveNavigation extends StatelessWidget {
         selectedIndex: navigationShell.currentIndex,
         onDestinationSelected: _onDestinationSelected,
         contactsCount: contactsCount,
-        organizeCount: organizeCount,
+        duplicatesCount: duplicatesCount,
       ),
     );
   }

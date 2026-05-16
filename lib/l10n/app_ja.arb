@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "暗号化された連絡先",
   "navContacts": "連絡先",
-  "navOrganize": "整理",
+  "navDuplicates": "重複",
   "navSupport": "サポート",
   "navSettings": "設定",
   "settingsTitle": "設定",
   "language": "言語",
   "languageSystemDefault": "システムのデフォルト",
-  "organizeTitle": "整理",
+  "duplicatesTitle": "重複",
   "supportTitle": "サポート",
   "search": "検索",
   "commonCancel": "キャンセル",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "サブスクリプションを確認するには、インターネットに接続してください。",
-  "organizeNoDuplicates": "潜在的な重複は見つかりませんでした",
-  "organizeSkippedShownAgain": "スキップされた重複が再度表示されます。",
-  "organizeShowSkippedTooltip": "スキップされた重複グループを再度表示します",
-  "organizeFailedToLoad": "重複したグループのロードに失敗しました: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "潜在的な重複は見つかりませんでした",
+  "duplicatesSkippedShownAgain": "スキップされた重複が再度表示されます。",
+  "duplicatesShowSkippedTooltip": "スキップされた重複グループを再度表示します",
+  "duplicatesFailedToLoad": "重複したグループのロードに失敗しました: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "タップして詳細を表示",
-  "organizeConflictMostlyIdentical": "ほとんど同一",
-  "organizeConflictFieldVariants": "{field}: {count} 種類",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "タップして詳細を表示",
+  "duplicatesConflictMostlyIdentical": "ほとんど同一",
+  "duplicatesConflictFieldVariants": "{field}: {count} 種類",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

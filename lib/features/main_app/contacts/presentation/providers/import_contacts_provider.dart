@@ -9,7 +9,7 @@ import 'package:contacts/features/main_app/contacts/data/datasources/device_cont
 import 'package:contacts/features/main_app/contacts/data/datasources/device_contacts_datasource_impl.dart';
 import 'package:contacts/features/main_app/contacts/domain/entities/contact.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

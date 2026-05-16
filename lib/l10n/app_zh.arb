@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "加密联系人",
   "navContacts": "联系人",
-  "navOrganize": "组织",
+  "navDuplicates": "重复项",
   "navSupport": "支持",
   "navSettings": "设置",
   "settingsTitle": "设置",
   "language": "语言",
   "languageSystemDefault": "系统默认",
-  "organizeTitle": "组织",
+  "duplicatesTitle": "重复项",
   "supportTitle": "支持",
   "search": "搜索",
   "commonCancel": "取消",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "连接到互联网以验证您的订阅。",
-  "organizeNoDuplicates": "未发现潜在的重复项",
-  "organizeSkippedShownAgain": "跳过的重复项会再次显示。",
-  "organizeShowSkippedTooltip": "再次显示跳过的重复组",
-  "organizeFailedToLoad": "无法加载重复组：{error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "未发现潜在的重复项",
+  "duplicatesSkippedShownAgain": "跳过的重复项会再次显示。",
+  "duplicatesShowSkippedTooltip": "再次显示跳过的重复组",
+  "duplicatesFailedToLoad": "无法加载重复组：{error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "点击查看详情",
-  "organizeConflictMostlyIdentical": "大部分相同",
-  "organizeConflictFieldVariants": "{field}：{count} 变体",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "点击查看详情",
+  "duplicatesConflictMostlyIdentical": "大部分相同",
+  "duplicatesConflictFieldVariants": "{field}：{count} 变体",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

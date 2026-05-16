@@ -18,7 +18,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get navContacts => 'Contacts';
 
   @override
-  String get navOrganize => 'Organiser';
+  String get navDuplicates => 'Doublons';
 
   @override
   String get navSupport => 'Assistance';
@@ -36,7 +36,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get languageSystemDefault => 'Valeur par défaut du système';
 
   @override
-  String get organizeTitle => 'Organiser';
+  String get duplicatesTitle => 'Doublons';
 
   @override
   String get supportTitle => 'Assistance';
@@ -597,18 +597,18 @@ class AppLocalizationsFr extends AppLocalizations {
       'Connectez-vous à Internet pour vérifier votre abonnement.';
 
   @override
-  String get organizeNoDuplicates => 'Aucun doublon potentiel trouvé';
+  String get duplicatesNoDuplicates => 'Aucun doublon potentiel trouvé';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'Les doublons ignorés sont à nouveau affichés.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'Afficher à nouveau les groupes en double ignorés';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'Échec du chargement des groupes en double : $error';
   }
 
@@ -618,13 +618,14 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'Appuyez pour afficher les détails';
+  String get duplicatesSubtitlePlaceholder =>
+      'Appuyez pour afficher les détails';
 
   @override
-  String get organizeConflictMostlyIdentical => 'Presque identique';
+  String get duplicatesConflictMostlyIdentical => 'Presque identique';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field : $count variantes';
   }
 

@@ -18,7 +18,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get navContacts => 'Kontak';
 
   @override
-  String get navOrganize => 'Mengatur';
+  String get navDuplicates => 'Duplikat';
 
   @override
   String get navSupport => 'Dukungan';
@@ -36,7 +36,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get languageSystemDefault => 'Bawaan sistem';
 
   @override
-  String get organizeTitle => 'Mengatur';
+  String get duplicatesTitle => 'Duplikat';
 
   @override
   String get supportTitle => 'Dukungan';
@@ -590,19 +590,19 @@ class AppLocalizationsId extends AppLocalizations {
       'Hubungkan ke internet untuk memverifikasi langganan Anda.';
 
   @override
-  String get organizeNoDuplicates =>
+  String get duplicatesNoDuplicates =>
       'Tidak ada potensi duplikat yang ditemukan';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'Duplikat yang dilewati akan ditampilkan lagi.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'Tampilkan lagi grup duplikat yang dilewati';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'Gagal memuat grup duplikat: $error';
   }
 
@@ -612,13 +612,13 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'Ketuk untuk melihat detailnya';
+  String get duplicatesSubtitlePlaceholder => 'Ketuk untuk melihat detailnya';
 
   @override
-  String get organizeConflictMostlyIdentical => 'Sebagian besar identik';
+  String get duplicatesConflictMostlyIdentical => 'Sebagian besar identik';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count varian';
   }
 

@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Contacts chiffrés",
   "navContacts": "Contacts",
-  "navOrganize": "Organiser",
+  "navDuplicates": "Doublons",
   "navSupport": "Assistance",
   "navSettings": "Paramètres",
   "settingsTitle": "Paramètres",
   "language": "Langue",
   "languageSystemDefault": "Valeur par défaut du système",
-  "organizeTitle": "Organiser",
+  "duplicatesTitle": "Doublons",
   "supportTitle": "Assistance",
   "search": "Recherche",
   "commonCancel": "Annuler",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Connectez-vous à Internet pour vérifier votre abonnement.",
-  "organizeNoDuplicates": "Aucun doublon potentiel trouvé",
-  "organizeSkippedShownAgain": "Les doublons ignorés sont à nouveau affichés.",
-  "organizeShowSkippedTooltip": "Afficher à nouveau les groupes en double ignorés",
-  "organizeFailedToLoad": "Échec du chargement des groupes en double : {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Aucun doublon potentiel trouvé",
+  "duplicatesSkippedShownAgain": "Les doublons ignorés sont à nouveau affichés.",
+  "duplicatesShowSkippedTooltip": "Afficher à nouveau les groupes en double ignorés",
+  "duplicatesFailedToLoad": "Échec du chargement des groupes en double : {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Appuyez pour afficher les détails",
-  "organizeConflictMostlyIdentical": "Presque identique",
-  "organizeConflictFieldVariants": "{field} : {count} variantes",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Appuyez pour afficher les détails",
+  "duplicatesConflictMostlyIdentical": "Presque identique",
+  "duplicatesConflictFieldVariants": "{field} : {count} variantes",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

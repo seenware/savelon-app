@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Danh bạ được mã hóa",
   "navContacts": "Danh bạ",
-  "navOrganize": "Tổ chức",
+  "navDuplicates": "Trùng lặp",
   "navSupport": "Hỗ trợ",
   "navSettings": "Cài đặt",
   "settingsTitle": "Cài đặt",
   "language": "Ngôn ngữ",
   "languageSystemDefault": "Mặc định hệ thống",
-  "organizeTitle": "Tổ chức",
+  "duplicatesTitle": "Trùng lặp",
   "supportTitle": "Hỗ trợ",
   "search": "Tìm kiếm",
   "commonCancel": "Hủy bỏ",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Kết nối với Internet để xác minh đăng ký của bạn.",
-  "organizeNoDuplicates": "Không tìm thấy thông tin liên lạc bị trùng",
-  "organizeSkippedShownAgain": "Các bản sao bị bỏ qua sẽ được hiển thị lại.",
-  "organizeShowSkippedTooltip": "Hiển thị lại các nhóm trùng lặp bị bỏ qua",
-  "organizeFailedToLoad": "Không thể tải các nhóm trùng lặp: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Không tìm thấy thông tin liên lạc bị trùng",
+  "duplicatesSkippedShownAgain": "Các bản sao bị bỏ qua sẽ được hiển thị lại.",
+  "duplicatesShowSkippedTooltip": "Hiển thị lại các nhóm trùng lặp bị bỏ qua",
+  "duplicatesFailedToLoad": "Không thể tải các nhóm trùng lặp: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Nhấn để xem chi tiết",
-  "organizeConflictMostlyIdentical": "Hầu hết giống hệt nhau",
-  "organizeConflictFieldVariants": "{field}: các biến thể {count}",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Nhấn để xem chi tiết",
+  "duplicatesConflictMostlyIdentical": "Hầu hết giống hệt nhau",
+  "duplicatesConflictFieldVariants": "{field}: các biến thể {count}",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

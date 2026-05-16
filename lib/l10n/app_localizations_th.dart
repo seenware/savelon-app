@@ -18,7 +18,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get navContacts => 'รายชื่อผู้ติดต่อ';
 
   @override
-  String get navOrganize => 'จัดระเบียบ';
+  String get navDuplicates => 'รายการซ้ำ';
 
   @override
   String get navSupport => 'ช่วยเหลือ';
@@ -36,7 +36,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get languageSystemDefault => 'ค่าเริ่มต้นของระบบ';
 
   @override
-  String get organizeTitle => 'จัดระเบียบ';
+  String get duplicatesTitle => 'รายการซ้ำ';
 
   @override
   String get supportTitle => 'ช่วยเหลือ';
@@ -586,17 +586,17 @@ class AppLocalizationsTh extends AppLocalizations {
       'เชื่อมต่ออินเทอร์เน็ตเพื่อยืนยันการสมัครสมาชิกของคุณ';
 
   @override
-  String get organizeNoDuplicates => 'ไม่พบรายการที่ซ้ำกัน';
+  String get duplicatesNoDuplicates => 'ไม่พบรายการที่ซ้ำกัน';
 
   @override
-  String get organizeSkippedShownAgain => 'รายการซ้ำที่ข้ามจะแสดงอีกครั้ง';
+  String get duplicatesSkippedShownAgain => 'รายการซ้ำที่ข้ามจะแสดงอีกครั้ง';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'แสดงกลุ่มที่ซ้ำกันที่ถูกข้ามอีกครั้ง';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'ไม่สามารถโหลดกลุ่มที่ซ้ำกัน: $error';
   }
 
@@ -606,13 +606,13 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'แตะเพื่อดูรายละเอียด';
+  String get duplicatesSubtitlePlaceholder => 'แตะเพื่อดูรายละเอียด';
 
   @override
-  String get organizeConflictMostlyIdentical => 'เหมือนกันเป็นส่วนใหญ่';
+  String get duplicatesConflictMostlyIdentical => 'เหมือนกันเป็นส่วนใหญ่';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count เวอร์ชัน';
   }
 

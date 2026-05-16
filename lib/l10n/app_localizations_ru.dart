@@ -18,7 +18,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get navContacts => 'Контакты';
 
   @override
-  String get navOrganize => 'Дубликаты';
+  String get navDuplicates => 'Дубликаты';
 
   @override
   String get navSupport => 'Поддержка';
@@ -36,7 +36,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get languageSystemDefault => 'Система по умолчанию';
 
   @override
-  String get organizeTitle => 'Дубликаты';
+  String get duplicatesTitle => 'Дубликаты';
 
   @override
   String get supportTitle => 'Поддержка';
@@ -591,18 +591,18 @@ class AppLocalizationsRu extends AppLocalizations {
       'Подключитесь к Интернету, чтобы подтвердить подписку.';
 
   @override
-  String get organizeNoDuplicates => 'Потенциальные дубликаты не найдены';
+  String get duplicatesNoDuplicates => 'Потенциальные дубликаты не найдены';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'Пропущенные дубликаты отображаются снова.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'Снова показать пропущенные повторяющиеся группы';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'Не удалось загрузить повторяющиеся группы: $error.';
   }
 
@@ -612,14 +612,14 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder =>
+  String get duplicatesSubtitlePlaceholder =>
       'Нажмите, чтобы просмотреть подробности';
 
   @override
-  String get organizeConflictMostlyIdentical => 'В основном идентичны';
+  String get duplicatesConflictMostlyIdentical => 'В основном идентичны';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: варианты $count';
   }
 

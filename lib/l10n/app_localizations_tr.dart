@@ -18,7 +18,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get navContacts => 'Kişiler';
 
   @override
-  String get navOrganize => 'Düzenle';
+  String get navDuplicates => 'Yinelenenler';
 
   @override
   String get navSupport => 'Destek';
@@ -36,7 +36,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get languageSystemDefault => 'Sistem varsayılanı';
 
   @override
-  String get organizeTitle => 'Düzenle';
+  String get duplicatesTitle => 'Yinelenenler';
 
   @override
   String get supportTitle => 'Destek';
@@ -590,17 +590,18 @@ class AppLocalizationsTr extends AppLocalizations {
       'Aboneliğinizi doğrulamak için internete bağlanın.';
 
   @override
-  String get organizeNoDuplicates => 'Potansiyel kopya bulunamadı';
+  String get duplicatesNoDuplicates => 'Potansiyel kopya bulunamadı';
 
   @override
-  String get organizeSkippedShownAgain => 'Atlanan kopyalar tekrar gösterilir.';
+  String get duplicatesSkippedShownAgain =>
+      'Atlanan kopyalar tekrar gösterilir.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'Atlanan yinelenen grupları tekrar göster';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'Yinelenen gruplar yüklenemedi: $error';
   }
 
@@ -610,14 +611,14 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder =>
+  String get duplicatesSubtitlePlaceholder =>
       'Ayrıntıları görüntülemek için dokunun';
 
   @override
-  String get organizeConflictMostlyIdentical => 'Çoğunlukla aynı';
+  String get duplicatesConflictMostlyIdentical => 'Çoğunlukla aynı';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: $count varyant';
   }
 

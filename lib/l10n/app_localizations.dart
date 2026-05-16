@@ -156,11 +156,11 @@ abstract class AppLocalizations {
   /// **'Contacts'**
   String get navContacts;
 
-  /// No description provided for @navOrganize.
+  /// No description provided for @navDuplicates.
   ///
   /// In en, this message translates to:
-  /// **'Organize'**
-  String get navOrganize;
+  /// **'Duplicates'**
+  String get navDuplicates;
 
   /// No description provided for @navSupport.
   ///
@@ -192,11 +192,11 @@ abstract class AppLocalizations {
   /// **'System default'**
   String get languageSystemDefault;
 
-  /// No description provided for @organizeTitle.
+  /// No description provided for @duplicatesTitle.
   ///
   /// In en, this message translates to:
-  /// **'Organize'**
-  String get organizeTitle;
+  /// **'Duplicates'**
+  String get duplicatesTitle;
 
   /// No description provided for @supportTitle.
   ///
@@ -1176,29 +1176,29 @@ abstract class AppLocalizations {
   /// **'Connect to the internet to verify your subscription.'**
   String get subscriptionConnectToVerify;
 
-  /// No description provided for @organizeNoDuplicates.
+  /// No description provided for @duplicatesNoDuplicates.
   ///
   /// In en, this message translates to:
   /// **'No potential duplicates found'**
-  String get organizeNoDuplicates;
+  String get duplicatesNoDuplicates;
 
-  /// No description provided for @organizeSkippedShownAgain.
+  /// No description provided for @duplicatesSkippedShownAgain.
   ///
   /// In en, this message translates to:
   /// **'Skipped duplicates are shown again.'**
-  String get organizeSkippedShownAgain;
+  String get duplicatesSkippedShownAgain;
 
-  /// No description provided for @organizeShowSkippedTooltip.
+  /// No description provided for @duplicatesShowSkippedTooltip.
   ///
   /// In en, this message translates to:
   /// **'Show skipped duplicate groups again'**
-  String get organizeShowSkippedTooltip;
+  String get duplicatesShowSkippedTooltip;
 
-  /// No description provided for @organizeFailedToLoad.
+  /// No description provided for @duplicatesFailedToLoad.
   ///
   /// In en, this message translates to:
   /// **'Failed to load duplicate groups: {error}'**
-  String organizeFailedToLoad(String error);
+  String duplicatesFailedToLoad(String error);
 
   /// No description provided for @duplicatesCount.
   ///
@@ -1206,23 +1206,23 @@ abstract class AppLocalizations {
   /// **'{count} duplicates'**
   String duplicatesCount(int count);
 
-  /// No description provided for @organizeSubtitlePlaceholder.
+  /// No description provided for @duplicatesSubtitlePlaceholder.
   ///
   /// In en, this message translates to:
   /// **'Tap to view details'**
-  String get organizeSubtitlePlaceholder;
+  String get duplicatesSubtitlePlaceholder;
 
-  /// No description provided for @organizeConflictMostlyIdentical.
+  /// No description provided for @duplicatesConflictMostlyIdentical.
   ///
   /// In en, this message translates to:
   /// **'Mostly identical'**
-  String get organizeConflictMostlyIdentical;
+  String get duplicatesConflictMostlyIdentical;
 
-  /// No description provided for @organizeConflictFieldVariants.
+  /// No description provided for @duplicatesConflictFieldVariants.
   ///
   /// In en, this message translates to:
   /// **'{field}: {count} variants'**
-  String organizeConflictFieldVariants(String field, int count);
+  String duplicatesConflictFieldVariants(String field, int count);
 
   /// No description provided for @fieldLabelName.
   ///

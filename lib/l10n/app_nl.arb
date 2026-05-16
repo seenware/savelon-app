@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "Versleutelde contacten",
   "navContacts": "Contacten",
-  "navOrganize": "Organiseren",
+  "navDuplicates": "Duplicaten",
   "navSupport": "Ondersteuning",
   "navSettings": "Instellingen",
   "settingsTitle": "Instellingen",
   "language": "Taal",
   "languageSystemDefault": "Systeemstandaard",
-  "organizeTitle": "Organiseren",
+  "duplicatesTitle": "Duplicaten",
   "supportTitle": "Ondersteuning",
   "search": "Zoeken",
   "commonCancel": "Annuleren",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "Maak verbinding met internet om uw abonnement te verifiëren.",
-  "organizeNoDuplicates": "Geen potentiële duplicaten gevonden",
-  "organizeSkippedShownAgain": "Overgeslagen duplicaten worden opnieuw weergegeven.",
-  "organizeShowSkippedTooltip": "Overgeslagen duplicaatgroepen opnieuw tonen",
-  "organizeFailedToLoad": "Kan dubbele groepen niet laden: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "Geen potentiële duplicaten gevonden",
+  "duplicatesSkippedShownAgain": "Overgeslagen duplicaten worden opnieuw weergegeven.",
+  "duplicatesShowSkippedTooltip": "Overgeslagen duplicaatgroepen opnieuw tonen",
+  "duplicatesFailedToLoad": "Kan dubbele groepen niet laden: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "Tik om details te bekijken",
-  "organizeConflictMostlyIdentical": "Grotendeels identiek",
-  "organizeConflictFieldVariants": "{field}: {count} varianten",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "Tik om details te bekijken",
+  "duplicatesConflictMostlyIdentical": "Grotendeels identiek",
+  "duplicatesConflictFieldVariants": "{field}: {count} varianten",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

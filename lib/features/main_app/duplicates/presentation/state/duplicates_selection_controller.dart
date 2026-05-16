@@ -1,4 +1,4 @@
-class OrganizeSelectionController {
+class DuplicatesSelectionController {
   final Map<String, Set<String>> _selectedByGroup = {};
 
   Set<String> selectedIdsForGroup(

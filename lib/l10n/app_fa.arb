@@ -3,13 +3,13 @@
   "appTitle": "Savelon",
   "encryptedContactsTitle": "مخاطبین رمزگذاری شده",
   "navContacts": "مخاطبین",
-  "navOrganize": "سازماندهی کنید",
+  "navDuplicates": "تکراری‌ها",
   "navSupport": "پشتیبانی",
   "navSettings": "تنظیمات",
   "settingsTitle": "تنظیمات",
   "language": "زبان",
   "languageSystemDefault": "پیش فرض سیستم",
-  "organizeTitle": "سازماندهی کنید",
+  "duplicatesTitle": "تکراری‌ها",
   "supportTitle": "پشتیبانی",
   "search": "جستجو کنید",
   "commonCancel": "لغو کنید",
@@ -268,11 +268,11 @@
     }
   },
   "subscriptionConnectToVerify": "برای تأیید اشتراک خود به اینترنت متصل شوید.",
-  "organizeNoDuplicates": "هیچ مورد تکراری احتمالی یافت نشد",
-  "organizeSkippedShownAgain": "موارد تکراری نادیده گرفته شده دوباره نشان داده می شوند.",
-  "organizeShowSkippedTooltip": "دوباره گروه های تکراری حذف شده را نشان دهید",
-  "organizeFailedToLoad": "بارگیری گروه های تکراری انجام نشد: {error}",
-  "@organizeFailedToLoad": {
+  "duplicatesNoDuplicates": "هیچ مورد تکراری احتمالی یافت نشد",
+  "duplicatesSkippedShownAgain": "موارد تکراری نادیده گرفته شده دوباره نشان داده می شوند.",
+  "duplicatesShowSkippedTooltip": "دوباره گروه های تکراری حذف شده را نشان دهید",
+  "duplicatesFailedToLoad": "بارگیری گروه های تکراری انجام نشد: {error}",
+  "@duplicatesFailedToLoad": {
     "placeholders": {
       "error": {
         "type": "String"
@@ -287,10 +287,10 @@
       }
     }
   },
-  "organizeSubtitlePlaceholder": "برای مشاهده جزئیات ضربه بزنید",
-  "organizeConflictMostlyIdentical": "اکثراً یکسان است",
-  "organizeConflictFieldVariants": "{field}: انواع {count}",
-  "@organizeConflictFieldVariants": {
+  "duplicatesSubtitlePlaceholder": "برای مشاهده جزئیات ضربه بزنید",
+  "duplicatesConflictMostlyIdentical": "اکثراً یکسان است",
+  "duplicatesConflictFieldVariants": "{field}: انواع {count}",
+  "@duplicatesConflictFieldVariants": {
     "placeholders": {
       "field": {
         "type": "String"

@@ -4,7 +4,7 @@ import 'package:contacts/core/image_storage/image_storage_provider.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_view_providers.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/import_contacts_provider.dart';
-import 'package:contacts/features/main_app/organize/presentation/providers/organize_providers.dart';
+import 'package:contacts/features/main_app/duplicates/presentation/providers/duplicates_providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Orchestrates a full factory reset of the app.
@@ -32,9 +32,9 @@ class AppResetService {
     ref.invalidate(duplicateGroupsRefreshProvider);
     ref.invalidate(duplicateGroupsProvider);
     ref.invalidate(duplicateGroupsCacheProvider);
-    ref.invalidate(lastKnownOrganizeCountProvider);
+    ref.invalidate(lastKnownDuplicatesCountProvider);
     ref.invalidate(visibleDuplicateGroupsProvider);
-    ref.invalidate(organizeCountProvider);
+    ref.invalidate(duplicatesCountProvider);
     ref.invalidate(skippedDuplicateGroupIdsProvider);
     ref.invalidate(duplicateGroupsBackgroundSyncProvider);
   }

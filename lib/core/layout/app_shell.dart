@@ -7,13 +7,13 @@ import 'widgets/adaptive_navigation.dart';
 class AppShell extends ConsumerWidget {
   final StatefulNavigationShell navigationShell;
   final int? contactsCount;
-  final int? organizeCount;
+  final int? duplicatesCount;
 
   const AppShell({
     super.key,
     required this.navigationShell,
     this.contactsCount,
-    this.organizeCount,
+    this.duplicatesCount,
   });
 
   @override
@@ -21,7 +21,7 @@ class AppShell extends ConsumerWidget {
     return AdaptiveNavigation(
       navigationShell: navigationShell,
       contactsCount: contactsCount,
-      organizeCount: organizeCount,
+      duplicatesCount: duplicatesCount,
     );
   }
 }

@@ -2,14 +2,14 @@ import 'package:contacts/features/main_app/contacts/domain/contact_duplicates.da
 import 'package:contacts/features/main_app/contacts/domain/entities/contact.dart';
 import 'package:contacts/l10n/app_localizations.dart';
 
-class OrganizeGroupPresenter {
-  const OrganizeGroupPresenter();
+class DuplicatesGroupPresenter {
+  const DuplicatesGroupPresenter();
 
   String subtitle(AppLocalizations l10n, Contact contact) {
     if (contact.emails.isNotEmpty) return contact.emails.first.address;
     if (contact.phones.isNotEmpty) return contact.phones.first.number;
     if (contact.company.isNotEmpty) return contact.company;
-    return l10n.organizeSubtitlePlaceholder;
+    return l10n.duplicatesSubtitlePlaceholder;
   }
 
   List<String> conflictPreview(AppLocalizations l10n, List<Contact> contacts) {
@@ -28,11 +28,11 @@ class OrganizeGroupPresenter {
           .toSet()
           .length;
       if (variants > 1) {
-        previews.add(l10n.organizeConflictFieldVariants(field, variants));
+        previews.add(l10n.duplicatesConflictFieldVariants(field, variants));
       }
     });
     return previews.isEmpty
-        ? <String>[l10n.organizeConflictMostlyIdentical]
+        ? <String>[l10n.duplicatesConflictMostlyIdentical]
         : previews;
   }
 

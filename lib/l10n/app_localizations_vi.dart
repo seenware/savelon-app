@@ -18,7 +18,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get navContacts => 'Danh bạ';
 
   @override
-  String get navOrganize => 'Tổ chức';
+  String get navDuplicates => 'Trùng lặp';
 
   @override
   String get navSupport => 'Hỗ trợ';
@@ -36,7 +36,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get languageSystemDefault => 'Mặc định hệ thống';
 
   @override
-  String get organizeTitle => 'Tổ chức';
+  String get duplicatesTitle => 'Trùng lặp';
 
   @override
   String get supportTitle => 'Hỗ trợ';
@@ -589,19 +589,19 @@ class AppLocalizationsVi extends AppLocalizations {
       'Kết nối với Internet để xác minh đăng ký của bạn.';
 
   @override
-  String get organizeNoDuplicates =>
+  String get duplicatesNoDuplicates =>
       'Không tìm thấy thông tin liên lạc bị trùng';
 
   @override
-  String get organizeSkippedShownAgain =>
+  String get duplicatesSkippedShownAgain =>
       'Các bản sao bị bỏ qua sẽ được hiển thị lại.';
 
   @override
-  String get organizeShowSkippedTooltip =>
+  String get duplicatesShowSkippedTooltip =>
       'Hiển thị lại các nhóm trùng lặp bị bỏ qua';
 
   @override
-  String organizeFailedToLoad(String error) {
+  String duplicatesFailedToLoad(String error) {
     return 'Không thể tải các nhóm trùng lặp: $error';
   }
 
@@ -611,13 +611,13 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get organizeSubtitlePlaceholder => 'Nhấn để xem chi tiết';
+  String get duplicatesSubtitlePlaceholder => 'Nhấn để xem chi tiết';
 
   @override
-  String get organizeConflictMostlyIdentical => 'Hầu hết giống hệt nhau';
+  String get duplicatesConflictMostlyIdentical => 'Hầu hết giống hệt nhau';
 
   @override
-  String organizeConflictFieldVariants(String field, int count) {
+  String duplicatesConflictFieldVariants(String field, int count) {
     return '$field: các biến thể $count';
   }
 
