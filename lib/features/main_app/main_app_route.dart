@@ -1,6 +1,7 @@
 // lib/features/main_app/main_app_route.dart
 
 import 'package:contacts/core/layout/app_shell.dart';
+import 'package:contacts/core/layout/widgets/fading_branch_container.dart';
 import 'package:contacts/features/main_app/contacts/presentation/contact_details/contact_details_page.dart';
 import 'package:contacts/features/main_app/contacts/presentation/contacts_list/contacts_list_page.dart';
 import 'package:contacts/features/main_app/contacts/presentation/providers/contacts_provider.dart';
@@ -47,7 +48,13 @@ GoRoute mainAppRoute(String path) => GoRoute(
   },
   routes: [
     // Main app shell with nested navigation
-    StatefulShellRoute.indexedStack(
+    StatefulShellRoute(
+      navigatorContainerBuilder: (context, navigationShell, children) {
+        return FadingBranchContainer(
+          currentIndex: navigationShell.currentIndex,
+          children: children,
+        );
+      },
       builder: (context, state, navigationShell) {
         return Consumer(
           builder: (context, ref, _) {
